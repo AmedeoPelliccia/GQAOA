@@ -293,6 +293,6 @@ Q4 2026  ──► Open-source release of Ampel-qcore (Apache 2.0)
 
 ---
 
-*AM.PEL — A Me. Posible Evolutioned PapaLaik'ed*
+*AM.PEL — A Possible Evolved PapaLaik'ed*
 
 *Document ID: AMPEL-EVO-2026-04-05-PAPALAIKED-V2 | Version 2.0 | Status: Production-Ready*

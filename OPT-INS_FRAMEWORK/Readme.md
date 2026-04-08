@@ -22,7 +22,7 @@ Each module is **self-contained**, **versioned**, and **domain-scoped**. Integra
 | **Composability** | Multiple modules can be activated simultaneously without coupling |
 | **Compliance-first** | Every module documents its applicable standards |
 | **Backwards-compatible** | Activating a module never breaks an existing baseline |
-| **Traceability** | All opt-ins link back to the full ALICE–BOB DT–CHARLIE-T–GENTLE–BOOST chain | GENTLE | BOOST |
+| **Traceability** | All opt-ins link back to the full ALICE–BOB DT–CHARLIE-T–GENTLE–BOOST chain |
 
 ## Module Catalog
 
