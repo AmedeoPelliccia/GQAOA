@@ -37,6 +37,7 @@
 *   Anexo F: Catálogo Maestro de Plantillas de Documentación
 *   [GTL Specification](GTL-Specification.md): Generative Transgentle Language — framework for transgentle models
 *   [TMS Species Taxonomy](TMS-Transgentle-Model-Species.md): Transgentle Model Species — eight subtypes, seven axioms, lifecycle, UTCS mapping
+*   [Q-ASI-HUMAN-TRANSGENTLE](Q-ASI-HUMAN-TRANSGENTLE.md): Coexistence protocol — Quantum, ASI, Human under Transgentle governance
 
 ---
 
