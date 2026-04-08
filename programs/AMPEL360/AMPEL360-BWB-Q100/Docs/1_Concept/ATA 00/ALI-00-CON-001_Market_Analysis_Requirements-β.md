@@ -9,7 +9,7 @@
 ---
 
 **⚠️ NOTA IMPORTANTE: Naturaleza del Proyecto y Datos Ilustrativos ⚠️**
-Este proyecto, "Global Quantum Aerospace Organization Advent (GQAOA)", es una iniciativa **puramente conceptual y ficticia**, desarrollada como un **esfuerzo personal por Amedeo Pelliccia**. Todas las especificaciones técnicas, capacidades, métricas de rendimiento y datos financieros o de impacto presentados en esta documentación son **ilustrativos y no representan información real** de ningún programa o empresa con financiación. Su propósito es demostrar una arquitectura de proyecto robusta y una visión futurista en el campo aeroespacial.
+Este proyecto, "GAIA QUANTUM AMPEL OPT-INS ARCHITECTURE, INC. (GQAOA, INC.)", es una iniciativa **puramente conceptual y ficticia**, desarrollada como un **esfuerzo personal por Amedeo Pelliccia**. Todas las especificaciones técnicas, capacidades, métricas de rendimiento y datos financieros o de impacto presentados en esta documentación son **ilustrativos y no representan información real** de ningún programa o empresa con financiación. Su propósito es demostrar una arquitectura de proyecto robusta y una visión futurista en el campo aeroespacial.
 
 ---
 

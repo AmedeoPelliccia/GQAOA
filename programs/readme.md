@@ -2,14 +2,14 @@
 
 # programs/
 
-Este repositorio central alberga la matriz maestra de ALICES (sistemas físicos reales) y sus gemelos digitales asociados (BOB DT y BOB DA) dentro del ecosistema **GLOBAL QUANTUM AEROSPACE OPTIME ARCHITECTURE (GQAOA)**. Su propósito es organizar y trazar los entregables de cada sistema a lo largo de su ciclo de vida, garantizando la coherencia y la trazabilidad 360° que exige el **GAIA-QAO Universal Technology Classification System (UTCS)**.
+Este repositorio central alberga la matriz maestra de ALICES (sistemas físicos reales) y sus gemelos digitales asociados (BOB DT y BOB DA) dentro del ecosistema **GAIA QUANTUM AMPEL OPT-INS ARCHITECTURE, INC. (GQAOA, INC.)**. Su propósito es organizar y trazar los entregables de cada sistema a lo largo de su ciclo de vida, garantizando la coherencia y la trazabilidad 360° que exige el **GAIA-QAO Universal Technology Classification System (UTCS)**.
 
 ## 🎯 Propósito del Repositorio
 ---
 
-# ✳️ MATRIZ MAESTRA DE ALICES – GAIA-QAOA v1.1 (CORREGIDA)
+# ✳️ MATRIZ MAESTRA DE ALICES – GQAOA, INC. v1.1 (CORREGIDA)
 
-Este documento presenta la matriz oficial y corregida de **ALICES** (sistemas físicos reales) dentro del ecosistema **GAIA-QAOA**, clasificados por dominio de operación (**aire, espacio, tierra**) y vinculados a sus respectivos gemelos digitales (**BOB DT** y **BOB DA**), bajo los principios de sincronización cuántica.
+Este documento presenta la matriz oficial y corregida de **ALICES** (sistemas físicos reales) dentro del ecosistema **GQAOA, INC.**, clasificados por dominio de operación (**aire, espacio, tierra**) y vinculados a sus respectivos gemelos digitales (**BOB DT** y **BOB DA**), bajo los principios de sincronización cuántica.
 
 ---
 
@@ -56,7 +56,7 @@ Este documento presenta la matriz oficial y corregida de **ALICES** (sistemas f�
 * **ALICE**: sistema físico real (aeronave, satélite, robot, etc.) con capacidades cuántico-integradas.
 * **BOB DT**: gemelo digital estructural (CAD, sensores, configuración).
 * **BOB DA**: agente digital contextual (narrativas, procedimientos, predicciones).
-* **Descripción Funcional**: resume el propósito operativo del sistema dentro del dominio GAIA-QAOA.
+* **Descripción Funcional**: resume el propósito operativo del sistema dentro del dominio GQAOA, INC.
 
 Este documento forma parte del `ALI-BOB-MAP-V1.0` y está alineado con el UTCS GAIA-QAO.
 
