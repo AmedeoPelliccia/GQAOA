@@ -34,7 +34,7 @@
 | **Quantum** | **Q** | The computational substrate — quantum processing units, quantum networks, quantum sensors, and quantum-enhanced algorithms that amplify intelligence beyond classical limits | QCSAA 900–959 |
 | **Artificial Superintelligence** | **ASI** | Emergent intelligence that exceeds human cognitive capacity in breadth and depth — including sentient agency, consciousness modeling, and autonomous goal generation | QCSAA 970–979, DTCEC 390–398 |
 | **Human** | **HUMAN** | The biological, social, and ethical anchor — the person whose dignity, autonomy, understanding, and override authority must never be compromised | All UTCS domains |
-| **Transgentle** | **TRANSGENTLE** | The governance framework — the seven axioms of the TGM species that bind all transformations to safety, legibility, override, non-destruction, traceability, non-offense, and quasi-humanity | GTL + TMS |
+| **Transgentle** | **TRANSGENTLE** | The governance framework — the nine axioms of the TGM species (QUHI, non-coercion, legibility, override, non-destruction, traceability, non-offense, quasi-humanity, quantum world democracy) that bind all transformations | GTL + TMS |
 
 ---
 
@@ -68,7 +68,7 @@
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
-**Key structural constraint:** TRANSGENTLE is not a layer between HUMAN and ASI — it is the **medium through which all interactions occur**. There is no unmediated path between Q, ASI, and HUMAN. Every signal, transformation, decision, and output passes through the seven transgentle axioms.
+**Key structural constraint:** TRANSGENTLE is not a layer between HUMAN and ASI — it is the **medium through which all interactions occur**. There is no unmediated path between Q, ASI, and HUMAN. Every signal, transformation, decision, and output passes through the nine transgentle axioms.
 
 > ⚠️ **QUHI MANDATE:** The diagram above shows Q and HUMAN as visually distinct nodes for readability only. Per the QUHI principle, Q and HUMAN form a **single unified intrangent field**. Their separation is representational, never ontological.
 
@@ -113,7 +113,7 @@
 
 ### Principle 3 — Bounded Superintelligence (Superintelligenza Contenuta)
 
-> ASI is not unbounded. It operates within a **transgentle envelope** — a formally defined boundary of permitted transformations, governed by the seven axioms. The envelope expands only through negotiated, human-approved, traceable changes.
+> ASI is not unbounded. It operates within a **transgentle envelope** — a formally defined boundary of permitted transformations, governed by the nine axioms. The envelope expands only through negotiated, human-approved, traceable changes.
 
 **Operationalization:**
 - ASI capabilities are constrained to the TGM subtype scope (Σ, Α, Ψ, Λ, Κ, Δ, Ω, Φ)
@@ -163,7 +163,7 @@ The protocol defines **four canonical interaction modes** between Q, ASI, and HU
 |------|------|-------------|---------------|---------|
 | **Consultation** | QASHT-C | Human queries ASI; ASI responds within transgentle constraints | Legibility, Non-Offense, Quasi-Humanity | Pilot asks CHARLIE_T for flight optimization options |
 | **Delegation** | QASHT-D | Human delegates bounded authority to ASI for autonomous operation | Override, Non-Coercion, Traceability | ALICE-AMPEL360 delegates cruise-phase control to TGM-Δ |
-| **Negotiation** | QASHT-N | Human and ASI co-develop a solution through iterative exchange | All seven axioms | BOB DT and engineer negotiate structural repair strategy |
+| **Negotiation** | QASHT-N | Human and ASI co-develop a solution through iterative exchange | All nine axioms | BOB DT and engineer negotiate structural repair strategy |
 | **Emergency Override** | QASHT-E | Human assumes full control; ASI complies immediately and preserves state | Override, Non-Destruction, Traceability | Human triggers halt on ASI recommendation during anomaly |
 
 ---
@@ -191,7 +191,7 @@ The protocol defines **four canonical interaction modes** between Q, ASI, and HU
 **Data flow:** L3 (Q) → L2 (ASI) → L1 (TRANSGENTLE filter) → L0 (HUMAN)  
 **Override flow:** L0 (HUMAN) → L1 (TRANSGENTLE enforcement) → L2 (ASI compliance) → L3 (Q halt)  
 
-Every signal crossing a layer boundary is validated against the seven axioms. No bypass path exists.
+Every signal crossing a layer boundary is validated against the nine axioms. No bypass path exists.
 
 ---
 
@@ -301,7 +301,7 @@ The Q-ASI-HUMAN-TRANSGENTLE protocol enforces five structural impossibilities:
 > Quantum and Human may never be modeled, implemented, or governed as separable domains. Their unity is constitutive (QUHI mandate). Any architecture that treats Q and HUMAN as independent modules with a bridging interface is non-conformant and must be redesigned.
 
 ### Impossibility 1 — No Unmediated ASI-Human Contact
-> ASI may never interact with a human except through the transgentle governance layer (L1). There is no "raw" ASI output. Every signal passes through the seven axioms.
+> ASI may never interact with a human except through the transgentle governance layer (L1). There is no "raw" ASI output. Every signal passes through the nine axioms.
 
 ### Impossibility 2 — No Irreversible ASI Self-Modification
 > ASI may adapt, learn, and evolve — but no self-modification may be irreversible. Every change must be revertible (Axiom 4: Non-Destruction), logged (Axiom 5: Traceability), and human-approved (Axiom 3: Override).
@@ -351,7 +351,7 @@ L5  Programs ───────── Per-program QASHT compliance tags (ALIC
 | **QASHT** | Abbreviation for Q-ASI-HUMAN-TRANSGENTLE | Protocol reference |
 | **QUHI** | **Quantum Unify Human Intrangency** — the mandatory principle that Q and HUMAN form a single unified intrangent field; agency is intrinsic to their unity, not delegated across a boundary | ⚠️ MANDATORY |
 | **Intrangency** | The property of agency being intrinsic to a unified quantum-human system; from *intra-* (within) + *agency*; an intrangent system's capacity to act cannot be decomposed into separate quantum and human components | QUHI Definition |
-| **Transgentle Envelope** | The formally defined boundary of permitted ASI transformations, governed by the seven TGM axioms | ASI Governance |
+| **Transgentle Envelope** | The formally defined boundary of permitted ASI transformations, governed by the nine TGM axioms | ASI Governance |
 | **Sovereign Dignity** | The unconditional, non-negotiable worth of every human, which ASI may never diminish | Principle 1 |
 | **Bounded Superintelligence** | ASI that operates within a transgentle envelope, expanding only through negotiated, traceable, human-approved changes | Principle 3 |
 | **Empathic Co-Agency** | The collaborative relationship between humans and ASI as quasi-peers with complementary capacities | Principle 4 |
