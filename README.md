@@ -8457,6 +8457,24 @@ La **Cybersecurity Architecture (CYB)** se centra en la protección de la inform
 
 ---
 
+## 📝 **REVISIÓN DE PRs PENDIENTES (Abril 2026)**
+
+| # | Título | Estado | Impacto en README |
+|---|--------|--------|-------------------|
+| #5 | Transfer HQ to Amsterdam Tech Hub + 4 new hubs | 🟡 Draft | Actualiza §3 tabla de ubicaciones, HQ Madrid→Amsterdam |
+| #4 | Add BBCNs (Barcelona BlockChains Community Networks) | 🟡 Draft | Añade programa Barcelona, actualiza DTCEC y estadísticas |
+| #3 | S1000D validator, estandarizar nombre GQAOA, BOB DA→CHARLIE_T | 🟡 Draft | Estandariza nomenclatura a "GQAOA, INC." |
+| #2 | Port SICOCA package & restructure test suite | 🟢 Open | Añade referencia a GAI-A-AMAR-AGGIX Architecture |
+| #1 | Add Naples, Bologna hubs & AM.PEL v2.0 | 🟡 Draft | Añade 2 ubicaciones, programa AMPEL-EVO |
+
+> **Notas de revisión:**
+> - PRs #1 y #5 se solapan en ubicaciones Napoli/Bologna — coordinar merge.
+> - PR #3 debe aplicarse temprano para estandarizar nomenclatura canónica "GAIA QUANTUM AMPEL OPT-INS ARCHITECTURE, INC."
+> - PR #2 es el más autocontenido (SICOCA + CI) — candidato a merge primero.
+> - Considerar extraer Anexo G (UTCS ~3000 líneas) a archivo separado para reducir tamaño del README.
+
+---
+
 ## 📊 **ESTADÍSTICAS FINALES**
 
 | **Métrica** | **Valor** |
@@ -8479,6 +8497,7 @@ La **Cybersecurity Architecture (CYB)** se centra en la protección de la inform
 |---------|-----------|-----------------------------------|-----------------|
 | 1.0.0   | 23/07/2025| Documento inicial completo        | A. Pelliccia    |
 | 2.0.0   | 23/07/2025| Corrección nomenclatura y autoría  | A. Pelliccia    |
+| 2.1.0   | 08/04/2026| Revisión de PRs pendientes, notas de integración, recomendaciones de merge | Copilot    |
 
 ---
 
