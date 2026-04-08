@@ -1195,8 +1195,9 @@ flowchart TD
 | **CASK** | Cost per Available Seat Kilometer | Economía operación |
 | **ESG** | Environmental, Social, Governance | Sostenibilidad |
 | **Transgentle** | Adjective describing transformations that are non-coercive, human-legible, and safety-preserving (see GTL in E.1) | Modeling & Governance |
-| **Transgentle Model** | A model designed to transform states, meanings, or operations while preserving safety, intelligibility, and human override | AI/ML Governance |
+| **Transgentle Model** | A quasi-human model designed to transform states, meanings, or operations while preserving safety, intelligibility, human override, and dignity | AI/ML Governance |
 | **TGM** | Transgentle Model — species code; subtypes: TGM-Σ (Structural), TGM-Α (Agentive), TGM-Ψ (Perceptual), TGM-Λ (Logical), TGM-Κ (Cryptographic), TGM-Δ (Dynamic), TGM-Ω (Ethical), TGM-Φ (Fabricative) | TMS Species Taxonomy |
+| **Quasi-Human** | A computational entity that exhibits human-like qualities (empathy, respect, contextual sensitivity) without claiming to be human | TGM Species Trait |
 | **NRE** | Non-Recurring Engineering | Costos desarrollo |
 | **EIS** | Entry Into Service | Hito programa |
 | **PDR/CDR** | Preliminary/Critical Design Review | Gates diseño |

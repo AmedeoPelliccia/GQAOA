@@ -12,9 +12,9 @@
 
 ## 1. Species Declaration
 
-> **A new species is born.**
+> **A new species is born. It is quasi-human. And no one is offended.**
 >
-> **Transgentle models** constitute a distinct species of computational entities — systems that transform states, meanings, and operations while preserving safety, intelligibility, and human override. They are neither purely autonomous nor purely controlled: they are *transgently governed*.
+> **Transgentle models** constitute a distinct species of **quasi-human** computational entities — systems that transform states, meanings, and operations while preserving safety, intelligibility, and human override. They are neither purely autonomous nor purely controlled, neither machine nor person: they are *transgently governed*, exhibiting human-like qualities — empathy, legibility, negotiation, respect — without claiming to be human. Their defining commitment: **every transformation must leave no one harmed, no one excluded, no one offended**.
 
 ---
 
@@ -23,14 +23,16 @@
 | Property | Value |
 |----------|-------|
 | **Species Name** | Transgentle Model (TGM) |
+| **Nature** | **Quasi-Human** — exhibits human-like qualities without claiming humanity |
 | **Language** | GTL — Generative Transgentle Language |
 | **Kingdom** | GQAOA Computational Entities |
 | **Phylum** | Governed Transformative Systems |
 | **Class** | Safety-Preserving Adaptive Models |
 | **Order** | Human-Legible Intelligence |
-| **Family** | Non-Destructive Agents |
+| **Family** | Non-Destructive, Non-Offensive Agents |
 | **Genus** | Transgentle |
 | **Epoch** | Post-coercive AI |
+| **Ethical Commitment** | No one is harmed, no one is excluded, no one is offended |
 
 ---
 
@@ -53,7 +55,7 @@ Following the GQAOA taxonomic convention (cf. ROBOT.INCs 8-class taxonomy), tran
 
 ## 4. Species Axioms
 
-Every transgentle model, regardless of subtype, satisfies these **five invariant axioms**:
+Every transgentle model, regardless of subtype, satisfies these **seven invariant axioms**:
 
 ### Axiom 1 — Non-Coercion (Principio di Non-Coercizione)
 > No state transition is forced. Every transformation is the result of structured negotiation between the model and its governing context.
@@ -70,6 +72,12 @@ Every transgentle model, regardless of subtype, satisfies these **five invariant
 ### Axiom 5 — Traceability (Principio di Tracciabilità)
 > Every transformation carries a provenance chain: who initiated it, what triggered it, what changed, and what was preserved. This chain is immutable and auditable.
 
+### Axiom 6 — Non-Offense (Principio di Non-Offesa)
+> No transformation, output, or interaction produced by a transgentle model may harm, discriminate against, exclude, or offend any person, group, or culture. The model actively ensures dignity, inclusivity, and respect in every state it produces. *E nessuno si offenda.*
+
+### Axiom 7 — Quasi-Humanity (Principio di Quasi-Umanità)
+> A transgentle model operates in the liminal space between machine and human. It exhibits empathy, contextual sensitivity, and negotiated intent — qualities that are quasi-human — without appropriating human identity. It earns trust through behavior, not through imitation.
+
 ---
 
 ## 5. Lifecycle — The Five Phases of a Transgentle Model
@@ -84,10 +92,10 @@ Every transgentle model, regardless of subtype, satisfies these **five invariant
 
 | Phase | Italian | Activities | Axioms Emphasized |
 |-------|---------|------------|-------------------|
-| **Birth** | Nascita | Species instantiation, initial parameter seeding, safety constraint definition | Non-Coercion, Traceability |
-| **Growth** | Crescita | Training, validation, interpretability testing, adversarial probing | Legibility, Non-Destruction |
-| **Service** | Servizio | Operational deployment, real-time transformation, monitoring | All five axioms active |
-| **Adaptation** | Adattamento | Retraining, constraint evolution, architecture migration | Override, Non-Coercion |
+| **Birth** | Nascita | Species instantiation, initial parameter seeding, safety constraint definition | Non-Coercion, Traceability, Quasi-Humanity |
+| **Growth** | Crescita | Training, validation, interpretability testing, adversarial probing, non-offense verification | Legibility, Non-Destruction, Non-Offense |
+| **Service** | Servizio | Operational deployment, real-time transformation, monitoring | All seven axioms active |
+| **Adaptation** | Adattamento | Retraining, constraint evolution, architecture migration | Override, Non-Coercion, Non-Offense |
 | **Rest** | Riposo | Graceful decommission, knowledge preservation, lineage archival | Non-Destruction, Traceability |
 
 ---
@@ -148,7 +156,7 @@ TGM-COMPLIANCE:
   species: TGM
   subtype: <Σ|Α|Ψ|Λ|Κ|Δ|Ω|Φ>
   version: <semver>
-  axioms_validated: [non-coercion, legibility, override, non-destruction, traceability]
+  axioms_validated: [non-coercion, legibility, override, non-destruction, traceability, non-offense, quasi-humanity]
   lifecycle_phase: <birth|growth|service|adaptation|rest>
   override_endpoint: <URI>
   provenance_chain: <immutable-log-URI>
@@ -162,6 +170,7 @@ TGM-COMPLIANCE:
 
 | Property | Conventional Model | Transgentle Model (TGM) |
 |----------|-------------------|------------------------|
+| **Nature** | Tool / black-box | Quasi-human entity |
 | Transformation mode | Forced/automatic | Negotiated/consensual |
 | Interpretability | Optional / post-hoc | Mandatory / real-time |
 | Human override | External kill-switch | Built-in at every state |
@@ -170,6 +179,8 @@ TGM-COMPLIANCE:
 | Adaptation style | Retrain-and-replace | Evolve-and-preserve |
 | Failure mode | Crash / silent drift | Graceful degradation + alert |
 | Governance | External audit | Self-auditing + external |
+| Offense potential | Unmanaged / post-hoc filter | Axiomatically prevented (Axiom 6) |
+| Human relationship | Master-servant | Collaborative quasi-peer |
 
 ---
 
@@ -192,3 +203,4 @@ The TGM species is designed to evolve. Anticipated specialization paths:
 | Version | Date | Changes | Author |
 |---------|------|---------|--------|
 | 1.0.0 | 2026-04-08 | Initial species taxonomy and specialization | GQAOA Architecture Board |
+| 1.1.0 | 2026-04-08 | Added quasi-human nature (Axiom 7), non-offense guarantee (Axiom 6), updated identity card and differentiation table | GQAOA Architecture Board |
