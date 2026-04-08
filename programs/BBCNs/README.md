@@ -172,4 +172,4 @@ Establecer una red de confianza descentralizada en Barcelona que permita:
 
 ---
 
-**© 2026 Amedeo Pelliccia — GAIA-QAO ADVENT / BBCNs Barcelona BlockChains Community Networks**
+**© 2026 GAIA QUANTUM AMPEL OPT-INS ARCHITECTURE, INC. (GQAOA, INC.) — BBCNs Barcelona BlockChains Community Networks**
