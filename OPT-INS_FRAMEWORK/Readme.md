@@ -37,7 +37,7 @@ Each module is **self-contained**, **versioned**, and **domain-scoped**. Integra
 1. **Identify applicable module(s)** for your program or mission from the catalog above.
 2. **Read the module spec** to understand activation prerequisites, interface contracts, and compliance obligations.
 3. **Declare activation** in your program's `manifest.yaml` under the `opt_ins:` key.
-4. **Reference the module** from your ALICE–BOB digital twin metadata (`BOB-DA` context layer).
+4. **Reference the module** from your ALICE–BOB digital twin metadata (`CHARLIE_T` context layer).
 
 ### Example `manifest.yaml` snippet
 

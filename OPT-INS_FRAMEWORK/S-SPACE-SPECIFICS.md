@@ -530,13 +530,13 @@ spec:
 
 ## 10. ALICE–BOB Traceability
 
-| ALICE | BOB DT | BOB DA | Role in S-SPACE |
+| ALICE | BOB DT | CHARLIE_T | Role in S-SPACE |
 |---|---|---|---|
-| ALICE-AMPEL-EVO-PIPELINE | BOB-DT-AMPEL-EVO-PIPELINE | BOB-DA-AMPEL-EVO-PIPELINE | Core pipeline consuming S-SPACE sub-modules |
-| ALICE-GAIA-SAT-01 | BOB-DT-GAIA-SAT-01 | BOB-DA-GAIA-SAT-01 | CCSDS telemetry source (5.1) |
-| ALICE-GAIA-SAT-02-QKD | BOB-DT-GAIA-SAT-02-QKD | BOB-DA-GAIA-SAT-02-QKD | QKD inter-satellite link (5.4) |
-| ALICE-GAIA-SND-01 | BOB-DT-GAIA-SND-01 | BOB-DA-GAIA-SND-01 | Deep space telemetry (5.8) |
-| ALICE-GAIA-SAT-02-QKD | BOB-DT-GAIA-SAT-02-QKD | BOB-DA-GAIA-SAT-02-QKD | QKD source for Naples QH (5.4, 5.9) |
+| ALICE-AMPEL-EVO-PIPELINE | BOB-DT-AMPEL-EVO-PIPELINE | CHARLIE-T-AMPEL-EVO-PIPELINE | Core pipeline consuming S-SPACE sub-modules |
+| ALICE-GAIA-SAT-01 | BOB-DT-GAIA-SAT-01 | CHARLIE-T-GAIA-SAT-01 | CCSDS telemetry source (5.1) |
+| ALICE-GAIA-SAT-02-QKD | BOB-DT-GAIA-SAT-02-QKD | CHARLIE-T-GAIA-SAT-02-QKD | QKD inter-satellite link (5.4) |
+| ALICE-GAIA-SND-01 | BOB-DT-GAIA-SND-01 | CHARLIE-T-GAIA-SND-01 | Deep space telemetry (5.8) |
+| ALICE-GAIA-SAT-02-QKD | BOB-DT-GAIA-SAT-02-QKD | CHARLIE-T-GAIA-SAT-02-QKD | QKD source for Naples QH (5.4, 5.9) |
 
 ---
 
