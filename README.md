@@ -1181,6 +1181,7 @@ flowchart TD
 | **ORB** | Organizational Resource Branch | Funciones empresariales |
 | **BWB** | Blended Wing Body | Configuración aeronave |
 | **AMPEL360** | Advanced Multi-Purpose Electric Aircraft 360° | Programa aeronave |
+| **GTL** | Generative Transgentle Language | Marco de modelado transversal |
 
 ### E.2 Términos Técnicos Clave
 
@@ -1193,6 +1194,8 @@ flowchart TD
 | **First Pass Yield** | % productos correctos primera vez | Calidad producción |
 | **CASK** | Cost per Available Seat Kilometer | Economía operación |
 | **ESG** | Environmental, Social, Governance | Sostenibilidad |
+| **GTL** | Generative Transgentle Language — a language framework for transgentle models: systems that transform without brutality, preserve interpretability, and remain governable | Modeling & Governance |
+| **Transgentle Model** | A model designed to transform states, meanings, or operations while preserving safety, intelligibility, and human override | AI/ML Governance |
 | **NRE** | Non-Recurring Engineering | Costos desarrollo |
 | **EIS** | Entry Into Service | Hito programa |
 | **PDR/CDR** | Preliminary/Critical Design Review | Gates diseño |

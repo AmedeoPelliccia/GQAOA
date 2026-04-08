@@ -35,6 +35,7 @@
 *   Anexo D: Arquitectura de Documentación Técnica (S1000D)
 *   Anexo E: Glosario de Términos
 *   Anexo F: Catálogo Maestro de Plantillas de Documentación
+*   [GTL Specification](GTL-Specification.md): Generative Transgentle Language — framework for transgentle models
 
 ---
 
