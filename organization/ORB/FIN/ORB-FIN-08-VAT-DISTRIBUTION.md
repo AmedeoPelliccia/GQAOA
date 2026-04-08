@@ -188,7 +188,7 @@ Toda factura emitida entre entidades del consorcio debe incluir:
 | Fecha de emisión | Fecha de la factura | 2026-04-08 |
 | Número secuencial | Identificador único | GQAOA-FIN-2026-001234 |
 | NIF-IVA del emisor | Número de identificación del proveedor | DE123456789 |
-| NIF-IVA del destinatario | Número de identificación del cliente | ES-X1234567A |
+| NIF-IVA del destinatario | Número de identificación del cliente | ESX1234567A |
 | Descripción del servicio/bien | Detalle suficiente para identificar la transacción | "Ingeniería estructural — AMPEL360 Q100 — WP 3.2" |
 | Base imponible | Importe antes de IVA | €125.000,00 |
 | Tipo de IVA | % aplicable o referencia a exención | "Exenta — Art. 138 Dir. 2006/112/CE" |
