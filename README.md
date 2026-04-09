@@ -171,8 +171,10 @@ GAIA-QAO ADVENT se organiza como una estructura ideal pensada para la integraci�
 | Madrid (HQ) | Sede Central, Finanzas, Legal         | 500                | Ubicación central, acceso a talento financiero y legal, entorno empresarial competitivo.                                  | €150M                 |
 | Toulouse    | Integración Final, Pruebas Vuelo      | 1200               | Ecosistema aeroespacial líder en Europa, con infraestructura de pruebas y talento experimentado.                         | €400M                 |
 | Hamburgo    | Diseño Fuselaje, Cabina               | 800                | Centro de excelencia histórico en diseño de cabinas y fuselajes, con una fuerte base industrial.                         | €300M                 |
-| Múnich      | I+D Cuántico, Propulsión              | 400                | Proximidad a centros de investigación de vanguardia en propulsión y física cuántica.                                     | €250M                 |
+| München (ESSA-HQ) | Hauptsitz des Earth Safety and Security Assemblies Center (ESSA) | 450 | Zentraler Standort für Sicherheitsforschung, Krisenmanagement, Frühwarnsysteme und interinstitutionelle Koordination zum Schutz der Erde; strategische Mittellage in Europa, Nähe zu führenden Forschungseinrichtungen und Sicherheitsbehörden. | €280M |
 | Sevilla     | Manufactura Composites                | 600                | Centro especializado en la producción de aeroestructuras de materiales compuestos a gran escala.                       | €350M                 |
+| Nápoles     | Hub Tecnológico Quantum de Vanguardia | 450                | Centro de investigación en nanotecnología, biotecnología, investigación experimental de neutrinos y propulsión cuántica; conexión con universidades y laboratorios de física de partículas del sur de Europa. | €280M |
+| Bolonia     | Programas Avanzados de Protección Terrestre | 350           | Centro de excelencia en satélites de observación, prevención de catástrofes naturales e investigación del espacio profundo; sinergias con ESA y el ecosistema académico emiliano. | €220M |
 
 **🌊 Presencia Mediterránea Ampliada**
 
@@ -7863,6 +7865,14 @@ La **Cybersecurity Architecture (CYB)** se centra en la protección de la inform
 
 > **Impacto operativo**: El nuevo **AMPEL360‑BWB‑e** reutiliza el chasis BWB existente, por lo que solo exige adaptar **ROBBBO‑T‑TEST** (banco de baterías y pruebas EMI) y **ROBBBO‑T‑FAL** (línea de integración de packs modulares). No requiere alteraciones en los programas espaciales.
 
+---
+
+### 4. Programas de datos cuánticos **AMPEL‑EVO**
+
+| Programa | Descripción básica |
+| -------- | ------------------ |
+| **AMPEL‑EVO/PAPALAIKED‑V2** | Pipeline cuántico AM.PEL v2.0: QML híbrido, clasificación de transientes astrofísicos, telemetría aeroespacial (CCSDS), SSA y provenance cuántica inmutable. Evolved de la baseline PapaLaiked v1.x. Alineado con los hubs de Nápoles (quantum propulsion sensors) y Bolonia (Earth Protection / SSA). |
+
 
 ## ANEXO I  🌐 ESTRUCTURA DE DIRECTORIO GAIA-QAO ADVENT v2.0.0
 
@@ -7885,6 +7895,7 @@ La **Cybersecurity Architecture (CYB)** se centra en la protección de la inform
 | [08](#08-digital-infrastructure) | **DIGITAL-INFRASTRUCTURE** | Infraestructura Digital | - | - |
 | [09](#09-external-partnerships) | **EXTERNAL-PARTNERSHIPS** | Partnerships Externos | - | - |
 | [10](#10-archive-legacy) | **ARCHIVE-LEGACY** | Archivo y Legacy | - | - |
+| [OPT-INS](#opt-ins_framework) | **OPT-INS_FRAMEWORK** | Marco de Integraciones Opcionales (Space, Atmos…) | 6 | 12 |
 
 **Total: 559 subcarpetas | 36,101 archivos | 459 GB**
 
@@ -8361,11 +8372,12 @@ La **Cybersecurity Architecture (CYB)** se centra en la protección de la inform
 - [🔬 Structures Lab](#structures-lab)
 - [🧪 Materials Testing](#materials-testing)
 
-### [🔬 Munich Research](#munich-research)
-- [⚛️ Quantum Lab](#quantum-lab)
-- [🚀 Propulsion Research](#propulsion-research)
-- [🤖 AI Development](#ai-development)
-- [🎓 University Partnerships](#university-partnerships-munich)
+### [🛡️ München — ESSA-Hauptquartier](#muenchen-essa-hq)
+- [🔬 Sicherheitsforschung & Technologieentwicklung](#sicherheitsforschung-muenchen)
+- [⚠️ Krisenmanagement & Notfallkoordination](#krisenmanagement-muenchen)
+- [🌍 Frühwarnsysteme & Erdbeobachtung](#fruehwarnsysteme-muenchen)
+- [🏛️ Interinstitutionelle Zusammenarbeit & Normung](#zusammenarbeit-muenchen)
+- [🛠️ Sicherheits-Assemblierungshalle (ESSA-Core)](#essa-assembly-muenchen)
 
 ### [🏭 Seville Manufacturing](#seville-manufacturing)
 - [🧪 Composites Production](#composites-production)
@@ -8373,6 +8385,18 @@ La **Cybersecurity Architecture (CYB)** se centra en la protección de la inform
 - [🏆 Quality Control](#quality-control)
 - [⛓️ Supply Chain](#supply-chain-seville)
 
+### [⚛️ Naples Quantum Hub](#naples-quantum-hub)
+- [🔬 Nanotechnology Lab](#nanotechnology-lab-naples)
+- [🧬 Biotechnology Research](#biotechnology-research-naples)
+- [🌌 Experimental Neutrino Research](#neutrino-research-naples)
+- [🚀 Quantum Propulsion Lab](#quantum-propulsion-lab-naples)
+- [🎓 University Partnerships](#university-partnerships-naples)
+
+### [🛡️ Bologna Earth Protection Center](#bologna-earth-protection-center)
+- [🛰️ Observation Satellites Program](#observation-satellites-bologna)
+- [🌋 Catastrophe Prevention Systems](#catastrophe-prevention-bologna)
+- [🌌 Deep Space Research](#deep-space-research-bologna)
+- [🔭 Space Situational Awareness](#space-situational-awareness-bologna)
 ### 🌊 Mediterranean Countries — Extended Facilities Network
 
 ### [🏛️ Rome — ESA Integration (Italy)](#rome-esa-integration)
@@ -8586,6 +8610,26 @@ La **Cybersecurity Architecture (CYB)** se centra en la protección de la inform
 
 ---
 
+## OPT-INS_FRAMEWORK
+**⚛️🛰️ Marco de Integraciones Opcionales por Dominio**
+
+> Módulos opt-in que cualquier programa GAIA-QAO puede activar selectivamente para extender las capacidades del pipeline central (AM.PEL v2.0) a dominios operacionales específicos.
+
+### [⚛️🛰️ S-SPACE — Space Domain Specifics](#s-space-specifics)
+- [📡 CCSDS Telemetry Adapter](./OPT-INS_FRAMEWORK/S-SPACE-SPECIFICS.md#51-ccsds-telemetry-adapter)
+- [🔭 Space Situational Awareness (SSA)](./OPT-INS_FRAMEWORK/S-SPACE-SPECIFICS.md#52-space-situational-awareness-ssa)
+- [🪐 Orbital Mechanics Engine](./OPT-INS_FRAMEWORK/S-SPACE-SPECIFICS.md#53-orbital-mechanics-engine)
+- [🔐 QKD Inter-Satellite Link](./OPT-INS_FRAMEWORK/S-SPACE-SPECIFICS.md#54-quantum-key-distribution-qkd-inter-satellite-link)
+- [📡 Ground Station Interface](./OPT-INS_FRAMEWORK/S-SPACE-SPECIFICS.md#55-ground-station-interface)
+- [☢️ Radiation-Hardened Edge Profile](./OPT-INS_FRAMEWORK/S-SPACE-SPECIFICS.md#56-radiation-hardened-edge-profile)
+- [🌞 Space Weather & Debris Monitoring](./OPT-INS_FRAMEWORK/S-SPACE-SPECIFICS.md#57-space-weather--debris-monitoring)
+- [🌌 Deep Space Telemetry Extension](./OPT-INS_FRAMEWORK/S-SPACE-SPECIFICS.md#58-deep-space-telemetry-extension)
+- [⚛️ Quantum Sensor Stream Adapter](./OPT-INS_FRAMEWORK/S-SPACE-SPECIFICS.md#59-quantum-sensor-stream-adapter)
+
+> Full specification: [`OPT-INS_FRAMEWORK/S-SPACE-SPECIFICS.md`](./OPT-INS_FRAMEWORK/S-SPACE-SPECIFICS.md)
+
+---
+
 ## 🎯 **NAVEGACIÓN RÁPIDA**
 
 | **Sección** | **Link Directo** | **Subsecciones** |
@@ -8597,10 +8641,11 @@ La **Cybersecurity Architecture (CYB)** se centra en la protección de la inform
 | **UTCS** | [04-UTCS-ARCHITECTURE](#04-utcs-architecture) | 10 Arquitecturas (000-999) |
 | **Templates** | [05-DOCUMENTATION-TEMPLATES](#05-documentation-templates) | 251 Templates |
 | **Standards** | [06-STANDARDS-COMPLIANCE](#06-standards-compliance) | Aerospace, Quality, Cyber |
-| **Facilities** | [07-FACILITIES-LOCATIONS](#07-facilities-locations) | 25 Ubicaciones (5 Principales + 20 Mediterráneas) |
+| **Facilities** | [07-FACILITIES-LOCATIONS](#07-facilities-locations) | 25 Ubicaciones
 | **Digital** | [08-DIGITAL-INFRASTRUCTURE](#08-digital-infrastructure) | PLM, Twins, Quantum, Cyber |
 | **Partnerships** | [09-EXTERNAL-PARTNERSHIPS](#09-external-partnerships) | Industria, Academia, Gobierno |
 | **Archive** | [10-ARCHIVE-LEGACY](#10-archive-legacy) | Histórico, Legacy, Versiones |
+| **Opt-Ins** | [OPT-INS_FRAMEWORK](#opt-ins_framework) | S-SPACE (9 sub-modules) |
 
 ---
 
