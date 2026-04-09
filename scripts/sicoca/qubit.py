@@ -80,7 +80,13 @@ def measure(statevector: np.ndarray, shots: int = 1024,
         Mapping from bitstring label (e.g. ``"00"``, ``"11"``) to count.
     """
     rng = np.random.default_rng(seed)
-    n_qubits = int(np.log2(len(statevector)))
+    statevector_len = len(statevector)
+    if statevector_len <= 0 or (statevector_len & (statevector_len - 1)) != 0:
+        raise ValueError(
+            "Statevector length must be a positive power of two, "
+            f"got {statevector_len}"
+        )
+    n_qubits = int(np.log2(statevector_len))
     probs = probabilities(statevector)
     indices = rng.choice(len(probs), size=shots, p=probs)
     counts: dict[str, int] = {}
