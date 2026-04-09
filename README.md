@@ -8,6 +8,12 @@
 **Autor:** Oficina del CEO / Comité Estratégico GAIA-QAO
 **Estado:** Borrador Maestro Revisado
 
+## GAI‑A‑AMAR‑AGGIX Governance & Architecture Framework
+
+> **See [`GAI-A-AMAR-AGGIX-Architecture.md`](GAI-A-AMAR-AGGIX-Architecture.md)** for the normative top‑level governance umbrella that sits above all domains (aerospace, marine, space, robotics) and organises them as a Tree Architecture with canonical definitions, standards per layer, and formal durability/inheritance/branching rules.
+
+---
+
 ## ÍNDICE EJECUTIVO
 
 *   [Declaración de Propósito](#1-declaración-de-propósito)
