@@ -499,6 +499,19 @@ class CircuitQueue:
                 if job.assigned_qpu:
                     self._allocator.release(job.assigned_qpu)
 
+    # -- Requeue API --------------------------------------------------------
+
+    def requeue(self, job: CircuitJob) -> None:
+        """Push *job* back onto the scheduling heap as QUEUED.
+
+        This is the single place where external callers should re-enqueue a
+        job so that heap/index invariants are maintained in one location.
+        """
+        with self._lock:
+            job.status = CircuitStatus.QUEUED
+            job.assigned_qpu = None
+            heapq.heappush(self._heap, job)
+
 
 # ---------------------------------------------------------------------------
 # 3. Resource Monitoring & Metrics Subsystem
@@ -802,9 +815,7 @@ class QuantumResourceManager:
             qpu_id = self.allocator.allocate(job)
             if qpu_id is None:
                 # No QPU available — push job back
-                job.status = CircuitStatus.QUEUED
-                with self.queue._lock:
-                    heapq.heappush(self.queue._heap, job)
+                self.queue.requeue(job)
                 break
             scheduled += 1
         return scheduled
@@ -816,9 +827,6 @@ class QuantumResourceManager:
         for cid in displaced:
             job = self.queue.get_job(cid)
             if job:
-                job.status = CircuitStatus.QUEUED
-                job.assigned_qpu = None
-                with self.queue._lock:
-                    heapq.heappush(self.queue._heap, job)
+                self.queue.requeue(job)
                 rescheduled += 1
         return rescheduled

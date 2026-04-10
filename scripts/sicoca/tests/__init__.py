@@ -25,7 +25,7 @@ def make_dummy_result(counts=None, n_qubits=2, index=0):
     -------
     SimulationResult
     """
-    counts = counts or {"00": 100}
+    counts = counts if counts is not None else {"00": 100}
     return SimulationResult(
         circuit_name="test",
         n_qubits=n_qubits,

@@ -26,6 +26,7 @@ import argparse
 import enum
 import re
 import sys
+import tempfile
 import textwrap
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass, field
@@ -694,181 +695,180 @@ def _run_self_tests() -> bool:
 
     print("Running self-tests …\n")
 
-    # --- Test 1: valid descriptive DM ----------------------------------------
-    valid_dm = textwrap.dedent("""\
-        <?xml version="1.0" encoding="UTF-8"?>
-        <dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <identAndStatusSection>
-            <dmAddress>
-              <dmIdent>
-                <dmCode>AMPEL360-A-51-00-00-00A-040A-A</dmCode>
-                <language>
-                  <languageIsoCode>en</languageIsoCode>
-                  <countryIsoCode>US</countryIsoCode>
-                </language>
-              </dmIdent>
-              <dmAddressItems>
-                <dmTitle>
-                  <techName>BWB Structural Configuration</techName>
-                  <infoName>Description</infoName>
-                </dmTitle>
-              </dmAddressItems>
-            </dmAddress>
-          </identAndStatusSection>
-          <content>
-            <description>
-              <para>Primary structural layout of the BWB airframe.</para>
-            </description>
-          </content>
-        </dmodule>
-    """)
-    tmp_valid = Path("/tmp/_s1000d_test_valid.xml")
-    tmp_valid.write_text(valid_dm, encoding="utf-8")
-    r1 = validator.validate_file(tmp_valid)
-    _assert(r1.passed, "Valid descriptive DM produces no errors")
-    _assert(len(r1.errors) == 0, f"  error count == 0 (got {len(r1.errors)})")
+    with tempfile.TemporaryDirectory(prefix="s1000d_test_") as tmpdir:
+        _tmpdir = Path(tmpdir)
 
-    # --- Test 2: missing root ------------------------------------------------
-    bad_root = '<?xml version="1.0"?>\n<notAModule><foo/></notAModule>'
-    tmp_bad = Path("/tmp/_s1000d_test_bad_root.xml")
-    tmp_bad.write_text(bad_root, encoding="utf-8")
-    r2 = validator.validate_file(tmp_bad)
-    _assert(not r2.passed, "Wrong root element triggers error")
-    _assert(
-        any(f.rule_id == "XSD-001" for f in r2.errors),
-        "  error XSD-001 raised",
-    )
+        # --- Test 1: valid descriptive DM ----------------------------------------
+        valid_dm = textwrap.dedent("""\
+            <?xml version="1.0" encoding="UTF-8"?>
+            <dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <identAndStatusSection>
+                <dmAddress>
+                  <dmIdent>
+                    <dmCode>AMPEL360-A-51-00-00-00A-040A-A</dmCode>
+                    <language>
+                      <languageIsoCode>en</languageIsoCode>
+                      <countryIsoCode>US</countryIsoCode>
+                    </language>
+                  </dmIdent>
+                  <dmAddressItems>
+                    <dmTitle>
+                      <techName>BWB Structural Configuration</techName>
+                      <infoName>Description</infoName>
+                    </dmTitle>
+                  </dmAddressItems>
+                </dmAddress>
+              </identAndStatusSection>
+              <content>
+                <description>
+                  <para>Primary structural layout of the BWB airframe.</para>
+                </description>
+              </content>
+            </dmodule>
+        """)
+        tmp_valid = _tmpdir / "valid.xml"
+        tmp_valid.write_text(valid_dm, encoding="utf-8")
+        r1 = validator.validate_file(tmp_valid)
+        _assert(r1.passed, "Valid descriptive DM produces no errors")
+        _assert(len(r1.errors) == 0, f"  error count == 0 (got {len(r1.errors)})")
 
-    # --- Test 3: bad DMC format ----------------------------------------------
-    bad_dmc_dm = textwrap.dedent("""\
-        <?xml version="1.0" encoding="UTF-8"?>
-        <dmodule>
-          <identAndStatusSection>
-            <dmAddress>
-              <dmIdent>
-                <dmCode>BAD-FORMAT-1234</dmCode>
-              </dmIdent>
-            </dmAddress>
-          </identAndStatusSection>
-          <content><description><para>x</para></description></content>
-        </dmodule>
-    """)
-    tmp_dmc = Path("/tmp/_s1000d_test_bad_dmc.xml")
-    tmp_dmc.write_text(bad_dmc_dm, encoding="utf-8")
-    r3 = validator.validate_file(tmp_dmc)
-    _assert(
-        any(f.rule_id == "XSD-006" for f in r3.errors),
-        "Invalid DMC triggers XSD-006",
-    )
-
-    # --- Test 4: missing content section -------------------------------------
-    no_content = textwrap.dedent("""\
-        <?xml version="1.0" encoding="UTF-8"?>
-        <dmodule>
-          <identAndStatusSection>
-            <dmAddress>
-              <dmIdent>
-                <dmCode>AMPEL360-A-51-00-00-00A-040A-A</dmCode>
-              </dmIdent>
-            </dmAddress>
-          </identAndStatusSection>
-        </dmodule>
-    """)
-    tmp_nc = Path("/tmp/_s1000d_test_no_content.xml")
-    tmp_nc.write_text(no_content, encoding="utf-8")
-    r4 = validator.validate_file(tmp_nc)
-    _assert(
-        any(f.rule_id == "XSD-005" for f in r4.errors),
-        "Missing <content> triggers XSD-005",
-    )
-
-    # --- Test 5: warning after para (BREX-007) --------------------------------
-    bad_order = textwrap.dedent("""\
-        <?xml version="1.0" encoding="UTF-8"?>
-        <dmodule>
-          <identAndStatusSection>
-            <dmAddress><dmIdent>
-              <dmCode>AMPEL360-A-71-00-00-00A-040A-A</dmCode>
-            </dmIdent></dmAddress>
-          </identAndStatusSection>
-          <content>
-            <procedure>
-              <preliminaryRqmts/>
-              <mainProcedure>
-                <proceduralStep id="step01">
-                  <para>Do something.</para>
-                  <warning><warningAndCautionPara>Danger!</warningAndCautionPara></warning>
-                </proceduralStep>
-              </mainProcedure>
-            </procedure>
-          </content>
-        </dmodule>
-    """)
-    tmp_order = Path("/tmp/_s1000d_test_warning_order.xml")
-    tmp_order.write_text(bad_order, encoding="utf-8")
-    r5 = validator.validate_file(tmp_order)
-    _assert(
-        any(f.rule_id == "BREX-007" for f in r5.findings),
-        "Warning after <para> triggers BREX-007",
-    )
-
-    # --- Test 6: valid procedural DM -----------------------------------------
-    valid_proc = textwrap.dedent("""\
-        <?xml version="1.0" encoding="UTF-8"?>
-        <dmodule>
-          <identAndStatusSection>
-            <dmAddress><dmIdent>
-              <dmCode>AMPEL360-A-71-00-00-00A-200A-A</dmCode>
-            </dmIdent></dmAddress>
-          </identAndStatusSection>
-          <content>
-            <procedure>
-              <preliminaryRqmts>
-                <reqCondGroup>
-                  <noConds>Aircraft power OFF</noConds>
-                </reqCondGroup>
-              </preliminaryRqmts>
-              <mainProcedure>
-                <proceduralStep id="s1">
-                  <warning><warningAndCautionPara>High voltage!</warningAndCautionPara></warning>
-                  <para>Disconnect main bus.</para>
-                </proceduralStep>
-              </mainProcedure>
-            </procedure>
-          </content>
-        </dmodule>
-    """)
-    tmp_proc = Path("/tmp/_s1000d_test_valid_proc.xml")
-    tmp_proc.write_text(valid_proc, encoding="utf-8")
-    r6 = validator.validate_file(tmp_proc)
-    _assert(r6.passed, "Valid procedural DM passes without errors")
-
-    # --- Test 7: malformed XML -----------------------------------------------
-    tmp_malformed = Path("/tmp/_s1000d_test_malformed.xml")
-    tmp_malformed.write_text("<dmodule><broken", encoding="utf-8")
-    r7 = validator.validate_file(tmp_malformed)
-    _assert(
-        any(f.rule_id == "XML-001" for f in r7.errors),
-        "Malformed XML triggers XML-001",
-    )
-
-    # --- Test 8: DMC pattern matches known good codes -------------------------
-    good_codes = [
-        "AMPEL360-A-51-00-00-00A-040A-A",
-        "AMPEL360-A-27-00-00-00A-040A-A",
-        "AMPEL360-A-71-00-00-00A-040A-A",
-        "AMPEL360-A-42-00-00-00A-040A-A",
-        "AMPEL360-A-00-00-00-00A-040A-A",
-    ]
-    for code in good_codes:
+        # --- Test 2: missing root ------------------------------------------------
+        bad_root = '<?xml version="1.0"?>\n<notAModule><foo/></notAModule>'
+        tmp_bad = _tmpdir / "bad_root.xml"
+        tmp_bad.write_text(bad_root, encoding="utf-8")
+        r2 = validator.validate_file(tmp_bad)
+        _assert(not r2.passed, "Wrong root element triggers error")
         _assert(
-            DMC_PATTERN.match(code) is not None,
-            f"DMC_PATTERN accepts '{code}'",
+            any(f.rule_id == "XSD-001" for f in r2.errors),
+            "  error XSD-001 raised",
         )
 
-    # Clean up
-    for tmp in (tmp_valid, tmp_bad, tmp_dmc, tmp_nc, tmp_order, tmp_proc, tmp_malformed):
-        tmp.unlink(missing_ok=True)
+        # --- Test 3: bad DMC format ----------------------------------------------
+        bad_dmc_dm = textwrap.dedent("""\
+            <?xml version="1.0" encoding="UTF-8"?>
+            <dmodule>
+              <identAndStatusSection>
+                <dmAddress>
+                  <dmIdent>
+                    <dmCode>BAD-FORMAT-1234</dmCode>
+                  </dmIdent>
+                </dmAddress>
+              </identAndStatusSection>
+              <content><description><para>x</para></description></content>
+            </dmodule>
+        """)
+        tmp_dmc = _tmpdir / "bad_dmc.xml"
+        tmp_dmc.write_text(bad_dmc_dm, encoding="utf-8")
+        r3 = validator.validate_file(tmp_dmc)
+        _assert(
+            any(f.rule_id == "XSD-006" for f in r3.errors),
+            "Invalid DMC triggers XSD-006",
+        )
+
+        # --- Test 4: missing content section -------------------------------------
+        no_content = textwrap.dedent("""\
+            <?xml version="1.0" encoding="UTF-8"?>
+            <dmodule>
+              <identAndStatusSection>
+                <dmAddress>
+                  <dmIdent>
+                    <dmCode>AMPEL360-A-51-00-00-00A-040A-A</dmCode>
+                  </dmIdent>
+                </dmAddress>
+              </identAndStatusSection>
+            </dmodule>
+        """)
+        tmp_nc = _tmpdir / "no_content.xml"
+        tmp_nc.write_text(no_content, encoding="utf-8")
+        r4 = validator.validate_file(tmp_nc)
+        _assert(
+            any(f.rule_id == "XSD-005" for f in r4.errors),
+            "Missing <content> triggers XSD-005",
+        )
+
+        # --- Test 5: warning after para (BREX-007) --------------------------------
+        bad_order = textwrap.dedent("""\
+            <?xml version="1.0" encoding="UTF-8"?>
+            <dmodule>
+              <identAndStatusSection>
+                <dmAddress><dmIdent>
+                  <dmCode>AMPEL360-A-71-00-00-00A-040A-A</dmCode>
+                </dmIdent></dmAddress>
+              </identAndStatusSection>
+              <content>
+                <procedure>
+                  <preliminaryRqmts/>
+                  <mainProcedure>
+                    <proceduralStep id="step01">
+                      <para>Do something.</para>
+                      <warning><warningAndCautionPara>Danger!</warningAndCautionPara></warning>
+                    </proceduralStep>
+                  </mainProcedure>
+                </procedure>
+              </content>
+            </dmodule>
+        """)
+        tmp_order = _tmpdir / "warning_order.xml"
+        tmp_order.write_text(bad_order, encoding="utf-8")
+        r5 = validator.validate_file(tmp_order)
+        _assert(
+            any(f.rule_id == "BREX-007" for f in r5.findings),
+            "Warning after <para> triggers BREX-007",
+        )
+
+        # --- Test 6: valid procedural DM -----------------------------------------
+        valid_proc = textwrap.dedent("""\
+            <?xml version="1.0" encoding="UTF-8"?>
+            <dmodule>
+              <identAndStatusSection>
+                <dmAddress><dmIdent>
+                  <dmCode>AMPEL360-A-71-00-00-00A-200A-A</dmCode>
+                </dmIdent></dmAddress>
+              </identAndStatusSection>
+              <content>
+                <procedure>
+                  <preliminaryRqmts>
+                    <reqCondGroup>
+                      <noConds>Aircraft power OFF</noConds>
+                    </reqCondGroup>
+                  </preliminaryRqmts>
+                  <mainProcedure>
+                    <proceduralStep id="s1">
+                      <warning><warningAndCautionPara>High voltage!</warningAndCautionPara></warning>
+                      <para>Disconnect main bus.</para>
+                    </proceduralStep>
+                  </mainProcedure>
+                </procedure>
+              </content>
+            </dmodule>
+        """)
+        tmp_proc = _tmpdir / "valid_proc.xml"
+        tmp_proc.write_text(valid_proc, encoding="utf-8")
+        r6 = validator.validate_file(tmp_proc)
+        _assert(r6.passed, "Valid procedural DM passes without errors")
+
+        # --- Test 7: malformed XML -----------------------------------------------
+        tmp_malformed = _tmpdir / "malformed.xml"
+        tmp_malformed.write_text("<dmodule><broken", encoding="utf-8")
+        r7 = validator.validate_file(tmp_malformed)
+        _assert(
+            any(f.rule_id == "XML-001" for f in r7.errors),
+            "Malformed XML triggers XML-001",
+        )
+
+        # --- Test 8: DMC pattern matches known good codes -------------------------
+        good_codes = [
+            "AMPEL360-A-51-00-00-00A-040A-A",
+            "AMPEL360-A-27-00-00-00A-040A-A",
+            "AMPEL360-A-71-00-00-00A-040A-A",
+            "AMPEL360-A-42-00-00-00A-040A-A",
+            "AMPEL360-A-00-00-00-00A-040A-A",
+        ]
+        for code in good_codes:
+            _assert(
+                DMC_PATTERN.match(code) is not None,
+                f"DMC_PATTERN accepts '{code}'",
+            )
 
     print(f"\nSelf-test result: {'ALL PASSED' if all_ok else 'SOME FAILED'}")
     return all_ok
