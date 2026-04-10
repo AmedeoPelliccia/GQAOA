@@ -42,4 +42,14 @@
 
 ---
 
+## Companion Documents
+
+| Document | Description |
+|----------|-------------|
+| [GQAOA-UTA-SUPIA-001.md](./GQAOA-UTA-SUPIA-001.md) | **SUPIA v1.0** — Sistema Unico di Progettazione Industriale Avanzata (17 sections + glossary) |
+| [UTA-DOMAINS.md](./UTA-DOMAINS.md) | Universal Technology Architecture — 10 domains, 1000 chapters, decade block registry |
+| [components/UTAExplorer.jsx](./components/UTAExplorer.jsx) | React interactive UTA Explorer |
+
+---
+
 *OPT-INS Framework v1.0 — Amedeo Pelliccia — AEROSPACEMODEL Lifecycle Operating System*

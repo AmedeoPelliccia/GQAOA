@@ -96,6 +96,14 @@ Integration is governed by a feature-flag mechanism so core programs (AM.PEL, AM
         └── IETP/                ← Interactive viewer packaging
 ```
 
+## Companion Specifications
+
+| Document | Code | Description |
+|---|---|---|
+| **SUPIA v1.0** | [GQAOA-UTA-SUPIA-001.md](./GQAOA-UTA-SUPIA-001.md) | Sistema Unico di Progettazione Industriale Avanzata — 1000-chapter design system with 10 domains, KNOT/KNU orchestration, TT tokenomics, technical drawing norms, S1000D publication, and comprehensive glossary |
+| **UTA Domain Map** | [UTA-DOMAINS.md](./UTA-DOMAINS.md) | Universal Technology Architecture — 10 domain groups (G1–G10), decade block registry, axis distribution, programme coverage |
+| **UTA Explorer** | [components/UTAExplorer.jsx](./components/UTAExplorer.jsx) | React interactive visualisation of the full UTA domain map |
+
 ## Legacy References
 
 | Module | File | Notes |
