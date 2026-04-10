@@ -29,6 +29,7 @@ Each module is **self-contained**, **versioned**, and **domain-scoped**. Integra
 | Module ID | Domain | File | Status |
 |---|---|---|---|
 | **S-SPACE** | Space (orbital, sub-orbital, deep space) | [S-SPACE-SPECIFICS.md](./S-SPACE-SPECIFICS.md) | ✅ Active |
+| **ATA 000‑009** | Información General y Servicio | [ATA_000-009/](./ATA_000-009/000-00-general/) | ✅ Active |
 
 > Additional modules (S-ATMOS, S-GROUND, S-MARITIME, S-CYBER) are planned for subsequent releases.
 

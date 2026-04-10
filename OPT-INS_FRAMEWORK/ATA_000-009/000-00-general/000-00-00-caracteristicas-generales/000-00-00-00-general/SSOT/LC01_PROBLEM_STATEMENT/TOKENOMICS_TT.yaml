@@ -1,0 +1,18 @@
+# Tokenomics — Traceability Tokens
+# ATA Node: KNOT-ATA000-00-00
+# Programme: AMPEL360 Q100 (AMPEL360-AIR-T)
+
+token_class: ATA_DOCUMENT
+knot_prefix: "KNOT-ATA000-00-00"
+mint_policy:
+  trigger: LC01_APPROVAL
+  authority: Q-DATAGOV
+  ledger: AM.PEL_DAG
+token_attributes:
+  - knot_id
+  - lifecycle_phase
+  - approval_hash
+  - timestamp_utc
+circulation:
+  max_supply: null          # unlimited — one per approved artefact
+  burn_policy: ARCHIVE_ONLY # tokens are never destroyed
