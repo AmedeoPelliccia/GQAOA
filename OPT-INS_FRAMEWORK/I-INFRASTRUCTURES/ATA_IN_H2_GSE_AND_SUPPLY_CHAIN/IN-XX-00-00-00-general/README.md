@@ -1,4 +1,4 @@
-# IN-XX-00-00-00: H2 GSE and Supply Chain — General
+# IN-XX-00-00-00: H₂ GSE and Supply Chain — General
 
 **ATA Code:** IN-XX-00-00-00  
 **Programme:** AMPEL360 Q100 · GAIA-SPACE-LAUNCHER · SPACET Q10  
@@ -9,7 +9,7 @@
 
 ## Scope
 
-H2 GSE and Supply Chain — general node.
+H₂ GSE and Supply Chain — general node.
 
 ## Directory Layout
 

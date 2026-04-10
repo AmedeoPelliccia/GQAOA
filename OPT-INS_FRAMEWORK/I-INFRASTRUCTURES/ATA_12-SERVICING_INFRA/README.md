@@ -2,4 +2,4 @@
 
 **Axis:** I — Infrastructures  
 **Code:** 12-I  
-**Status:** �� Stub — canonical pattern to be expanded  
+**Status:** 🟡 Stub — canonical pattern to be expanded  
