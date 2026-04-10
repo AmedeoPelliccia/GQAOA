@@ -59,6 +59,14 @@ Este documento presenta la matriz oficial y corregida de **ALICES** (sistemas f�
 
 ---
 
+## ⛓️ DOMINIO DIGITAL — BBCNs Barcelona BlockChains Community Networks
+
+| Programa Oficial | ALICE          | BOB DT          | BOB DA          | Descripción Funcional                                                     |
+| ---------------- | -------------- | --------------- | --------------- | ------------------------------------------------------------------------- |
+| BBCNs            | ALICE-BBCN-BCN | BOB-DT-BBCN-BCN | BOB-DA-BBCN-BCN | Red comunitaria blockchain en Barcelona para trazabilidad y gobernanza DLT |
+
+---
+
 ## 📌 Notas:
 
 * **ALICE**: sistema físico real (aeronave, satélite, robot, etc.) con capacidades cuántico-integradas.

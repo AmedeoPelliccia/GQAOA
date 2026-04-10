@@ -4552,6 +4552,12 @@ La **Digital Twin, Cloud & Edge Computing Architecture (DTCEC)** abarca todas la
         *   360-20-30: Practical Byzantine Fault Tolerance
         *   360-20-40: Delegated Proof of Stake
         *   360-20-50: Novel Consensus Algorithms
+    *   **360-30-00: BBCNs — Barcelona BlockChains Community Networks**
+        *   360-30-10: Red Comunitaria DLT Barcelona (Infraestructura de Nodos)
+        *   360-30-20: Gobernanza Descentralizada (DAO) y Votación On-Chain
+        *   360-30-30: Trazabilidad Aeroespacial Comunitaria
+        *   360-30-40: Tokenización de Digital Twins y Activos IP
+        *   360-30-50: Integración Post-Quantum y Criptografía Avanzada
 
 *   **361-00-00: Smart Contracts para Digital Twins**
     *   **361-10-00: Desarrollo de Smart Contracts**
@@ -8405,139 +8411,12 @@ La **Cybersecurity Architecture (CYB)** se centra en la protección de la inform
 - [🏆 Quality Control](#quality-control)
 - [⛓️ Supply Chain](#supply-chain-seville)
 
-### [⚛️ Naples Quantum Hub](#naples-quantum-hub)
-- [🔬 Nanotechnology Lab](#nanotechnology-lab-naples)
-- [🧬 Biotechnology Research](#biotechnology-research-naples)
-- [🌌 Experimental Neutrino Research](#neutrino-research-naples)
-- [🚀 Quantum Propulsion Lab](#quantum-propulsion-lab-naples)
-- [🎓 University Partnerships](#university-partnerships-naples)
-
-### [🛡️ Bologna Earth Protection Center](#bologna-earth-protection-center)
-- [🛰️ Observation Satellites Program](#observation-satellites-bologna)
-- [🌋 Catastrophe Prevention Systems](#catastrophe-prevention-bologna)
-- [🌌 Deep Space Research](#deep-space-research-bologna)
-- [🔭 Space Situational Awareness](#space-situational-awareness-bologna)
-### 🌊 Mediterranean Countries — Extended Facilities Network
-
-### [🏛️ Rome — ESA Integration (Italy)](#rome-esa-integration)
-- [🛰️ ESA-ESRIN Collaboration](#esa-esrin-collaboration)
-- [🚀 Aerospace Systems Integration](#aerospace-systems-integration-rome)
-- [📡 Satellite Operations Support](#satellite-operations-rome)
-- [🤝 Institutional Partnerships](#institutional-partnerships-rome)
-
-### [⚙️ Turin — Advanced Propulsion (Italy)](#turin-advanced-propulsion)
-- [🔥 Propulsion R&D](#propulsion-rd-turin)
-- [🏭 Precision Manufacturing](#precision-manufacturing-turin)
-- [🧪 Engine Testing Facilities](#engine-testing-turin)
-- [🔬 Materials Science Lab](#materials-science-turin)
-
-### [🌊 Naples — Maritime-Aerospace Research (Italy)](#naples-maritime-aerospace)
-- [🧪 Composite Materials Research](#composite-research-naples)
-- [🚢 Maritime-Aerospace Interface](#maritime-aerospace-naples)
-- [🎓 University Partnerships](#university-partnerships-naples)
-- [🌋 Environmental Monitoring](#environmental-monitoring-naples)
-
-### [⚛️ Athens — Quantum & Maritime Monitoring (Greece)](#athens-quantum-maritime)
-- [⚛️ Quantum Research Lab](#quantum-research-athens)
-- [🌊 Maritime Surveillance Systems](#maritime-surveillance-athens)
-- [📡 Eastern Mediterranean Sensors](#eastern-med-sensors-athens)
-- [🎓 NCSR Demokritos Collaboration](#demokritos-athens)
-
-### [💻 Zagreb — Software & Simulation (Croatia)](#zagreb-software-simulation)
-- [💻 Software Engineering Center](#software-engineering-zagreb)
-- [🖥️ Digital Simulation Lab](#simulation-lab-zagreb)
-- [🧪 Virtual Testing Infrastructure](#virtual-testing-zagreb)
-- [🎓 Technical Talent Hub](#talent-hub-zagreb)
-
-### [🤖 Ljubljana — Robotics & Automation (Slovenia)](#ljubljana-robotics)
-- [🤖 Advanced Robotics Lab](#robotics-lab-ljubljana)
-- [⚙️ Automation Systems](#automation-systems-ljubljana)
-- [🔬 Jožef Stefan Institute Collaboration](#jozef-stefan-ljubljana)
-- [🔧 Mechatronics Center](#mechatronics-ljubljana)
-
-### [🌿 Podgorica — Environmental Monitoring (Montenegro)](#podgorica-environmental)
-- [🌍 Adriatic Environmental Sensors](#adriatic-sensors-podgorica)
-- [📊 Data Collection Station](#data-station-podgorica)
-- [🌊 Mediterranean Climate Monitoring](#climate-monitoring-podgorica)
-- [📡 Remote Sensing Hub](#remote-sensing-podgorica)
-
-### [🏗️ Tirana — Operational Support (Albania)](#tirana-operational-support)
-- [🛠️ Operational Support Center](#ops-support-tirana)
-- [📦 Logistics Coordination](#logistics-tirana)
-- [🎓 Capacity Building Program](#capacity-building-tirana)
-- [🌍 Adriatic Coverage Node](#adriatic-node-tirana)
-
-### [✈️ Valletta — Aviation & Maritime Regulation (Malta)](#valletta-aviation-maritime)
-- [✈️ Aviation Regulatory Hub](#aviation-regulation-valletta)
-- [🚢 Maritime Registry Center](#maritime-registry-valletta)
-- [📋 Compliance & Certification](#compliance-valletta)
-- [🌊 Central Mediterranean Operations](#central-med-ops-valletta)
-
-### [📡 Nicosia — Satellite & Cybersecurity (Cyprus)](#nicosia-satellite-cybersecurity)
-- [📡 Satellite Telecommunications](#satellite-telecom-nicosia)
-- [🛡️ Cybersecurity Operations Center](#cybersecurity-ops-nicosia)
-- [🛰️ Eastern Mediterranean Relay](#eastern-med-relay-nicosia)
-- [🔐 Post-Quantum Security Lab](#pq-security-nicosia)
-
-### [💰 Monaco — Innovation & Sustainability (Monaco)](#monaco-innovation-sustainability)
-- [💰 Financial Innovation Center](#fin-innovation-monaco)
-- [🌊 Oceanographic Research](#oceanographic-research-monaco)
-- [🌱 Marine Sustainability Lab](#marine-sustainability-monaco)
-- [🤝 Monaco Ocean Foundation Partnership](#ocean-foundation-monaco)
-
-### [🌉 Istanbul — Systems & Manufacturing (Turkey)](#istanbul-systems-manufacturing)
-- [⚙️ Systems Engineering Center](#systems-engineering-istanbul)
-- [🏭 Aerospace Manufacturing Plant](#aerospace-manufacturing-istanbul)
-- [🔧 MRO Operations](#mro-operations-istanbul)
-- [🌐 Europe-Asia Bridge Hub](#europe-asia-hub-istanbul)
-
-### [🔬 Haifa — Quantum-AI R&D (Israel)](#haifa-quantum-ai)
-- [⚛️ Quantum Computing Lab](#quantum-computing-haifa)
-- [🤖 AI Research Center](#ai-research-haifa)
-- [🛡️ Cybersecurity R&D](#cybersecurity-rd-haifa)
-- [🎓 Technion Collaboration](#technion-haifa)
-
-### [🎓 Beirut — Academic Research (Lebanon)](#beirut-academic-research)
-- [🎓 AUB Research Partnership](#aub-partnership-beirut)
-- [📚 Academic Exchange Program](#academic-exchange-beirut)
-- [🌍 Cultural Bridge Center](#cultural-bridge-beirut)
-- [💡 Innovation Incubator](#innovation-incubator-beirut)
-
-### [🏭 Casablanca — Aerospace Manufacturing (Morocco)](#casablanca-aerospace-manufacturing)
-- [✈️ Aerospace Component Manufacturing](#component-manufacturing-casablanca)
-- [🎓 Technical Training Academy](#training-academy-casablanca)
-- [🏭 Free Zone Operations](#free-zone-casablanca)
-- [⛓️ African Supply Chain Hub](#supply-chain-casablanca)
-
-### [⚡ Tunis — Electronics & Calibration (Tunisia)](#tunis-electronics-calibration)
-- [⚡ Electronic Systems Engineering](#electronics-engineering-tunis)
-- [🔧 Calibration & Metrology Center](#calibration-center-tunis)
-- [🏭 Component Assembly](#component-assembly-tunis)
-- [🎓 Technical Partnerships](#technical-partnerships-tunis)
-
-### [☀️ Algiers — Renewables & Space Monitoring (Algeria)](#algiers-renewables-space)
-- [☀️ Solar Energy Research Center](#solar-research-algiers)
-- [🛰️ Space Monitoring Station (ASAL)](#space-monitoring-algiers)
-- [🌍 Territorial Sensor Network](#sensor-network-algiers)
-- [🔋 Energy Storage Lab](#energy-storage-algiers)
-
-### [📡 Tripoli — Remote Monitoring Station (Libya)](#tripoli-remote-monitoring)
-- [📡 Central Mediterranean Monitoring](#central-med-monitoring-tripoli)
-- [🌍 Remote Sensing Station](#remote-sensing-tripoli)
-- [📊 Data Relay Node](#data-relay-tripoli)
-- [🔧 Minimal Footprint Operations](#minimal-ops-tripoli)
-
-### [🏗️ Cairo — Aerospace Engineering (Egypt)](#cairo-aerospace-engineering)
-- [✈️ Aerospace Engineering Center (AOI)](#aerospace-engineering-cairo)
-- [🎓 Technical Training Campus](#training-campus-cairo)
-- [🔧 MRO Regional Hub](#mro-hub-cairo)
-- [🌐 Europe-Africa-Asia Nexus](#nexus-cairo)
-
-### [🌊 Alexandria — Maritime & Oceanography (Egypt)](#alexandria-maritime-oceanography)
-- [🌊 Maritime Research Institute](#maritime-research-alexandria)
-- [🔬 Oceanographic Studies Lab](#oceanography-lab-alexandria)
-- [🚢 Port Infrastructure Collaboration](#port-infrastructure-alexandria)
-- [📡 Mediterranean-Red Sea Link](#med-red-sea-link-alexandria)
+### [⛓️ Barcelona BBCNs](#barcelona-bbcns)
+- [⛓️ Blockchain Community Networks](#blockchain-community-networks)
+- [🔗 DLT Infrastructure & Validator Nodes](#dlt-infrastructure)
+- [📜 Smart Contracts & dApps](#smart-contracts-dapps)
+- [🏛️ Decentralized Governance (DAO)](#decentralized-governance)
+- [🔬 Post-Quantum Cryptography Lab](#pqc-lab-barcelona)
 
 ---
 
@@ -8661,7 +8540,7 @@ La **Cybersecurity Architecture (CYB)** se centra en la protección de la inform
 | **UTCS** | [04-UTCS-ARCHITECTURE](#04-utcs-architecture) | 10 Arquitecturas (000-999) |
 | **Templates** | [05-DOCUMENTATION-TEMPLATES](#05-documentation-templates) | 251 Templates |
 | **Standards** | [06-STANDARDS-COMPLIANCE](#06-standards-compliance) | Aerospace, Quality, Cyber |
-| **Facilities** | [07-FACILITIES-LOCATIONS](#07-facilities-locations) | 25 Ubicaciones
+| **Facilities** | [07-FACILITIES-LOCATIONS](#07-facilities-locations) | 6 Ubicaciones Principales |
 | **Digital** | [08-DIGITAL-INFRASTRUCTURE](#08-digital-infrastructure) | PLM, Twins, Quantum, Cyber |
 | **Partnerships** | [09-EXTERNAL-PARTNERSHIPS](#09-external-partnerships) | Industria, Academia, Gobierno |
 | **Archive** | [10-ARCHIVE-LEGACY](#10-archive-legacy) | Histórico, Legacy, Versiones |
@@ -8681,8 +8560,8 @@ La **Cybersecurity Architecture (CYB)** se centra en la protección de la inform
 | **Templates Documentales** | 251 |
 | **Q-Divisions** | 10 |
 | **ORB-Functions** | 6 |
-| **Ubicaciones Físicas** | 5 |
-| **Programas Activos** | 15+ |
+| **Ubicaciones Físicas** | 6 |
+| **Programas Activos** | 16+ |
 
 
 ### **Control de Cambios:**
@@ -8691,6 +8570,7 @@ La **Cybersecurity Architecture (CYB)** se centra en la protección de la inform
 |---------|-----------|-----------------------------------|-----------------|
 | 1.0.0   | 23/07/2025| Documento inicial completo        | A. Pelliccia    |
 | 2.0.0   | 23/07/2025| Corrección nomenclatura y autoría  | A. Pelliccia    |
+| 2.1.0   | 08/04/2026| Añadido programa BBCNs (Barcelona BlockChains Community Networks) y ubicación Barcelona | A. Pelliccia    |
 
 ---
 
