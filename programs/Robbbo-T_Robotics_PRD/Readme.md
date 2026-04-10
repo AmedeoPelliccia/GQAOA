@@ -93,7 +93,7 @@ La seguente matrice mostra come le classi ROBOT.INCs mappano ai domini tecnologi
 | INC-M | 600-xx | 300-xx (DT) | — | 870-xx | 570-xx |
 | INC-C | 601-xx | 320-xx (AI) | — | 870-xx | — |
 | INC-V | 602-xx | 315-xx (Signal) | — | — | 560-xx |
-| INC-A | 603-xx | 300-xx (DT) | 681-xx (Opt.) | 800-xx | 570-xx |
+| INC-A | 603-xx, 681-xx (Opt.) | 300-xx (DT) | — | 800-xx | 570-xx |
 | INC-D | 604-xx | 302-xx (Sync) | — | 870-xx | — |
 | INC-G | 610-xx | 320-xx (AI) | — | 800-xx | — |
 | INC-S | 670-xx | 320-xx (AI) | — | 800-xx | — |
