@@ -8461,7 +8461,7 @@ La **Cybersecurity Architecture (CYB)** se centra en la protección de la inform
 
 | # | Título | Estado | Impacto en README |
 |---|--------|--------|-------------------|
-| #5 | Transfer HQ to Amsterdam Tech Hub + 4 new hubs | 🟡 Draft | Actualiza §3 tabla de ubicaciones, HQ Madrid→Amsterdam |
+| #5 | Transfer HQ to Amsterdam Tech Hub + 4 new hubs | 🟡 Draft | Actualiza 07-FACILITIES-LOCATIONS (tabla de ubicaciones), HQ Madrid→Amsterdam |
 | #4 | Add BBCNs (Barcelona BlockChains Community Networks) | 🟡 Draft | Añade programa Barcelona, actualiza DTCEC y estadísticas |
 | #3 | S1000D validator, estandarizar nombre GQAOA, BOB DA→CHARLIE_T | 🟡 Draft | Estandariza nomenclatura a "GQAOA, INC." |
 | #2 | Port SICOCA package & restructure test suite | 🟢 Open | Añade referencia a GAI-A-AMAR-AGGIX Architecture |
