@@ -1,4 +1,4 @@
-# AIDED PROMPT ENGINEERING FOR AEROSPACE DIGITAL APPLICATION AND PROGRAMMING TECHNOLOGIES — USER INTERFACE STUDIO
+# AIDED PROMPT ENGINEERING TO AEROSPACE DIGITAL APPLICATIONS AND PROGRAMMING TECHNOLOGIES — USER INTERFACE STUDIO
 
 **Acronimo:** APE ADAPT UI STUDIO  
 **Codice:** GQAOA-APE-ADAPT-001  
@@ -12,9 +12,24 @@
 
 ---
 
+> **Mission & Vision:** *Transforming aided prompt engineering into traceable aerospace digital applications and programming technologies, so that every engineering instruction reduces uncertainty, produces measurable artefacts, and rewards every contributor — one prompt, one artefact, one token at a time.*
+
 > *"L'ingegnere non scrive prompt — progetta istruzioni ingegneristiche tracciabili."*  
 > P(t) = KNOT → Prompt → KNU  
 > dove il prompt è l'atto di definizione che fissa lo stato dell'artefatto.
+
+### Funzione di trasformazione
+
+```
+APE  ──────────────►  ADAPT
+Aided Prompt           Aerospace Digital Applications
+Engineering            and Programming Technologies
+
+       T: APE → ADAPT
+       T(prompt) = KNU ∈ SSOT
+       ∀ prompt ∈ APE: ∃! KNU ∈ ADAPT
+       dove ADAPT = { artefatti tracciabili × domini UTA × fasi LC }
+```
 
 ---
 
@@ -39,7 +54,9 @@
 
 ### 0.1 Scopo
 
-APE ADAPT UI STUDIO (Aided Prompt Engineering for Aerospace Digital Application and Programming Technologies — User Interface Studio) è il **sistema di interfaccia umano-IA** per la creazione, validazione, esecuzione e tracciabilità di prompt ingegneristici entro l'architettura SUPIA/UTA.
+APE ADAPT UI STUDIO (Aided Prompt Engineering **to** Aerospace Digital **Applications** and Programming Technologies — User Interface Studio) è il **sistema di interfaccia umano-IA** per la creazione, validazione, esecuzione e tracciabilità di prompt ingegneristici entro l'architettura SUPIA/UTA.
+
+La funzione di trasformazione **APE → ADAPT** converte ogni prompt ingegneristico strutturato in un artefatto digitale tracciabile (KNU), collocato nella tassonomia universale UTA (1000 capitoli), registrato nella SSOT, e ricompensato tramite Teknia Token.
 
 APE ADAPT non è un chatbot né un assistente generico. È uno **studio di progettazione di istruzioni** in cui ogni prompt:
 
@@ -663,7 +680,7 @@ ape_version: "1.0"
 
 | Acronimo | Espansione | Definizione |
 |----------|-----------|-------------|
-| **ADAPT** | Aerospace Digital Application and Programming Technologies | Tecnologie di applicazione e programmazione digitale aerospaziale |
+| **ADAPT** | Aerospace Digital Applications and Programming Technologies | Tecnologie di applicazioni e programmazione digitale aerospaziale |
 | **APE** | Aided Prompt Engineering | Ingegneria assistita dei prompt |
 | **BOOST** | Bayesian-Optimized Output for Semantic Transformation | Ottimizzazione bayesiana dell'output per trasformazione semantica (5° livello della catena) |
 | **BREX** | Business Rules Exchange | Regole di validazione S1000D |
@@ -702,8 +719,8 @@ ape_version: "1.0"
 ```
 ┌──────────────────────────────────────────────────────────────────┐
 │                                                                  │
-│  AIDED PROMPT ENGINEERING FOR AEROSPACE DIGITAL                  │
-│  APPLICATION AND PROGRAMMING TECHNOLOGIES                        │
+│  AIDED PROMPT ENGINEERING TO AEROSPACE DIGITAL                   │
+│  APPLICATIONS AND PROGRAMMING TECHNOLOGIES                       │
 │  USER INTERFACE STUDIO                                           │
 │  APE ADAPT UI STUDIO v1.0                                        │
 │                                                                  │
