@@ -24,7 +24,6 @@ from __future__ import annotations
 
 import argparse
 import enum
-import os
 import re
 import sys
 import textwrap
