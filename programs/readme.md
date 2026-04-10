@@ -2,60 +2,60 @@
 
 # programs/
 
-Este repositorio central alberga la matriz maestra de ALICES (sistemas físicos reales) y sus gemelos digitales asociados (BOB DT, CHARLIE-T, GENTLE y BOOST) dentro del ecosistema **GLOBAL QUANTUM AEROSPACE OPTIME ARCHITECTURE (GQAOA)**. Su propósito es organizar y trazar los entregables de cada sistema a lo largo de su ciclo de vida, garantizando la coherencia y la trazabilidad 360° que exige el **GAIA-QAO Universal Technology Classification System (UTCS)**.
+Este repositorio central alberga la matriz maestra de ALICES (sistemas físicos reales) y sus gemelos digitales asociados (BOB DT, CHARLIE_T, GENTLE y BOOST) dentro del ecosistema **GAIA QUANTUM AMPEL OPT-INS ARCHITECTURE, INC. (GQAOA, INC.)**. Su propósito es organizar y trazar los entregables de cada sistema a lo largo de su ciclo de vida, garantizando la coherencia y la trazabilidad 360° que exige el **GAIA-QAO Universal Technology Classification System (UTCS)**.
 
 ## 🎯 Propósito del Repositorio
 ---
 
-# ✳️ MATRIZ MAESTRA DE ALICES – GAIA-QAOA v1.1 (CORREGIDA)
+# ✳️ MATRIZ MAESTRA DE ALICES – GQAOA, INC. v1.1 (CORREGIDA)
 
-Este documento presenta la matriz oficial y corregida de **ALICES** (sistemas físicos reales) dentro del ecosistema **GAIA-QAOA**, clasificados por dominio de operación (**aire, espacio, tierra**) y vinculados a sus respectivos gemelos digitales (**BOB DT**, **CHARLIE-T**, **GENTLE** y **BOOST**), bajo los principios de sincronización cuántica.
+Este documento presenta la matriz oficial y corregida de **ALICES** (sistemas físicos reales) dentro del ecosistema **GQAOA, INC.**, clasificados por dominio de operación (**aire, espacio, tierra**) y vinculados a sus respectivos gemelos digitales (**BOB DT**, **CHARLIE_T**, **GENTLE** y **BOOST**), bajo los principios de sincronización cuántica.
 
 ---
 
 ## ✈️ DOMINIO AIRE – Programas Oficiales AMPEL360
 
-| Programa Oficial | ALICE                  | BOB DT                  | CHARLIE-T                  | GENTLE                  | BOOST                  | Descripción Funcional                                                |
+| Programa Oficial | ALICE                  | BOB DT                  | CHARLIE_T                  | GENTLE                  | BOOST                  | Descripción Funcional                                                |
 | ---------------- | ---------------------- | ----------------------- | ----------------------- | ----------------------- | ---------------------- | -------------------------------------------------------------------- |
-| AMPEL360BWB Q100 | ALICE-AMPEL360BWB-Q100 | BOB-DT-AMPEL360BWB-Q100 | CHARLIE-T-AMPEL360BWB-Q100 | GENTLE-AMPEL360BWB-Q100 | BOOST-AMPEL360BWB-Q100 | Aeronave a impacto 0 de 100 pasajeros con propulsión híbrida |
-| AMPEL360BWB Q250 | ALICE-AMPEL360BWB-Q250 | BOB-DT-AMPEL360BWB-Q250 | CHARLIE-T-AMPEL360BWB-Q250 | GENTLE-AMPEL360BWB-Q250 | BOOST-AMPEL360BWB-Q250 | Aeronave de largo alcance, alta eficiencia, 75% menos emisiones |
-| AMPEL360PLUS     | ALICE-AMPEL360PLUS     | BOB-DT-AMPEL360PLUS     | CHARLIE-T-AMPEL360PLUS     | GENTLE-AMPEL360PLUS | BOOST-AMPEL360PLUS | Nave suborbital reutilizable para turismo espacial y experimentación |
-| AMPEL360PLUSPLUS | ALICE-AMPEL360PLUSPLUS | BOB-DT-AMPEL360PLUSPLUS | CHARLIE-T-AMPEL360PLUSPLUS | GENTLE-AMPEL360PLUSPLUS | BOOST-AMPEL360PLUSPLUS | Nave de turismo orbital con capacidad para vuelos prolongados |
-| AMPEL360XWLRGA   | ALICE-AMPEL360XWLRGA   | BOB-DT-AMPEL360XWLRGA   | CHARLIE-T-AMPEL360XWLRGA   | GENTLE-AMPEL360XWLRGA | BOOST-AMPEL360XWLRGA | Sistema (tripulado o no) de remediación ambiental aérea |
-| AMPEL360 AC-MACH | ALICE-AC-MACH          | BOB-DT-AC-MACH          | CHARLIE-T-AC-MACH          | GENTLE-AC-MACH | BOOST-AC-MACH | Vehículo hipersónico con control morfodinámico adaptativo |
-| AMPEL360 C-MAX   | ALICE-AMPEL-CMAX       | BOB-DT-AMPEL-CMAX       | CHARLIE-T-AMPEL-CMAX       | GENTLE-AMPEL-CMAX | BOOST-AMPEL-CMAX | Agente de crucero con percepción atmosférica extendida |
+| AMPEL360BWB Q100 | ALICE-AMPEL360BWB-Q100 | BOB-DT-AMPEL360BWB-Q100 | CHARLIE_T-AMPEL360BWB-Q100 | GENTLE-AMPEL360BWB-Q100 | BOOST-AMPEL360BWB-Q100 | Aeronave a impacto 0 de 100 pasajeros con propulsión híbrida |
+| AMPEL360BWB Q250 | ALICE-AMPEL360BWB-Q250 | BOB-DT-AMPEL360BWB-Q250 | CHARLIE_T-AMPEL360BWB-Q250 | GENTLE-AMPEL360BWB-Q250 | BOOST-AMPEL360BWB-Q250 | Aeronave de largo alcance, alta eficiencia, 75% menos emisiones |
+| AMPEL360PLUS     | ALICE-AMPEL360PLUS     | BOB-DT-AMPEL360PLUS     | CHARLIE_T-AMPEL360PLUS     | GENTLE-AMPEL360PLUS | BOOST-AMPEL360PLUS | Nave suborbital reutilizable para turismo espacial y experimentación |
+| AMPEL360PLUSPLUS | ALICE-AMPEL360PLUSPLUS | BOB-DT-AMPEL360PLUSPLUS | CHARLIE_T-AMPEL360PLUSPLUS | GENTLE-AMPEL360PLUSPLUS | BOOST-AMPEL360PLUSPLUS | Nave de turismo orbital con capacidad para vuelos prolongados |
+| AMPEL360XWLRGA   | ALICE-AMPEL360XWLRGA   | BOB-DT-AMPEL360XWLRGA   | CHARLIE_T-AMPEL360XWLRGA   | GENTLE-AMPEL360XWLRGA | BOOST-AMPEL360XWLRGA | Sistema (tripulado o no) de remediación ambiental aérea |
+| AMPEL360 AC-MACH | ALICE-AC-MACH          | BOB-DT-AC-MACH          | CHARLIE_T-AC-MACH          | GENTLE-AC-MACH | BOOST-AC-MACH | Vehículo hipersónico con control morfodinámico adaptativo |
+| AMPEL360 C-MAX   | ALICE-AMPEL-CMAX       | BOB-DT-AMPEL-CMAX       | CHARLIE_T-AMPEL-CMAX       | GENTLE-AMPEL-CMAX | BOOST-AMPEL-CMAX | Agente de crucero con percepción atmosférica extendida |
 
 ---
 
 ## 🌌 DOMINIO ESPACIO – Programas Oficiales GAIA-QAO
 
-| Programa Oficial | ALICE                 | BOB DT                 | CHARLIE-T                 | GENTLE                 | BOOST                 | Descripción Funcional                                              |
+| Programa Oficial | ALICE                 | BOB DT                 | CHARLIE_T                 | GENTLE                 | BOOST                 | Descripción Funcional                                              |
 | ---------------- | --------------------- | ---------------------- | ---------------------- | ---------------------- | --------------------- | ------------------------------------------------------------------ |
-| GAIA-SAT-01      | ALICE-GAIA-SAT-01     | BOB-DT-GAIA-SAT-01     | CHARLIE-T-GAIA-SAT-01     | GENTLE-GAIA-SAT-01 | BOOST-GAIA-SAT-01 | Satélite de observación en LEO con instrumentación avanzada |
-| GAIA-SAT-02-QKD  | ALICE-GAIA-SAT-02-QKD | BOB-DT-GAIA-SAT-02-QKD | CHARLIE-T-GAIA-SAT-02-QKD | GENTLE-GAIA-SAT-02-QKD | BOOST-GAIA-SAT-02-QKD | Satélite dedicado a la distribución de claves cuánticas (QKD) |
-| GAIA-TEL-01      | ALICE-GAIA-TEL-01     | BOB-DT-GAIA-TEL-01     | CHARLIE-T-GAIA-TEL-01     | GENTLE-GAIA-TEL-01 | BOOST-GAIA-TEL-01 | Telescopio orbital para observación astronómica y espectroscopía Q |
-| GAIA-SND-01      | ALICE-GAIA-SND-01     | BOB-DT-GAIA-SND-01     | CHARLIE-T-GAIA-SND-01     | GENTLE-GAIA-SND-01 | BOOST-GAIA-SND-01 | Sonda interplanetaria con navegación cuántico-asistida |
-| GAIA-HAB-01      | ALICE-GAIA-HAB-01     | BOB-DT-GAIA-HAB-01     | CHARLIE-T-GAIA-HAB-01     | GENTLE-GAIA-HAB-01 | BOOST-GAIA-HAB-01 | Hábitat orbital para vida y experimentación en microgravedad |
-| GAIA-CARGO-01    | ALICE-GAIA-CARGO-01   | BOB-DT-GAIA-CARGO-01   | CHARLIE-T-GAIA-CARGO-01   | GENTLE-GAIA-CARGO-01 | BOOST-GAIA-CARGO-01 | Nave de carga automatizada para soporte a estaciones y hábitats |
-| GAIA-SRV-01      | ALICE-GAIA-SRV-01     | BOB-DT-GAIA-SRV-01     | CHARLIE-T-GAIA-SRV-01     | GENTLE-GAIA-SRV-01 | BOOST-GAIA-SRV-01 | Robot de servicio en órbita para reparación y ensamblaje satelital |
+| GAIA-SAT-01      | ALICE-GAIA-SAT-01     | BOB-DT-GAIA-SAT-01     | CHARLIE_T-GAIA-SAT-01     | GENTLE-GAIA-SAT-01 | BOOST-GAIA-SAT-01 | Satélite de observación en LEO con instrumentación avanzada |
+| GAIA-SAT-02-QKD  | ALICE-GAIA-SAT-02-QKD | BOB-DT-GAIA-SAT-02-QKD | CHARLIE_T-GAIA-SAT-02-QKD | GENTLE-GAIA-SAT-02-QKD | BOOST-GAIA-SAT-02-QKD | Satélite dedicado a la distribución de claves cuánticas (QKD) |
+| GAIA-TEL-01      | ALICE-GAIA-TEL-01     | BOB-DT-GAIA-TEL-01     | CHARLIE_T-GAIA-TEL-01     | GENTLE-GAIA-TEL-01 | BOOST-GAIA-TEL-01 | Telescopio orbital para observación astronómica y espectroscopía Q |
+| GAIA-SND-01      | ALICE-GAIA-SND-01     | BOB-DT-GAIA-SND-01     | CHARLIE_T-GAIA-SND-01     | GENTLE-GAIA-SND-01 | BOOST-GAIA-SND-01 | Sonda interplanetaria con navegación cuántico-asistida |
+| GAIA-HAB-01      | ALICE-GAIA-HAB-01     | BOB-DT-GAIA-HAB-01     | CHARLIE_T-GAIA-HAB-01     | GENTLE-GAIA-HAB-01 | BOOST-GAIA-HAB-01 | Hábitat orbital para vida y experimentación en microgravedad |
+| GAIA-CARGO-01    | ALICE-GAIA-CARGO-01   | BOB-DT-GAIA-CARGO-01   | CHARLIE_T-GAIA-CARGO-01   | GENTLE-GAIA-CARGO-01 | BOOST-GAIA-CARGO-01 | Nave de carga automatizada para soporte a estaciones y hábitats |
+| GAIA-SRV-01      | ALICE-GAIA-SRV-01     | BOB-DT-GAIA-SRV-01     | CHARLIE_T-GAIA-SRV-01     | GENTLE-GAIA-SRV-01 | BOOST-GAIA-SRV-01 | Robot de servicio en órbita para reparación y ensamblaje satelital |
 
 ---
 
 ## 🏭 DOMINIO TIERRA – Programas Oficiales Robbbo‑T
 
-| Programa Oficial               | ALICE                  | BOB DT                  | CHARLIE-T                  | GENTLE                  | BOOST                  | Descripción Funcional                                        |
+| Programa Oficial               | ALICE                  | BOB DT                  | CHARLIE_T                  | GENTLE                  | BOOST                  | Descripción Funcional                                        |
 | ------------------------------ | ---------------------- | ----------------------- | ----------------------- | ----------------------- | ---------------------- | ------------------------------------------------------------ |
-| Robbbo‑T/Factory               | ALICE-ROBBBO-T-FACTORY | BOB-DT-ROBBBO-T-FACTORY | CHARLIE-T-ROBBBO-T-FACTORY | GENTLE-ROBBBO-T-FACTORY | BOOST-ROBBBO-T-FACTORY | Fábrica digital avanzada con robótica cuántico-asistida |
-| Robbbo‑T/Extended\_Maintenance | ALICE-ROBBBO-T-MAINT   | BOB-DT-ROBBBO-T-MAINT   | CHARLIE-T-ROBBBO-T-MAINT   | GENTLE-ROBBBO-T-MAINT | BOOST-ROBBBO-T-MAINT | Plataforma XR/AR para mantenimiento técnico inteligente |
-| RTA‑212                        | ALICE-RTA-212          | BOB-DT-RTA-212          | CHARLIE-T-RTA-212          | GENTLE-RTA-212 | BOOST-RTA-212 | Subsistema robótico de control de fuerza y torque adaptativo |
+| Robbbo‑T/Factory               | ALICE-ROBBBO-T-FACTORY | BOB-DT-ROBBBO-T-FACTORY | CHARLIE_T-ROBBBO-T-FACTORY | GENTLE-ROBBBO-T-FACTORY | BOOST-ROBBBO-T-FACTORY | Fábrica digital avanzada con robótica cuántico-asistida |
+| Robbbo‑T/Extended\_Maintenance | ALICE-ROBBBO-T-MAINT   | BOB-DT-ROBBBO-T-MAINT   | CHARLIE_T-ROBBBO-T-MAINT   | GENTLE-ROBBBO-T-MAINT | BOOST-ROBBBO-T-MAINT | Plataforma XR/AR para mantenimiento técnico inteligente |
+| RTA‑212                        | ALICE-RTA-212          | BOB-DT-RTA-212          | CHARLIE_T-RTA-212          | GENTLE-RTA-212 | BOOST-RTA-212 | Subsistema robótico de control de fuerza y torque adaptativo |
 
 ---
 
 ## ⚛️ DOMINIO CUÁNTICO-DATOS – Programas AMPEL-EVO
 
-| Programa Oficial | ALICE | BOB DT | CHARLIE-T | GENTLE | BOOST | Descripción Funcional |
+| Programa Oficial | ALICE | BOB DT | CHARLIE_T | GENTLE | BOOST | Descripción Funcional |
 | ---------------- | ----- | ------ | ------ | --------------------- | --- | --- |
-| [AMPEL-EVO/PAPALAIKED-V2](./AMPEL-EVO/AMPEL-EVO-2026-04-05-PAPALAIKED-V2.md) | ALICE-AMPEL-EVO-PIPELINE | BOB-DT-AMPEL-EVO-PIPELINE | CHARLIE-T-AMPEL-EVO-PIPELINE | GENTLE-AMPEL-EVO-PIPELINE | BOOST-AMPEL-EVO-PIPELINE | Pipeline cuántico AM.PEL v2.0: QML, provenance híbrida, telemetría aeroespacial y SSA |
+| [AMPEL-EVO/PAPALAIKED-V2](./AMPEL-EVO/AMPEL-EVO-2026-04-05-PAPALAIKED-V2.md) | ALICE-AMPEL-EVO-PIPELINE | BOB-DT-AMPEL-EVO-PIPELINE | CHARLIE_T-AMPEL-EVO-PIPELINE | GENTLE-AMPEL-EVO-PIPELINE | BOOST-AMPEL-EVO-PIPELINE | Pipeline cuántico AM.PEL v2.0: QML, provenance híbrida, telemetría aeroespacial y SSA |
 
 ---
 
@@ -63,10 +63,10 @@ Este documento presenta la matriz oficial y corregida de **ALICES** (sistemas f�
 
 * **ALICE**: sistema físico real (aeronave, satélite, robot, etc.) con capacidades cuántico-integradas.
 * **BOB DT**: gemelo digital estructural (CAD, sensores, configuración).
-* **CHARLIE-T**: agente digital contextual — T-Transformation hacia GENTLE (narrativas, procedimientos, predicciones).
-* **GENTLE** *(Generative Engineering Narrative Transforming Language Engine)*: capa generativa de lenguaje; convierte el contexto de CHARLIE-T en salidas narrativas alineadas con ética y gobernanza.
+* **CHARLIE_T**: agente digital contextual — T-Transformation hacia GENTLE (narrativas, procedimientos, predicciones).
+* **GENTLE** *(Generative Engineering Narrative Transforming Language Engine)*: capa generativa de lenguaje; convierte el contexto de CHARLIE_T en salidas narrativas alineadas con ética y gobernanza.
 * **BOOST** *(Bayesian-Optimized Output for Semantic Transformation)*: capa de optimización y despliegue que escala y afina las salidas de GENTLE para producción.
-* **Descripción Funcional**: resume el propósito operativo del sistema dentro del dominio GAIA-QAOA.
+* **Descripción Funcional**: resume el propósito operativo del sistema dentro del dominio GQAOA, INC.
 
 Este documento forma parte del `ALI-BOB-MAP-V1.0` y está alineado con el UTCS GAIA-QAO.
 

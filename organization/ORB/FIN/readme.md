@@ -4,7 +4,7 @@ Este documento README describe las responsabilidades, operaciones y entregables 
 
 ### **1. Misión y Alcance**
 
-La misión principal de ORB-FIN es la gestión integral de los recursos financieros del programa Global Quantum Aerospace Organization Advent (GQAOA). Esto incluye la planificación estratégica, la asignación de presupuesto, el control de costes, el análisis de inversiones y la gestión de riesgos financieros, garantizando que el programa disponga de los recursos necesarios para alcanzar sus ambiciosos objetivos tecnológicos y operacionales.
+La misión principal de ORB-FIN es la gestión integral de los recursos financieros del programa GAIA QUANTUM AMPEL OPT-INS ARCHITECTURE, INC. (GQAOA, INC.). Esto incluye la planificación estratégica, la asignación de presupuesto, el control de costes, el análisis de inversiones y la gestión de riesgos financieros, garantizando que el programa disponga de los recursos necesarios para alcanzar sus ambiciosos objetivos tecnológicos y operacionales.
 
 ---
 
