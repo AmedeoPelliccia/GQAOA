@@ -1,7 +1,7 @@
 # GTL — Generative Transgentle Language
 
 **Document ID:** GAIA-QAO-GTL-SPEC-001  
-**Version:** 1.0.0  
+**Version:** 1.4.0  
 **Date:** 2026-04-08  
 **Status:** Draft  
 **Owner:** Office of the CTO / GQAOA Architecture Board
