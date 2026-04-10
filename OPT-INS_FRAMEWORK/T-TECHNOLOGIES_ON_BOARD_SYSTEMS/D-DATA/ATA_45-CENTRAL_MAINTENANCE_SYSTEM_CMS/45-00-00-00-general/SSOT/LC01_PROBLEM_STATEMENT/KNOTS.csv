@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA45-00-00-K001,Central Maintenance System (CMS) — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA45-00-00-K002,Central Maintenance System (CMS) — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA45-00-00-K003,Central Maintenance System (CMS) — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

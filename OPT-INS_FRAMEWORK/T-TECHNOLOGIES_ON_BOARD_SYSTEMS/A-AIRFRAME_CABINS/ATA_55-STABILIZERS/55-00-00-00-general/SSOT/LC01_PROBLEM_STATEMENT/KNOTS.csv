@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA55-00-00-K001,Stabilizers — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA55-00-00-K002,Stabilizers — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA55-00-00-K003,Stabilizers — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

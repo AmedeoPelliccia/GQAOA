@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA31-00-00-K001,Indicating / Recording — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA31-00-00-K002,Indicating / Recording — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA31-00-00-K003,Indicating / Recording — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

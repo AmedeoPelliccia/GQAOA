@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-S10-00-00-K001,Simulation Environment — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-S10-00-00-K002,Simulation Environment — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-S10-00-00-K003,Simulation Environment — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

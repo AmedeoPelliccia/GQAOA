@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA32-00-00-K001,Landing Gear — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA32-00-00-K002,Landing Gear — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA32-00-00-K003,Landing Gear — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA20-00-00-K001,Standard Practices — Airframe — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA20-00-00-K002,Standard Practices — Airframe — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA20-00-00-K003,Standard Practices — Airframe — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

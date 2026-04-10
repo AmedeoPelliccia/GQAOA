@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IETP — AMPEL360 Quantum Resource Manager</title>
+<style>
+/* ===================================================================
+   IETP Stylesheet — AMPEL360 Quantum Resource Manager
+   Technical Briefing  |  TRL 7  |  CRL 6
+   =================================================================== */
+
+:root {
+  --clr-primary:   #0b3d91;
+  --clr-accent:    #fc3d21;
+  --clr-bg:        #f4f6f9;
+  --clr-surface:   #ffffff;
+  --clr-text:      #1e1e1e;
+  --clr-muted:     #6b7280;
+  --clr-border:    #d1d5db;
+  --clr-warning-bg:#fff3cd;
+  --clr-warning-bd:#ffc107;
+  --clr-caution-bg:#f8d7da;
+  --clr-caution-bd:#dc3545;
+  --clr-info-bg:   #d1ecf1;
+  --clr-info-bd:   #17a2b8;
+  --radius:        6px;
+  --font-main:     'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-mono:     'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font-main);
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  line-height: 1.65;
+  font-size: 15px;
+}
+
+/* -- Header ----------------------------------------------------------- */
+header {
+  background: linear-gradient(135deg, var(--clr-primary) 0%, #1a5cad 100%);
+  color: #fff;
+  padding: 2rem 2.5rem;
+}
+header h1 { margin: 0 0 .25rem; font-size: 1.8rem; letter-spacing: .5px; }
+header .subtitle { opacity: .85; font-size: 1rem; }
+header .meta { margin-top: 1rem; font-size: .85rem; opacity: .75; display: flex; gap: 2rem; flex-wrap: wrap; }
+header .meta span { white-space: nowrap; }
+
+/* -- Navigation ------------------------------------------------------- */
+nav.toc {
+  background: var(--clr-surface);
+  border-bottom: 1px solid var(--clr-border);
+  padding: 1rem 2.5rem;
+  position: sticky; top: 0; z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,.06);
+}
+nav.toc a {
+  color: var(--clr-primary);
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-size: .9rem;
+  font-weight: 500;
+}
+nav.toc a:hover { text-decoration: underline; }
+
+/* -- Main content ----------------------------------------------------- */
+main { max-width: 1100px; margin: 0 auto; padding: 2rem 2.5rem 4rem; }
+
+section { margin-bottom: 3rem; }
+section > h2 {
+  font-size: 1.35rem;
+  color: var(--clr-primary);
+  border-bottom: 2px solid var(--clr-primary);
+  padding-bottom: .35rem;
+  margin-bottom: 1.25rem;
+}
+h3 { font-size: 1.1rem; margin-top: 1.5rem; }
+h4 { font-size: 1rem; margin-top: 1.2rem; color: var(--clr-muted); }
+
+p, ul, ol { margin-top: .5rem; margin-bottom: .75rem; }
+ul, ol { padding-left: 1.5rem; }
+li { margin-bottom: .3rem; }
+
+code, .mono { font-family: var(--font-mono); font-size: .92em; }
+pre {
+  background: #1e293b; color: #e2e8f0;
+  padding: 1rem 1.25rem; border-radius: var(--radius);
+  overflow-x: auto; font-size: .88rem; line-height: 1.5;
+}
+
+/* -- Tables ----------------------------------------------------------- */
+table {
+  width: 100%; border-collapse: collapse; margin: 1rem 0;
+  font-size: .92rem;
+}
+th, td {
+  padding: .55rem .75rem;
+  border: 1px solid var(--clr-border);
+  text-align: left;
+}
+th {
+  background: var(--clr-primary);
+  color: #fff; font-weight: 600;
+  white-space: nowrap;
+}
+tr:nth-child(even) { background: #f9fafb; }
+
+/* -- Alert boxes ------------------------------------------------------ */
+.alert {
+  border-left: 4px solid;
+  padding: .85rem 1.1rem;
+  border-radius: var(--radius);
+  margin: 1rem 0;
+  font-size: .93rem;
+}
+.alert-warning  { background: var(--clr-warning-bg); border-color: var(--clr-warning-bd); }
+.alert-caution  { background: var(--clr-caution-bg); border-color: var(--clr-caution-bd); }
+.alert-info     { background: var(--clr-info-bg);    border-color: var(--clr-info-bd); }
+.alert strong   { display: block; margin-bottom: .25rem; }
+
+/* -- Figures ---------------------------------------------------------- */
+figure {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+figure .diagram {
+  display: inline-block;
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+figcaption {
+  font-size: .85rem;
+  color: var(--clr-muted);
+  margin-top: .4rem;
+}
+
+/* -- Legend box -------------------------------------------------------- */
+.legend {
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  border-radius: var(--radius);
+  padding: .75rem 1rem;
+  margin: 1rem 0;
+  font-size: .9rem;
+}
+.legend dt { font-weight: 700; font-family: var(--font-mono); display: inline; }
+.legend dd { display: inline; margin: 0 0 0 .25rem; }
+.legend dd::after { content: ''; display: block; margin-bottom: .3rem; }
+
+/* -- Footer ----------------------------------------------------------- */
+footer {
+  text-align: center;
+  font-size: .8rem;
+  color: var(--clr-muted);
+  padding: 2rem;
+  border-top: 1px solid var(--clr-border);
+}
+
+/* -- Responsive ------------------------------------------------------- */
+@media (max-width: 768px) {
+  header, nav.toc, main { padding-left: 1rem; padding-right: 1rem; }
+  nav.toc a { display: block; margin: .35rem 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- ================================================================== -->
+<!--  HEADER                                                            -->
+<!-- ================================================================== -->
+<header>
+  <h1>AMPEL360 Quantum Resource Manager</h1>
+  <div class="subtitle">Interactive Electronic Technical Publication (IETP) — System Specification</div>
+  <div class="meta">
+    <span><strong>Document&nbsp;ID:</strong> GQAOA-IETP-QRM-001</span>
+    <span><strong>Revision:</strong> A</span>
+    <span><strong>Date:</strong> 2026-04-08</span>
+    <span><strong>TRL:</strong> 7</span>
+    <span><strong>CRL:</strong> 6</span>
+    <span><strong>Classification:</strong> UNCLASSIFIED / FOUO</span>
+    <span><strong>Source:</strong> <code>src/quantum/resource_manager.py</code></span>
+  </div>
+</header>
+
+<!-- ================================================================== -->
+<!--  TABLE OF CONTENTS                                                 -->
+<!-- ================================================================== -->
+<nav class="toc" aria-label="Table of Contents">
+  <a href="#sec-intro">0&nbsp;Introduction</a>
+  <a href="#sec-alloc">1&nbsp;QPU Allocation</a>
+  <a href="#sec-queue">2&nbsp;Circuit Queue</a>
+  <a href="#sec-monitor">3&nbsp;Monitoring</a>
+  <a href="#sec-hybrid">4&nbsp;Hybrid Orchestration</a>
+  <a href="#sec-api">5&nbsp;API Reference</a>
+</nav>
+
+<main>
+
+<!-- ================================================================== -->
+<!--  SECTION 0 — Introduction                                         -->
+<!-- ================================================================== -->
+<section id="sec-intro">
+<h2>0 &nbsp; Introduction</h2>
+
+<h3>0.1 &nbsp; Purpose</h3>
+<p>This Interactive Electronic Technical Publication (IETP) defines the
+complete specification for the <strong>AMPEL360 Quantum Resource Manager
+(QRM)</strong>&nbsp;— the subsystem responsible for managing Quantum
+Processing Unit (QPU) resources, circuit execution scheduling, telemetry
+monitoring, and quantum-classical hybrid orchestration across all
+AMPEL360 platform variants (Q100, Q250, PLUS, PLUS+, AC-MACH).</p>
+
+<h3>0.2 &nbsp; Scope</h3>
+<p>The QRM interfaces with the universal quantum platform binary
+(<code>AMPEL360-UNIVERSAL-002_Quantum_Platform.bin</code>) and operates
+under the Core OS real-time kernel. The reference implementation resides
+at <code>src/quantum/resource_manager.py</code>. This document is
+structured into four subsystem specifications, each corresponding to a
+major functional area depicted in <a href="#fig-arch">Figure&nbsp;1</a>
+below.</p>
+
+<h3>0.3 &nbsp; Applicable Documents</h3>
+<table>
+<tr><th>ID</th><th>Title</th></tr>
+<tr><td>DO-178C</td><td>Software Considerations in Airborne Systems — DAL&nbsp;B</td></tr>
+<tr><td>ARP4754A</td><td>Development of Civil Aircraft and Systems</td></tr>
+<tr><td>GQAOA-ARCH-001</td><td>GAI-A-AMAR-AGGIX Architecture (normative)</td></tr>
+<tr><td>GQAOA-QPU-ICD-001</td><td>QPU Interface Control Document</td></tr>
+</table>
+
+<!-- Figure 1 — System Architecture Overview -->
+<figure id="fig-arch">
+  <div class="diagram">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" width="760" height="340" role="img" aria-label="Figure 1: AMPEL360 QRM System Architecture">
+      <rect width="760" height="340" fill="#f8fafc"/>
+      <!-- title -->
+      <text x="380" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="#0b3d91">AMPEL360 Quantum Resource Manager — System Architecture</text>
+      <!-- QPU Allocator -->
+      <rect x="30"  y="55" width="160" height="90" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+      <text x="110" y="80" text-anchor="middle" font-size="11" font-weight="600" fill="#1e40af">QPU Allocator</text>
+      <text x="110" y="97" text-anchor="middle" font-size="9" fill="#374151">Scoring · Scheduling</text>
+      <text x="110" y="112" text-anchor="middle" font-size="9" fill="#374151">Dynamic Reallocation</text>
+      <text x="110" y="127" text-anchor="middle" font-size="9" fill="#374151">QPU Registry</text>
+      <!-- Circuit Queue -->
+      <rect x="220" y="55" width="160" height="90" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="300" y="80" text-anchor="middle" font-size="11" font-weight="600" fill="#92400e">Circuit Queue</text>
+      <text x="300" y="97" text-anchor="middle" font-size="9" fill="#374151">Priority Heap (depth≤512)</text>
+      <text x="300" y="112" text-anchor="middle" font-size="9" fill="#374151">Submit · Cancel · Retry</text>
+      <text x="300" y="127" text-anchor="middle" font-size="9" fill="#374151">Eviction Policy</text>
+      <!-- Resource Monitor -->
+      <rect x="410" y="55" width="160" height="90" rx="6" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
+      <text x="490" y="80" text-anchor="middle" font-size="11" font-weight="600" fill="#065f46">Resource Monitor</text>
+      <text x="490" y="97" text-anchor="middle" font-size="9" fill="#374151">Metric Ingestion (1 Hz)</text>
+      <text x="490" y="112" text-anchor="middle" font-size="9" fill="#374151">Threshold Alerts</text>
+      <text x="490" y="127" text-anchor="middle" font-size="9" fill="#374151">Hot / Warm / Cold Store</text>
+      <!-- Hybrid Orchestrator -->
+      <rect x="600" y="55" width="140" height="90" rx="6" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1.5"/>
+      <text x="670" y="80" text-anchor="middle" font-size="11" font-weight="600" fill="#5b21b6">Hybrid Orch.</text>
+      <text x="670" y="97" text-anchor="middle" font-size="9" fill="#374151">VQE / QAOA Loops</text>
+      <text x="670" y="112" text-anchor="middle" font-size="9" fill="#374151">State Sync</text>
+      <text x="670" y="127" text-anchor="middle" font-size="9" fill="#374151">Error Mitigation</text>
+      <!-- Arrows -->
+      <line x1="190" y1="100" x2="220" y2="100" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="380" y1="100" x2="410" y2="100" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="570" y1="100" x2="600" y2="100" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+      <!-- QPU Hardware row -->
+      <rect x="30" y="190" width="350" height="60" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+      <text x="205" y="215" text-anchor="middle" font-size="11" font-weight="600" fill="#991b1b">QPU Hardware Layer</text>
+      <text x="205" y="232" text-anchor="middle" font-size="9" fill="#374151">QPU-0 … QPU-N  ·  Qubit Arrays  ·  Cryogenic Control  ·  Readout Electronics</text>
+      <!-- Classical layer -->
+      <rect x="410" y="190" width="330" height="60" rx="6" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="1.5"/>
+      <text x="575" y="215" text-anchor="middle" font-size="11" font-weight="600" fill="#0c4a6e">Classical Compute Layer</text>
+      <text x="575" y="232" text-anchor="middle" font-size="9" fill="#374151">CPU Cluster  ·  GPU Accelerators  ·  Parameter Optimiser  ·  RTOS Kernel</text>
+      <!-- Vertical connectors -->
+      <line x1="110" y1="145" x2="110" y2="190" stroke="#64748b" stroke-width="1" stroke-dasharray="5,3"/>
+      <line x1="300" y1="145" x2="300" y2="190" stroke="#64748b" stroke-width="1" stroke-dasharray="5,3"/>
+      <line x1="490" y1="145" x2="490" y2="190" stroke="#64748b" stroke-width="1" stroke-dasharray="5,3"/>
+      <line x1="670" y1="145" x2="670" y2="190" stroke="#64748b" stroke-width="1" stroke-dasharray="5,3"/>
+      <!-- Façade box -->
+      <rect x="150" y="280" width="460" height="45" rx="6" fill="#0b3d91" stroke="#0b3d91"/>
+      <text x="380" y="308" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">QuantumResourceManager  (Façade)</text>
+      <line x1="380" y1="250" x2="380" y2="280" stroke="#0b3d91" stroke-width="1.5" marker-end="url(#arr2)"/>
+      <!-- Arrow markers -->
+      <defs>
+        <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#64748b"/></marker>
+        <marker id="arr2" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#0b3d91"/></marker>
+      </defs>
+    </svg>
+  </div>
+  <figcaption>Figure 1 — AMPEL360 Quantum Resource Manager system architecture showing the four subsystems,
+  hardware/classical layers, and the top-level façade.</figcaption>
+</figure>
+
+<p>As illustrated in <a href="#fig-arch">Figure&nbsp;1</a>, the QRM
+comprises four primary subsystems — QPU Allocator, Circuit Queue, Resource
+Monitor, and Hybrid Orchestrator — each interfacing with the QPU hardware
+layer and the classical compute layer.  The <code>QuantumResourceManager</code>
+façade class exposes a unified API that coordinates all subsystem
+interactions.</p>
+</section>
+
+<!-- ================================================================== -->
+<!--  SECTION 1 — QPU Allocation and Scheduling Subsystem               -->
+<!-- ================================================================== -->
+<section id="sec-alloc">
+<h2>1 &nbsp; QPU Allocation and Scheduling Subsystem</h2>
+
+<h3>1.1 &nbsp; Functional Overview</h3>
+<p>The QPU Allocation subsystem is responsible for selecting the optimal
+Quantum Processing Unit for each submitted circuit job based on a
+composite scoring algorithm.  It maintains a live registry of all
+available QPUs, their operational status, and current workload.  The
+scheduling flow is depicted in <a href="#fig-sched">Figure&nbsp;2</a>.</p>
+
+<!-- Figure 2 — Scheduling Flow -->
+<figure id="fig-sched">
+  <div class="diagram">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 200" width="700" height="200" role="img" aria-label="Figure 2: QPU Scheduling Flow">
+      <rect width="700" height="200" fill="#f8fafc"/>
+      <text x="350" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#0b3d91">QPU Scheduling Decision Flow</text>
+      <!-- Nodes -->
+      <rect x="20"  y="55" width="110" height="40" rx="20" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+      <text x="75"  y="80" text-anchor="middle" font-size="10" fill="#1e40af">Job Received</text>
+      <rect x="160" y="55" width="120" height="40" rx="6"  fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="220" y="80" text-anchor="middle" font-size="10" fill="#92400e">Queue Check</text>
+      <rect x="310" y="55" width="120" height="40" rx="6"  fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
+      <text x="370" y="80" text-anchor="middle" font-size="10" fill="#065f46">Score QPUs</text>
+      <rect x="460" y="55" width="110" height="40" rx="6"  fill="#ede9fe" stroke="#8b5cf6" stroke-width="1.5"/>
+      <text x="515" y="80" text-anchor="middle" font-size="10" fill="#5b21b6">Allocate Best</text>
+      <rect x="600" y="55" width="80"  height="40" rx="20" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+      <text x="640" y="80" text-anchor="middle" font-size="10" fill="#166534">Execute</text>
+      <!-- Arrows -->
+      <line x1="130" y1="75" x2="160" y2="75" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="280" y1="75" x2="310" y2="75" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="430" y1="75" x2="460" y2="75" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="570" y1="75" x2="600" y2="75" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+      <!-- No QPU branch -->
+      <line x1="515" y1="95" x2="515" y2="150" stroke="#ef4444" stroke-width="1" stroke-dasharray="4,3"/>
+      <rect x="455" y="150" width="120" height="30" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+      <text x="515" y="170" text-anchor="middle" font-size="9" fill="#991b1b">Re-queue (wait)</text>
+      <text x="530" y="130" font-size="8" fill="#ef4444">No QPU avail.</text>
+    </svg>
+  </div>
+  <figcaption>Figure 2 — QPU scheduling decision flow from job receipt through queue validation, multi-criteria scoring, allocation, and execution.</figcaption>
+</figure>
+
+<p>As shown in <a href="#fig-sched">Figure&nbsp;2</a>, when no QPU is
+available the job is re-queued and will be retried during the next
+scheduling pass initiated by <code>schedule_pending()</code>.</p>
+
+<h3>1.2 &nbsp; Scoring Algorithm</h3>
+
+<p>The allocator computes a composite score <em>S(q, j)</em> for each
+candidate QPU&nbsp;<em>q</em> and circuit job&nbsp;<em>j</em>:</p>
+
+<pre>S(q, j) = w_p · U_lvl(j)  +  w_f · F_avg(q)  -  w_e · E_rate(q)  -  w_d · C_depth(j)</pre>
+
+<div class="legend">
+  <dl>
+    <dt>U_lvl(j)</dt><dd>— Normalised user priority level for job <em>j</em>. Mapped from the <code>CircuitPriority</code> enum (0&nbsp;=&nbsp;CRITICAL … 4&nbsp;=&nbsp;BACKGROUND) to a continuous range [1.0&nbsp;…&nbsp;0.0] via <code>1.0 − (priority / 4.0)</code>.</dd>
+    <dt>F_avg(q)</dt><dd>— Average gate fidelity of QPU&nbsp;<em>q</em>, ranging 0.0&nbsp;–&nbsp;1.0. Sourced from the latest calibration telemetry.</dd>
+    <dt>E_rate(q)</dt><dd>— Current aggregate error rate of QPU&nbsp;<em>q</em>, ranging 0.0&nbsp;–&nbsp;1.0. Higher values penalise the score.</dd>
+    <dt>C_depth(j)</dt><dd>— Normalised circuit depth of job&nbsp;<em>j</em>, computed as <code>estimated_depth / MAX_DEPTH_NORM</code> (capped at 1.0). Deeper circuits incur a scheduling penalty.</dd>
+    <dt>w_p</dt><dd>— User-priority weight (default&nbsp;0.40).</dd>
+    <dt>w_f</dt><dd>— Fidelity weight (default&nbsp;0.30).</dd>
+    <dt>w_e</dt><dd>— Error-rate penalty weight (default&nbsp;0.20).</dd>
+    <dt>w_d</dt><dd>— Circuit-depth penalty weight (default&nbsp;0.10).</dd>
+  </dl>
+</div>
+
+<h3>1.3 &nbsp; Allocation Criteria</h3>
+<ul>
+  <li><strong>Qubit capacity:</strong> the QPU must have <code>qubit_count ≥ job.min_qubits</code>.</li>
+  <li><strong>Availability:</strong> the QPU must be in <code>ONLINE</code> status with no currently assigned circuit.</li>
+  <li><strong>Score maximisation:</strong> among all eligible QPUs, the one with the highest composite score is selected.</li>
+</ul>
+
+<h3>1.4 &nbsp; Dynamic Reallocation</h3>
+
+<div class="alert alert-warning">
+  <strong>⚠ WARNING — QPU Status Transition</strong>
+  Before initiating dynamic reallocation, verify that displaced circuits
+  have not produced partial results.  Partial measurement data from
+  interrupted circuits is non-recoverable and must be discarded.
+</div>
+
+<p>When the Resource Monitor detects that a QPU has transitioned to
+<code>DEGRADED</code> status (e.g., due to increased error rates or
+reduced coherence times), the following reallocation procedure is
+executed:</p>
+
+<ol>
+  <li>The <code>reallocate_degraded()</code> method identifies all circuits currently assigned to degraded QPUs.</li>
+  <li>Affected circuits are unassigned from the degraded QPU and their status is reset to <code>QUEUED</code>.</li>
+  <li>The circuit is re-inserted into the priority queue for rescheduling on a healthy QPU.</li>
+  <li>The <code>schedule_pending()</code> method is invoked to attempt immediate reallocation.</li>
+</ol>
+
+<h3>1.5 &nbsp; QPU Status Model</h3>
+<table>
+<tr><th>Status</th><th>Description</th><th>Accepts New Circuits</th></tr>
+<tr><td><code>ONLINE</code></td><td>Fully operational, within calibration parameters</td><td>Yes</td></tr>
+<tr><td><code>DEGRADED</code></td><td>Operational but error rates exceed nominal thresholds</td><td>No (triggers reallocation)</td></tr>
+<tr><td><code>CALIBRATING</code></td><td>Undergoing automated calibration cycle</td><td>No</td></tr>
+<tr><td><code>MAINTENANCE</code></td><td>Scheduled or unscheduled maintenance window</td><td>No</td></tr>
+<tr><td><code>OFFLINE</code></td><td>Powered down or unreachable</td><td>No</td></tr>
+</table>
+</section>
+
+<!-- ================================================================== -->
+<!--  SECTION 2 — Circuit Queue Management Subsystem                    -->
+<!-- ================================================================== -->
+<section id="sec-queue">
+<h2>2 &nbsp; Circuit Queue Management Subsystem</h2>
+
+<h3>2.1 &nbsp; Queue Architecture</h3>
+<p>The circuit queue is implemented as a <strong>min-heap priority
+queue</strong> keyed on <code>(priority, submission_timestamp)</code>.
+This guarantees that higher-priority circuits are dequeued first, with
+FIFO ordering among circuits of equal priority.</p>
+
+<h3>2.2 &nbsp; Maximum Queue Depth</h3>
+<p>The maximum queue depth is <strong>512 circuits</strong> (constant
+<code>MAX_QUEUE_DEPTH = 512</code>).  This limit is enforced at
+submission time.</p>
+
+<h3>2.3 &nbsp; Priority Levels</h3>
+<table>
+<tr><th>Level</th><th>Enum Value</th><th>Typical Use Case</th></tr>
+<tr><td>CRITICAL</td><td>0</td><td>Safety-critical in-flight computations, real-time control loops</td></tr>
+<tr><td>HIGH</td><td>1</td><td>Hybrid orchestrator iterations, time-sensitive optimisations</td></tr>
+<tr><td>NORMAL</td><td>2</td><td>Standard user-submitted circuits</td></tr>
+<tr><td>LOW</td><td>3</td><td>Batch processing, non-urgent analyses</td></tr>
+<tr><td>BACKGROUND</td><td>4</td><td>Calibration circuits, diagnostic routines</td></tr>
+</table>
+
+<h3>2.4 &nbsp; Circuit Cancellation Strategy</h3>
+
+<div class="alert alert-caution">
+  <strong>⚠ CAUTION — Cancellation of Executing Circuits</strong>
+  Cancelling a circuit in <code>EXECUTING</code> status sets its state to
+  <code>CANCELLED</code>, but the QPU may continue processing until the
+  executor polls the status flag.  Do not assume instantaneous
+  termination.  Verify circuit status after cancellation before
+  resubmitting dependent circuits.
+</div>
+
+<p>Cancellation behaviour depends on the current circuit status:</p>
+<table>
+<tr><th>Current Status</th><th>Cancellation Action</th><th>QPU Released?</th></tr>
+<tr><td><code>QUEUED</code></td><td>Immediately removed from queue; status → <code>CANCELLED</code></td><td>N/A</td></tr>
+<tr><td><code>SCHEDULED</code></td><td>Status → <code>CANCELLED</code>; assigned QPU released</td><td>Yes</td></tr>
+<tr><td><code>EXECUTING</code></td><td>Status → <code>CANCELLED</code>; executor expected to abort on next poll</td><td>On executor acknowledgement</td></tr>
+<tr><td><code>COMPLETED</code></td><td>No action (already finished)</td><td>Already released</td></tr>
+<tr><td><code>CANCELLED</code></td><td>No action (idempotent)</td><td>Already released</td></tr>
+</table>
+
+<h3>2.5 &nbsp; Queue Overflow and Eviction Policy</h3>
+<p>When the queue is at maximum capacity (512 circuits) and a new
+submission arrives:</p>
+<ol>
+  <li>The system identifies the <strong>lowest-priority queued</strong> circuit in the heap.</li>
+  <li>If the incoming circuit has a <em>strictly higher</em> priority than the worst queued circuit, the worst circuit is <strong>evicted</strong> (status set to <code>CANCELLED</code>) and the new circuit is enqueued.</li>
+  <li>If the incoming circuit does not outrank any existing entry, a <code>RuntimeError</code> is raised and the submission is rejected.</li>
+</ol>
+
+<h3>2.6 &nbsp; Re-submission and Failure Handling</h3>
+<p>When a circuit fails during execution:</p>
+<ol>
+  <li>The job status is set to <code>FAILED</code> and the QPU is released.</li>
+  <li>The <code>resubmit(circuit_id)</code> method checks whether retries remain (<code>retries &lt; max_retries</code>, default 3).</li>
+  <li>If retries remain, the circuit is re-inserted into the queue with incremented retry count and status reset to <code>QUEUED</code>.</li>
+  <li>If retries are exhausted, the circuit remains in <code>FAILED</code> status and the owner is notified via the monitoring alert subsystem.</li>
+</ol>
+
+<h3>2.7 &nbsp; Circuit Lifecycle</h3>
+<!-- Figure 3 — Circuit State Machine -->
+<figure id="fig-states">
+  <div class="diagram">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 170" width="650" height="170" role="img" aria-label="Figure 3: Circuit Job State Machine">
+      <rect width="650" height="170" fill="#f8fafc"/>
+      <text x="325" y="20" text-anchor="middle" font-size="13" font-weight="700" fill="#0b3d91">Circuit Job State Machine</text>
+      <!-- States -->
+      <rect x="20"  y="60" width="85" height="32" rx="16" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+      <text x="62"  y="81" text-anchor="middle" font-size="10" fill="#1e40af">QUEUED</text>
+      <rect x="140" y="60" width="95" height="32" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="187" y="81" text-anchor="middle" font-size="10" fill="#92400e">SCHEDULED</text>
+      <rect x="270" y="60" width="95" height="32" rx="6" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
+      <text x="317" y="81" text-anchor="middle" font-size="10" fill="#065f46">EXECUTING</text>
+      <rect x="400" y="45" width="100" height="32" rx="16" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+      <text x="450" y="66" text-anchor="middle" font-size="10" fill="#166534">COMPLETED</text>
+      <rect x="400" y="95" width="85" height="32" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+      <text x="442" y="116" text-anchor="middle" font-size="10" fill="#991b1b">FAILED</text>
+      <rect x="540" y="60" width="95" height="32" rx="6" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5"/>
+      <text x="587" y="81" text-anchor="middle" font-size="10" fill="#4b5563">CANCELLED</text>
+      <!-- Transitions -->
+      <line x1="105" y1="76" x2="140" y2="76" stroke="#64748b" stroke-width="1.2" marker-end="url(#arr)"/>
+      <line x1="235" y1="76" x2="270" y2="76" stroke="#64748b" stroke-width="1.2" marker-end="url(#arr)"/>
+      <line x1="365" y1="68" x2="400" y2="61" stroke="#22c55e" stroke-width="1.2" marker-end="url(#arr)"/>
+      <line x1="365" y1="84" x2="400" y2="106" stroke="#ef4444" stroke-width="1.2" marker-end="url(#arr)"/>
+      <!-- Cancel arrows -->
+      <line x1="62"  y1="92" x2="540" y2="80" stroke="#9ca3af" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+      <line x1="187" y1="92" x2="540" y2="78" stroke="#9ca3af" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+      <line x1="317" y1="92" x2="540" y2="77" stroke="#9ca3af" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+      <!-- Retry arrow -->
+      <path d="M442,127 C442,150 62,150 62,92" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+      <text x="250" y="160" text-anchor="middle" font-size="8" fill="#f59e0b">retry (if retries &lt; max_retries)</text>
+    </svg>
+  </div>
+  <figcaption>Figure 3 — Circuit job state machine showing transitions between lifecycle states, including cancellation paths and retry loop.</figcaption>
+</figure>
+
+<p><a href="#fig-states">Figure&nbsp;3</a> shows the full state machine
+governing circuit lifecycle.  All three active states (QUEUED, SCHEDULED,
+EXECUTING) may transition to CANCELLED.  The FAILED state supports a
+retry loop back to QUEUED, limited by <code>max_retries</code>.</p>
+</section>
+
+<!-- ================================================================== -->
+<!--  SECTION 3 — Resource Monitoring and Metrics Subsystem             -->
+<!-- ================================================================== -->
+<section id="sec-monitor">
+<h2>3 &nbsp; Resource Monitoring and Metrics Subsystem</h2>
+
+<h3>3.1 &nbsp; Monitored Resources</h3>
+<table>
+<tr><th>Category</th><th>Metric</th><th>Unit</th><th>Sampling Freq.</th></tr>
+<tr><td rowspan="4">Quantum (per QPU)</td><td>T1 relaxation time</td><td>μs</td><td>1 Hz</td></tr>
+<tr><td>T2 coherence time</td><td>μs</td><td>1 Hz</td></tr>
+<tr><td>Average gate fidelity</td><td>dimensionless (0–1)</td><td>1 Hz</td></tr>
+<tr><td>Aggregate error rate</td><td>dimensionless (0–1)</td><td>1 Hz</td></tr>
+<tr><td rowspan="2">QPU Operational</td><td>QPU uptime</td><td>%</td><td>0.1 Hz</td></tr>
+<tr><td>QPU status transitions</td><td>event count</td><td>event-driven</td></tr>
+<tr><td rowspan="3">Classical</td><td>CPU utilisation</td><td>%</td><td>5 Hz</td></tr>
+<tr><td>Memory utilisation</td><td>%</td><td>5 Hz</td></tr>
+<tr><td>Network latency (QPU ↔ classical)</td><td>ms</td><td>5 Hz</td></tr>
+<tr><td>Queue</td><td>Current queue depth</td><td>count</td><td>1 Hz</td></tr>
+</table>
+
+<h3>3.2 &nbsp; Data Storage Requirements</h3>
+
+<table>
+<tr><th>Storage Tier</th><th>Resolution</th><th>Retention</th><th>Database</th><th>Purpose</th></tr>
+<tr>
+  <td><strong>Hot</strong></td>
+  <td>Native (1 s)</td>
+  <td>24 hours</td>
+  <td>In-memory ring buffer (86 400 samples per metric)</td>
+  <td>Real-time dashboards, live alerting</td>
+</tr>
+<tr>
+  <td><strong>Warm</strong></td>
+  <td>1 s</td>
+  <td>90 days</td>
+  <td>Time-series database (e.g., InfluxDB / TimescaleDB)</td>
+  <td>Trend analysis, incident investigation</td>
+</tr>
+<tr>
+  <td><strong>Cold</strong></td>
+  <td>5 min aggregated (avg, min, max, p99)</td>
+  <td>365 days</td>
+  <td>Object storage (S3-compatible) with Parquet format</td>
+  <td>Long-term capacity planning, regulatory archival</td>
+</tr>
+</table>
+
+<h3>3.3 &nbsp; Alerting Mechanisms</h3>
+
+<div class="alert alert-info">
+  <strong>ℹ NOTE — Current Alert Emission Behavior</strong>
+  The current <code>ResourceMonitor</code> emits an <code>Alert</code> for
+  each out-of-bounds sample. Operators should therefore expect repeated
+  notifications during sustained threshold violations unless downstream
+  alert suppression or deduplication is configured separately.
+</div>
+
+<p>Alerts are triggered when any metric sample falls outside the
+configured threshold bounds (set via
+<code>monitor.set_threshold(metric, low, high)</code>).</p>
+
+<table>
+<tr><th>Severity</th><th>Trigger Example</th><th>Notification Channel</th></tr>
+<tr><td><code>INFO</code></td><td>QPU status transition (ONLINE → CALIBRATING)</td><td>Dashboard log, metrics endpoint</td></tr>
+<tr><td><code>WARNING</code></td><td>Gate fidelity &lt; 0.990, error rate &gt; 0.02</td><td>Dashboard + email to QPU ops team</td></tr>
+<tr><td><code>CRITICAL</code></td><td>QPU offline, T2 &lt; 10 μs, queue depth &gt; 480</td><td>Dashboard + PagerDuty + SMS</td></tr>
+</table>
+
+<p>Alert callbacks are registered via
+<code>monitor.register_alert_callback(fn)</code>.  Each callback receives
+an <code>Alert</code> dataclass instance with fields for
+<code>alert_id</code>, <code>severity</code>, <code>metric_name</code>,
+<code>message</code>, <code>timestamp</code>, <code>qpu_id</code>, and
+<code>acknowledged</code>.</p>
+
+<h3>3.4 &nbsp; Metric Flow</h3>
+<!-- Figure 4 — Metric Data Flow -->
+<figure id="fig-metrics">
+  <div class="diagram">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 140" width="700" height="140" role="img" aria-label="Figure 4: Metric Data Flow">
+      <rect width="700" height="140" fill="#f8fafc"/>
+      <text x="350" y="20" text-anchor="middle" font-size="13" font-weight="700" fill="#0b3d91">Metric Data Flow — Hot → Warm → Cold</text>
+      <!-- Stages -->
+      <rect x="20"  y="50" width="120" height="50" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+      <text x="80"  y="72" text-anchor="middle" font-size="10" font-weight="600" fill="#991b1b">QPU / Classical</text>
+      <text x="80"  y="88" text-anchor="middle" font-size="9" fill="#374151">Telemetry Source</text>
+      <rect x="180" y="50" width="130" height="50" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+      <text x="245" y="72" text-anchor="middle" font-size="10" font-weight="600" fill="#166534">Hot Store</text>
+      <text x="245" y="88" text-anchor="middle" font-size="9" fill="#374151">Ring Buffer · 24 h</text>
+      <rect x="350" y="50" width="130" height="50" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="415" y="72" text-anchor="middle" font-size="10" font-weight="600" fill="#92400e">Warm Store</text>
+      <text x="415" y="88" text-anchor="middle" font-size="9" fill="#374151">TSDB · 90 days</text>
+      <rect x="520" y="50" width="140" height="50" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+      <text x="590" y="72" text-anchor="middle" font-size="10" font-weight="600" fill="#1e40af">Cold Store</text>
+      <text x="590" y="88" text-anchor="middle" font-size="9" fill="#374151">Object / Parquet · 365 d</text>
+      <!-- Arrows -->
+      <line x1="140" y1="75" x2="180" y2="75" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="310" y1="75" x2="350" y2="75" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="480" y1="75" x2="520" y2="75" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+      <!-- Labels -->
+      <text x="160" y="118" font-size="8" fill="#6b7280">1 Hz / 5 Hz</text>
+      <text x="330" y="118" font-size="8" fill="#6b7280">batch flush</text>
+      <text x="500" y="118" font-size="8" fill="#6b7280">5 min downsample</text>
+    </svg>
+  </div>
+  <figcaption>Figure 4 — Metric data flow through the three-tier storage architecture: Hot (in-memory), Warm (TSDB), and Cold (object storage).</figcaption>
+</figure>
+
+<p><a href="#fig-metrics">Figure&nbsp;4</a> illustrates the metric
+pipeline.  Raw telemetry is ingested into the hot ring buffer at native
+frequency, periodically flushed to the warm time-series database, and
+downsampled to 5-minute aggregates for cold archival.</p>
+</section>
+
+<!-- ================================================================== -->
+<!--  SECTION 4 — Quantum-Classical Hybrid Orchestration Subsystem      -->
+<!-- ================================================================== -->
+<section id="sec-hybrid">
+<h2>4 &nbsp; Quantum-Classical Hybrid Orchestration Subsystem</h2>
+
+<h3>4.1 &nbsp; Purpose</h3>
+<p>The Hybrid Orchestrator manages iterative quantum-classical algorithms
+(e.g., VQE, QAOA) where a classical optimiser and a parameterised quantum
+circuit exchange data in a closed loop until convergence.</p>
+
+<h3>4.2 &nbsp; Orchestration Protocol</h3>
+
+<!-- Figure 5 — Hybrid Loop -->
+<figure id="fig-hybrid">
+  <div class="diagram">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" width="600" height="220" role="img" aria-label="Figure 5: Hybrid Quantum-Classical Loop">
+      <rect width="600" height="220" fill="#f8fafc"/>
+      <text x="300" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#0b3d91">Hybrid Quantum-Classical Iteration Loop</text>
+      <!-- Classical box -->
+      <rect x="30" y="50" width="200" height="130" rx="6" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="1.5"/>
+      <text x="130" y="72" text-anchor="middle" font-size="11" font-weight="600" fill="#0c4a6e">Classical Stage</text>
+      <text x="130" y="92"  text-anchor="middle" font-size="9" fill="#374151">1. Receive measurements</text>
+      <text x="130" y="107" text-anchor="middle" font-size="9" fill="#374151">2. Compute cost function</text>
+      <text x="130" y="122" text-anchor="middle" font-size="9" fill="#374151">3. Update parameters θ</text>
+      <text x="130" y="137" text-anchor="middle" font-size="9" fill="#374151">4. Check convergence</text>
+      <text x="130" y="157" text-anchor="middle" font-size="9" fill="#374151">   |Δθ| &lt; ε ?</text>
+      <!-- Quantum box -->
+      <rect x="370" y="50" width="200" height="130" rx="6" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1.5"/>
+      <text x="470" y="72" text-anchor="middle" font-size="11" font-weight="600" fill="#5b21b6">Quantum Stage</text>
+      <text x="470" y="92"  text-anchor="middle" font-size="9" fill="#374151">1. Instantiate circuit(θ)</text>
+      <text x="470" y="107" text-anchor="middle" font-size="9" fill="#374151">2. Submit to CircuitQueue</text>
+      <text x="470" y="122" text-anchor="middle" font-size="9" fill="#374151">3. QPU executes circuit</text>
+      <text x="470" y="137" text-anchor="middle" font-size="9" fill="#374151">4. Error mitigation</text>
+      <text x="470" y="157" text-anchor="middle" font-size="9" fill="#374151">5. Return measurements</text>
+      <!-- Arrows -->
+      <line x1="230" y1="90" x2="370" y2="90" stroke="#0b3d91" stroke-width="1.5" marker-end="url(#arr2)"/>
+      <text x="300" y="84" text-anchor="middle" font-size="9" fill="#0b3d91" font-weight="600">θ parameters</text>
+      <line x1="370" y1="150" x2="230" y2="150" stroke="#8b5cf6" stroke-width="1.5" marker-end="url(#arr)"/>
+      <text x="300" y="166" text-anchor="middle" font-size="9" fill="#8b5cf6" font-weight="600">measurements</text>
+      <!-- Converged exit -->
+      <line x1="130" y1="180" x2="130" y2="205" stroke="#22c55e" stroke-width="1.5" marker-end="url(#arr)"/>
+      <text x="130" y="218" text-anchor="middle" font-size="9" font-weight="600" fill="#166534">CONVERGED → result</text>
+    </svg>
+  </div>
+  <figcaption>Figure 5 — Iterative quantum-classical hybrid loop showing parameter exchange, circuit execution, measurement feedback, and convergence exit.</figcaption>
+</figure>
+
+<p>The iterative loop depicted in <a href="#fig-hybrid">Figure&nbsp;5</a>
+proceeds as follows:</p>
+<ol>
+  <li><strong>Initialisation:</strong> The classical optimiser provides an initial parameter vector&nbsp;θ₀ to the quantum circuit template.</li>
+  <li><strong>Quantum execution:</strong> The parameterised circuit is submitted to the Circuit Queue with <code>HIGH</code> priority.  The QPU Allocator selects the best available QPU and the circuit is executed.</li>
+  <li><strong>Measurement return:</strong> Raw measurement results are post-processed through error mitigation (zero-noise extrapolation, measurement-error mitigation matrices) before being returned to the classical stage.</li>
+  <li><strong>Classical update:</strong> The optimiser (e.g., COBYLA, L-BFGS-B, SPSA) evaluates the cost function, computes new parameters&nbsp;θ_{k+1}, and checks convergence: |Δθ| &lt; ε.</li>
+  <li><strong>Loop or terminate:</strong> If converged or <code>max_iterations</code> reached, the job completes and the final result is stored.  Otherwise, the loop repeats from step&nbsp;2.</li>
+</ol>
+
+<h3>4.3 &nbsp; State Synchronisation</h3>
+<p>Parameter vectors are serialised as tuples alongside the circuit
+template at each iteration.  The <code>HybridJob</code> dataclass
+maintains the canonical state:</p>
+<ul>
+  <li><code>parameters</code> — current parameter vector (updated after each classical step)</li>
+  <li><code>current_iteration</code> — iteration counter</li>
+  <li><code>converged</code> — boolean convergence flag</li>
+  <li><code>result</code> — final measurement result (populated on convergence)</li>
+</ul>
+
+<h3>4.4 &nbsp; Error Mitigation Strategies</h3>
+<table>
+<tr><th>Strategy</th><th>Description</th><th>When Applied</th></tr>
+<tr>
+  <td>Zero-Noise Extrapolation (ZNE)</td>
+  <td>Execute circuit at multiple noise scale factors and extrapolate to the zero-noise limit</td>
+  <td>Post-measurement, before feeding back to classical optimiser</td>
+</tr>
+<tr>
+  <td>Measurement Error Mitigation</td>
+  <td>Apply an inverse confusion matrix derived from calibration circuits to correct readout errors</td>
+  <td>Immediately after QPU readout</td>
+</tr>
+<tr>
+  <td>Dynamical Decoupling</td>
+  <td>Insert identity-equivalent pulse sequences during idle qubit periods to suppress decoherence</td>
+  <td>Circuit compilation stage (pre-execution)</td>
+</tr>
+<tr>
+  <td>Symmetry Verification</td>
+  <td>Post-select measurement results that satisfy known symmetry constraints of the target Hamiltonian</td>
+  <td>Post-measurement filtering</td>
+</tr>
+</table>
+
+<h3>4.5 &nbsp; Convergence Criteria</h3>
+<p>A hybrid job terminates when any of the following conditions is met:</p>
+<ul>
+  <li>The classical optimiser returns <code>None</code> (signalling convergence to the orchestrator).</li>
+  <li>The parameter update norm falls below <code>convergence_threshold</code> (default 1×10⁻⁶).</li>
+  <li>The iteration count reaches <code>max_iterations</code> (default 100).</li>
+</ul>
+</section>
+
+<!-- ================================================================== -->
+<!--  SECTION 5 — API Reference                                        -->
+<!-- ================================================================== -->
+<section id="sec-api">
+<h2>5 &nbsp; API Reference Summary</h2>
+
+<h3>5.1 &nbsp; Circuit Submission API</h3>
+<pre>
+circuit_id = mgr.queue.submit(
+    circuit_data=my_circuit,
+    priority=CircuitPriority.NORMAL,
+    owner="user@example.com",
+    estimated_depth=250,
+    min_qubits=8,
+    max_retries=3,
+)
+</pre>
+
+<h3>5.2 &nbsp; Status Retrieval API</h3>
+<pre>
+status = mgr.queue.get_status(circuit_id)    # → CircuitStatus enum
+job    = mgr.queue.get_job(circuit_id)        # → CircuitJob dataclass (full details)
+</pre>
+
+<h3>5.3 &nbsp; Cancellation API</h3>
+<pre>
+success = mgr.queue.cancel(circuit_id)        # → bool
+</pre>
+
+<h3>5.4 &nbsp; QPU Management API</h3>
+<pre>
+mgr.allocator.register_qpu(QPUDescriptor(
+    qpu_id="QPU-0",
+    qubit_count=127,
+    avg_gate_fidelity=0.9985,
+    t1_us=120.0,
+    t2_us=95.0,
+    error_rate=0.005,
+))
+mgr.allocator.update_qpu_status("QPU-0", QPUStatus.CALIBRATING)
+qpus = mgr.allocator.list_qpus()             # → List[QPUDescriptor]
+</pre>
+
+<h3>5.5 &nbsp; Monitoring API</h3>
+<pre>
+mgr.monitor.set_threshold("gate_fidelity", low=0.990, high=None)
+mgr.monitor.set_threshold("error_rate", low=None, high=0.020)
+
+mgr.monitor.record(MetricSample(
+    timestamp=time.time(),
+    metric_name="gate_fidelity",
+    value=0.9982,
+    qpu_id="QPU-0",
+))
+
+latest = mgr.monitor.get_latest("gate_fidelity", qpu_id="QPU-0")
+alerts = mgr.monitor.get_alerts(acknowledged=False)
+</pre>
+
+<h3>5.6 &nbsp; Hybrid Orchestration API</h3>
+<pre>
+job_id = mgr.orchestrator.create_hybrid_job(
+    classical_fn=my_optimizer,
+    circuit_template=ansatz,
+    initial_params=[0.1, 0.2, 0.3],
+    max_iterations=50,
+    convergence_threshold=1e-5,
+)
+done = mgr.orchestrator.step(job_id)
+done = mgr.orchestrator.feed_result(job_id, measurement_result)
+hjob = mgr.orchestrator.get_job(job_id)
+</pre>
+
+<h3>5.7 &nbsp; Façade API</h3>
+<pre>
+mgr = QuantumResourceManager()
+scheduled = mgr.schedule_pending()            # → int (count of newly scheduled)
+moved     = mgr.handle_degraded_qpus()        # → int (count rescheduled)
+</pre>
+</section>
+
+</main>
+
+<!-- ================================================================== -->
+<!--  FOOTER                                                            -->
+<!-- ================================================================== -->
+<footer>
+  <p>GQAOA-IETP-QRM-001 Rev&nbsp;A &nbsp;|&nbsp; AMPEL360 Quantum Resource Manager &nbsp;|&nbsp;
+  TRL&nbsp;7 · CRL&nbsp;6 &nbsp;|&nbsp; Digital Twin Archetype: Orionis &nbsp;|&nbsp;
+  Carbon Impact: 0&nbsp;kg&nbsp;CO₂e &nbsp;|&nbsp;
+  Generated for System Engineers &nbsp;|&nbsp; UNCLASSIFIED / FOUO</p>
+</footer>
+
+</body>
+</html>

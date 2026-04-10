@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA04-00-00-K001,Airworthiness Limitations — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA04-00-00-K002,Airworthiness Limitations — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA04-00-00-K003,Airworthiness Limitations — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

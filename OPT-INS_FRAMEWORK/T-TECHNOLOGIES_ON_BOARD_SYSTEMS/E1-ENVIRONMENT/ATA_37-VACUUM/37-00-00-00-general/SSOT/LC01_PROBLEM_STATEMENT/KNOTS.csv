@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA37-00-00-K001,Vacuum — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA37-00-00-K002,Vacuum — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA37-00-00-K003,Vacuum — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

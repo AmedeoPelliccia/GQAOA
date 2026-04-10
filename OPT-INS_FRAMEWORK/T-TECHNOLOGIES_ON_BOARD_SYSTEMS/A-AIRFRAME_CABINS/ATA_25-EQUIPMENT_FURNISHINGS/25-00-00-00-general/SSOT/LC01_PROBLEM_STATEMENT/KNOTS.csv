@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA25-00-00-K001,Equipment / Furnishings — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA25-00-00-K002,Equipment / Furnishings — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA25-00-00-K003,Equipment / Furnishings — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

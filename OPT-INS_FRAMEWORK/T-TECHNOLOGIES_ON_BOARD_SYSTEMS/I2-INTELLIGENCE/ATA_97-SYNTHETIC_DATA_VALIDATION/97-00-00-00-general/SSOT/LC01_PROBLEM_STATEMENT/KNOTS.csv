@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA97-00-00-K001,Synthetic Data Validation — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA97-00-00-K002,Synthetic Data Validation — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA97-00-00-K003,Synthetic Data Validation — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

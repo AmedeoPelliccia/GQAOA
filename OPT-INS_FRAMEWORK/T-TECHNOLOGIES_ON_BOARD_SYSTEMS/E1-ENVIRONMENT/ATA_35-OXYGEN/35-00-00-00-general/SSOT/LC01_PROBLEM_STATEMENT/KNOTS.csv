@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA35-00-00-K001,Oxygen — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA35-00-00-K002,Oxygen — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA35-00-00-K003,Oxygen — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

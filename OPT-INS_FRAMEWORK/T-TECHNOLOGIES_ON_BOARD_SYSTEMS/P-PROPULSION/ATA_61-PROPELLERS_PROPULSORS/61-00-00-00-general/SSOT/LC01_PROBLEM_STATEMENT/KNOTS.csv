@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA61-00-00-K001,Propellers / Propulsors — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA61-00-00-K002,Propellers / Propulsors — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA61-00-00-K003,Propellers / Propulsors — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

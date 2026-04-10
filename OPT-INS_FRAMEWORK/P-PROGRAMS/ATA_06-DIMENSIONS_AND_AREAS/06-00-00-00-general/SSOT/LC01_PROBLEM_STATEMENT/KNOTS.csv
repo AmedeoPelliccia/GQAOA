@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA06-00-00-K001,Dimensions and Areas — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA06-00-00-K002,Dimensions and Areas — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA06-00-00-K003,Dimensions and Areas — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

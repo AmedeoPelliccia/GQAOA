@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATAIN-00-00-K001,H₂ GSE and Supply Chain — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATAIN-00-00-K002,H₂ GSE and Supply Chain — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATAIN-00-00-K003,H₂ GSE and Supply Chain — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

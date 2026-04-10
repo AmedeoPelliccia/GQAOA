@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA10I-00-00-K001,Parking Mooring Storage RTS Infrastructure — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA10I-00-00-K002,Parking Mooring Storage RTS Infrastructure — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA10I-00-00-K003,Parking Mooring Storage RTS Infrastructure — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

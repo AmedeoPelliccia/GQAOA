@@ -1,0 +1,4 @@
+knu_id,knot_ref,action,responsible,deadline,status
+KNU-001,KNOT-ATA40-00-00-K001,Define problem boundaries,Q-DATAGOV,2026-05-01,PLANNED
+KNU-002,KNOT-ATA40-00-00-K002,Validate scope with stakeholders,Q-DATAGOV,2026-05-15,PLANNED
+KNU-003,KNOT-ATA40-00-00-K003,Collect stakeholder requirements,Q-DATAGOV,2026-05-30,PLANNED

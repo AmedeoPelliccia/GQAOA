@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA34-00-00-K001,Navigation — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA34-00-00-K002,Navigation — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA34-00-00-K003,Navigation — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

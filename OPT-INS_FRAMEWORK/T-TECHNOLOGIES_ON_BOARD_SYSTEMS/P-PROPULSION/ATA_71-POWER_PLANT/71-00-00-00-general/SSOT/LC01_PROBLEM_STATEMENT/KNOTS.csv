@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA71-00-00-K001,Power Plant — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA71-00-00-K002,Power Plant — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA71-00-00-K003,Power Plant — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

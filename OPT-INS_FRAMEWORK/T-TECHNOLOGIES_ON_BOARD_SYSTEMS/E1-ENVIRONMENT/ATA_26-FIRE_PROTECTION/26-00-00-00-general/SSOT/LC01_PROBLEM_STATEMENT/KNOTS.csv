@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA26-00-00-K001,Fire Protection — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA26-00-00-K002,Fire Protection — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA26-00-00-K003,Fire Protection — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

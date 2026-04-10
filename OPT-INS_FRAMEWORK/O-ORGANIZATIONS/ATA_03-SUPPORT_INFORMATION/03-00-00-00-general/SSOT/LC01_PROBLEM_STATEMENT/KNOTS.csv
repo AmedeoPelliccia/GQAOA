@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA03-00-00-K001,Support Information — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA03-00-00-K002,Support Information — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA03-00-00-K003,Support Information — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

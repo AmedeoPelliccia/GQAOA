@@ -1,0 +1,18 @@
+# Tokenomics — Traceability Tokens
+# Node: KNOT-ATA96-00-00
+# Programme: AMPEL360 Q100 / GAIA-SPACE-LAUNCHER / SPACET Q10
+
+token_class: ATA_DOCUMENT
+knot_prefix: "KNOT-ATA96-00-00"
+mint_policy:
+  trigger: LC01_APPROVAL
+  authority: Q-DATAGOV
+  ledger: AM.PEL_DAG
+token_attributes:
+  - knot_id
+  - lifecycle_phase
+  - approval_hash
+  - timestamp_utc
+circulation:
+  max_supply: null
+  burn_policy: ARCHIVE_ONLY

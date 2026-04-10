@@ -1,0 +1,4 @@
+milestone_id,title,start_date,end_date,status,dependency
+MS-001,Problem Statement Draft,2026-04-11,2026-04-30,IN_PROGRESS,
+MS-002,Requirements Capture,2026-05-01,2026-05-31,PLANNED,MS-001
+MS-003,Baseline Approval,2026-06-01,2026-06-15,PLANNED,MS-002

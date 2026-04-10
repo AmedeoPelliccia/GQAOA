@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA000-10-10-K001,Manuales Digitales S1000D — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA000-10-10-K002,Manuales Digitales S1000D — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA000-10-10-K003,Manuales Digitales S1000D — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

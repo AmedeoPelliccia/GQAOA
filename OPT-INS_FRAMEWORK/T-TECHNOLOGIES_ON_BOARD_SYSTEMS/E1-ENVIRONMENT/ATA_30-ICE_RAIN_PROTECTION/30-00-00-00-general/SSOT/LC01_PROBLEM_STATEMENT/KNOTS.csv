@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA30-00-00-K001,Ice and Rain Protection — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA30-00-00-K002,Ice and Rain Protection — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA30-00-00-K003,Ice and Rain Protection — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA56-00-00-K001,Windows — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA56-00-00-K002,Windows — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA56-00-00-K003,Windows — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

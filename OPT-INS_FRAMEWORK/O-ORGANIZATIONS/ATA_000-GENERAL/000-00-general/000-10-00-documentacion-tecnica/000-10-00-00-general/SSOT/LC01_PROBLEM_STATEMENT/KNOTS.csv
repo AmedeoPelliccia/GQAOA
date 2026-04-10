@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA000-10-00-K001,Documentación Técnica — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA000-10-00-K002,Documentación Técnica — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA000-10-00-K003,Documentación Técnica — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

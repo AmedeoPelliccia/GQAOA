@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA36-00-00-K001,Pneumatic — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA36-00-00-K002,Pneumatic — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA36-00-00-K003,Pneumatic — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA03I-00-00-K001,Support Infrastructure — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA03I-00-00-K002,Support Infrastructure — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA03I-00-00-K003,Support Infrastructure — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

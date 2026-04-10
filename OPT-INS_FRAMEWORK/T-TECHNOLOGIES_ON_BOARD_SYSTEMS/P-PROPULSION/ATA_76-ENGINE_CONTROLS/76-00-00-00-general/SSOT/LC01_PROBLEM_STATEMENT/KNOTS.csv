@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA76-00-00-K001,Engine Controls — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA76-00-00-K002,Engine Controls — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA76-00-00-K003,Engine Controls — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11

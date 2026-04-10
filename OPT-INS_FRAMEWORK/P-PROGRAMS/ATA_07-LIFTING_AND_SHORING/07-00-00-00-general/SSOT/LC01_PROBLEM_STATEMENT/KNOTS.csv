@@ -1,0 +1,4 @@
+knot_id,title,type,status,priority,owner,created
+KNOT-ATA07-00-00-K001,Lifting and Shoring — Problem Definition,PROBLEM,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA07-00-00-K002,Lifting and Shoring — Scope Boundary,SCOPE,OPEN,HIGH,Q-DATAGOV,2026-04-11
+KNOT-ATA07-00-00-K003,Lifting and Shoring — Stakeholder Needs,NEED,OPEN,MEDIUM,Q-DATAGOV,2026-04-11
