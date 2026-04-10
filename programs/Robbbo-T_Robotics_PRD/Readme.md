@@ -39,6 +39,7 @@ Coerentemente con l'architettura GQAOA, la triade MACCHIN-AR-IA opera attraverso
 | **BOB DT** | Il gemello digitale strutturale — modello CAD, sensori, configurazione cinematica |
 | **CHARLIE_T** | L'agente digitale contestuale — narrativa operativa, procedure, predizioni AI |
 
+> **Nota di nomenclatura:** in altre parti del repository questa stessa entità può comparire con la denominazione precedente **BOB DA** e con identificativi nel formato **BOB-DA-…**. In questo documento, **CHARLIE_T** è da intendersi come il rename/equivalente funzionale di **BOB DA**.
 ---
 
 ## 3. ROBOT.INCs — Tassonomia Operativa
