@@ -10,9 +10,9 @@ checks that the XSD would enforce, plus additional BREX-level
 checks relevant to the AMPEL360 project.
 
 Usage:
-    python s1000d_validator.py <path-to-dm.xml>
-    python s1000d_validator.py <directory>       # validate all .xml in tree
-    python s1000d_validator.py --self-test       # run built-in checks
+    python CSDB/s1000d_validator.py <path-to-dm.xml>
+    python CSDB/s1000d_validator.py <directory>       # validate all .xml in tree
+    python CSDB/s1000d_validator.py --self-test       # run built-in checks
 
 Exit codes:
     0  – all validations passed
