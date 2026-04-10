@@ -383,7 +383,7 @@ export default function ApeAdaptStudio() {
             APE ADAPT UI STUDIO
           </h1>
           <p style={{ fontSize: "0.7rem", color: "#64748b", margin: 0 }}>
-            Aided Prompt Engineering to Aerospace Digital Applications and Programming Technologies
+            Aided Prompt Engineering to Aerospace Digital Applications and Programming Technologies — Enhancing user interaction, streamlining development
           </p>
         </div>
       </div>

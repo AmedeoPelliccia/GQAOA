@@ -12,7 +12,7 @@
 
 ---
 
-> **Mission & Vision:** *Transforming aided prompt engineering into traceable aerospace digital applications and programming technologies, so that every engineering instruction reduces uncertainty, produces measurable artefacts, and rewards every contributor — one prompt, one artefact, one token at a time.*
+> **Mission & Vision:** *APE ADAPT UI Studio transforms aided prompt engineering into aerospace digital applications and programming technologies to enhance user interaction and streamline development processes — so that every engineering instruction reduces uncertainty, produces measurable artefacts, and rewards every contributor.*
 
 > *"L'ingegnere non scrive prompt — progetta istruzioni ingegneristiche tracciabili."*  
 > P(t) = KNOT → Prompt → KNU  
@@ -21,14 +21,17 @@
 ### Funzione di trasformazione
 
 ```
-APE  ──────────────►  ADAPT
-Aided Prompt           Aerospace Digital Applications
-Engineering            and Programming Technologies
+APE  ──────────────►  ADAPT  ──────────────►  UI STUDIO
+Aided Prompt           Aerospace Digital        User Interface
+Engineering            Applications and         Studio
+                       Programming Technologies
 
-       T: APE → ADAPT
+       T: APE → ADAPT → UI STUDIO
        T(prompt) = KNU ∈ SSOT
        ∀ prompt ∈ APE: ∃! KNU ∈ ADAPT
        dove ADAPT = { artefatti tracciabili × domini UTA × fasi LC }
+       UI STUDIO = interfaccia che potenzia l'interazione utente
+                   e ottimizza i processi di sviluppo
 ```
 
 ---
