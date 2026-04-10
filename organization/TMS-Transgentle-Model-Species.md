@@ -43,7 +43,7 @@ Following the GQAOA taxonomic convention (cf. ROBOT.INCs 8-class taxonomy), tran
 | Code | Subtype | Full Name | Domain | Description |
 |------|---------|-----------|--------|-------------|
 | **TGM-Σ** | Structural | Transgentle Structural Model | Digital Twin / ALICE-BOB DT | Transforms physical-structural states (geometry, materials, loads) while preserving certification integrity |
-| **TGM-Α** | Agentive | Transgentle Agent Model | CHARLIE_T / BOB DA | Transforms contextual narratives, predictions, and decision policies while keeping human override active |
+| **TGM-Α** | Agentive | Transgentle Agent Model | BOB DA (formerly CHARLIE_T) | Transforms contextual narratives, predictions, and decision policies while keeping human override active |
 | **TGM-Ψ** | Perceptual | Transgentle Perceptual Model | Sensors / QCSAA 940–949 | Transforms sensory data streams (quantum sensors, LiDAR, BCI) while preserving signal intelligibility |
 | **TGM-Λ** | Logical | Transgentle Logical Model | AI/ML / QCSAA 910–919 | Transforms inference rules, trained weights, and reasoning chains while maintaining explainability |
 | **TGM-Κ** | Cryptographic | Transgentle Cryptographic Model | Cybersecurity / CYB 800–899 | Transforms security states (key rotation, PQC migration) without disrupting operational continuity |
