@@ -6,6 +6,8 @@ from typing import Annotated
 from fastapi import APIRouter, File, Form, HTTPException, UploadFile
 from pydantic import BaseModel
 
+from api.routes.finex import finex_service
+
 ALLOWED_SOURCE_TYPES = {"text", "sensor_data", "logs", "images", "yaml", "csv"}
 
 router = APIRouter(prefix="/ingest", tags=["ingest"])
@@ -45,6 +47,14 @@ async def ingest(
         )
 
     genesis_source = meta.get("genesis_source", "GENESIS/O-KNOT")
+
+    # FINEX guard — reject requests on finalized entities
+    entity_id = meta.get("entity_id")
+    if entity_id:
+        try:
+            finex_service.enforce(entity_id)
+        except ValueError as exc:
+            raise HTTPException(status_code=403, detail=str(exc)) from exc
 
     content = await file.read()
     return IngestionReceipt(

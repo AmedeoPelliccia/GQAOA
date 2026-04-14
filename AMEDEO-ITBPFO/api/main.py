@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from api.routes import ingest, transform, validate
+from api.routes import finex, ingest, transform, validate
 
 app = FastAPI(
     title="AMEDEO-ITBPFO API",
@@ -24,6 +24,7 @@ app.add_middleware(
 app.include_router(ingest.router)
 app.include_router(transform.router)
 app.include_router(validate.router)
+app.include_router(finex.router)
 
 
 @app.get("/health", tags=["system"])
@@ -42,6 +43,6 @@ def root() -> dict:
             "Autonomous Multimodal Execution — Intergenerational Transformation "
             "to Best Processable Formatted Output"
         ),
-        "endpoints": ["/health", "/ingest", "/transform", "/validate"],
+        "endpoints": ["/health", "/ingest", "/transform", "/validate", "/finex"],
         "docs": "/docs",
     }

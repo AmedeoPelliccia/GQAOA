@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
+from api.routes.finex import finex_service
 from api.services.transformer import TransformerService
 
 router = APIRouter(prefix="/transform", tags=["transform"])
@@ -14,6 +15,7 @@ class TransformRequest(BaseModel):
     source_type: str = "text"
     uta_chapter: str = "000"
     lc_phase: str = "LC02"
+    entity_id: str | None = None
 
 
 class TransformResponse(BaseModel):
@@ -37,6 +39,13 @@ def transform(request: TransformRequest) -> TransformResponse:
             status_code=422,
             detail="Provide either 'ingestion_id' or 'raw_data'.",
         )
+
+    # FINEX guard — reject requests on finalized entities
+    if request.entity_id:
+        try:
+            finex_service.enforce(request.entity_id)
+        except ValueError as exc:
+            raise HTTPException(status_code=403, detail=str(exc)) from exc
 
     input_data = request.raw_data or f"<ref:{request.ingestion_id}>"
     artifact = _transformer.transform(input_data, request.source_type)

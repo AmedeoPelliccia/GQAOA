@@ -70,3 +70,34 @@ model:
     approval_authority: "GAIA-QAO Architecture Board (Q-DATAGOV)"
     change_process: "RFC → review → merge into versioned release"
     versioning: "Semantic versioning (MAJOR.MINOR.PATCH)"
+
+  finex:
+    description: >
+      FINEX (Final Execution) establishes a terminal endpoint for entities
+      (organizations, repositories, programs, companies, enterprises).
+      Once an entity reaches its FINEX phase, no further ingestion,
+      transformation, or stock requests are permitted against it.
+    entity_scopes:
+      - "organization"
+      - "repository"
+      - "program"
+      - "company"
+      - "enterprise"
+    terminal_phases:
+      - "LC14_DECOMMISSION"
+      - "CUSTOM"
+    enforcement:
+      ingest: "Reject with HTTP 403 if entity_id is finalized"
+      transform: "Reject with HTTP 403 if entity_id is finalized"
+      stock_requests: "Blocked — no new allocations after finalization"
+    record_fields:
+      - "entity_id"
+      - "entity_scope"
+      - "finex_phase"
+      - "reason"
+      - "authority"
+      - "finalized_at"
+      - "mission"
+      - "vision"
+      - "plan_summary"
+    irreversible: true
