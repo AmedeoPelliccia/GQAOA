@@ -105,6 +105,7 @@ Integration is governed by a feature-flag mechanism so core programs (AM.PEL, AM
 | **UTA Explorer** | [components/UTAExplorer.jsx](./components/UTAExplorer.jsx) | React interactive visualisation of the full UTA domain map |
 | **APE ADAPT UI Studio v1.0** | [GQAOA-APE-ADAPT-001.md](./GQAOA-APE-ADAPT-001.md) | Aided Prompt Engineering to Aerospace Digital Applications and Programming Technologies — structured prompt engineering studio for the CHARLIE-T → GENTLE → BOOST pipeline, with PQS scoring, template gallery, and KNOT/KNU traceability |
 | **APE ADAPT Studio** | [components/ApeAdaptStudio.jsx](./components/ApeAdaptStudio.jsx) | React interactive prompt engineering interface with PQS gauge, pipeline visualisation, template gallery, and prompt registry |
+| **LUT-RICICLATI v1.0** | [GQAOA-LUT-RICICLATI-001.md](./GQAOA-LUT-RICICLATI-001.md) | Libro Unico delle Tecnologie — Registro Integrato delle Configurazioni Industriali per il Ciclo di vita, Lineage, Aggiornamento Tecnologico e Innovazione. Tracks every technology across four states: In Uso, Disuso, Nuova Progettazione, Riassetti (RICICLATI), with DPP, circularity metrics and TT incentives |
 
 ## Legacy References
 
