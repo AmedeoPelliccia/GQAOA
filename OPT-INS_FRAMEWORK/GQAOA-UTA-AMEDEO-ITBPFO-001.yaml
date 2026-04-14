@@ -77,27 +77,72 @@ model:
       (organizations, repositories, programs, companies, enterprises).
       Once an entity reaches its FINEX phase, no further ingestion,
       transformation, or stock requests are permitted against it.
+      A cryptographically sealed .finex ZIP package is generated as
+      immutable proof of the terminal state.
     entity_scopes:
       - "organization"
       - "repository"
       - "program"
       - "company"
       - "enterprise"
+    pipeline_states:
+      - "PENDING"
+      - "INGESTED"
+      - "TRANSFORMED"
+      - "TERMINAL"
+    pipeline_transitions:
+      PENDING: ["INGESTED"]
+      INGESTED: ["TRANSFORMED"]
+      TRANSFORMED: ["TERMINAL"]
+      TERMINAL: []
     terminal_phases:
       - "LC14_DECOMMISSION"
       - "CUSTOM"
+    finex_file:
+      extension: ".finex"
+      format: "ZIP"
+      structure:
+        - "payload.json"
+        - "manifest.yaml"
+        - "integrity.sha256"
+        - "lock.json"
+      manifest_fields:
+        - "id"
+        - "type: finex_terminal"
+        - "revision"
+        - "effective_date"
+        - "entity_scope"
+        - "mission"
+        - "vision"
+        - "plan_phase"
+        - "compliance_refs"
+        - "integrity: {sha256: <hash>}"
+        - "terminal_lock: true"
+      lock_enforcement:
+        terminal: true
+        block_downstream: true
+        block_ingestion: true
+        block_transformation: true
+        block_stock_requests: true
     enforcement:
       ingest: "Reject with HTTP 403 if entity_id is finalized"
       transform: "Reject with HTTP 403 if entity_id is finalized"
+      finalize: "Reject with HTTP 400 if pipeline not TRANSFORMED"
       stock_requests: "Blocked — no new allocations after finalization"
-    record_fields:
-      - "entity_id"
-      - "entity_scope"
-      - "finex_phase"
-      - "reason"
-      - "authority"
-      - "finalized_at"
-      - "mission"
-      - "vision"
-      - "plan_summary"
+      ci_cd: "Reject PRs targeting *.finex directories"
+    mission_vision_alignment:
+      mission: "Captured in manifest.yaml and bound to the sealed package"
+      vision: "Captured in manifest.yaml and bound to the sealed package"
+      plan_phase: "Maps to lifecycle phase (e.g. LC02 → FINAL_DELIVERY)"
+      compliance_refs:
+        - "ATA_00-GENERAL"
+        - "STD_Metadata-Schema-Guide_rev1.1.0"
+        - "ISO_27001"
+    api_endpoints:
+      - "POST /finex"
+      - "POST /finex/finalize/{entity_id}"
+      - "GET  /finex"
+      - "GET  /finex/status/{entity_id}"
+      - "GET  /finex/{entity_id}"
+      - "GET  /finex/{entity_id}/download"
     irreversible: true

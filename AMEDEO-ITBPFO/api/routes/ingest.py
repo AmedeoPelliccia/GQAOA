@@ -6,6 +6,7 @@ from typing import Annotated
 from fastapi import APIRouter, File, Form, HTTPException, UploadFile
 from pydantic import BaseModel
 
+from api.models.finex import PipelineState
 from api.routes.finex import finex_service
 
 ALLOWED_SOURCE_TYPES = {"text", "sensor_data", "logs", "images", "yaml", "csv"}
@@ -21,6 +22,7 @@ class IngestionReceipt(BaseModel):
     filename: str | None
     size_bytes: int
     status: str
+    pipeline_state: str | None = None
 
 
 @router.post("", response_model=IngestionReceipt)
@@ -33,6 +35,9 @@ async def ingest(
     Validates that the declared ``source_type`` is one of the types supported by the
     AMEDEO-ITBPFO model (text, sensor_data, logs, images, yaml, csv) and maps the
     artifact to the canonical GENESIS/O-KNOT source.
+
+    If ``entity_id`` is provided in the metadata, the pipeline state is advanced
+    from PENDING to INGESTED automatically.
     """
     try:
         meta = json.loads(metadata)
@@ -57,12 +62,36 @@ async def ingest(
             raise HTTPException(status_code=403, detail=str(exc)) from exc
 
     content = await file.read()
+    ingestion_id = str(uuid.uuid4())
+
+    # Advance pipeline: PENDING → INGESTED
+    pipeline_state = None
+    if entity_id:
+        try:
+            entry = finex_service.get_or_create_pipeline(entity_id)
+            mission = meta.get("mission")
+            vision = meta.get("vision")
+            plan_summary = meta.get("plan_summary")
+            finex_service.advance_pipeline(
+                entity_id,
+                PipelineState.INGESTED,
+                ingestion_id=ingestion_id,
+                mission=mission,
+                vision=vision,
+                plan_summary=plan_summary,
+            )
+            pipeline_state = PipelineState.INGESTED.value
+        except ValueError:
+            # Pipeline already advanced past INGESTED — still accept the file
+            pipeline_state = entry.state
+
     return IngestionReceipt(
-        ingestion_id=str(uuid.uuid4()),
+        ingestion_id=ingestion_id,
         timestamp=datetime.now(timezone.utc).isoformat(),
         source_type=source_type,
         genesis_source=genesis_source,
         filename=file.filename,
         size_bytes=len(content),
         status="accepted",
+        pipeline_state=pipeline_state,
     )

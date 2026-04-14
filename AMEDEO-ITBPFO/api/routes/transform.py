@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
+from api.models.finex import PipelineState
 from api.routes.finex import finex_service
 from api.services.transformer import TransformerService
 
@@ -24,6 +25,7 @@ class TransformResponse(BaseModel):
     content: dict
     derivation: dict
     status: str
+    pipeline_state: str | None = None
 
 
 @router.post("", response_model=TransformResponse)
@@ -33,6 +35,9 @@ def transform(request: TransformRequest) -> TransformResponse:
     Accepts either an ``ingestion_id`` (referencing a prior /ingest call) or
     ``raw_data`` with ``source_type``.  Returns the artifact together with
     ``_derivation.yaml`` metadata.
+
+    If ``entity_id`` is provided, the pipeline state is advanced from
+    INGESTED to TRANSFORMED automatically.
     """
     if request.ingestion_id is None and request.raw_data is None:
         raise HTTPException(
@@ -52,10 +57,27 @@ def transform(request: TransformRequest) -> TransformResponse:
     derivation = _transformer.generate_metadata(artifact)
     ssot_path = _transformer.map_to_ssot_path(request.uta_chapter, request.lc_phase)
 
+    # Advance pipeline: INGESTED → TRANSFORMED
+    pipeline_state = None
+    if request.entity_id:
+        try:
+            finex_service.advance_pipeline(
+                request.entity_id,
+                PipelineState.TRANSFORMED,
+                transform_artifact_id=artifact.artifact_id,
+                payload=artifact.content,
+            )
+            pipeline_state = PipelineState.TRANSFORMED.value
+        except ValueError:
+            # Pipeline not in INGESTED state — still return the artifact
+            entry = finex_service.get_pipeline(request.entity_id)
+            pipeline_state = entry.state if entry else None
+
     return TransformResponse(
         artifact_id=artifact.artifact_id,
         ssot_path=ssot_path,
         content=artifact.content,
         derivation=derivation.model_dump(),
         status="transformed",
+        pipeline_state=pipeline_state,
     )

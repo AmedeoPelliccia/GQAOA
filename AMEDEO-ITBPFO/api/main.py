@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from api.routes import finex, ingest, transform, validate
 
@@ -8,7 +9,7 @@ app = FastAPI(
     description=(
         "Autonomous Multimodal Execution — Intergenerational Transformation to Best "
         "Processable Formatted Output. Implements the GENESIS → SSOT transformation "
-        "pipeline as defined in GQAOA-UTA-AMEDEO-ITBPFO-001."
+        "pipeline with FINEX terminal-state sealing as defined in GQAOA-UTA-AMEDEO-ITBPFO-001."
     ),
     version="1.0.0",
 )
@@ -43,6 +44,16 @@ def root() -> dict:
             "Autonomous Multimodal Execution — Intergenerational Transformation "
             "to Best Processable Formatted Output"
         ),
-        "endpoints": ["/health", "/ingest", "/transform", "/validate", "/finex"],
+        "endpoints": [
+            "/health",
+            "/ingest",
+            "/transform",
+            "/validate",
+            "/finex",
+            "/finex/finalize/{entity_id}",
+            "/finex/status/{entity_id}",
+            "/finex/{entity_id}",
+            "/finex/{entity_id}/download",
+        ],
         "docs": "/docs",
     }
