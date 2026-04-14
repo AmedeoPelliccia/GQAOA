@@ -105,6 +105,7 @@ Integration is governed by a feature-flag mechanism so core programs (AM.PEL, AM
 | **UTA Explorer** | [components/UTAExplorer.jsx](./components/UTAExplorer.jsx) | React interactive visualisation of the full UTA domain map |
 | **APE ADAPT UI Studio v1.0** | [GQAOA-APE-ADAPT-001.md](./GQAOA-APE-ADAPT-001.md) | Aided Prompt Engineering to Aerospace Digital Applications and Programming Technologies — structured prompt engineering studio for the CHARLIE-T → GENTLE → BOOST pipeline, with PQS scoring, template gallery, and KNOT/KNU traceability |
 | **APE ADAPT Studio** | [components/ApeAdaptStudio.jsx](./components/ApeAdaptStudio.jsx) | React interactive prompt engineering interface with PQS gauge, pipeline visualisation, template gallery, and prompt registry |
+| **AMEDEO-ITBPFO v1.0** | [GQAOA-UTA-AMEDEO-ITBPFO-001.yaml](./GQAOA-UTA-AMEDEO-ITBPFO-001.yaml) | Autonomous Multimodal Execution — Intergenerational Transformation to Best Processable Formatted Output. Standardizes the autonomous transformation pipeline from GENESIS multimodal inputs through SSOT lifecycle phases to optimized published artifacts. |
 
 ## Legacy References
 
