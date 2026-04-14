@@ -354,7 +354,7 @@ BOOST (output)    →  Report di circolarità e DPP pubblicato
 
 ### 7.2 Pool dedicato
 
-Dal pool TT complessivo, il **2%** (40.000.000 TT) è riservato alla circolarità e distribuito attraverso il meccanismo LUT-RICICLATI.
+Dal pool TT complessivo di 2.000.000.000 TT (cfr. [SUPIA §9.1](./GQAOA-UTA-SUPIA-001.md#91-parametri-fondamentali)), il **2%** (40.000.000 TT) è riservato alla circolarità e distribuito attraverso il meccanismo LUT-RICICLATI.
 
 ---
 
