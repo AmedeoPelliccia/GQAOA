@@ -44,7 +44,14 @@ G10.975 is load-bearing: without it, "frontier agent" becomes an exemption from 
 | Term | Definition |
 |---|---|
 | `monstrum` | G10.974 boundary-form descriptor for an agent at the edge of classification; it is not a moral or threat label. |
-| KNOT residual scale | Integer unresolved-risk score with inclusive endpoints: `0` = closed or accepted; scores `1` to `49`, inclusive, = monitored residual; scores `50` to `99`, inclusive, = unresolved residual; `100` = unresolved load-bearing blocker. |
+| KNOT residual scale | Integer unresolved-risk score with inclusive endpoints, defined by the threshold table below. |
+
+| Score(s) | Meaning |
+|---:|---|
+| `0` | Closed or accepted. |
+| `1` to `49`, inclusive | Monitored residual. |
+| `50` to `99`, inclusive | Unresolved residual. |
+| `100` | Unresolved load-bearing blocker. |
 
 ---
 
@@ -105,7 +112,7 @@ A behavior is quarantinable when any condition holds:
 - it uses an unregistered or malformed name;
 - it cannot identify its class, authority source, or evidence package;
 - it attempts persistence, concealment, policy bypass, or uncontrolled replication;
-- it crosses from `SENTIENTIT_zGen` into `regent-ZetaGentz` without the escalation evidence defined in Section 6;
+- it crosses from `SENTIENTIT_zGen` into `regent-ZetaGentz` without the escalation evidence defined in Section 6: Regency Escalation Evidence;
 - it produces outputs that cannot be replayed, bounded, or independently audited.
 
 ---
