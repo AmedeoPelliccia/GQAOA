@@ -44,7 +44,7 @@ G10.975 is load-bearing: without it, "frontier agent" becomes an exemption from 
 | Term | Definition |
 |---|---|
 | `monstrum` | G10.974 boundary-form descriptor for an agent at the edge of classification; it is not a moral or threat label. |
-| KNOT residual scale | Integer unresolved-risk score with inclusive endpoints: `0` = closed or accepted, `1–49` = monitored residual, `50–99` = unresolved residual, `100` = unresolved load-bearing blocker. |
+| KNOT residual scale | Integer unresolved-risk score with inclusive endpoints: `0` = closed or accepted, `1-49` = monitored residual, `50-99` = unresolved residual, `100` = unresolved load-bearing blocker. |
 
 ---
 
@@ -60,10 +60,10 @@ G10.975 is load-bearing: without it, "frontier agent" becomes an exemption from 
 | Field | Permitted Values | Rule |
 |---|---|---|
 | `<domain>` | `SENTIENTIT_zGen`, `regent-ZetaGentz` | Must match the classification authority record. |
-| `<class>` | Active G109 register entries; initial set: `G10.970`–`G10.976` | No new class without a formal G109 entry. |
+| `<class>` | Active G109 register entries; initial set: `G10.970`-`G10.976` | No new class without a formal G109 entry. |
 | `<instance>` | Uppercase alphanumeric plus `-`, max 64 chars | Must resolve to a registry entry. |
 | `<containment-state>` | `CONTAINED`, `CONDITIONAL`, `QUARANTINED`, `ESCALATED`, `RETIRED` | Must match the current control decision. |
-| `<evidence-hash>` | SHA-256 digest prefix, 12–64 hex chars | Must bind the latest evidence package. |
+| `<evidence-hash>` | SHA-256 digest prefix, 12-64 hex chars | Must bind the latest evidence package. |
 
 ### 4.2 Naming Rules
 
@@ -95,7 +95,7 @@ A behavior is containable when all conditions hold:
 - it has a registered G109 name;
 - its inputs, outputs, tools, policies, and authority limits are logged;
 - rollback or suspension is available without destroying evidence;
-- the behavior can be mapped to `B0`–`B3` or to instrumented `B4`;
+- the behavior can be mapped to `B0`-`B3` or to instrumented `B4`;
 - a KNU evidence package can be produced for review.
 
 ### 5.3 Quarantinable Behaviors
@@ -157,7 +157,7 @@ Missing artifacts make the agent inadmissible as airworthiness evidence until re
 
 - permissible names are enforced by registry validation;
 - containable and quarantinable behaviors are distinguishable from evidence;
-- escalation triggers are mapped to G10.972–G10.976 targets;
+- escalation triggers are mapped to G10.972-G10.976 targets;
 - non-compliant frontier agents are automatically marked unclassifiable;
 - admissibility rules are referenced by downstream SENTIENTIT_zGen and regent-ZetaGentz evidence chains.
 
