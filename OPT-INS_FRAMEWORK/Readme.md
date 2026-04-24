@@ -107,6 +107,7 @@ Integration is governed by a feature-flag mechanism so core programs (AM.PEL, AM
 | **APE ADAPT Studio** | [components/ApeAdaptStudio.jsx](./components/ApeAdaptStudio.jsx) | React interactive prompt engineering interface with PQS gauge, pipeline visualisation, template gallery, and prompt registry |
 | **LUTNDR v1.0** | [GQAOA-UTA-LUTNDR-001.md](./GQAOA-UTA-LUTNDR-001.md) | Libro Unico delle Tecnologie — In Uso · Disuso · Nuova Progettazione · Riassetti (RICICLATI). Centralized technology registry tracking every technology across four eras with 15 sub-states, DPP, circularity metrics, gate-based governance, and TT incentives |
 | **AMEDEO-ITBPFO v1.0** | [GQAOA-UTA-AMEDEO-ITBPFO-001.yaml](./GQAOA-UTA-AMEDEO-ITBPFO-001.yaml) | Autonomous Multimodal Execution — Intergenerational Transformation to Best Processable Formatted Output. Standardizes the autonomous transformation pipeline from GENESIS multimodal inputs through SSOT lifecycle phases to optimized published artifacts. |
+| **G109 G10.975 Containment Grammar** | [GQAOA-UTA-G109-G10-975-CONTAINMENT-GRAMMAR-001.md](./GQAOA-UTA-G109-G10-975-CONTAINMENT-GRAMMAR-001.md) | Load-bearing G109 grammar for permissible frontier-agent names, containable vs. quarantinable behaviors, and regency escalation evidence. |
 
 ## Legacy References
 

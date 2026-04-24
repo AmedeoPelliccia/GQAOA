@@ -187,7 +187,7 @@ interactive visualisation of the full UTA domain map.
 | 940–949 | Sensores y Metrología Cuántica | **S** |
 | 950–959 | Simulación Cuántica | **S** |
 | 960–969 | Robótica Cuántica | **T** |
-| 970–979 | Conciencia y Agencia Sentiente | **T** |
+| 970–979 | Conciencia, ZGen, regent-ZetaGentz y Containment Grammar | **T** |
 | 980–989 | Gobernanza y Ética IA/Cuántica | **O** |
 | 990–999 | Futuro y Inter-Arquitectura | **T** |
 

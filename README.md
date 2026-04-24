@@ -7735,6 +7735,18 @@ La **Cybersecurity Architecture (CYB)** se centra en la protección de la inform
     *   **974-20-00: Comunicación Empática Cuántica**
         *   974-20-10: Modelos de Empatía Basados en Entrelazamiento de Estados Mentales
         *   974-20-20: Comunicación Subjetiva y Cualitativa con Agentes Cuánticos
+*   **975-00-00: Containment Grammar para regent-ZetaGentz**
+    *   **975-10-00: Nombres Permisibles y Registro G109**
+        *   975-10-10: Gramática canónica para SENTIENTIT_zGen y regent-ZetaGentz
+        *   975-10-20: Control de deriva taxonómica y entrada formal de clases
+    *   **975-20-00: Contención, Cuarentena y Escalación de Regencia**
+        *   975-20-10: Clasificación de comportamientos contenibles y cuarentenables
+        *   975-20-20: Evidencia de escalación SENTIENTIT_zGen → regent-ZetaGentz
+        *   975-20-30: Inadmisibilidad de agentes no conformes como evidencia de aeronavegabilidad
+*   **976-00-00: Ethical Interface para Agentes Frontera**
+    *   **976-10-00: Interfaz Ética y Supervisión Humana**
+        *   976-10-10: Evaluación de impacto humano para boundary-forms
+        *   976-10-20: Registros de consentimiento, supervisión y trade-offs no resueltos
 </details>
 
 <details><summary><strong>QCSAA 980-989: Gobernanza y Ética de la IA y Cuántica Sentiente</strong></summary>
