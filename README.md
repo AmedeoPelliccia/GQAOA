@@ -1064,7 +1064,7 @@ flowchart TB
 
 #### Principios de Gestión de Personas
 1. **Meritocracia**: Promoción por resultados
-2. **Diversidad**: 40% mujeres, 38% hombres, 22% otros en leadership
+2. **Diversidad**: 40% mujeres, 38% hombres, 22% queers en leadership
 3. **Desarrollo**: 5% payroll en training
 4. **Bienestar**: Work-life balance
 5. **Reconocimiento**: Quarterly awards
