@@ -38,7 +38,22 @@ This specification applies to:
 - Precision assembly stations for aerospace, automotive, and electronics manufacturing
 - Robotic cells operating within GQAOA-governed facilities (Robbbo-T/Factory program)
 
+#### 1.1.1 Primary Deployment Site — Getafe Robotics FAL
+
+The primary target of this specification is the **Airbus Getafe (Madrid, Spain) Final Assembly Line (FAL)** and its associated robotics cells (structural assembly, drilling/riveting, automated welding of metallic sub-assemblies, composite trimming/inspection). Consequently, **all applicable European Union and Spanish national regulations apply in addition to the international ISO/IEC standards listed below**. Where conflicts exist, the more stringent requirement governs, and the Spanish transposition of the EU directive prevails for legal compliance within Spanish territory.
+
+Jurisdictional layering for any 600-10-10 cell deployed at Getafe FAL:
+
+1. **EU level** — Machinery Regulation (EU) 2023/1230 (replacing Directive 2006/42/EC from 20 January 2027), Low Voltage Directive 2014/35/EU, EMC Directive 2014/30/EU, ATEX Directive 2014/34/EU, Use of Work Equipment Directive 2009/104/EC, Workplace Safety Framework Directive 89/391/EEC, REACH Regulation (EC) 1907/2006, CLP Regulation (EC) 1272/2008.
+2. **Spanish national level** — Ley 31/1995 de Prevención de Riesgos Laborales (PRL); RD 1644/2008 (machinery — currently transposing 2006/42/EC); RD 1215/1997 (work equipment); RD 486/1997 (workplaces); RD 614/2001 (electrical risk); RD 681/2003 (ATEX); RD 374/2001 (chemical agents — welding fumes); RD 286/2006 (noise); RD 1311/2005 (mechanical vibration); RD 773/1997 (PPE); RD 488/1997 (display screen equipment for teach-pendant operators); ITC-MIE-AEM-2 (lifting/handling equipment associated with the cell).
+3. **Aeronautical sector level** — EASA Part 21 Subpart G (Production Organisation Approval), Part 145 (Maintenance Organisation Approval), Airbus **AIPS** (Airbus Industrial Process Specifications) for welding/assembly, Airbus **AP** (Airbus Process) standards, and Airbus AITM/ABT test methods invoked by the relevant FAL work-package (A400M, Eurofighter Typhoon Spain workshare, C295/C295W, future FCAS demonstrators).
+4. **Spanish technical guidance** — INSST (Instituto Nacional de Seguridad y Salud en el Trabajo) NTPs (Notas Técnicas de Prevención) applicable to robotic and welding operations (notably NTP 884 — robot industriales, NTP 494/495 — soldadura, NTP 1142 — colaborativos).
+
+Compliance evidence for a Getafe-deployed cell shall therefore be assembled as a **dual-track dossier**: (a) the CE Declaration of Conformity / Technical File per the Machinery Regulation and (b) the Spanish PRL evaluation per Ley 31/1995, in addition to the GQAOA-internal artefacts defined in §6 and §9.
+
 ### 1.2 Normative References
+
+#### 1.2.1 International (ISO/IEC/AWS)
 
 | Standard | Title |
 |----------|-------|
@@ -54,6 +69,56 @@ This specification applies to:
 | ISO 9283:1998 | Manipulating industrial robots — Performance criteria and related test methods |
 | AWS D8.1M | Specification for Automotive Weld Quality — Arc Welding |
 | ISO 14731:2019 | Welding coordination — Tasks and responsibilities |
+
+#### 1.2.2 European Union — Directives and Regulations (Getafe FAL applicability)
+
+| Reference | Title / Subject |
+|-----------|-----------------|
+| Regulation (EU) 2023/1230 | Machinery Regulation (applicable from 20 January 2027; supersedes 2006/42/EC) |
+| Directive 2006/42/EC | Machinery Directive (currently in force; CE marking obligation) |
+| Directive 2014/35/EU | Low Voltage Directive (LVD) |
+| Directive 2014/30/EU | Electromagnetic Compatibility (EMC) Directive |
+| Directive 2014/34/EU | ATEX equipment in potentially explosive atmospheres |
+| Directive 2009/104/EC | Use of work equipment by workers at work |
+| Directive 89/391/EEC | OSH Framework Directive |
+| Directive 2003/10/EC | Workers' exposure to noise |
+| Directive 2002/44/EC | Workers' exposure to mechanical vibration |
+| Regulation (EC) 1907/2006 | REACH — chemicals registration (welding consumables, lubricants) |
+| Regulation (EC) 1272/2008 | CLP — classification, labelling and packaging |
+| EN ISO 10218-1/-2 | Harmonised version of ISO 10218 (CE-marking presumption of conformity) |
+| EN ISO 13849-1, EN 62061 | Harmonised functional-safety standards |
+| EN ISO 12100 | Harmonised risk-assessment standard |
+
+#### 1.2.3 Spanish National Law (Reino de España)
+
+| Reference | Title / Subject |
+|-----------|-----------------|
+| Ley 31/1995, de 8 de noviembre | Prevención de Riesgos Laborales (PRL) |
+| RD 1644/2008 | Normas para la comercialización y puesta en servicio de las máquinas (transposes 2006/42/EC) |
+| RD 1215/1997 | Disposiciones mínimas de seguridad para la utilización de equipos de trabajo |
+| RD 486/1997 | Disposiciones mínimas de seguridad y salud en los lugares de trabajo |
+| RD 614/2001 | Disposiciones mínimas frente al riesgo eléctrico |
+| RD 681/2003 | Protección frente a atmósferas explosivas (ATEX, lugar de trabajo) |
+| RD 374/2001 | Protección frente a riesgos por agentes químicos (humos de soldadura) |
+| RD 286/2006 | Protección de los trabajadores frente al ruido |
+| RD 1311/2005 | Protección frente a vibraciones mecánicas |
+| RD 773/1997 | Disposiciones mínimas para la utilización de equipos de protección individual (EPI) |
+| RD 488/1997 | Pantallas de visualización (operadores de teach-pendant / HMI) |
+| RD 39/1997 | Reglamento de los Servicios de Prevención |
+| ITC-MIE-AEM-2 | Instrucción técnica complementaria — grúas torre y equipos de elevación asociados a la celda |
+| INSST NTP 884, 494/495, 1142 | Notas Técnicas de Prevención — robots industriales, soldadura, robots colaborativos |
+
+#### 1.2.4 Aeronautical Sector (Getafe FAL — Airbus / EASA)
+
+| Reference | Title / Subject |
+|-----------|-----------------|
+| Regulation (EU) 748/2012 | EASA Initial Airworthiness — Part 21 (incl. Subpart G — Production Organisation Approval) |
+| Regulation (EU) 1321/2014 | EASA Continuing Airworthiness — Part 145 (Maintenance Organisation Approval) |
+| Airbus AIPS series | Airbus Industrial Process Specifications (welding, fastening, surface treatment, NDT applicable to FAL workshare) |
+| Airbus AP series | Airbus Process standards invoked by the FAL work-package (A400M, Eurofighter, C295) |
+| Airbus AITM / ABT | Airbus test methods for qualification of automated welding/assembly outputs |
+| EN 9100:2018 | Aerospace Quality Management Systems (Getafe FAL accredited scope) |
+| EN 4179 / NAS 410 | Qualification and approval of personnel for non-destructive testing of welded joints |
 
 ---
 
@@ -495,6 +560,28 @@ Within the GQAOA framework, the UTCS code **600-10-10** functions as an **intern
 3. **Lifecycle traceability:** Safety-critical components tracked through GQAOA lifecycle phases (CON → DES → TST → CRT → PRD → OPS → MNT → SUP → REP → RET), with mandatory review gates at CRT (certification) and OPS (operational release).
 4. **CHARLIE_T integration:** The digital agent maintains a live safety status dashboard, aggregating sensor data (force/torque, speed monitors, safeguard status) and flagging deviations in real time.
 
+### 6.6 Getafe FAL Compliance Overlay (EU + Spain + Aerospace)
+
+For any 600-10-10 cell installed at the **Airbus Getafe Final Assembly Line** the requirements of §6.1–§6.5 are layered on top of the following **legally binding** obligations. This subsection is the dispositive checklist the integrator and the GQAOA Robbbo-T program shall satisfy before the cell is released to production.
+
+| Layer | Obligation | Acceptance evidence at Getafe FAL |
+|-------|------------|-----------------------------------|
+| **EU machinery (in force)** | CE marking per Directive 2006/42/EC; Annex IV procedure where applicable; Technical File retained 10 years | EC Declaration of Conformity + Technical File + harmonised-standard list (EN ISO 10218-1/-2, EN ISO 13849-1, EN 62061, EN ISO 12100) |
+| **EU machinery (transition)** | Migration plan to Regulation (EU) 2023/1230 by 20 January 2027; high-risk Annex I machinery (incl. safety-critical AI components) requires third-party assessment | Gap-analysis dossier + revised DoC template + notified-body engagement record (where AI safety functions are present) |
+| **EU LVD / EMC / ATEX** | 2014/35/EU + 2014/30/EU; ATEX 2014/34/EU only if welding cell is in/adjacent to a classified zone (e.g. paint-shop boundary, hydrogen storage at H₂-conversion lines) | LVD/EMC test reports; ATEX zoning plan + equipment category mapping (Cat 2/3 GD) |
+| **Spain — PRL** | Ley 31/1995: written risk assessment, preventive planning, worker information/consultation, health surveillance | Evaluación de riesgos del puesto + Plan de prevención (servicio de prevención propio Airbus) + actas del Comité de Seguridad y Salud |
+| **Spain — RD 1644/2008** | National declaration & Spanish-language documentation (instrucciones, marcado, EC declaration) | Documentación en castellano firmada por el fabricante / integrador |
+| **Spain — RD 1215/1997** | Adequacy of work equipment (existing robots retrofitted into the cell) | Informe de adecuación RD 1215 firmado por técnico competente |
+| **Spain — RD 614/2001** | Electrical-risk assessment (480 V cell mains, servo cabinets, weld-current returns) | Procedimiento de trabajo eléctrico + cualificación del personal (autorizado/cualificado) |
+| **Spain — RD 374/2001 + RD 286/2006 + RD 1311/2005** | Welding-fume, noise and vibration measurement campaigns | Higienic measurement reports vs. VLA-ED/VLA-EC limits; LEX,8h ≤ 87 dB(A); A(8) for hand-arm vibration |
+| **Spain — RD 681/2003 (ATEX workplace)** | Document on Explosion Protection (DPE) when applicable | DPE signed by Airbus EHS + zoning markings |
+| **Spain — RD 773/1997** | PPE matrix consistent with §8.4 mapped to Airbus Getafe PPE catalogue | EPI assignment record per operator/role |
+| **Aerospace — EASA Part 21G** | Production output of the FAL must remain within the POA scope; any process change (incl. new robotic cell) requires POA Form 4 / change notification | POA change package + AIPS revalidation record |
+| **Aerospace — Airbus AIPS/AP** | Welding/fastening/sealing performed by the cell qualified to the AIPS revision invoked by the work-package | Qualified Process File (QPF) + welder/operator AIPS qualification cards (where mandated) |
+| **Aerospace — EN 9100** | The cell's processes integrated into the Airbus Getafe EN 9100 quality system | Process FMEA + Control Plan + first-article inspection (FAI) per AS9102 |
+
+> **Conflict-resolution rule:** Where a Spanish RD imposes a stricter requirement than the EU directive it transposes (e.g. operator information in castellano, mandatory written risk-assessment), the Spanish requirement governs. Where the Airbus AIPS imposes a stricter process tolerance than ISO 5817, the AIPS governs for that work-package. In all cases the higher of {ISO PL/SIL, RIA SIL, IEC 62061 SIL} shall be implemented in the safety-related control system.
+
 ---
 
 ## 7. Risk Assessment Methodology
@@ -848,18 +935,70 @@ The CHARLIE_T contextual digital agent for 600-10-10 systems provides:
 | GQAOA Master README — UTCS v1.1 | `README.md` (root) |
 | CSDB Validator | `CSDB/s1000d_validator.py` |
 
+### 10.4 European Union — Directives and Regulations (Getafe FAL)
+
+| Reference | Full Title |
+|-----------|-----------|
+| Regulation (EU) 2023/1230 | Regulation of the European Parliament and of the Council on machinery (entry into application 20 January 2027) |
+| Directive 2006/42/EC | Directive on machinery, amending Directive 95/16/EC (Machinery Directive) |
+| Directive 2014/35/EU | Low Voltage Directive (LVD) — making available on the market of electrical equipment within certain voltage limits |
+| Directive 2014/30/EU | Electromagnetic Compatibility Directive (EMC) |
+| Directive 2014/34/EU | ATEX equipment Directive — equipment and protective systems intended for use in potentially explosive atmospheres |
+| Directive 2009/104/EC | Minimum safety and health requirements for the use of work equipment by workers at work |
+| Directive 89/391/EEC | OSH Framework Directive — measures to encourage improvements in the safety and health of workers |
+| Directive 2003/10/EC | Minimum health and safety requirements regarding workers' exposure to noise |
+| Directive 2002/44/EC | Minimum health and safety requirements regarding workers' exposure to mechanical vibration |
+| Regulation (EC) 1907/2006 | REACH — Registration, Evaluation, Authorisation and Restriction of Chemicals |
+| Regulation (EC) 1272/2008 | CLP — Classification, Labelling and Packaging of substances and mixtures |
+
+### 10.5 Spanish National Law (Reino de España)
+
+| Reference | Full Title |
+|-----------|-----------|
+| Ley 31/1995, de 8 de noviembre | Ley de Prevención de Riesgos Laborales |
+| RD 1644/2008, de 10 de octubre | Normas para la comercialización y puesta en servicio de las máquinas |
+| RD 1215/1997, de 18 de julio | Disposiciones mínimas de seguridad y salud para la utilización por los trabajadores de los equipos de trabajo |
+| RD 486/1997, de 14 de abril | Disposiciones mínimas de seguridad y salud en los lugares de trabajo |
+| RD 614/2001, de 8 de junio | Disposiciones mínimas para la protección de la salud y seguridad de los trabajadores frente al riesgo eléctrico |
+| RD 681/2003, de 12 de junio | Protección de la salud y la seguridad de los trabajadores expuestos a los riesgos derivados de atmósferas explosivas |
+| RD 374/2001, de 6 de abril | Protección de la salud y seguridad de los trabajadores contra los riesgos relacionados con los agentes químicos durante el trabajo |
+| RD 286/2006, de 10 de marzo | Protección de la salud y la seguridad de los trabajadores contra los riesgos relacionados con la exposición al ruido |
+| RD 1311/2005, de 4 de noviembre | Protección de la salud y la seguridad de los trabajadores frente a los riesgos derivados de la exposición a vibraciones mecánicas |
+| RD 773/1997, de 30 de mayo | Disposiciones mínimas de seguridad y salud relativas a la utilización por los trabajadores de equipos de protección individual |
+| RD 488/1997, de 14 de abril | Disposiciones mínimas de seguridad y salud relativas al trabajo con equipos que incluyen pantallas de visualización |
+| RD 39/1997, de 17 de enero | Reglamento de los Servicios de Prevención |
+| ITC-MIE-AEM-2 | Instrucción técnica complementaria — grúas torre desmontables para obras |
+| INSST NTP 884 | Evaluación de riesgos en operaciones con robots industriales |
+| INSST NTP 494 / 495 | Soldadura eléctrica al arco — normas de seguridad |
+| INSST NTP 1142 | Robots colaborativos — evaluación del riesgo |
+
+### 10.6 Aeronautical Sector — EASA / Airbus (Getafe FAL)
+
+| Reference | Full Title |
+|-----------|-----------|
+| Regulation (EU) 748/2012 | Implementing rules for the airworthiness and environmental certification of aircraft and related products, parts and appliances (Part 21, incl. Subpart G — POA) |
+| Regulation (EU) 1321/2014 | Continuing airworthiness of aircraft and aeronautical products, parts and appliances (Part 145, Part-M, Part-CAMO) |
+| EN 9100:2018 | Quality Management Systems — Requirements for Aviation, Space and Defence Organisations |
+| EN 4179 | Aerospace series — Qualification and approval of personnel for non-destructive testing |
+| AS9102 | Aerospace First Article Inspection Requirement |
+| Airbus AIPS | Airbus Industrial Process Specifications (welding, fastening, sealing, surface treatment, NDT) |
+| Airbus AP | Airbus Process standards (process-control documents invoked by AIPS and by FAL work-packages) |
+| Airbus AITM / ABT | Airbus test methods and test specifications |
+
 ---
 
 ## Document Status
 
 | Field | Value |
 |-------|-------|
-| Version | 1.0 |
+| Version | 1.1 |
 | Status | DRAFT |
 | Classification | UTCS OGATA 600-10-10 |
 | Author | GQAOA, INC. — Robbbo-T Robotics PRD |
 | Domain | TERRA |
-| ROBOT.INCs | INC-M, INC-A |
-| S1000D Applicability | `product="GQAOA" variant="OGATA" optAxis="600-10-10"` |
-| Review Required | Safety Engineering, Welding Engineering, Robotics Integration |
-| Date | 2026-04-17 |
+| Primary Deployment Site | Airbus Getafe Final Assembly Line (FAL), Madrid, España |
+| Jurisdiction | EU + Spain (ES); aeronautical sector under EASA |
+| ROBOT.INCs | ROBOT.INC-M, ROBOT.INC-A |
+| S1000D Applicability | `product="GQAOA" variant="OGATA" optAxis="600-10-10" environment="GETAFE-FAL"` |
+| Review Required | Safety Engineering, Welding Engineering, Robotics Integration, Airbus EHS Getafe, EASA POA Office |
+| Date | 2026-04-25 |
