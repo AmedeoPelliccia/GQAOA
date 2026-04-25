@@ -168,9 +168,13 @@ The standard 6-axis industrial robot consists of a serial kinematic chain with s
 
 #### 2.1.1 Joint Configuration (Anthropomorphic Serial Chain)
 
-```
-Base (J1: Rotation) → Shoulder (J2: Pitch) → Elbow (J3: Pitch)
-→ Wrist-1 (J4: Roll) → Wrist-2 (J5: Pitch) → Wrist-3 (J6: Roll)
+```mermaid
+flowchart LR
+    J1["J1 — Base<br/>Rotation"] --> J2["J2 — Shoulder<br/>Pitch"]
+    J2 --> J3["J3 — Elbow<br/>Pitch"]
+    J3 --> J4["J4 — Wrist-1<br/>Roll"]
+    J4 --> J5["J5 — Wrist-2<br/>Pitch"]
+    J5 --> J6["J6 — Wrist-3<br/>Roll"]
 ```
 
 | Joint | Axis | Typical Range | Function |
@@ -214,9 +218,15 @@ A 7-axis robot adds a **redundant joint** to the 6-DOF serial chain, typically i
 
 #### 2.2.1 Typical Joint Configuration
 
-```
-Base (J1) → Shoulder (J2) → Upper Arm Roll (J3: Redundant)
-→ Elbow (J4) → Forearm Roll (J5) → Wrist Pitch (J6) → Wrist Roll (J7)
+```mermaid
+flowchart LR
+    J1["J1 — Base"] --> J2["J2 — Shoulder"]
+    J2 --> J3["J3 — Upper Arm Roll<br/>(Redundant)"]
+    J3 --> J4["J4 — Elbow"]
+    J4 --> J5["J5 — Forearm Roll"]
+    J5 --> J6["J6 — Wrist Pitch"]
+    J6 --> J7["J7 — Wrist Roll"]
+    style J3 fill:#fff4c2,stroke:#b08900
 ```
 
 Alternative: Some designs place the 7th axis as an inline rotation in the forearm (e.g., KUKA LBR iiwa, Motoman SIA series).
@@ -493,31 +503,18 @@ Six and seven-axis robots perform precision assembly tasks requiring sub-millime
 
 The safety of industrial robot systems is governed by a hierarchical set of international standards. Within the GQAOA framework, all ROBOT.INCs must comply with these standards, cross-referenced to UTCS codes **691-10-xx** (Functional Safety Standards) and **690-xx-xx** (Human-Robot Interaction).
 
-```
-                    ┌────────────────────────┐
-                    │    ISO 12100:2010       │  ← General Principles (Type-A)
-                    │  Safety of Machinery    │
-                    └────────────┬───────────┘
-                                 │
-                ┌────────────────┴────────────────┐
-                │                                  │
-     ┌──────────┴──────────┐          ┌───────────┴───────────┐
-     │  ISO 13849-1:2023   │          │   IEC 62061:2021      │
-     │  Safety-Related      │          │   Functional Safety   │
-     │  Control Systems     │          │   E/E/PE Systems      │
-     └──────────┬──────────┘          └───────────┬───────────┘
-                │                                  │
-                └────────────────┬─────────────────┘
-                                 │
-                    ┌────────────┴───────────┐
-                    │  ISO 10218-1/2:2011    │  ← Robot-Specific (Type-C)
-                    │  Robot Safety Reqs.     │
-                    └────────────┬───────────┘
-                                 │
-                    ┌────────────┴───────────┐
-                    │  ISO/TS 15066:2016     │  ← Collaborative Operations
-                    │  Cobots Spec.           │
-                    └────────────────────────┘
+```mermaid
+flowchart TD
+    A["ISO 12100:2010<br/>Safety of Machinery<br/><i>General Principles (Type-A)</i>"]
+    B["ISO 13849-1:2023<br/>Safety-Related<br/>Control Systems"]
+    C["IEC 62061:2021<br/>Functional Safety<br/>E/E/PE Systems"]
+    D["ISO 10218-1/2:2011<br/>Robot Safety Reqs.<br/><i>Robot-Specific (Type-C)</i>"]
+    E["ISO/TS 15066:2016<br/>Cobots Spec.<br/><i>Collaborative Operations</i>"]
+    A --> B
+    A --> C
+    B --> D
+    C --> D
+    D --> E
 ```
 
 ### 6.2 ISO 10218 — Safety Requirements for Industrial Robots
@@ -630,47 +627,15 @@ For any 600-10-10 cell installed at the **Airbus Getafe Final Assembly Line** th
 
 All robotic cells under UTCS 600-10-10 must undergo a formal risk assessment following the iterative process defined in ISO 12100:
 
-```
-┌─────────────────────────────────────────┐
-│  1. DETERMINE MACHINE LIMITS            │
-│     - Intended use and foreseeable misuse│
-│     - Space limits (safeguarded space)   │
-│     - Time limits (lifecycle phases)     │
-│     - Environmental limits               │
-└──────────────┬──────────────────────────┘
-               │
-┌──────────────▼──────────────────────────┐
-│  2. HAZARD IDENTIFICATION               │
-│     - Mechanical (crushing, shearing)    │
-│     - Electrical (arc, contact)          │
-│     - Thermal (welding heat, spatter)    │
-│     - Radiation (UV from arc, laser)     │
-│     - Chemical (fumes, shielding gas)    │
-│     - Ergonomic (loading postures)       │
-│     - Noise (> 85 dBA in welding cells)  │
-└──────────────┬──────────────────────────┘
-               │
-┌──────────────▼──────────────────────────┐
-│  3. RISK ESTIMATION                      │
-│     Severity (S) × Frequency/Duration (F)│
-│     × Probability of Occurrence (O)      │
-│     × Avoidability (A)                   │
-│     → Risk level: High / Medium / Low    │
-└──────────────┬──────────────────────────┘
-               │
-┌──────────────▼──────────────────────────┐
-│  4. RISK EVALUATION                      │
-│     - Is risk adequately reduced?        │
-│     - Compare to ALARP (As Low As        │
-│       Reasonably Practicable)            │
-└──────────────┬──────────────────────────┘
-               │
-┌──────────────▼──────────────────────────┐
-│  5. RISK REDUCTION (3-Step Method)       │
-│     Step 1: Inherently safe design       │
-│     Step 2: Safeguarding & complementary │
-│     Step 3: Information for use          │
-└─────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    S1["<b>1. DETERMINE MACHINE LIMITS</b><br/>• Intended use and foreseeable misuse<br/>• Space limits (safeguarded space)<br/>• Time limits (lifecycle phases)<br/>• Environmental limits"]
+    S2["<b>2. HAZARD IDENTIFICATION</b><br/>• Mechanical (crushing, shearing)<br/>• Electrical (arc, contact)<br/>• Thermal (welding heat, spatter)<br/>• Radiation (UV from arc, laser)<br/>• Chemical (fumes, shielding gas)<br/>• Ergonomic (loading postures)<br/>• Noise (> 85 dBA in welding cells)"]
+    S3["<b>3. RISK ESTIMATION</b><br/>Severity (S) × Frequency/Duration (F)<br/>× Probability of Occurrence (O)<br/>× Avoidability (A)<br/>→ Risk level: High / Medium / Low"]
+    S4["<b>4. RISK EVALUATION</b><br/>• Is risk adequately reduced?<br/>• Compare to ALARP (As Low As<br/>Reasonably Practicable)"]
+    S5["<b>5. RISK REDUCTION (3-Step Method)</b><br/>Step 1: Inherently safe design<br/>Step 2: Safeguarding & complementary<br/>Step 3: Information for use"]
+    S1 --> S2 --> S3 --> S4 --> S5
+    S4 -.->|"if not adequately reduced,<br/>iterate"| S1
 ```
 
 ### 7.2 Hazard Identification for 600-10-10 Systems
@@ -741,36 +706,35 @@ All risk assessments for 600-10-10 systems must be documented in the CSDB follow
 
 A typical robotic welding cell for 600-10-10 robots includes:
 
-```
-┌──────────────────────────────────────────────────────┐
-│                    WELDING CELL                       │
-│                                                      │
-│  ┌─────────────┐      ┌─────────────┐               │
-│  │  ROBOT      │      │  POSITIONER │               │
-│  │  (6/7-axis) │─────▶│  (2-axis)   │               │
-│  │             │      │  ┌───────┐  │               │
-│  └─────────────┘      │  │ WORK- │  │               │
-│        │              │  │ PIECE │  │               │
-│        │              │  └───────┘  │               │
-│  ┌─────▼─────┐        └─────────────┘               │
-│  │ WIRE FEED │                                      │
-│  │ & POWER   │        ┌─────────────┐               │
-│  │ SOURCE    │        │ FUME        │               │
-│  └───────────┘        │ EXTRACTION  │               │
-│                       └─────────────┘               │
-│  ┌───────────┐                                      │
-│  │ NOZZLE    │   ┌──────────────────┐               │
-│  │ CLEANING  │   │ TCP CALIBRATION  │               │
-│  │ STATION   │   │ STATION          │               │
-│  └───────────┘   └──────────────────┘               │
-│                                                      │
-├──────────────────────────────────────────────────────┤
-│  [INTERLOCKED GATE] ◀═══ [LIGHT CURTAIN]            │
-│  ┌────────────────────────────────────────┐         │
-│  │           OPERATOR ZONE                 │         │
-│  │  [TEACH PENDANT] [HMI] [E-STOP]        │         │
-│  └────────────────────────────────────────┘         │
-└──────────────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    subgraph CELL["WELDING CELL (safeguarded space)"]
+        direction TB
+        ROBOT["ROBOT<br/>(6/7-axis)"]
+        POS["POSITIONER<br/>(2-axis)"]
+        WP["WORKPIECE"]
+        WIRE["WIRE FEED &<br/>POWER SOURCE"]
+        FUME["FUME<br/>EXTRACTION"]
+        NOZ["NOZZLE<br/>CLEANING<br/>STATION"]
+        TCP["TCP CALIBRATION<br/>STATION"]
+        ROBOT -->|"weld path"| POS
+        POS --- WP
+        WIRE --> ROBOT
+        ROBOT -.-> NOZ
+        ROBOT -.-> TCP
+        FUME -.->|"capture"| ROBOT
+    end
+    subgraph PERI["Perimeter Safeguarding"]
+        direction LR
+        GATE["INTERLOCKED GATE"]
+        LC["LIGHT CURTAIN"]
+    end
+    subgraph OPZ["OPERATOR ZONE"]
+        TP["TEACH PENDANT"]
+        HMI["HMI"]
+        ES["E-STOP"]
+    end
+    CELL --> PERI --> OPZ
 ```
 
 #### 8.1.2 Assembly Cell Layout Considerations
