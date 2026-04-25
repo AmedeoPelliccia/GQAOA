@@ -3,7 +3,7 @@
 > **UTCS Classification:** OGATA 600-10-10
 > **Parent:** 600-10-00 — Robots de Brazo Articulado y Cartesianos
 > **Domain:** G7 — OGATA · Ground Automation (600–699)
-> **ROBOT.INCs Classes:** INC-M (Manipuladores), INC-A (Assemblaggio)
+> **ROBOT.INCs Classes:** ROBOT.INC-M (Manipuladores), ROBOT.INC-A (Assemblaggio)
 > **Version:** 1.0 | **Status:** DRAFT
 > **Date:** 2026-04-17
 > **Author:** GQAOA, INC. — Robbbo-T Robotics PRD
@@ -166,7 +166,7 @@ Base (J1: Rotation) → Shoulder (J2: Pitch) → Elbow (J3: Pitch)
 
 | Singularity | Condition | Impact |
 |-------------|-----------|--------|
-| **Wrist singularity** | J5 ≈ 0° (axes J4, J6 colinear) | Loss of one rotational DOF; infinite joint velocities near singularity |
+| **Wrist singularity** | J5 ≈ 0° (axes J4, J6 collinear) | Loss of one rotational DOF; infinite joint velocities near singularity |
 | **Shoulder singularity** | Wrist center on J1 axis | Ambiguous J1 rotation |
 | **Elbow singularity** | Arm fully extended (J3 at limit) | Loss of radial reach control |
 
@@ -407,7 +407,7 @@ Six and seven-axis robots perform precision assembly tasks requiring sub-millime
 
 - Class 1–100 cleanroom compatibility
 - ESD-safe construction (conductive coatings, grounded joints)
-- Particle generation: < 10 particles/min (ISO 14644-1 Class 5)
+- Cleanroom compatibility: ISO 14644-1 Class 5 (airborne particle concentration limits per m³ at specified particle sizes)
 - Robot examples: Fanuc CR series (cleanroom), Stäubli TX2-60 CR
 
 ### 5.3 Aerospace Component Assembly
@@ -496,6 +496,8 @@ Specifies safety requirements for the **robot itself** (the manipulator and cont
 | **Axis limiting** | Software and hardware limits on each joint | 7th axis must have independent limit switches and software limits |
 | **Singular configuration management** | Safe behavior at kinematic singularities | Wrist singularity protection critical for 6-axis; less critical for 7-axis |
 | **Safety-rated monitored stop** | STO/SLS/SLP per IEC 61800-5-2 | Drive-integrated safety functions for each axis servo |
+
+> **Editorial note:** Because IEC 61800-5-2 is cited here for drive-integrated safety functions, it shall also be added to **Section 1.2 Normative References** and **Section 10 References** for completeness and auditability.
 | **Pendant and teach mode** | Reduced-speed operation (≤250 mm/s TCP speed) | Teach pendant with enabling device (3-position) and dead-man switch |
 
 #### 6.2.2 Part 2: Robot Systems and Integration (ISO 10218-2:2011)
