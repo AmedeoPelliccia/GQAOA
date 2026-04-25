@@ -169,7 +169,7 @@ graph LR
 
 ---
 
-## 9. Hoja de Ruta Tecnológica
+## 8. Hoja de Ruta Tecnológica
 
 | Tecnología / Capacidad | TRL Actual | TRL Objetivo | Año Objetivo | Hito Clave |
 |------------------------|-----------|-------------|-------------|------------|
@@ -181,14 +181,14 @@ graph LR
 
 ---
 
-## 8. Referencias
+## 9. Referencias
 
 ### Internas
 - [Matriz RACI Maestra Q-Divisions](../Readme.md)
 - [Documento Organizacional Maestro GQAOA](../../README.md)
 - [AMPEL360-BWB-Q100 Docs](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)
 - [CSDB S1000D Validator](../../../CSDB/s1000d_validator.py)
-- [SUPIA v1.0 — Sistema Unico de Proyección Industrial](../../../OPT-INS_FRAMEWORK/GQAOA-UTA-SUPIA-001.md)
+- [SUPIA v1.0 — Sistema Unico di Progettazione Industriale Avanzata](../../../OPT-INS_FRAMEWORK/GQAOA-UTA-SUPIA-001.md)
 
 ### Externas — Normativa y Estándares
 | Referencia | Descripción | Enlace |

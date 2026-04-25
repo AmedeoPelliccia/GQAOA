@@ -16,7 +16,7 @@ tags:
   - governance
   - organizational
   - GQAOA
-parent: "../../README.md"
+parent: "../README.md"
 ---
 
 # Q-Divisions — Matriz RACI Maestra
@@ -255,7 +255,7 @@ graph LR
 
 Para la tabla completa de distribución de documentos técnicos por Q-Division y tipo de artefacto, consultar:
 
-→ **[`../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md`](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)**
+→ **[`../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md`](../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)**
 
 Resumen de documentos por Q-Division (AMPEL360-BWB-Q100):
 
@@ -272,6 +272,33 @@ Resumen de documentos por Q-Division (AMPEL360-BWB-Q100):
 | Q-SPACE | 6 | Sat-comm ICD, orbital ops |
 | Q-SCIRES | 6 | Test plans, cert. matrices |
 
+
+---
+
+## 8. Programas OPT-INS Asociados
+
+Las Q-Divisions prestan servicio no sólo al programa aeronáutico **AMPEL360-BWB-Q100**, sino también a los tres programas del wrapper **OPT-INS Space SIM Framework** (`AEROSPACEMODEL-OPT-INS-001`). Cada programa cuenta con su propio instancia `OPT-IN_FRAMEWORK`:
+
+| Programa | Tipo | Misión principal | Q-Divisions clave |
+|----------|------|-----------------|-------------------|
+| **AMPEL360-Q10** | Lanzadera tripulada (*shuttle*) | Viaje espacial y turismo espacial | Q-SPACE, Q-HPC, Q-STRUCTURES, Q-SCIRES |
+| **GAIA** | Estaciones espaciales y hábitats | Habitación humana orbital y en espacio profundo | Q-SPACE, Q-GREENTECH, Q-HPC, Q-STRUCTURES |
+| **ROBBBO-T** | Plataformas no tripuladas | COMMS, SAT, REPAIR, DEBRIS (debris removal) | Q-SPACE, Q-MECHANICS, Q-HPC, Q-GROUND |
+
+Topología de 6 ejes compartida (Space SIM):
+
+| Eje | Conjunto de capítulos espaciales |
+|-----|----------------------------------|
+| **O** — Organizations | Equivalente misión (ECSS-M) |
+| **P** — Programs | Equivalente misión (ECSS-M) |
+| **T** — Technologies / On-Board Systems | ECLSS, TPS, GNC, OMS/RCS, EVA, comms, power |
+| **I** — Infrastructures | Lanzamiento, range, recuperación, segmento terrestre |
+| **N** — Neural Networks | Ledger, DPP, gobernanza |
+| **S** — Space Simulations | Mecánica orbital, vacío/térmico, radiación, microgravedad, RPO, reentrada |
+
+> **Nota:** Los tres programas OPT-INS heredan la misma gobernanza Q-Divisions definida en este documento. Las actividades Space SIM se asignan como extensión del ciclo de vida GQAOA (fases Operation/Support y Retirement/Circular) con la adición de una fase **Launch & Mission** específica de espacio.
+
+---
 
 ## 9. Referencias Externas Clave
 

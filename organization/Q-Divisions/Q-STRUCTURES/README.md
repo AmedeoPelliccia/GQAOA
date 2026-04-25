@@ -151,7 +151,7 @@ graph LR
 | KPI | Objetivo | Fuente |
 |-----|----------|--------|
 | OEW (Operating Empty Weight) | ≤ objetivo MDO ±2% | Q-STRUCTURES-06-WEIGHT-BUDGET |
-| Margen de reserva último (ultimate load) | ≥ +1.5× límite × 1.5 | Q-STRUCTURES-01-FEM-MASTER |
+| Margen de reserva último (ultimate load) | ≥ límite × 1.5 (carga última, CS-25 §25.303) | Q-STRUCTURES-01-FEM-MASTER |
 | Cobertura de coupon allowables en base de datos | ≥ 95% de familias de materiales certificadas | Q-STRUCTURES-02-MATERIALS-ALLOWABLES |
 | TRL de compuestos bio-inspirados | ≥ TRL 5 en 2032 | Q-SCIRES datos |
 | Ciclos de fatiga validados (economic life) | ≥ 90,000 FC (flight cycles) | Q-STRUCTURES-03-STATIC-TEST-PLAN |
@@ -169,7 +169,7 @@ graph LR
 
 ---
 
-## 9. Hoja de Ruta Tecnológica
+## 8. Hoja de Ruta Tecnológica
 
 | Tecnología / Capacidad | TRL Actual | TRL Objetivo | Año Objetivo | Hito Clave |
 |------------------------|-----------|-------------|-------------|------------|
@@ -181,7 +181,7 @@ graph LR
 
 ---
 
-## 8. Referencias
+## 9. Referencias
 
 ### Internas
 - [Matriz RACI Maestra Q-Divisions](../Readme.md)

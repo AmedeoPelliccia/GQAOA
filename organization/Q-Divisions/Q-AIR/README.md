@@ -99,7 +99,7 @@ La división lidera la integración multidisciplinar entre la aerodinámica exte
 
 ## 4. RACI de Dominio
 
-| Actividad | Q-AIR Lead | Co-Q-Divisions (C) | ORB Support (C/I) |
+| Actividad | Q-AIR Lead | Co-Q-Divisions (R/C/I) | ORB Support (C/I) |
 |-----------|-----------|-------------------|-------------------|
 | Diseño perfil aerodinámico BWB | **A**/R | Q-STRUCTURES (C), Q-HPC (C) | ORB-PMO (I) |
 | CFD analysis — alta fidelidad | **A**/R | Q-HPC (R), Q-SCIRES (C) | ORB-PMO (I) |
@@ -172,7 +172,7 @@ graph LR
 
 ---
 
-## 9. Hoja de Ruta Tecnológica
+## 8. Hoja de Ruta Tecnológica
 
 | Tecnología / Capacidad | TRL Actual | TRL Objetivo | Año Objetivo | Hito Clave |
 |------------------------|-----------|-------------|-------------|------------|
@@ -184,7 +184,7 @@ graph LR
 
 ---
 
-## 8. Referencias
+## 9. Referencias
 
 ### Internas
 - [Matriz RACI Maestra Q-Divisions](../Readme.md)

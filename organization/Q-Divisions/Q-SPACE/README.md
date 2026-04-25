@@ -20,6 +20,10 @@ tags:
   - EMC
   - ATM
   - communications
+  - AMPEL360-Q10
+  - GAIA
+  - ROBBBO-T
+  - OPT-INS-space
 parent: "../Readme.md"
 ---
 
@@ -34,6 +38,9 @@ parent: "../Readme.md"
 
 | Acrónimo / Término | Definición completa | Referencia externa |
 |--------------------|--------------------|--------------------|
+| **AMPEL360-Q10** | Lanzadera tripulada del programa OPT-INS Space SIM; diseñada para viaje espacial y turismo orbital. Instancia `OPT-IN_FRAMEWORK` propia | *(AEROSPACEMODEL-OPT-INS-001)* |
+| **GAIA** | Programa OPT-INS de estaciones espaciales y hábitats para habitación humana orbital y en espacio profundo | *(AEROSPACEMODEL-OPT-INS-001)* |
+| **ROBBBO-T** | Plataformas no tripuladas OPT-INS para misiones COMMS, SAT, REPAIR y eliminación de debris (DEBRIS removal) | *(AEROSPACEMODEL-OPT-INS-001)* |
 | **ACARS** | *Aircraft Communications Addressing and Reporting System* — sistema de enlace de datos aeronáuticos voz/texto | [ARINC 618](https://www.aviation-ia.com/arinc) |
 | **ADS-B** | *Automatic Dependent Surveillance–Broadcast* — sistema de vigilancia basado en GNSS que difunde posición e identidad | [ICAO Doc 9871](https://www.icao.int/) |
 | **ATM** | *Air Traffic Management* — gestión del tráfico aéreo; en Europa gestionada por EUROCONTROL/SESAR | [EUROCONTROL](https://www.eurocontrol.int/) |
@@ -165,7 +172,38 @@ graph LR
 
 ---
 
-## 8. Referencias
+---
+
+## 8. Programas OPT-INS Space SIM Asociados
+
+Q-SPACE actúa como división técnica de referencia para los tres programas del wrapper **OPT-INS Space SIM Framework** (`AEROSPACEMODEL-OPT-INS-001`). Cada programa hereda la gobernanza GQAOA con extensión a capítulos espaciales (eje **S** — Space Simulations).
+
+| Programa | Tipo | Misión | Responsabilidades Q-SPACE |
+|----------|------|--------|---------------------------|
+| **AMPEL360-Q10** | Lanzadera tripulada | Viaje espacial / turismo orbital | SATCOM de misión, GNSS/PNT en órbita, QKD inter-orbital, EMC espacio |
+| **GAIA** | Estaciones / hábitats | Habitación orbital y profundo espacio | Enlace de datos de estación, posicionamiento de rendezvous (RPO), comms tierra-órbita |
+| **ROBBBO-T** | Plataformas no tripuladas | COMMS · SAT · REPAIR · DEBRIS | Diseño de payloads de comunicaciones, protocolos enlace, gestión de constelación |
+
+Topología Space SIM aplicada a Q-SPACE:
+
+```mermaid
+graph LR
+    QSPACE["Q-SPACE"]
+    A10["AMPEL360-Q10\n(crewed shuttle)"]
+    GAIA["GAIA\n(space station)"]
+    ROBBOT["ROBBBO-T\n(unmanned)"]
+    QSPACE -->|"SATCOM · QKD · GNSS"| A10
+    QSPACE -->|"data link · RPO comms"| GAIA
+    QSPACE -->|"payload comms · LDACS"| ROBBOT
+    A10 -.->|"docking link"| GAIA
+    GAIA -.->|"repair tasking"| ROBBOT
+```
+
+> **Referencia maestra OPT-INS:** [`../../Readme.md#8-programas-opt-ins-asociados`](../Readme.md)
+
+---
+
+## 9. Referencias
 
 ### Internas
 - [Matriz RACI Maestra Q-Divisions](../Readme.md)
