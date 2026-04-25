@@ -54,6 +54,18 @@ La división es propietaria del modelo de elementos finitos (FEM) maestro, del e
 | Publicación SRM (S1000D) | **A**/R | Q-DATAGOV (R), Q-GROUND (C) | ORB-PMO (I) |
 | Integración de sistemas en estructura | **A**/R | Q-MECHANICS (R), Q-GREENTECH (C) | ORB-PMO (I) |
 
+```mermaid
+graph LR
+    QSTRUCT["Q-STRUCTURES"]
+    FEM["FEM Maestro\n(HPC Q-HPC)"]
+    CERTS["Ensayos Cert.\n(Q-SCIRES)"]
+    WEIGHT["Budget Peso\n(MDO)"]
+    QSTRUCT -->|"modelo"| FEM
+    FEM -->|"resultados"| CERTS
+    QSTRUCT -->|"datos masa"| WEIGHT
+    WEIGHT -->|"feedback MDO"| QSTRUCT
+```
+
 ---
 
 ## 5. Interfaces Clave
@@ -101,6 +113,18 @@ La división es propietaria del modelo de elementos finitos (FEM) maestro, del e
 | Fallo de programa de ensayos de certificación (ultimate load test) | Crítico | Baja | Ensayos de coupon y componente por fases previas; factor de seguridad conservador |
 | Escasez de fibra de carbono de grado aeroespacial | Medio | Media | Acuerdos de suministro a largo plazo con ORB-PROC; investigación de alternativas |
 | Incompatibilidad de materiales entre zonas térmicas (H₂) | Alto | Baja | Análisis térmico conjunto Q-GREENTECH; cualificación de materiales criogénicos |
+
+---
+
+## 9. Hoja de Ruta Tecnológica
+
+| Tecnología / Capacidad | TRL Actual | TRL Objetivo | Año Objetivo | Hito Clave |
+|------------------------|-----------|-------------|-------------|------------|
+| Compuestos CFRP termoplásticos (TPC) | TRL 4 | TRL 7 | 2032 | Cualificación material volar |
+| Materiales bio-inspirados estructurales | TRL 3 | TRL 5 | 2034 | Coupon allowables database |
+| MDO multifísica acoplada | TRL 5 | TRL 8 | 2031 | Congelado baseline estructural |
+| Impresión 3D metálica certificada (Ti/Al) | TRL 5 | TRL 7 | 2033 | Primera pieza primaria producida |
+| Damage tolerance in-service monitoring | TRL 4 | TRL 7 | 2035 | Integración con BOB DA |
 
 ---
 

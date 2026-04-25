@@ -54,6 +54,18 @@ La división es propietaria de la Final Assembly Line (FAL), del Manufacturing P
 | Automatización FAL (robots OGATA 600) | **A**/R | Q-HPC (C), Q-MECHANICS (C) | ORB-IT (C) |
 | Gestión de no conformidades (NC) | **A**/R | Q-STRUCTURES (C), Q-SCIRES (C) | ORB-LEG (C), ORB-PMO (I) |
 
+```mermaid
+graph LR
+    QIND["Q-INDUSTRY"]
+    FAL["Final Assembly\nLine (FAL)"]
+    QUALITY["Control\nCalidad (SPC)"]
+    SUPPLY["Cadena\nSuministro"]
+    QIND -->|"secuencia"| FAL
+    FAL -->|"métricas NC"| QUALITY
+    QIND -->|"gestiona"| SUPPLY
+    SUPPLY -->|"materiales"| FAL
+```
+
 ---
 
 ## 5. Interfaces Clave

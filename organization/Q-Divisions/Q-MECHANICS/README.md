@@ -54,6 +54,18 @@ La división actúa como el nexo entre las necesidades aerodinámicas (Q-AIR) y 
 | Sistemas de puertas y emergencia | **A**/R | Q-STRUCTURES (C), Q-SCIRES (C) | ORB-LEG (C) |
 | Electrificación de sistemas (EMA/EHA) | **A**/R | Q-GREENTECH (R), Q-AIR (C) | ORB-PMO (I) |
 
+```mermaid
+graph LR
+    QMECH["Q-MECHANICS"]
+    HYD["Sistemas\nHidráulicos"]
+    ACT["Actuadores\nEHA/EMA"]
+    LG["Tren de\nAterrizaje"]
+    QMECH -->|"diseña"| HYD
+    HYD -->|"alimenta"| ACT
+    QMECH -->|"integra"| LG
+    ACT -->|"FCS mandos"| QMECH
+```
+
 ---
 
 ## 5. Interfaces Clave

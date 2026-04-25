@@ -54,6 +54,18 @@ La división lidera la integración multidisciplinar entre la aerodinámica exte
 | Integración FMS/FGCS | **A**/R | Q-HPC (R), Q-DATAGOV (C) | ORB-IT (C) |
 | Reducción de ruido aerodinámico | **A**/R | Q-SCIRES (C), Q-STRUCTURES (C) | ORB-CSR (I) |
 
+```mermaid
+graph LR
+    QAIR["Q-AIR"]
+    CFD["CFD / Túnel Viento\n(campañas Q-SCIRES)"]
+    FCS["FCS SW\n(DO-178C Q-HPC)"]
+    LOADS["Espectro de Cargas\n→ Q-STRUCTURES"]
+    QAIR -->|"diseño perfil"| CFD
+    CFD -->|"datos correlación"| QAIR
+    QAIR -->|"requisitos deflexión"| FCS
+    QAIR -->|"cargas aero"| LOADS
+```
+
 ---
 
 ## 5. Interfaces Clave
@@ -101,6 +113,18 @@ La división lidera la integración multidisciplinar entre la aerodinámica exte
 | Retraso en certificación DO-178C del FCS | Alto | Baja | Plan de V&V temprano; contratación de DER (Designated Engineering Representative) |
 | Inestabilidad aeroelástica imprevista (flutter) | Crítico | Baja | Análisis flutter en cada baseline congelado; ensayo GVT temprano |
 | Insuficiencia de recursos HPC para CFD LES | Medio | Media | Acuerdo de capacidad HPC con Q-HPC; uso de cloud burst |
+
+---
+
+## 9. Hoja de Ruta Tecnológica
+
+| Tecnología / Capacidad | TRL Actual | TRL Objetivo | Año Objetivo | Hito Clave |
+|------------------------|-----------|-------------|-------------|------------|
+| CFD LES a alta fidelidad | TRL 6 | TRL 8 | 2030 | First Flight CFD-validated |
+| Optimización cuántica QAOA de perfiles | TRL 3 | TRL 6 | 2032 | Demo en túnel de viento |
+| FCS adaptativo con IA embarcada | TRL 4 | TRL 7 | 2034 | Certificación DO-178C nivel A |
+| Reducción activa de ruido aerodinámico | TRL 4 | TRL 7 | 2033 | Validación Chapter 14 ICAO |
+| Diseño aerodinámico BWB certificable | TRL 5 | TRL 9 | 2038 | Type Certificate EIS |
 
 ---
 

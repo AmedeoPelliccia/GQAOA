@@ -54,6 +54,18 @@ Q-SCIRES actúa como el árbitro técnico independiente del programa, validando 
 | V&V algoritmos IA/cuánticos | **A**/R | Q-HPC (R), Q-DATAGOV (C) | ORB-LEG (I) |
 | ACV / certificación ESG | **A**/R | Q-GREENTECH (R), Q-DATAGOV (C) | ORB-CSR (C), ORB-LEG (C) |
 
+```mermaid
+graph LR
+    QSCIRES["Q-SCIRES"]
+    MTP["Plan Maestro\nEnsayos (MTP)"]
+    CERT["Certification\nProgramme (CP)"]
+    CORR["Correlación\nModelo-Ensayo"]
+    QSCIRES -->|"elabora"| MTP
+    MTP -->|"estructura"| CERT
+    QSCIRES -->|"valida"| CORR
+    CORR -->|"feedback modelos"| QSCIRES
+```
+
 ---
 
 ## 5. Interfaces Clave

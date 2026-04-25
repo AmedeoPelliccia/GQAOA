@@ -54,6 +54,18 @@ Q-GREENTECH lidera además la estrategia de sostenibilidad del consorcio, actuan
 | Economía circular (LUTNDR) | **A**/R | Q-STRUCTURES (C), Q-INDUSTRY (R) | ORB-CSR (C) |
 | Gestión térmica sistemas eléctricos | **A**/R | Q-MECHANICS (R), Q-AIR (C) | ORB-PMO (I) |
 
+```mermaid
+graph LR
+    QGREEN["Q-GREENTECH"]
+    EMS["Energy Mgmt\nSystem (EMS)"]
+    LCA["ACV/LCA\n(ISO 14040)"]
+    LUTNDR["LUTNDR\nCircularidad"]
+    QGREEN -->|"estrategias"| EMS
+    QGREEN -->|"inventario ciclo vida"| LCA
+    LCA -->|"datos materiales"| LUTNDR
+    LUTNDR -->|"registro tecnologías"| QGREEN
+```
+
 ---
 
 ## 5. Interfaces Clave
@@ -102,6 +114,18 @@ Q-GREENTECH lidera además la estrategia de sostenibilidad del consorcio, actuan
 | Incidentes de seguridad con H₂ criogénico a bordo | Crítico | Baja | Análisis HAZOP/FTA dedicado; validación en demostrador terrestre antes de vuelo |
 | No cumplimiento CORSIA/EU ETS por retraso en ACV | Alto | Baja | Auditorías intermedias anuales con ORB-CSR; contratación verificador externo |
 | Dependencia de minerales críticos (Li, Co, Ni) | Medio | Alta | Diversificación de proveedores; investigación de químicas sin cobalto |
+
+---
+
+## 9. Hoja de Ruta Tecnológica
+
+| Tecnología / Capacidad | TRL Actual | TRL Objetivo | Año Objetivo | Hito Clave |
+|------------------------|-----------|-------------|-------------|------------|
+| Baterías de estado sólido aeroespaciales | TRL 4 | TRL 7 | 2033 | Cualificación para vuelo |
+| Almacenamiento H₂ criogénico a bordo | TRL 3 | TRL 6 | 2036 | Demostrador en tierra |
+| EMS cuántico asistido por IA | TRL 3 | TRL 6 | 2034 | Demo en banco de pruebas |
+| Certificación ISO 14040 programa completo | TRL 7 | TRL 9 | 2038 | Certificación ESG externa |
+| Propulsión HEP >5 MW certificable | TRL 4 | TRL 8 | 2035 | Primer vuelo eléctrico |
 
 ---
 

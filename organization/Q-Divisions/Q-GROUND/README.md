@@ -54,6 +54,18 @@ Q-GROUND actúa como el principal cliente interno de Q-STRUCTURES, Q-MECHANICS y
 | Monitorización BOB DA en servicio | **A**/R | Q-HPC (R), Q-DATAGOV (C) | ORB-IT (C), ORB-PMO (I) |
 | Integración infraestructura H₂/eléctrica | **A**/R | Q-GREENTECH (R), Q-SPACE (C) | ORB-PROC (C) |
 
+```mermaid
+graph LR
+    QGROUND["Q-GROUND"]
+    MPD["MPD / MSG-3\nMantenimiento"]
+    GSE["GSE\nEquipos Soporte"]
+    BOBDA["BOB DA\nGemelo Digital"]
+    QGROUND -->|"define"| MPD
+    QGROUND -->|"especifica"| GSE
+    QGROUND -->|"alimenta"| BOBDA
+    BOBDA -->|"alertas CBM+"| QGROUND
+```
+
 ---
 
 ## 5. Interfaces Clave

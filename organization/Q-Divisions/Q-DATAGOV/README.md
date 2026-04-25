@@ -54,6 +54,18 @@ Q-DATAGOV actúa como la fuente única de verdad (SSOT) para toda la documentaci
 | Publicaciones técnicas (AMM, SRM, IPC) | **A**/R | Q-STRUCTURES (R), Q-GROUND (R) | ORB-PMO (I) |
 | Exportación IETP para operadores | **A**/R | Q-GROUND (C), Q-HPC (C) | ORB-MKTG (I) |
 
+```mermaid
+graph LR
+    QDATA["Q-DATAGOV"]
+    CSDB["CSDB\n(S1000D)"]
+    BREX["BREX/SNS\nEsquemas"]
+    ICD["ICDs\n(Control Interfaz)"]
+    QDATA -->|"opera"| CSDB
+    CSDB -->|"valida con"| BREX
+    QDATA -->|"publica"| ICD
+    ICD -->|"referencia"| CSDB
+```
+
 ---
 
 ## 5. Interfaces Clave

@@ -51,6 +51,18 @@ Q-SPACE actúa como la división enlace entre las capacidades aeronáuticas y la
 | ICD interfaz ATM (ADS-B/ACARS) | **A**/R | Q-DATAGOV (R), Q-AIR (C) | ORB-LEG (C), ORB-PMO (I) |
 | Seguridad comunicaciones ED-202A | **A**/R | Q-HPC (C), Q-DATAGOV (C) | ORB-IT (C), ORB-LEG (C) |
 
+```mermaid
+graph LR
+    QSPACE["Q-SPACE"]
+    SATCOM["SATCOM\n(Ka/LEO)"]
+    GNSS["GNSS/PNT\nMulti-constelación"]
+    QKD["QKD\nComunicación Cuántica"]
+    QSPACE -->|"integra"| SATCOM
+    QSPACE -->|"especifica"| GNSS
+    QSPACE -->|"investiga"| QKD
+    QKD -->|"enlace seguro"| SATCOM
+```
+
 ---
 
 ## 5. Interfaces Clave

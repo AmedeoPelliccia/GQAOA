@@ -54,6 +54,18 @@ Q-HPC es el habilitador tecnológico transversal del programa, proveyendo capaci
 | V&V algoritmos cuánticos | **A**/R | Q-SCIRES (R), Q-DATAGOV (C) | ORB-LEG (I) |
 | Integración QPU en aviónica | **A**/R | Q-AIR (C), Q-SPACE (C) | ORB-IT (C) |
 
+```mermaid
+graph LR
+    QHPC["Q-HPC"]
+    QPU["QPU / QAOA\nOptimización"]
+    AIML["Modelos IA/ML\nDiseño & BOB DA"]
+    CYBER["Ciberseguridad\n(DO-326A)"]
+    QHPC -->|"algoritmos"| QPU
+    QPU -->|"resultados opt."| AIML
+    QHPC -->|"arquitectura"| CYBER
+    AIML -->|"modelos inferencia"| QHPC
+```
+
 ---
 
 ## 5. Interfaces Clave
@@ -102,6 +114,18 @@ Q-HPC es el habilitador tecnológico transversal del programa, proveyendo capaci
 | Ciberataque a infraestructura aviónica embarcada | Crítico | Baja | DO-326A/ED-202A desde fase de diseño; penetration testing periódico |
 | Sobrecarga de HPC durante picos de CFD multifidelidad | Medio | Media | Capacidad cloud burst negociada con ORB-IT; scheduling inteligente de trabajos |
 | Obsolescencia de modelos IA ante cambios de configuración | Medio | Alta | Reentrenamiento periódico y versionado en CSDB (Q-DATAGOV) |
+
+---
+
+## 9. Hoja de Ruta Tecnológica
+
+| Tecnología / Capacidad | TRL Actual | TRL Objetivo | Año Objetivo | Hito Clave |
+|------------------------|-----------|-------------|-------------|------------|
+| QPU integrado en aviónica (5+ qubits útiles) | TRL 3 | TRL 6 | 2034 | Demo QPU en banco aviónica |
+| IA DO-178C nivel A embarcada | TRL 4 | TRL 7 | 2035 | Certificación primera IA de vuelo |
+| Gemelo digital BOB DA en tiempo real | TRL 5 | TRL 8 | 2032 | Despliegue en primer operador |
+| QKD aeronáutico (canal cuántico seguro) | TRL 2 | TRL 5 | 2036 | Demostrador en tierra |
+| Computación neuromórfica embarcada | TRL 2 | TRL 4 | 2036 | Evaluación de chip neuromórfico |
 
 ---
 
