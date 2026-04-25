@@ -30,6 +30,34 @@ parent: "../Readme.md"
 **Versión:** 1.0.0 · **Fecha:** 25 de abril de 2026 · **Estado:** α
 
 ---
+## Glosario de Términos y Acrónimos
+
+| Acrónimo / Término | Definición completa | Referencia externa |
+|--------------------|--------------------|--------------------|
+| **ACT** | *Applicability Cross-reference Table* — tabla S1000D que vincula atributos de aplicabilidad con los DMs correspondientes | [S1000D.net](https://www.s1000d.net/) |
+| **ASD-STE100** | *Simplified Technical English* — especificación ASD para redacción técnica clara y sin ambigüedades | [ASD-STE100](https://www.asd-ste100.org/) |
+| **BREX** | *Business Rules Exchange* — objeto S1000D con reglas de negocio para validar Data Modules del programa | [S1000D.net](https://www.s1000d.net/) |
+| **CCT** | *Conditions Cross-reference Table* — tabla S1000D que mapea condiciones lógicas de aplicabilidad | [S1000D.net](https://www.s1000d.net/) |
+| **CM** | *Configuration Management* — disciplina que gestiona la identificación, control y auditoría del estado de configuración | [IEEE 828](https://standards.ieee.org/ieee/828/4278/) |
+| **CMP** | *Configuration Management Plan* — documento que establece las políticas y procedimientos de gestión de configuración | [IEEE 828](https://standards.ieee.org/ieee/828/4278/) |
+| **CSA** | *Configuration Status Accounting* — registro del estado actualizado de todos los ítems de configuración | *(CMII best practice)* |
+| **CSDB** | *Common Source DataBase* — repositorio centralizado de documentación técnica S1000D | [S1000D.net](https://www.s1000d.net/) |
+| **DITA** | *Darwin Information Typing Architecture* — estándar OASIS de autoría modular XML; complementario a S1000D | [OASIS DITA](https://www.oasis-open.org/committees/dita/) |
+| **DM** | *Data Module* — unidad atómica de información en S1000D, identificada por un código único (DMC) | [S1000D.net](https://www.s1000d.net/) |
+| **DML** | *Data Module List* — lista de todos los DMs planificados o existentes en un proyecto S1000D | [S1000D.net](https://www.s1000d.net/) |
+| **ECO** | *Engineering Change Order* — orden de cambio de ingeniería que formaliza una modificación en la configuración | *(CM best practice)* |
+| **GDPR** | *General Data Protection Regulation* — Reglamento UE 2016/679 de protección de datos personales | [GDPR](https://gdpr-info.eu/) |
+| **ICD** | *Interface Control Document* — documento que define la interfaz técnica entre dos sistemas o subsistemas | *(SE best practice)* |
+| **IETP** | *Interactive Electronic Technical Publication* — publicación técnica electrónica interactiva conforme a S1000D | [S1000D.net](https://www.s1000d.net/) |
+| **iSpec 2200** | Especificación ATA para sistemas de información de mantenimiento de aeronaves | [A4A iSpec 2200](https://www.airlines.org/dataset/ispec-2200/) |
+| **LUTNDR** | Registro centralizado de tecnologías del programa GQAOA (en uso / nueva proyección / disuso / riassetti) | *(GQAOA-UTA-LUTNDR-001)* |
+| **PCT** | *Product Cross-reference Table* — tabla S1000D que vincula productos con DMs y condiciones | [S1000D.net](https://www.s1000d.net/) |
+| **S1000D** | Especificación internacional ASD/AIA/ATA para documentación técnica modular XML (Issue 5.0) | [S1000D.net](https://www.s1000d.net/) |
+| **SNS** | *Standard Numbering System* — sistema de numeración jerárquico S1000D para identificar elementos de sistema | [S1000D.net](https://www.s1000d.net/) |
+| **SSOT** | *Single Source of Truth* — principio: una única fuente autorizada para cada dato técnico | *(Data Governance best practice)* |
+
+
+---
 
 ## 1. Misión y Alcance
 
@@ -142,12 +170,23 @@ graph LR
 
 ## 8. Referencias
 
+### Internas
 - [Matriz RACI Maestra Q-Divisions](../Readme.md)
 - [Documento Organizacional Maestro GQAOA](../../README.md)
 - [AMPEL360-BWB-Q100 Docs](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)
 - [CSDB S1000D Validator](../../../CSDB/s1000d_validator.py)
 - [LUTNDR — Registro de Tecnologías](../../../OPT-INS_FRAMEWORK/GQAOA-UTA-LUTNDR-001.md)
 - [CSDB APPLICABILITY Model](../../../CSDB/readme.md)
+
+### Externas — Normativa y Estándares
+| Referencia | Descripción | Enlace |
+|-----------|-------------|--------|
+| S1000D Issue 5.0 | International spec. for technical publications | [s1000d.net](https://www.s1000d.net/) |
+| ASD-STE100 Issue 8 | Simplified Technical English specification | [asd-ste100.org](https://www.asd-ste100.org/) |
+| A4A iSpec 2200 | Information Standards for Aviation Maintenance | [airlines.org](https://www.airlines.org/dataset/ispec-2200/) |
+| OASIS DITA 1.3 | Darwin Information Typing Architecture | [oasis-open.org](https://www.oasis-open.org/committees/dita/) |
+| GDPR (EU) 2016/679 | General Data Protection Regulation | [gdpr-info.eu](https://gdpr-info.eu/) |
+| IEEE 828-2012 | Configuration Management in Systems and Software | [ieee.org](https://standards.ieee.org/ieee/828/4278/) |
 
 
 ## Notas

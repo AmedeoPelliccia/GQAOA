@@ -30,6 +30,29 @@ parent: "../Readme.md"
 **Versión:** 1.0.0 · **Fecha:** 25 de abril de 2026 · **Estado:** α
 
 ---
+## Glosario de Términos y Acrónimos
+
+| Acrónimo / Término | Definición completa | Referencia externa |
+|--------------------|--------------------|--------------------|
+| **ARP4754A** | *Guidelines for Development of Civil Aircraft and Systems* — guía SAE para el desarrollo de sistemas aeronáuticos complejos | [SAE ARP4754A](https://www.sae.org/standards/content/arp4754a/) |
+| **ARP4761** | *Guidelines and Methods for Conducting the Safety Assessment Process* — metodología SAE para evaluación de seguridad (FHA, PSSA, SSA, FTA, FMECA) | [SAE ARP4761](https://www.sae.org/standards/content/arp4761/) |
+| **CS-25 Subpart C** | Sección de CS-25 relativa a estructura; requisitos de cargas, fatiga y damage tolerance | [EASA CS-25](https://www.easa.europa.eu/en/document-library/certification-specifications/cs-25-amendment-28) |
+| **CS-25 Subpart F** | Sección de CS-25 relativa a equipos y sistemas; incluye requisitos del tren de aterrizaje | [EASA CS-25](https://www.easa.europa.eu/en/document-library/certification-specifications/cs-25-amendment-28) |
+| **CS-25 Subpart G** | Sección de CS-25 relativa a mandos de vuelo; incluye requisitos de FCS y actuadores | [EASA CS-25](https://www.easa.europa.eu/en/document-library/certification-specifications/cs-25-amendment-28) |
+| **DAL** | *Design Assurance Level* — niveles A–E de criticidad de diseño según DO-178C/DO-254/ARP4754A | [SAE ARP4754A](https://www.sae.org/standards/content/arp4754a/) |
+| **EHA** | *Electro-Hydrostatic Actuator* — actuador autocontenido motor eléctrico + bomba hidráulica + cilindro | *(Parker / Moog EHA technology)* |
+| **EMA** | *Electro-Mechanical Actuator* — actuador de accionamiento directo por motor eléctrico y tornillo de bolas | *(Parker / Moog EMA technology)* |
+| **FCS** | *Flight Control System* — sistema de control de vuelo, incluyendo actuadores de superficies primarias y secundarias | *(interno GQAOA)* |
+| **FH** | *Flight Hours* — horas de vuelo; unidad para tasas de fallo (p.ej., ≤ 10⁻⁹ eventos catastrófico/FH) | *(CS-25 §25.1309)* |
+| **FMECA** | *Failure Modes, Effects and Criticality Analysis* — extensión del FMEA con evaluación de criticidad | [MIL-STD-1629A](https://www.everyspec.com/MIL-STD/MIL-STD-1600-1699/MIL-STD-1629A_14167/) |
+| **FTA** | *Fault Tree Analysis* — análisis de árbol de fallos para determinar la probabilidad de un evento top | [IEC 61025](https://webstore.iec.ch/publication/4311) |
+| **HAZOP** | *Hazard and Operability Study* — técnica sistemática de identificación de riesgos en sistemas de proceso | [IEC 61882](https://webstore.iec.ch/publication/6047) |
+| **MDO** | *Multidisciplinary Design Optimization* — optimización simultánea de tren, estructura, peso y aerodinámica | [AIAA MDO](https://arc.aiaa.org/doi/10.2514/1.J058993) |
+| **NWS** | *Nose Wheel Steering* — sistema de dirección de la rueda de nariz para maniobras en tierra | *(CS-25 §25.745)* |
+| **TPIS** | *Tyre Pressure Indication System* — sistema de indicación de presión de neumáticos del tren de aterrizaje | *(CS-25 AMC 25.729)* |
+
+
+---
 
 ## 1. Misión y Alcance
 
@@ -142,10 +165,21 @@ graph LR
 
 ## 8. Referencias
 
+### Internas
 - [Matriz RACI Maestra Q-Divisions](../Readme.md)
 - [Documento Organizacional Maestro GQAOA](../../README.md)
 - [AMPEL360-BWB-Q100 Docs](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)
 - [CSDB S1000D Validator](../../../CSDB/s1000d_validator.py)
+
+### Externas — Normativa y Estándares
+| Referencia | Descripción | Enlace |
+|-----------|-------------|--------|
+| EASA CS-25 Amdt. 28 | Subparts F & G — Systems & FCS requirements | [easa.europa.eu](https://www.easa.europa.eu/en/document-library/certification-specifications/cs-25-amendment-28) |
+| SAE ARP4761 | Safety Assessment Process — FTA/FMECA | [sae.org](https://www.sae.org/standards/content/arp4761/) |
+| SAE ARP4754A | Development of Civil Aircraft and Systems | [sae.org](https://www.sae.org/standards/content/arp4754a/) |
+| MIL-STD-1629A | Failure Mode, Effects and Criticality Analysis | [everyspec.com](https://www.everyspec.com/MIL-STD/MIL-STD-1600-1699/MIL-STD-1629A_14167/) |
+| IEC 61025 | Fault Tree Analysis | [iec.ch](https://webstore.iec.ch/publication/4311) |
+| IEC 61882 | Hazard and Operability Studies (HAZOP) | [iec.ch](https://webstore.iec.ch/publication/6047) |
 
 
 ## Notas

@@ -29,6 +29,35 @@ parent: "../Readme.md"
 **Versión:** 1.0.0 · **Fecha:** 25 de abril de 2026 · **Estado:** α
 
 ---
+## Glosario de Términos y Acrónimos
+
+| Acrónimo / Término | Definición completa | Referencia externa |
+|--------------------|--------------------|--------------------|
+| **Allowables** | Valores límite de tensión, deformación o resistencia de un material que se usan en el cálculo estructural certificado | [MIL-HDBK-17](https://www.astm.org/mil-hdbk-17.html) |
+| **CFRP** | *Carbon Fibre Reinforced Polymer* — material compuesto de fibra de carbono en matriz epoxídica o termoplástica | [ASTM D3039](https://www.astm.org/d3039_d3039m-17.html) |
+| **Coupon** | Probeta pequeña de material usada para generar datos de allowables mediante ensayos destructivos normalizados | [ASTM standards](https://www.astm.org/) |
+| **CS-25** | *Certification Specifications for Large Aeroplanes* (EASA) — requisitos de aeronavegabilidad | [EASA CS-25](https://www.easa.europa.eu/en/document-library/certification-specifications/cs-25-amendment-28) |
+| **Damage Tolerance** | Filosofía de diseño estructural (CS-25 Subpart D) que acepta defectos y verifica integridad entre inspecciones | [FAA AC 25.571](https://rgl.faa.gov/Regulatory_and_Guidance_Library/rgAdvisoryCircular.nsf/0/95c8d36581dce77f862581c800571b8e/$FILE/AC%2025.571-1E.pdf) |
+| **DFM** | *Design for Manufacturability* — metodología que incorpora requisitos de fabricabilidad desde el diseño conceptual | *(DFM best practice)* |
+| **FAR-25** | *Federal Aviation Regulations Part 25* (FAA) | [FAR Part 25](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-C/part-25) |
+| **FC** | *Flight Cycle* — ciclo completo despegue-crucero-aterrizaje; unidad para fatiga estructural | *(CS-25 §25.571)* |
+| **FEM** | *Finite Element Method* — discretización numérica de la geometría en elementos para resolver ecuaciones de elasticidad | [ANSYS](https://www.ansys.com/) |
+| **Flutter** | Inestabilidad aeroelástica acoplada entre estructuras y aerodinámica; debe tener margen ≥ 15% sobre VD | [AIAA](https://arc.aiaa.org/) |
+| **GFRP** | *Glass Fibre Reinforced Polymer* — material compuesto de fibra de vidrio; mayor tenacidad pero menor rigidez que CFRP | [ASTM D2290](https://www.astm.org/d2290-19a.html) |
+| **GVT** | *Ground Vibration Test* — ensayo modal en tierra para caracterizar frecuencias y modos propios de la estructura | *(aerospace SE practice)* |
+| **MDO** | *Multidisciplinary Design Optimization* — optimización simultánea de aerodinámica, estructuras, propulsión y peso | [AIAA MDO](https://arc.aiaa.org/doi/10.2514/1.J058993) |
+| **MTOW** | *Maximum Take-Off Weight* — peso máximo certificado de despegue | *(CS-25 §25.25)* |
+| **OEW** | *Operating Empty Weight* — peso vacío operacional de la aeronave (estructura + sistemas + fluidos no utilizables) | *(CS-25 §25.29)* |
+| **ROM** | *Reduced Order Model* — modelo simplificado derivado de un FEM de alta fidelidad; usado para optimización rápida | *(aerospace SE practice)* |
+| **S1000D** | Especificación ASD/AIA/ATA para documentación técnica modular en XML | [S1000D.net](https://www.s1000d.net/) |
+| **SRM** | *Structural Repair Manual* — manual de reparaciones estructurales aprobadas para servicio | [S1000D.net](https://www.s1000d.net/) |
+| **Ti-6Al-4V** | Aleación de titanio (90% Ti, 6% Al, 4% V); alta relación resistencia-peso y excelente resistencia a la corrosión | [ASM Aerospace Specification Metals](https://asm.matweb.com/) |
+| **TPC** | *Thermoplastic Composites* — composites con matriz termoplástica (PEEK, PPS); soldables, reciclables y con alta tolerancia al daño | *(Airbus Thermoplastic research)* |
+| **TRL** | *Technology Readiness Level* — madurez tecnológica 1–9 | [NASA TRL](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/) |
+| **WBS** | *Work Breakdown Structure* — descomposición jerárquica de trabajo del proyecto en paquetes gestionables | [PMI PMBOK](https://www.pmi.org/pmbok-guide-standards) |
+
+
+---
 
 ## 1. Misión y Alcance
 
@@ -154,10 +183,22 @@ graph LR
 
 ## 8. Referencias
 
+### Internas
 - [Matriz RACI Maestra Q-Divisions](../Readme.md)
 - [Documento Organizacional Maestro GQAOA](../../README.md)
 - [AMPEL360-BWB-Q100 Docs](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)
 - [CSDB S1000D Validator](../../../CSDB/s1000d_validator.py)
+
+### Externas — Normativa y Estándares
+| Referencia | Descripción | Enlace |
+|-----------|-------------|--------|
+| EASA CS-25 Amdt. 28 | Certification Specifications for Large Aeroplanes | [easa.europa.eu](https://www.easa.europa.eu/en/document-library/certification-specifications/cs-25-amendment-28) |
+| FAA AC 25.571-1E | Damage Tolerance and Fatigue Evaluation | [faa.gov](https://rgl.faa.gov/Regulatory_and_Guidance_Library/rgAdvisoryCircular.nsf/0/95c8d36581dce77f862581c800571b8e/$FILE/AC%2025.571-1E.pdf) |
+| ASTM D3039 | Standard Test Method for Tensile Properties of Polymer Matrix Composites | [astm.org](https://www.astm.org/d3039_d3039m-17.html) |
+| MIL-HDBK-17 | Composite Materials Handbook | [astm.org](https://www.astm.org/mil-hdbk-17.html) |
+| SAE ARP4761 | Safety Assessment Process Guidelines | [sae.org](https://www.sae.org/standards/content/arp4761/) |
+| AIAA MDO | Multidisciplinary Design Optimization journal | [arc.aiaa.org](https://arc.aiaa.org/doi/10.2514/1.J058993) |
+| S1000D | Technical documentation specification | [s1000d.net](https://www.s1000d.net/) |
 
 
 ## Notas

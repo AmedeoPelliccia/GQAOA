@@ -33,6 +33,54 @@ parent: "../../README.md"
 **Estado:** α (operacional_estable)
 
 ---
+## Glosario de Términos y Acrónimos
+
+> Todos los acrónimos y conceptos usados en este documento se definen a continuación en orden alfabético.
+
+| Acrónimo / Término | Definición completa | Referencia externa |
+|--------------------|--------------------|--------------------|
+| **ACV / LCA** | Análisis del Ciclo de Vida / *Life Cycle Assessment* — metodología ISO 14040/14044 que cuantifica impactos ambientales de extracción a retiro | [ISO 14040](https://www.iso.org/standard/37456.html) |
+| **AMM** | *Aircraft Maintenance Manual* — manual de mantenimiento de aeronave publicado conforme a S1000D o iSpec 2200 | [iSpec 2200](https://www.airlines.org/dataset/ispec-2200/) |
+| **BOB DA** | *Contextual Digital Agent* — gemelo digital de monitorización en servicio del programa GQAOA; integra sensores, modelos físicos e IA | *(interno GQAOA)* |
+| **BWB** | *Blended Wing Body* — configuración aerodinámica que integra cuerpo y ala para reducir resistencia aerodinámica | [NASA BWB](https://www.nasa.gov/centers-and-facilities/armstrong/blended-wing-body/) |
+| **CORSIA** | *Carbon Offsetting and Reduction Scheme for International Aviation* — mecanismo ICAO de compensación de CO₂ de la aviación internacional desde 2021 | [ICAO CORSIA](https://www.icao.int/environmental-protection/CORSIA/Pages/default.aspx) |
+| **CS-25** | *Certification Specifications for Large Aeroplanes* — requisitos de aeronavegabilidad EASA para aviones de transporte | [EASA CS-25](https://www.easa.europa.eu/en/document-library/certification-specifications/cs-25-amendment-28) |
+| **CSDB** | *Common Source DataBase* — repositorio centralizado de documentación técnica S1000D del programa | [S1000D.net](https://www.s1000d.net/) |
+| **CTE** | Comité Técnico Ejecutivo — órgano máximo de gobernanza técnica del consorcio GQAOA; recibe reportes de los Directores de Q-Division | *(interno GQAOA)* |
+| **DO-178C** | *Software Considerations in Airborne Systems* — estándar RTCA/EUROCAE para certificación de software aeronáutico (niveles DAL A–E) | [RTCA DO-178C](https://www.rtca.org/products/do-178c/) |
+| **DO-254** | *Design Assurance Guidance for Airborne Electronic Hardware* — estándar equivalente a DO-178C para hardware electrónico complejo | [RTCA DO-254](https://www.rtca.org/products/do-254/) |
+| **EASA** | *European Union Aviation Safety Agency* — agencia reguladora de aviación de la Unión Europea con sede en Colonia | [EASA](https://www.easa.europa.eu/) |
+| **ESG** | *Environmental, Social, Governance* — marco de criterios no financieros de sostenibilidad y responsabilidad corporativa | [GRI Standards](https://www.globalreporting.org/) |
+| **EU ETS** | *EU Emissions Trading System* — sistema europeo de comercio de derechos de emisión de CO₂ que incluye la aviación desde 2012 | [EU ETS](https://climate.ec.europa.eu/eu-action/eu-emissions-trading-system-eu-ets_en) |
+| **FAA** | *Federal Aviation Administration* — autoridad de aviación civil de los EE.UU., responsable de los FAR/CFR | [FAA](https://www.faa.gov/) |
+| **FAL** | *Final Assembly Line* — línea de ensamblaje final donde se integra la aeronave completa | *(interno GQAOA)* |
+| **FAR-25** | *Federal Aviation Regulations Part 25* — requisitos de aeronavegabilidad FAA para aviones de transporte | [FAR Part 25](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-C/part-25) |
+| **FCS** | *Flight Control System* — sistema de control de vuelo; en GQAOA, arquitectura fly-by-wire con leyes de control adaptativas | *(interno GQAOA)* |
+| **GQAOA** | *GAIA QUANTUM AMPEL OPT-INS ARCHITECTURE, INC.* — programa conceptual de aviación sostenible diseñado por Amedeo Pelliccia | *(programa ficticio/educativo)* |
+| **GSE** | *Ground Support Equipment* — equipos de apoyo en tierra para mantenimiento, avituallamiento y operaciones | *(estándar industria)* |
+| **HPC** | *High-Performance Computing* — computación paralela masiva para CFD, FEM y simulaciones complejas | [TOP500 HPC](https://www.top500.org/) |
+| **ICD** | *Interface Control Document* — documento que define la interfaz técnica entre dos subsistemas o divisiones | *(estándar industria)* |
+| **IPC** | *Illustrated Parts Catalog* — catálogo ilustrado de piezas con referencias de repuesto; publicado en S1000D | [S1000D.net](https://www.s1000d.net/) |
+| **IPT** | *Integrated Product Team* — equipo multidisciplinar temporal para gestionar la entrega de un producto específico | *(PMI/DoD best practice)* |
+| **ISO 14040** | Norma internacional para la metodología ACV/LCA; define principios, marco y requisitos del estudio de ciclo de vida | [ISO 14040](https://www.iso.org/standard/37456.html) |
+| **LUTNDR** | *Libro Unico delle Tecnologie: in uso, Nuova progettazione, Disuso, Riassetti* — registro centralizado de tecnologías del programa | *(interno GQAOA — GQAOA-UTA-LUTNDR-001)* |
+| **MDO** | *Multidisciplinary Design Optimization* — optimización que considera simultáneamente aerodinámica, estructuras, propulsión y peso | [AIAA MDO](https://arc.aiaa.org/doi/10.2514/1.J058993) |
+| **MRO** | *Maintenance, Repair and Overhaul* — conjunto de actividades de mantenimiento aeronáutico | [IATA MRO](https://www.iata.org/en/programs/ops-infra/maintenance/) |
+| **OPS** | Fase de Operación/Soporte del ciclo de vida del programa GQAOA | *(interno GQAOA)* |
+| **ORB** | *Organizational Resource Branch* — unidades funcionales transversales del consorcio (FIN, HR, LEG, CSR, PMO, MKTG, PROC, IT) | *(interno GQAOA)* |
+| **Part 21J** | EASA Part 21 Subpart J — requisitos para el titular del certificado de tipo (*Type Certificate Holder*) | [EASA Part 21](https://www.easa.europa.eu/en/document-library/regulations/regulation-eu-no-7482012) |
+| **PMR** | *Program Management Review* — revisión mensual de estado del programa con dirección ejecutiva | *(PMI best practice)* |
+| **QAOA** | *Quantum Approximate Optimization Algorithm* — algoritmo cuántico variacional de optimización combinatoria | [arXiv QAOA](https://arxiv.org/abs/1411.4028) |
+| **QPU** | *Quantum Processing Unit* — procesador cuántico basado en qubits | [IBM Quantum](https://www.ibm.com/quantum) |
+| **RACI** | *Responsible, Accountable, Consulted, Informed* — metodología de asignación de roles en gestión de proyectos | [PMI PMBOK](https://www.pmi.org/pmbok-guide-standards) |
+| **S1000D** | Especificación ASD/AIA/ATA para documentación técnica modular basada en XML | [S1000D.net](https://www.s1000d.net/) |
+| **SRM** | *Structural Repair Manual* — manual de reparación estructural aprobada; publicado en S1000D | [S1000D.net](https://www.s1000d.net/) |
+| **SSOT** | *Single Source of Truth* — principio de arquitectura de datos: una única fuente autorizada por dato | *(best practice DG)* |
+| **TBR** | *Technical Baseline Review* — revisión de congelado de baseline técnico al final de cada fase | *(NASA/ESA SE practice)* |
+| **TRL** | *Technology Readiness Level* — escala de madurez tecnológica 1–9 (NASA/ESA) | [NASA TRL](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/) |
+
+
+---
 
 ## 1. Misión y Alcance
 
@@ -224,6 +272,27 @@ Resumen de documentos por Q-Division (AMPEL360-BWB-Q100):
 | Q-SPACE | 6 | Sat-comm ICD, orbital ops |
 | Q-SCIRES | 6 | Test plans, cert. matrices |
 
+
+## 9. Referencias Externas Clave
+
+| Referencia | Descripción | Enlace |
+|-----------|-------------|--------|
+| EASA | European Union Aviation Safety Agency | [easa.europa.eu](https://www.easa.europa.eu/) |
+| FAA | Federal Aviation Administration | [faa.gov](https://www.faa.gov/) |
+| EASA CS-25 Amdt. 28 | Certification Specifications for Large Aeroplanes | [easa.europa.eu](https://www.easa.europa.eu/en/document-library/certification-specifications/cs-25-amendment-28) |
+| EASA Part 21 (EU) 748/2012 | Type Certification regulations | [easa.europa.eu](https://www.easa.europa.eu/en/document-library/regulations/regulation-eu-no-7482012) |
+| RTCA DO-178C | Software certification standard | [rtca.org](https://www.rtca.org/products/do-178c/) |
+| RTCA DO-254 | Hardware certification standard | [rtca.org](https://www.rtca.org/products/do-254/) |
+| S1000D Issue 5.0 | Technical documentation specification | [s1000d.net](https://www.s1000d.net/) |
+| ISO 14040:2006 | Life Cycle Assessment methodology | [iso.org](https://www.iso.org/standard/37456.html) |
+| ICAO CORSIA | Carbon offsetting scheme for aviation | [icao.int](https://www.icao.int/environmental-protection/CORSIA/Pages/default.aspx) |
+| SAE ARP4754A | Development of Civil Aircraft and Systems | [sae.org](https://www.sae.org/standards/content/arp4754a/) |
+| SAE ARP4761 | Safety Assessment Process Guidelines | [sae.org](https://www.sae.org/standards/content/arp4761/) |
+| IATA MSG-3 | Maintenance Steering Group methodology | [iata.org](https://www.iata.org/en/programs/ops-infra/maintenance/msg-3/) |
+| PMI PMBOK | Project Management Body of Knowledge | [pmi.org](https://www.pmi.org/pmbok-guide-standards) |
+| arXiv:1411.4028 | QAOA algorithm (Farhi, Goldstone, Gutmann) | [arxiv.org](https://arxiv.org/abs/1411.4028) |
+| IBM Quantum | Quantum computing platform | [ibm.com/quantum](https://www.ibm.com/quantum) |
+| NASA TRL Scale | Technology Readiness Level definitions | [nasa.gov](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/) |
 
 ## Notas
 

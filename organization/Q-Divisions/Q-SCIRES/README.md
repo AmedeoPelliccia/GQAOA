@@ -30,6 +30,32 @@ parent: "../Readme.md"
 **Versión:** 1.0.0 · **Fecha:** 25 de abril de 2026 · **Estado:** α
 
 ---
+## Glosario de Términos y Acrónimos
+
+| Acrónimo / Término | Definición completa | Referencia externa |
+|--------------------|--------------------|--------------------|
+| **CIRA** | *Centro Italiano di Ricerche Aerospaziali* — centro de investigación aeroespacial italiano con túnel de viento y laboratorios de certificación | [CIRA](https://www.cira.it/) |
+| **CRI** | *Certification Review Item* — ítem de revisión de certificación acordado con EASA/FAA para aspectos no convencionales | [EASA Certification](https://www.easa.europa.eu/en/document-library/type-certificates) |
+| **CS-25** | *Certification Specifications for Large Aeroplanes* (EASA) — base de certificación para aviones de transporte | [EASA CS-25](https://www.easa.europa.eu/en/document-library/certification-specifications/cs-25-amendment-28) |
+| **DLR** | *Deutsches Zentrum für Luft- und Raumfahrt* — centro alemán de investigación aeroespacial; socio clave en ensayos | [DLR](https://www.dlr.de/) |
+| **EASA Part 21J** | Subparte J del Part 21 — requisitos para el titular del certificado de tipo (*TC Holder*) | [EASA Part 21](https://www.easa.europa.eu/en/document-library/regulations/regulation-eu-no-7482012) |
+| **EUROCAE WG-114** | Grupo de trabajo EUROCAE sobre IA aplicada a la aviación; desarrolla guidance para V&V de IA aeronáutica | [EUROCAE WG-114](https://www.eurocae.net/news/posts/2019/october/eurocae-establishes-new-working-group-on-artificial-intelligence/) |
+| **FAR-25** | *Federal Aviation Regulations Part 25* (FAA) | [FAR Part 25](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-C/part-25) |
+| **FHA** | *Functional Hazard Assessment* — evaluación funcional de peligros que clasifica fallos según severidad y probabilidad | [SAE ARP4761](https://www.sae.org/standards/content/arp4761/) |
+| **FTP** | *Flight Test Programme* — programa de ensayos en vuelo con hitos, campañas y aeronaves de prueba | *(EASA / FAA Flight Test guidance)* |
+| **GVT** | *Ground Vibration Test* — ensayo modal en tierra para caracterizar modos propios y validar modelo FEM | *(aerospace SE practice)* |
+| **MoC** | *Means of Compliance* — método de demostración de cumplimiento de un requisito regulatorio | [EASA AMC/GM](https://www.easa.europa.eu/) |
+| **MTP** | *Master Test Plan* — plan maestro que integra todas las campañas de ensayo del programa | *(SE best practice)* |
+| **ONERA** | *Office national d'études et de recherches aérospatiales* — agencia de investigación aeroespacial francesa | [ONERA](https://www.onera.fr/) |
+| **PSSA** | *Preliminary System Safety Assessment* — evaluación preliminar de seguridad del sistema durante el diseño | [SAE ARP4761](https://www.sae.org/standards/content/arp4761/) |
+| **SoI** | *Stage of Involvement* — reuniones periódicas entre EASA y el solicitante del TC para revisar el avance de certificación | [EASA Certification](https://www.easa.europa.eu/en/document-library/type-certificates) |
+| **SSA** | *System Safety Assessment* — evaluación de seguridad del sistema que demuestra cumplimiento de CS-25 §25.1309 | [SAE ARP4761](https://www.sae.org/standards/content/arp4761/) |
+| **TCDS** | *Type Certificate Data Sheet* — hoja de datos del certificado de tipo emitida por EASA o FAA | [EASA TCDS](https://www.easa.europa.eu/en/document-library/type-certificates) |
+| **TRL** | *Technology Readiness Level* — escala de madurez tecnológica 1–9 (NASA/ESA) | [NASA TRL](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/) |
+| **V&V** | *Verification & Validation* — proceso dual que verifica corrección e implementación y valida necesidades del usuario | [IEEE 1012](https://standards.ieee.org/ieee/1012/5609/) |
+
+
+---
 
 ## 1. Misión y Alcance
 
@@ -142,10 +168,25 @@ graph LR
 
 ## 8. Referencias
 
+### Internas
 - [Matriz RACI Maestra Q-Divisions](../Readme.md)
 - [Documento Organizacional Maestro GQAOA](../../README.md)
 - [AMPEL360-BWB-Q100 Docs](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)
 - [CSDB S1000D Validator](../../../CSDB/s1000d_validator.py)
+
+### Externas — Normativa y Estándares
+| Referencia | Descripción | Enlace |
+|-----------|-------------|--------|
+| EASA Part 21 (EU) 748/2012 | Type Certification (Part 21 Subpart J) | [easa.europa.eu](https://www.easa.europa.eu/en/document-library/regulations/regulation-eu-no-7482012) |
+| EASA CS-25 Amdt. 28 | Certification basis for large aeroplanes | [easa.europa.eu](https://www.easa.europa.eu/en/document-library/certification-specifications/cs-25-amendment-28) |
+| SAE ARP4761 | Safety Assessment — FHA, PSSA, SSA | [sae.org](https://www.sae.org/standards/content/arp4761/) |
+| SAE ARP4754A | Development of Civil Aircraft and Systems | [sae.org](https://www.sae.org/standards/content/arp4754a/) |
+| EUROCAE WG-114 | AI in Aviation working group | [eurocae.net](https://www.eurocae.net/news/posts/2019/october/eurocae-establishes-new-working-group-on-artificial-intelligence/) |
+| IEEE 1012-2016 | V&V for Systems, Software and Hardware | [ieee.org](https://standards.ieee.org/ieee/1012/5609/) |
+| NASA TRL Scale | Technology Readiness Level definitions | [nasa.gov](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/) |
+| ONERA | French aerospace research centre | [onera.fr](https://www.onera.fr/) |
+| DLR | German aerospace research centre | [dlr.de](https://www.dlr.de/) |
+| CIRA | Italian aerospace research centre | [cira.it](https://www.cira.it/) |
 
 
 ## Notas

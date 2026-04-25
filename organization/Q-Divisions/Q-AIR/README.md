@@ -28,6 +28,39 @@ parent: "../Readme.md"
 **Versión:** 1.0.0 · **Fecha:** 25 de abril de 2026 · **Estado:** α
 
 ---
+## Glosario de Términos y Acrónimos
+
+| Acrónimo / Término | Definición completa | Referencia externa |
+|--------------------|--------------------|--------------------|
+| **ADS-B** | *Automatic Dependent Surveillance–Broadcast* — sistema de vigilancia aeronáutica que difunde posición GNSS | [ICAO Doc 9684](https://www.icao.int/safety/acp/ACPWGF/ACP-WG-F_28/WGF28_WP06.pdf) |
+| **Aeroelasticidad** | Fenómeno de interacción entre fuerzas aerodinámicas, inercia y elasticidad estructural; incluye flutter, divergencia y respuesta en ráfagas | [AIAA Aeroelasticity](https://arc.aiaa.org/) |
+| **BWB** | *Blended Wing Body* — configuración que integra cuerpo y ala para reducir resistencia y aumentar sustentación | [NASA BWB](https://www.nasa.gov/centers-and-facilities/armstrong/blended-wing-body/) |
+| **CFD** | *Computational Fluid Dynamics* — disciplina que aplica métodos numéricos para simular el comportamiento de fluidos | [OpenFOAM](https://www.openfoam.com/) |
+| **Cl/Cd** | Coeficientes adimensionales de sustentación (Cl) y resistencia (Cd); la relación Cl/Cd = eficiencia aerodinámica | *(fundamento aerodinámica)* |
+| **CS-25** | *Certification Specifications for Large Aeroplanes* (EASA) — requisitos de aeronavegabilidad para aviones de transporte | [EASA CS-25](https://www.easa.europa.eu/en/document-library/certification-specifications/cs-25-amendment-28) |
+| **DAL** | *Design Assurance Level* — niveles A–E de criticidad de diseño (DO-178C/DO-254/ARP4754A) | [SAE ARP4754A](https://www.sae.org/standards/content/arp4754a/) |
+| **DER** | *Designated Engineering Representative* — ingeniero designado por la FAA para aprobar datos técnicos de certificación | [FAA DER](https://www.faa.gov/aircraft/air_cert/design_approvals/der) |
+| **DO-178C** | *Software Considerations in Airborne Systems* — estándar RTCA para certificación de software aviónco | [RTCA DO-178C](https://www.rtca.org/products/do-178c/) |
+| **EASA** | *European Union Aviation Safety Agency* — autoridad reguladora de aviación de la UE | [EASA](https://www.easa.europa.eu/) |
+| **FAR-25** | *Federal Aviation Regulations Part 25* (FAA) — requisitos de aeronavegabilidad para aviones de transporte | [FAR Part 25](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-C/part-25) |
+| **FBW** | *Fly-By-Wire* — sistema de control de vuelo en que las señales del piloto se transmiten eléctricamente, sin conexiones mecánicas directas | *(Airbus/Boeing engineering)* |
+| **FCS** | *Flight Control System* — sistema que ejecuta las leyes de control y actúa sobre superficies de vuelo | *(interno GQAOA)* |
+| **Flutter** | Inestabilidad aeroelástica autoexcitada que puede llevar a la destrucción estructural; debe evitarse en toda la envolvente de vuelo | [AIAA Flutter](https://arc.aiaa.org/) |
+| **FMS** | *Flight Management System* — sistema de navegación y gestión de vuelo integrado | *(ARINC 702A)* |
+| **GQAOA** | *GAIA QUANTUM AMPEL OPT-INS ARCHITECTURE, INC.* — programa conceptual ficticio de Amedeo Pelliccia | *(programa ficticio)* |
+| **GVT** | *Ground Vibration Test* — ensayo de vibración en tierra para caracterizar los modos propios estructurales antes del primer vuelo | *(aerospace SE practice)* |
+| **HPC** | *High-Performance Computing* — clústeres de cómputo paralelo para CFD LES de alta fidelidad | [TOP500](https://www.top500.org/) |
+| **ICAO Annex 16** | Anexo 16 al Convenio de Chicago — estándares de ruido y emisiones de aeronaves (Capítulos 3/4/14) | [ICAO Annex 16](https://www.icao.int/environmental-protection/Pages/noise.aspx) |
+| **LES** | *Large Eddy Simulation* — método CFD de alta fidelidad para resolver turbulencia a gran escala | *(fundamento CFD)* |
+| **MC/DC** | *Modified Condition/Decision Coverage* — criterio de cobertura de prueba estructural exigido por DO-178C nivel A | [RTCA DO-178C](https://www.rtca.org/products/do-178c/) |
+| **MDO** | *Multidisciplinary Design Optimization* — optimización simultánea de múltiples disciplinas de ingeniería | [AIAA MDO](https://arc.aiaa.org/doi/10.2514/1.J058993) |
+| **QAOA** | *Quantum Approximate Optimization Algorithm* — algoritmo cuántico de optimización combinatoria | [arXiv QAOA](https://arxiv.org/abs/1411.4028) |
+| **RNP** | *Required Navigation Performance* — especificación PBN que define la precisión de navegación requerida | [ICAO Doc 9613](https://www.icao.int/NACC/Documents/Meetings/2014/RNPARSM/RT-PBN-i2.pdf) |
+| **TRL** | *Technology Readiness Level* — madurez tecnológica 1–9 | [NASA TRL](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/) |
+| **V-n diagram** | Diagrama velocidad-factor de carga que define la envolvente de maniobra certificable | [CS-25 §25.333](https://www.easa.europa.eu/en/document-library/certification-specifications/cs-25-amendment-28) |
+
+
+---
 
 ## 1. Misión y Alcance
 
@@ -153,10 +186,23 @@ graph LR
 
 ## 8. Referencias
 
+### Internas
 - [Matriz RACI Maestra Q-Divisions](../Readme.md)
 - [Documento Organizacional Maestro GQAOA](../../README.md)
 - [AMPEL360-BWB-Q100 Docs](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)
 - [CSDB S1000D Validator](../../../CSDB/s1000d_validator.py)
+
+### Externas — Normativa y Estándares
+| Referencia | Descripción | Enlace |
+|-----------|-------------|--------|
+| EASA CS-25 Amdt. 28 | Certification Specifications for Large Aeroplanes | [easa.europa.eu](https://www.easa.europa.eu/en/document-library/certification-specifications/cs-25-amendment-28) |
+| FAR Part 25 | Federal Aviation Regulations Part 25 (FAA) | [ecfr.gov](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-C/part-25) |
+| RTCA DO-178C | Software Considerations in Airborne Systems | [rtca.org](https://www.rtca.org/products/do-178c/) |
+| SAE ARP4754A | Development of Civil Aircraft and Systems | [sae.org](https://www.sae.org/standards/content/arp4754a/) |
+| SAE ARP4761 | Safety Assessment Process Guidelines | [sae.org](https://www.sae.org/standards/content/arp4761/) |
+| ICAO Annex 16 Vol. I | Aircraft Noise Standards | [icao.int](https://www.icao.int/environmental-protection/Pages/noise.aspx) |
+| NASA BWB Research | Blended Wing Body program overview | [nasa.gov](https://www.nasa.gov/centers-and-facilities/armstrong/blended-wing-body/) |
+| OpenFOAM | Open-source CFD toolbox | [openfoam.com](https://www.openfoam.com/) |
 
 
 ## Notas

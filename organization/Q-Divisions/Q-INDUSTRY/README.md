@@ -29,6 +29,31 @@ parent: "../Readme.md"
 **Versión:** 1.0.0 · **Fecha:** 25 de abril de 2026 · **Estado:** α
 
 ---
+## Glosario de Términos y Acrónimos
+
+| Acrónimo / Término | Definición completa | Referencia externa |
+|--------------------|--------------------|--------------------|
+| **6-Sigma** | Metodología de mejora de calidad que busca reducir defectos a ≤ 3,4 por millón de oportunidades | [ASQ Six Sigma](https://asq.org/quality-resources/six-sigma) |
+| **AOG** | *Aircraft on Ground* — situación en que una aeronave no puede operar por falta de pieza o intervención de mantenimiento | *(industria MRO)* |
+| **BOM** | *Bill of Materials* — lista estructurada de materiales y componentes de un ensamblaje | *(PLM/ERP best practice)* |
+| **CAPEX** | *Capital Expenditure* — inversión en activos fijos (maquinaria, robotización FAL) | *(finanzas corporativas)* |
+| **DFA** | *Design for Assembly* — metodología para reducir el tiempo y complejidad de ensamblaje desde el diseño | *(Boothroyd Dewhurst DFA)* |
+| **DFM** | *Design for Manufacturability* — metodología para incorporar requisitos de fabricabilidad desde las fases tempranas de diseño | *(Boothroyd Dewhurst DFM)* |
+| **EASA Part 21G** | Subparte G del Reglamento EASA Part 21 — aprobación de organización de producción | [EASA Part 21](https://www.easa.europa.eu/en/document-library/regulations/regulation-eu-no-7482012) |
+| **EASA Part 145** | Reglamento EASA de requisitos para organizaciones de mantenimiento aprobadas | [EASA Part 145](https://www.easa.europa.eu/en/document-library/regulations/regulation-eu-no-13212014) |
+| **FAL** | *Final Assembly Line* — línea de ensamblaje final de la aeronave completa | *(industria aeroespacial)* |
+| **Lean** | Filosofía de producción orientada a eliminar desperdicios (muda) y maximizar valor; derivada del Toyota Production System | [Lean Enterprise Institute](https://www.lean.org/) |
+| **MPI** | *Manufacturing Process Instruction* — instrucción de trabajo que describe paso a paso un proceso de fabricación | [S1000D.net](https://www.s1000d.net/) |
+| **MPS** | *Master Production Schedule* — plan maestro de producción que establece volúmenes y fechas de entrega | *(APICS/ASCM)* |
+| **MRP** | *Material Requirements Planning* — sistema de planificación de necesidades de materiales basado en BOM y MPS | *(APICS/ASCM)* |
+| **NC** | *Non-Conformance* — desviación respecto a un requisito especificado; gestionada con un registro NC y acción correctiva | *(AS9100D)* |
+| **OGATA** | Código de dominio UTA 600–699 para robótica industrial; ver UTCS 600-10-10 para robots de ensamblaje | *(GQAOA UTA taxonomy)* |
+| **REACH** | *Registration, Evaluation, Authorisation and Restriction of Chemicals* — reglamento UE nº 1907/2006 | [ECHA REACH](https://echa.europa.eu/regulations/reach/understanding-reach) |
+| **ROI** | *Return on Investment* — indicador financiero de rentabilidad de una inversión | *(finanzas corporativas)* |
+| **SPC** | *Statistical Process Control* — control estadístico de proceso mediante cartas de control (Shewhart, CUSUM) | [ASQ SPC](https://asq.org/quality-resources/statistical-process-control) |
+
+
+---
 
 ## 1. Misión y Alcance
 
@@ -142,10 +167,22 @@ graph LR
 
 ## 8. Referencias
 
+### Internas
 - [Matriz RACI Maestra Q-Divisions](../Readme.md)
 - [Documento Organizacional Maestro GQAOA](../../README.md)
 - [AMPEL360-BWB-Q100 Docs](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)
 - [Robbbo-T Robotics PRD (OGATA 600)](../../../programs/Robbbo-T_Robotics_PRD/Readme.md)
+
+### Externas — Normativa y Estándares
+| Referencia | Descripción | Enlace |
+|-----------|-------------|--------|
+| EASA Part 21 (EU) 748/2012 | Airworthiness and Environmental Certification | [easa.europa.eu](https://www.easa.europa.eu/en/document-library/regulations/regulation-eu-no-7482012) |
+| EASA Part 145 (EU) 1321/2014 | Approved Maintenance Organisations | [easa.europa.eu](https://www.easa.europa.eu/en/document-library/regulations/regulation-eu-no-13212014) |
+| AS9100D | Quality Management Systems — Aviation, Space | [sae.org](https://www.sae.org/standards/content/as9100d/) |
+| ECHA REACH | Regulation (EC) No 1907/2006 | [echa.europa.eu](https://echa.europa.eu/regulations/reach/understanding-reach) |
+| Lean Enterprise Institute | Lean manufacturing resources | [lean.org](https://www.lean.org/) |
+| ASQ Six Sigma | Six Sigma methodology | [asq.org](https://asq.org/quality-resources/six-sigma) |
+| S1000D | Technical documentation for MPI/WI | [s1000d.net](https://www.s1000d.net/) |
 
 
 ## Notas

@@ -30,6 +30,33 @@ parent: "../Readme.md"
 **Versión:** 1.0.0 · **Fecha:** 25 de abril de 2026 · **Estado:** α
 
 ---
+## Glosario de Términos y Acrónimos
+
+| Acrónimo / Término | Definición completa | Referencia externa |
+|--------------------|--------------------|--------------------|
+| **ARINC 811** | Estándar aeronáutico para la seguridad cibernética de sistemas de información de aerolíneas y aeronaves | [ARINC](https://www.aviation-ia.com/arinc) |
+| **ASIC** | *Application-Specific Integrated Circuit* — circuito integrado diseñado para una aplicación específica; crítico en aviónica | *(microelectronics)* |
+| **BOB DA** | *Contextual Digital Agent* — gemelo digital de monitorización en servicio del programa GQAOA | *(interno GQAOA)* |
+| **CBM+** | *Condition-Based Maintenance Plus* — mantenimiento predictivo basado en datos de condición en tiempo real | [SAE JA1012](https://www.sae.org/standards/content/ja1012/) |
+| **DAL** | *Design Assurance Level* — niveles A–E de criticidad de diseño (DO-178C/ARP4754A) | [SAE ARP4754A](https://www.sae.org/standards/content/arp4754a/) |
+| **DO-178C** | *Software Considerations in Airborne Systems* — certificación de software aeronáutico | [RTCA DO-178C](https://www.rtca.org/products/do-178c/) |
+| **DO-254** | *Design Assurance for Airborne Electronic Hardware* — certificación de hardware electrónico complejo | [RTCA DO-254](https://www.rtca.org/products/do-254/) |
+| **DO-326A / ED-202A** | *Airworthiness Security Process Specification* — ciberseguridad de sistemas aeronáuticos | [EUROCAE ED-202A](https://www.eurocae.net/) |
+| **DSE** | *Design Space Exploration* — búsqueda sistemática del espacio de diseño multidimensional asistida por IA | *(aerospace SE practice)* |
+| **EUROCAE WG-114** | Grupo de trabajo EUROCAE sobre IA aplicada a la aviación | [EUROCAE](https://www.eurocae.net/news/posts/2019/october/eurocae-establishes-new-working-group-on-artificial-intelligence/) |
+| **FPGA** | *Field-Programmable Gate Array* — circuito integrado reprogramable; usado en prototipado de hardware aviónico | *(Xilinx/Intel Altera)* |
+| **HPC** | *High-Performance Computing* — clústeres de computación paralela masiva | [TOP500](https://www.top500.org/) |
+| **IBM Quantum** | Plataforma de acceso a QPU superconductores vía cloud de IBM | [IBM Quantum](https://www.ibm.com/quantum) |
+| **MC/DC** | *Modified Condition/Decision Coverage* — cobertura estructural exigida para software DAL A por DO-178C | [RTCA DO-178C](https://www.rtca.org/products/do-178c/) |
+| **QAOA** | *Quantum Approximate Optimization Algorithm* — algoritmo cuántico variacional para optimización combinatoria | [arXiv:1411.4028](https://arxiv.org/abs/1411.4028) |
+| **QPU** | *Quantum Processing Unit* — procesador cuántico basado en qubits superconductores o fotónicos | [IBM Quantum](https://www.ibm.com/quantum) |
+| **qubit** | Unidad básica de información cuántica; puede estar en superposición de |0⟩ y |1⟩ simultáneamente | [Nielsen & Chuang](https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/) |
+| **ROM** | *Reduced Order Model* — modelo de baja dimensión derivado de simulaciones de alta fidelidad para uso en optimización | *(aerospace SE practice)* |
+| **TRL** | *Technology Readiness Level* — madurez tecnológica 1–9 | [NASA TRL](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/) |
+| **V&V** | *Verification & Validation* — proceso dual que confirma que el producto fue construido correctamente y cumple necesidades del usuario | [IEEE 1012](https://standards.ieee.org/ieee/1012/5609/) |
+
+
+---
 
 ## 1. Misión y Alcance
 
@@ -156,11 +183,24 @@ graph LR
 
 ## 8. Referencias
 
+### Internas
 - [Matriz RACI Maestra Q-Divisions](../Readme.md)
 - [Documento Organizacional Maestro GQAOA](../../README.md)
 - [AMPEL360-BWB-Q100 Docs](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)
 - [CSDB S1000D Validator](../../../CSDB/s1000d_validator.py)
 - [SUPIA v1.0 — Sistema Unico de Proyección Industrial](../../../OPT-INS_FRAMEWORK/GQAOA-UTA-SUPIA-001.md)
+
+### Externas — Normativa y Estándares
+| Referencia | Descripción | Enlace |
+|-----------|-------------|--------|
+| RTCA DO-178C | Software Considerations in Airborne Systems | [rtca.org](https://www.rtca.org/products/do-178c/) |
+| RTCA DO-254 | Design Assurance for Airborne Electronic Hardware | [rtca.org](https://www.rtca.org/products/do-254/) |
+| EUROCAE ED-202A | Airworthiness Security Process Specification | [eurocae.net](https://www.eurocae.net/) |
+| EUROCAE WG-114 | Artificial Intelligence in Aviation | [eurocae.net](https://www.eurocae.net/news/posts/2019/october/eurocae-establishes-new-working-group-on-artificial-intelligence/) |
+| SAE ARP4754A | Development of Civil Aircraft and Systems | [sae.org](https://www.sae.org/standards/content/arp4754a/) |
+| arXiv:1411.4028 | QAOA original paper (Farhi et al.) | [arxiv.org](https://arxiv.org/abs/1411.4028) |
+| IBM Quantum | Quantum computing cloud platform | [ibm.com/quantum](https://www.ibm.com/quantum) |
+| IEEE 1012-2016 | Standard for System, Software and Hardware V&V | [ieee.org](https://standards.ieee.org/ieee/1012/5609/) |
 
 
 ## Notas

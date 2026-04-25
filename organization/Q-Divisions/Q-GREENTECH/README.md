@@ -29,6 +29,32 @@ parent: "../Readme.md"
 **Versión:** 1.0.0 · **Fecha:** 25 de abril de 2026 · **Estado:** α
 
 ---
+## Glosario de Términos y Acrónimos
+
+| Acrónimo / Término | Definición completa | Referencia externa |
+|--------------------|--------------------|--------------------|
+| **ACV / LCA** | *Análisis del Ciclo de Vida / Life Cycle Assessment* — metodología ISO 14040/14044 de evaluación ambiental cradle-to-grave | [ISO 14040](https://www.iso.org/standard/37456.html) |
+| **CAPEX** | *Capital Expenditure* — inversión en activos fijos (infraestructura, equipos); contraparte del OPEX (gastos operativos) | *(finanzas corporativas)* |
+| **CORSIA** | *Carbon Offsetting and Reduction Scheme for International Aviation* — mecanismo ICAO de compensación de CO₂ | [ICAO CORSIA](https://www.icao.int/environmental-protection/CORSIA/Pages/default.aspx) |
+| **EIS** | *Entry Into Service* — fecha de puesta en servicio comercial de la aeronave | *(industria aeroespacial)* |
+| **EMS** | *Energy Management System* — sistema de gestión de energía que optimiza carga/descarga y distribución de potencia a bordo | *(IEC 61970 / SAE AS6975)* |
+| **ESG** | *Environmental, Social, Governance* — criterios no financieros de sostenibilidad | [GRI Standards](https://www.globalreporting.org/) |
+| **EU ETS** | *EU Emissions Trading System* — mercado europeo de derechos de emisión de CO₂; aviación incluida desde 2012 | [EU ETS](https://climate.ec.europa.eu/eu-action/eu-emissions-trading-system-eu-ets_en) |
+| **GHG** | *Greenhouse Gas* — gas de efecto invernadero (CO₂, CH₄, N₂O, H₂O); unidad de medida: tCO₂eq | [IPCC](https://www.ipcc.ch/) |
+| **H₂ criogénico** | Hidrógeno líquido almacenado a –253 °C (20 K); densidad energética gravimétrica ≈ 120 MJ/kg, superior al queroseno | *(DOE Hydrogen Program)* |
+| **HAZOP** | *Hazard and Operability Study* — técnica sistemática de identificación de riesgos en sistemas de proceso | [IEC 61882](https://webstore.iec.ch/publication/6047) |
+| **HEP** | *Hybrid-Electric Propulsion* — arquitectura propulsiva que combina motor/celda de combustible con motor eléctrico y baterías | *(EASA SC E-19)* |
+| **ISO 14040** | Norma internacional que define el marco metodológico del ACV/LCA | [ISO 14040](https://www.iso.org/standard/37456.html) |
+| **ISO 14044** | Norma complementaria a ISO 14040 con requisitos y directrices para la realización del ACV | [ISO 14044](https://www.iso.org/standard/38498.html) |
+| **LUTNDR** | Registro centralizado de tecnologías del programa (en uso / nueva proyección / desuso / riassetti) | *(GQAOA-UTA-LUTNDR-001)* |
+| **NMC** | *Nickel Manganese Cobalt* — química de cátodo para baterías de ión-litio; alta densidad energética pero dependiente de cobalto | *(DOE BatPaC model)* |
+| **REACH** | *Registration, Evaluation, Authorisation and Restriction of Chemicals* — reglamento UE nº 1907/2006 sobre sustancias químicas | [ECHA REACH](https://echa.europa.eu/regulations/reach/understanding-reach) |
+| **Scope 1/2/3** | Alcances del inventario de GHG: 1=emisiones directas, 2=energía indirecta, 3=cadena de valor | [GHG Protocol](https://ghgprotocol.org/) |
+| **SoS** | *State of Solid* — química de baterías de estado sólido; ánodo de litio metálico y electrolito sólido | *(Toyota / QuantumScape research)* |
+| **TRL** | *Technology Readiness Level* — escala de madurez tecnológica 1–9 NASA/ESA | [NASA TRL](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/) |
+
+
+---
 
 ## 1. Misión y Alcance
 
@@ -155,10 +181,23 @@ graph LR
 
 ## 8. Referencias
 
+### Internas
 - [Matriz RACI Maestra Q-Divisions](../Readme.md)
 - [Documento Organizacional Maestro GQAOA](../../README.md)
 - [AMPEL360-BWB-Q100 Docs](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)
-- [LUTNDR — Libro Unico de Tecnologías](../../../OPT-INS_FRAMEWORK/GQAOA-UTA-LUTNDR-001.md)
+- [LUTNDR — Registro de Tecnologías](../../../OPT-INS_FRAMEWORK/GQAOA-UTA-LUTNDR-001.md)
+
+### Externas — Normativa y Estándares
+| Referencia | Descripción | Enlace |
+|-----------|-------------|--------|
+| ISO 14040:2006 | Environmental management — LCA principles | [iso.org](https://www.iso.org/standard/37456.html) |
+| ISO 14044:2006 | LCA requirements and guidelines | [iso.org](https://www.iso.org/standard/38498.html) |
+| ICAO CORSIA | Carbon Offsetting Scheme for Int'l Aviation | [icao.int](https://www.icao.int/environmental-protection/CORSIA/Pages/default.aspx) |
+| EU ETS Aviation | EU Emissions Trading System — aviation sector | [ec.europa.eu](https://climate.ec.europa.eu/eu-action/eu-emissions-trading-system-eu-ets_en) |
+| ECHA REACH | Registration, Evaluation, Authorisation of Chemicals | [echa.europa.eu](https://echa.europa.eu/regulations/reach/understanding-reach) |
+| GRI Standards | Global Reporting Initiative — ESG reporting | [globalreporting.org](https://www.globalreporting.org/) |
+| GHG Protocol | Corporate Accounting and Reporting Standard | [ghgprotocol.org](https://ghgprotocol.org/) |
+| EASA SC E-19 | Special Condition for Hybrid-Electric Propulsion | [easa.europa.eu](https://www.easa.europa.eu/en/document-library/special-conditions) |
 
 
 ## Notas

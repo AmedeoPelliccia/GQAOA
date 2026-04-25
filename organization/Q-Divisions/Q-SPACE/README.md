@@ -30,6 +30,35 @@ parent: "../Readme.md"
 **Versión:** 1.0.0 · **Fecha:** 25 de abril de 2026 · **Estado:** α
 
 ---
+## Glosario de Términos y Acrónimos
+
+| Acrónimo / Término | Definición completa | Referencia externa |
+|--------------------|--------------------|--------------------|
+| **ACARS** | *Aircraft Communications Addressing and Reporting System* — sistema de enlace de datos aeronáuticos voz/texto | [ARINC 618](https://www.aviation-ia.com/arinc) |
+| **ADS-B** | *Automatic Dependent Surveillance–Broadcast* — sistema de vigilancia basado en GNSS que difunde posición e identidad | [ICAO Doc 9871](https://www.icao.int/) |
+| **ATM** | *Air Traffic Management* — gestión del tráfico aéreo; en Europa gestionada por EUROCONTROL/SESAR | [EUROCONTROL](https://www.eurocontrol.int/) |
+| **DO-160G** | Condiciones ambientales y procedimientos de ensayo para equipos aeronáuticos embarcados | [RTCA DO-160G](https://www.rtca.org/products/do-160/) |
+| **EASA Part 21** | Requisitos EASA para diseño, producción y certificación de aeronaves; incluye aprobación de equipos | [EASA Part 21](https://www.easa.europa.eu/en/document-library/regulations/regulation-eu-no-7482012) |
+| **ED-202A** | Equivalente EUROCAE al DO-326A — ciberseguridad de sistemas aeronáuticos | [EUROCAE](https://www.eurocae.net/) |
+| **EMC** | *Electromagnetic Compatibility* — capacidad de equipos para funcionar en su entorno sin causar ni sufrir interferencias | [IEC 61000](https://www.iec.ch/emc) |
+| **EMI** | *Electromagnetic Interference* — perturbación electromagnética que afecta al funcionamiento de un equipo | [IEC 61000](https://www.iec.ch/emc) |
+| **EUROCAE** | *European Organisation for Civil Aviation Equipment* — organismo normativo europeo de aviónica | [EUROCAE](https://www.eurocae.net/) |
+| **GEO** | *Geostationary Earth Orbit* — órbita a ≈ 35 786 km; los satélites GEO parecen estacionarios desde tierra | *(orbital mechanics)* |
+| **GNSS** | *Global Navigation Satellite System* — sistemas de satélites de navegación (GPS, Galileo, GLONASS, BeiDou) | [ESA Galileo](https://www.euspa.europa.eu/european-space/galileo) |
+| **HIRF** | *High Intensity Radiated Fields* — ensayo de resistencia de la aeronave a campos electromagnéticos de alta intensidad | [CS-25 §25.1317](https://www.easa.europa.eu/en/document-library/certification-specifications/cs-25-amendment-28) |
+| **ITU** | *International Telecommunication Union* — agencia ONU para regulación del espectro radioeléctrico | [ITU](https://www.itu.int/) |
+| **LDACS** | *L-band Digital Aeronautical Communications System* — sistema de comunicaciones digitales aeronáuticas de banda L (sustituto de VHF) | [EUROCONTROL LDACS](https://www.eurocontrol.int/ldacs) |
+| **LEO** | *Low Earth Orbit* — órbita a 160–2 000 km; usada por constelaciones de satélites de baja latencia (Starlink, OneWeb) | [ESA Space Debris](https://www.esa.int/Space_Safety/Space_Debris) |
+| **NOC** | *Network Operations Center* — centro de operaciones de red que monitoriza y gestiona la infraestructura de comunicaciones | *(telecomunicaciones)* |
+| **PBN** | *Performance-Based Navigation* — concepto ICAO que define requisitos de rendimiento de navegación | [ICAO Doc 9613](https://www.icao.int/NACC/Documents/Meetings/2014/RNPARSM/RT-PBN-i2.pdf) |
+| **QKD** | *Quantum Key Distribution* — protocolo criptográfico cuántico de distribución de claves teóricamente irrompible | [ETSI QKD](https://www.etsi.org/technologies/quantum-key-distribution) |
+| **RTCA** | *Radio Technical Commission for Aeronautics* — organismo de normalización aeronáutica de EE.UU. (equivalente a EUROCAE) | [RTCA](https://www.rtca.org/) |
+| **SATCOM** | *Satellite Communications* — comunicaciones aeronáuticas vía satélite (GEO/LEO) para voz y datos | *(Inmarsat / Iridium / Starlink Aviation)* |
+| **SESAR** | *Single European Sky ATM Research* — programa de modernización ATM europeo | [SESAR JU](https://www.sesarju.eu/) |
+| **TRL** | *Technology Readiness Level* — madurez tecnológica 1–9 | [NASA TRL](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/) |
+
+
+---
 
 ## 1. Misión y Alcance
 
@@ -138,10 +167,23 @@ graph LR
 
 ## 8. Referencias
 
+### Internas
 - [Matriz RACI Maestra Q-Divisions](../Readme.md)
 - [Documento Organizacional Maestro GQAOA](../../README.md)
 - [AMPEL360-BWB-Q100 Docs](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)
 - [Eternity Continent Infrastructure](../../Eternity-Continent-Infrastructure.md)
+
+### Externas — Normativa y Estándares
+| Referencia | Descripción | Enlace |
+|-----------|-------------|--------|
+| RTCA DO-160G | Environmental Conditions for Airborne Equipment | [rtca.org](https://www.rtca.org/products/do-160/) |
+| EUROCAE ED-202A | Airworthiness Security Process Specification | [eurocae.net](https://www.eurocae.net/) |
+| ICAO Annex 10 Vol. III | Communication Systems (ACARS, ADS-B, VHF DL) | [icao.int](https://www.icao.int/) |
+| ICAO Doc 9613 | Performance-Based Navigation (PBN) Manual | [icao.int](https://www.icao.int/NACC/Documents/Meetings/2014/RNPARSM/RT-PBN-i2.pdf) |
+| ITU Radio Regulations | International spectrum regulation | [itu.int](https://www.itu.int/en/ITU-R/) |
+| SESAR JU | Single European Sky ATM Research programme | [sesarju.eu](https://www.sesarju.eu/) |
+| ESA Galileo | European GNSS constellation | [euspa.europa.eu](https://www.euspa.europa.eu/european-space/galileo) |
+| ETSI QKD Standards | Quantum Key Distribution specifications | [etsi.org](https://www.etsi.org/technologies/quantum-key-distribution) |
 
 
 ## Notas

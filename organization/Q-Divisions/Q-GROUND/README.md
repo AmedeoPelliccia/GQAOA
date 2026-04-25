@@ -30,6 +30,36 @@ parent: "../Readme.md"
 **Versión:** 1.0.0 · **Fecha:** 25 de abril de 2026 · **Estado:** α
 
 ---
+## Glosario de Términos y Acrónimos
+
+| Acrónimo / Término | Definición completa | Referencia externa |
+|--------------------|--------------------|--------------------|
+| **AMM** | *Aircraft Maintenance Manual* — manual de mantenimiento de aeronave; nivel ATA 100 / S1000D | [S1000D.net](https://www.s1000d.net/) |
+| **BITE** | *Built-In Test Equipment* — sistema embarcado de autodiagnóstico para detectar y aislar fallos | *(aviónica estándar)* |
+| **CBM+** | *Condition-Based Maintenance Plus* — mantenimiento predictivo basado en datos de condición en tiempo real | [SAE JA1012](https://www.sae.org/standards/content/ja1012/) |
+| **EASA Part 66** | Licencias de personal de mantenimiento aeronáutico (Categorías A, B1, B2, C) | [EASA Part 66](https://www.easa.europa.eu/en/document-library/regulations/regulation-eu-no-11492011) |
+| **EASA Part 145** | Reglamento de organizaciones de mantenimiento aprobadas | [EASA Part 145](https://www.easa.europa.eu/en/document-library/regulations/regulation-eu-no-13212014) |
+| **EASA Part M** | Reglamento de aeronavegabilidad continuada — responsabilidades del operador | [EASA Part M](https://www.easa.europa.eu/en/document-library/regulations/regulation-eu-no-13212014) |
+| **FMECA** | *Failure Modes, Effects and Criticality Analysis* — análisis de modos de fallo con evaluación de criticidad | [MIL-STD-1629A](https://www.everyspec.com/MIL-STD/MIL-STD-1600-1699/MIL-STD-1629A_14167/) |
+| **GSE** | *Ground Support Equipment* — equipos de apoyo en tierra para mantenimiento y operaciones | *(industria aeroespacial)* |
+| **HUMS** | *Health and Usage Monitoring System* — sistema embarcado de monitorización de salud y uso de componentes | *(CAA UK HUMS guidance)* |
+| **IETP** | *Interactive Electronic Technical Publication* — publicación técnica interactiva S1000D | [S1000D.net](https://www.s1000d.net/) |
+| **ILS** | *Integrated Logistic Support* — disciplina de ingeniería que asegura mantenibilidad y soporte durante toda la vida operativa | [MIL-STD-1388](https://www.everyspec.com/) |
+| **IPA** | *Initial Provisioning Analysis* — análisis de aprovisionamiento inicial de repuestos para el EIS | *(IATA provisioning practice)* |
+| **IPC** | *Illustrated Parts Catalog* — catálogo ilustrado de piezas con referencias de repuesto | [S1000D.net](https://www.s1000d.net/) |
+| **LSAP** | *Logistic Support Analysis Plan* — plan de análisis de soporte logístico; establece actividades ILS | [MIL-STD-1388](https://www.everyspec.com/) |
+| **MFOP** | *Maintenance Free Operating Period* — período de operación sin intervención de mantenimiento programado | *(Rolls-Royce / UK MoD concept)* |
+| **MPD** | *Maintenance Planning Document* — documento de planificación de mantenimiento derivado del MSG-3 | *(IATA MSG-3)* |
+| **MRO** | *Maintenance, Repair and Overhaul* — actividades de mantenimiento aeronáutico | [IATA MRO](https://www.iata.org/en/programs/ops-infra/maintenance/) |
+| **MSG-3** | *Maintenance Steering Group — 3ª revisión* — metodología lógica para determinar requisitos de mantenimiento | [IATA MSG-3](https://www.iata.org/en/programs/ops-infra/maintenance/msg-3/) |
+| **QRH** | *Quick Reference Handbook* — manual de referencia rápida de procedimientos de emergencia y anormales | *(FCOM/QRH standard)* |
+| **RAM** | *Reliability, Availability, Maintainability* — análisis de fiabilidad, disponibilidad y mantenibilidad del sistema | [IEC 60300-3-1](https://webstore.iec.ch/publication/1255) |
+| **S1000D** | Especificación internacional para documentación técnica modular XML | [S1000D.net](https://www.s1000d.net/) |
+| **SRM** | *Structural Repair Manual* — manual de reparaciones estructurales aprobadas | [S1000D.net](https://www.s1000d.net/) |
+| **TSM** | *Troubleshooting Manual* — manual de diagnóstico y resolución de fallos | [S1000D.net](https://www.s1000d.net/) |
+
+
+---
 
 ## 1. Misión y Alcance
 
@@ -142,10 +172,23 @@ graph LR
 
 ## 8. Referencias
 
+### Internas
 - [Matriz RACI Maestra Q-Divisions](../Readme.md)
 - [Documento Organizacional Maestro GQAOA](../../README.md)
 - [AMPEL360-BWB-Q100 Docs](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)
 - [CSDB S1000D Validator](../../../CSDB/s1000d_validator.py)
+
+### Externas — Normativa y Estándares
+| Referencia | Descripción | Enlace |
+|-----------|-------------|--------|
+| EASA Part 145 (EU) 1321/2014 | Approved Maintenance Organisations | [easa.europa.eu](https://www.easa.europa.eu/en/document-library/regulations/regulation-eu-no-13212014) |
+| EASA Part M (EU) 1321/2014 | Continuing Airworthiness Requirements | [easa.europa.eu](https://www.easa.europa.eu/en/document-library/regulations/regulation-eu-no-13212014) |
+| EASA Part 66 (EU) 1149/2011 | Aircraft Maintenance Licence | [easa.europa.eu](https://www.easa.europa.eu/en/document-library/regulations/regulation-eu-no-11492011) |
+| IATA MSG-3 | Maintenance Steering Group methodology | [iata.org](https://www.iata.org/en/programs/ops-infra/maintenance/msg-3/) |
+| S1000D Issue 5.0 | Technical publications (AMM, IPC, SRM) | [s1000d.net](https://www.s1000d.net/) |
+| IEC 60300-3-1 | Dependability management — RAM techniques | [iec.ch](https://webstore.iec.ch/publication/1255) |
+| SAE JA1012 | A Guide to the Reliability-Centered Maintenance | [sae.org](https://www.sae.org/standards/content/ja1012/) |
+| MIL-STD-1388-2B | Logistics Support Analysis Record | [everyspec.com](https://www.everyspec.com/) |
 
 
 ## Notas
