@@ -47,7 +47,7 @@
 
 ## 1.1 Misión
 
-La **Global Aerospace Innovation Alliance (GAIA-QAO)** es un consorcio estratégico europeo público-privado creado para asegurar el liderazgo tecnológico del continente en la aviación sostenible. Nuestra **misión** es desarrollar y certificar una nueva generación de aeronaves comerciales que establezcan el estándar global en eficiencia, seguridad y responsabilidad ambiental, utilizando un enfoque por fases que integre progresivamente tecnologías disruptivas. Esta misión no solo busca un avance tecnológico, sino también la revitalización y consolidación de la base industrial aeroespacial europea, asegurando su competitividad a largo plazo.
+La **Global Aerospace Innovation Alliance (GAIA-QAO)** es un consorcio estratégico europeo público-privado creado para asegurar el liderazgo tecnológico del continente en la aviación sostenible. Nuestra **misión** es desarrollar y certificar una nueva generación de aeronaves comerciales que establezcan el estándar global en eficiencia, seguridad y responsabilidad ambiental, generando retornos sociales tangibles para las comunidades y los territorios donde operamos y asumiendo responsabilidades globales en materia de equidad, inclusión y bienestar colectivo, utilizando un enfoque por fases que integre progresivamente tecnologías disruptivas. Esta misión no solo busca un avance tecnológico, sino también la revitalización y consolidación de la base industrial aeroespacial europea, asegurando su competitividad a largo plazo.
 
 ## 1.2 Visión
 
