@@ -33,9 +33,9 @@ parent: "../Readme.md"
 
 ## 1. Misión y Alcance
 
-Q-DATAGOV es la división técnica responsable del gobierno del dato, la gestión documental, la arquitectura de información y el Common Source DataBase (CSDB) del programa GQAOA. Su alcance cubre la definición y mantenimiento de estándares de documentación (S1000D, ASD-STE100, iSpec 2200), la gestión del ciclo de vida de datos técnicos, la arquitectura de los Data Modules (DMs), y el esquema BREX/SNS del programa.
+Q-DATAGOV es la división técnica responsable del gobierno del dato, la gestión documental, la arquitectura de información y el Common Source DataBase (CSDB[^1]) del programa GQAOA. Su alcance cubre la definición y mantenimiento de estándares de documentación (S1000D[^2], ASD-STE100, iSpec 2200), la gestión del ciclo de vida de datos técnicos, la arquitectura de los Data Modules (DMs), y el esquema BREX[^3]/SNS[^4] del programa.
 
-Q-DATAGOV actúa como la fuente única de verdad (SSOT) para toda la documentación técnica del programa, garantizando la trazabilidad, la coherencia semántica y la interoperabilidad de los datos entre todas las Q-Divisions y con los sistemas de los operadores y autoridades reguladoras.
+Q-DATAGOV actúa como la fuente única de verdad (SSOT[^5]) para toda la documentación técnica del programa, garantizando la trazabilidad, la coherencia semántica y la interoperabilidad de los datos entre todas las Q-Divisions y con los sistemas de los operadores y autoridades reguladoras.
 
 ---
 
@@ -149,6 +149,13 @@ graph LR
 - [LUTNDR — Registro de Tecnologías](../../../OPT-INS_FRAMEWORK/GQAOA-UTA-LUTNDR-001.md)
 - [CSDB APPLICABILITY Model](../../../CSDB/readme.md)
 
----
+
+## Notas
+
+[^1]: **CSDB** (Common Source DataBase): repositorio centralizado de documentación técnica conforme a S1000D; almacena Data Modules, Publication Modules, ICNs y metadatos de aplicabilidad para todo el programa.
+[^2]: **S1000D**: especificación internacional ASD/AIA/ATA para la producción y distribución de documentación técnica de sistemas de defensa y transporte; basada en XML y módulos de datos reutilizables.
+[^3]: **BREX** (Business Rules Exchange): objeto S1000D que encapsula las reglas de negocio del programa (valores permitidos, estructuras obligatorias, restricciones semánticas) y se usa para validar todos los Data Modules.
+[^4]: **SNS** (Standard Numbering System): sistema de numeración jerárquico S1000D que asigna identificadores únicos a los elementos del sistema, equivalente al sistema ATA de capítulos pero más flexible.
+[^5]: **SSOT** (Single Source of Truth): principio de arquitectura de datos según el cual existe una única fuente autorizada para cada dato, evitando inconsistencias por copias divergentes.
 
 **[FIN DEL DOCUMENTO]**

@@ -31,9 +31,9 @@ parent: "../Readme.md"
 
 ## 1. Misión y Alcance
 
-Q-AIR es la división técnica responsable del diseño, análisis y validación de todos los sistemas aerodinámicos y de control de vuelo (FCS) del programa GQAOA. Su alcance abarca desde la definición conceptual de la envolvente de vuelo hasta la certificación de los perfiles de sustentación, los sistemas fly-by-wire y los algoritmos de control adaptativo asistidos por IA.
+Q-AIR es la división técnica responsable del diseño, análisis y validación de todos los sistemas aerodinámicos y de control de vuelo (FCS[^1]) del programa GQAOA. Su alcance abarca desde la definición conceptual de la envolvente de vuelo hasta la certificación de los perfiles de sustentación conforme a CS-25/FAR-25[^2], los sistemas fly-by-wire y los algoritmos de control adaptativo asistidos por IA.
 
-La división lidera la integración multidisciplinar entre la aerodinámica exterior (CFD, túnel de viento), la dinámica de vuelo (estabilidad y control) y los sistemas embarcados de gestión de vuelo (FMS/FCS), coordinando activamente con Q-STRUCTURES (cargas y aeroelasticidad), Q-HPC (optimización cuántica) y Q-MECHANICS (actuadores FCS).
+La división lidera la integración multidisciplinar entre la aerodinámica exterior (CFD[^3], túnel de viento), la dinámica de vuelo (estabilidad y control) y los sistemas embarcados de gestión de vuelo (FMS/FCS), coordinando activamente con Q-STRUCTURES (cargas y aeroelasticidad[^4]), Q-HPC (optimización cuántica QAOA[^5]) y Q-MECHANICS (actuadores FCS).
 
 ---
 
@@ -158,6 +158,13 @@ graph LR
 - [AMPEL360-BWB-Q100 Docs](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)
 - [CSDB S1000D Validator](../../../CSDB/s1000d_validator.py)
 
----
+
+## Notas
+
+[^1]: **FCS** (Flight Control System): sistema de control de vuelo fly-by-wire que transmite las órdenes del piloto a las superficies de control mediante señales eléctricas en lugar de conexiones mecánicas directas.
+[^2]: **CS-25 / FAR-25**: Certification Specifications for Large Aeroplanes (EASA) / Federal Aviation Regulations Part 25 (FAA) — requisitos de aeronavegabilidad para aviones de transporte de gran tamaño.
+[^3]: **CFD** (Computational Fluid Dynamics): disciplina que aplica métodos numéricos para simular el comportamiento de fluidos; en aeronáutica se usa para predecir la aerodinámica sin necesidad exclusiva de ensayos físicos.
+[^4]: **Aeroelasticidad**: fenómeno de interacción entre las fuerzas aerodinámicas, la inercia y la elasticidad de la estructura; incluye flutter, divergencia y respuesta en ráfagas.
+[^5]: **QAOA** (Quantum Approximate Optimization Algorithm): algoritmo cuántico variacional que busca soluciones aproximadas a problemas de optimización combinatoria, desarrollado por Q-HPC en el programa GQAOA.
 
 **[FIN DEL DOCUMENTO]**

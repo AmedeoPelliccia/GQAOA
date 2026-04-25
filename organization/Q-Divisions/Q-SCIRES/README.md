@@ -33,9 +33,9 @@ parent: "../Readme.md"
 
 ## 1. Misión y Alcance
 
-Q-SCIRES es la división técnica responsable de la investigación científica aplicada, la gestión del programa de ensayos del programa GQAOA y la coordinación de todo el proceso de certificación de tipo con las autoridades reguladoras (EASA, FAA). Su alcance cubre desde la investigación de tecnologías en TRL bajo (TRL 1–3), la ejecución de campañas de ensayo (túnel de viento, ensayos estructurales, vuelos de prueba), hasta la generación del compliance summary y la coordinación del Type Certificate Data Sheet (TCDS).
+Q-SCIRES es la división técnica responsable de la investigación científica aplicada, la gestión del programa de ensayos del programa GQAOA y la coordinación de todo el proceso de certificación de tipo con las autoridades reguladoras (EASA, FAA). Su alcance cubre desde la investigación de tecnologías en TRL[^1] bajo (TRL 1–3), la ejecución de campañas de ensayo (túnel de viento, ensayos estructurales, vuelos de prueba), hasta la generación del compliance summary y la coordinación del Type Certificate Data Sheet (TCDS[^2]).
 
-Q-SCIRES actúa como el árbitro técnico independiente del programa, validando que los productos de las demás Q-Divisions cumplen los requisitos de certificación aplicables, y como la división enlace con las autoridades de aeronavegabilidad para todos los CRI (Certification Review Items) y MoC (Means of Compliance).
+Q-SCIRES actúa como el árbitro técnico independiente del programa, validando que los productos de las demás Q-Divisions cumplen los requisitos de certificación aplicables, y como la división enlace con las autoridades de aeronavegabilidad para todos los CRI[^3] (Certification Review Items) y MoC[^4] (Means of Compliance). La metodología de V&V[^5] para software y algoritmos cuánticos es una responsabilidad emergente clave de esta división.
 
 ---
 
@@ -147,6 +147,13 @@ graph LR
 - [AMPEL360-BWB-Q100 Docs](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)
 - [CSDB S1000D Validator](../../../CSDB/s1000d_validator.py)
 
----
+
+## Notas
+
+[^1]: **TRL** (Technology Readiness Level): escala de madurez tecnológica de 9 niveles definida originalmente por la NASA y adoptada por la ESA y la Comisión Europea; TRL 1 = principio básico observado, TRL 9 = sistema probado operacionalmente.
+[^2]: **TCDS** (Type Certificate Data Sheet): documento oficial emitido por EASA o FAA que resume las características técnicas, limitaciones operativas y datos de configuración de una aeronave certificada.
+[^3]: **CRI** (Certification Review Item): ítem específico de la base de certificación acordado bilateralmente entre el solicitante del TC y la autoridad reguladora (EASA/FAA) para tratar aspectos no cubiertos directamente por los CS/FAR aplicables.
+[^4]: **MoC** (Means of Compliance): método o conjunto de evidencias (análisis, ensayo, demostración, inspección) que el solicitante propone a la autoridad para demostrar el cumplimiento de un requisito de certificación.
+[^5]: **V&V** (Verification & Validation): proceso dual de ingeniería de sistemas que verifica que el producto se construyó correctamente (cumple especificaciones) y valida que el producto correcto fue construido (cumple necesidades del usuario).
 
 **[FIN DEL DOCUMENTO]**

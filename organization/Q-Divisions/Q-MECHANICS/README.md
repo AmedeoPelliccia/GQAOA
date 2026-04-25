@@ -33,9 +33,9 @@ parent: "../Readme.md"
 
 ## 1. Misión y Alcance
 
-Q-MECHANICS es la división técnica responsable del diseño, integración y certificación de todos los sistemas mecánicos y de actuación de la aeronave GQAOA, incluyendo los sistemas hidráulicos, los actuadores electromecánicos y electrohidrostáticos del FCS, los sistemas del tren de aterrizaje, el sistema de puertas y el sistema de escape de emergencia. Su alcance cubre también los sistemas de frenado, dirección y maniobra en tierra.
+Q-MECHANICS es la división técnica responsable del diseño, integración y certificación de todos los sistemas mecánicos y de actuación de la aeronave GQAOA, incluyendo los sistemas hidráulicos, los actuadores electromecánicos (EMA[^1]) y electrohidrostáticos (EHA[^2]) del FCS, los sistemas del tren de aterrizaje, el sistema de puertas y el sistema de escape de emergencia. Su alcance cubre también los sistemas de frenado, dirección y maniobra en tierra.
 
-La división actúa como el nexo entre las necesidades aerodinámicas (Q-AIR) y la ejecución física de los mandos de vuelo, garantizando que los actuadores del FCS cumplan con los requisitos de fuerza, deflexión, velocidad y redundancia establecidos en las especificaciones de Q-AIR. Trabaja en estrecha colaboración con Q-GREENTECH para la electrificación de sistemas de potencia y con Q-STRUCTURES para la integración de actuadores en la estructura primaria.
+La división actúa como el nexo entre las necesidades aerodinámicas (Q-AIR) y la ejecución física de los mandos de vuelo, garantizando que los actuadores del FCS cumplan con los requisitos de fuerza, deflexión, velocidad y redundancia establecidos conforme a CS-25 y al nivel de aseguramiento de diseño DAL[^3]. La arquitectura de redundancia de los sistemas hidráulicos debe alcanzar una probabilidad de pérdida total ≤ 10⁻⁹/FH[^4] según FMECA[^5].
 
 ---
 
@@ -147,6 +147,13 @@ graph LR
 - [AMPEL360-BWB-Q100 Docs](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)
 - [CSDB S1000D Validator](../../../CSDB/s1000d_validator.py)
 
----
+
+## Notas
+
+[^1]: **EMA** (Electro-Mechanical Actuator): actuador en el que un motor eléctrico acciona directamente la superficie de control a través de un mecanismo de tornillo de bolas o similar, eliminando la necesidad de circuito hidráulico local.
+[^2]: **EHA** (Electro-Hydrostatic Actuator): actuador que integra motor eléctrico, bomba hidráulica reversible y cilindro hidráulico en una unidad compacta autocontenida, combinando la potencia de la hidráulica con el control eléctrico.
+[^3]: **DAL** (Design Assurance Level): niveles A–E que determinan el rigor del proceso de diseño y verificación en función de la severidad del efecto de fallo del sistema; definido en ARP4761/ARP4754A y DO-178C/DO-254.
+[^4]: **FH** (Flight Hours): horas de vuelo; unidad de medida estándar para expresar tasas de fallo en sistemas aeronáuticos (p. ej., probabilidad de fallo catastrófico ≤ 10⁻⁹ eventos por hora de vuelo).
+[^5]: **FMECA** (Failure Modes, Effects and Criticality Analysis): extensión del FMEA que añade el análisis de criticidad para priorizar los modos de fallo según su probabilidad e impacto en la seguridad.
 
 **[FIN DEL DOCUMENTO]**

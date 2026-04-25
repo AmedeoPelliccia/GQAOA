@@ -33,9 +33,9 @@ parent: "../Readme.md"
 
 ## 1. Misión y Alcance
 
-Q-GROUND es la división técnica responsable del diseño, especificación y soporte de todos los sistemas de apoyo en tierra (Ground Support Equipment — GSE), los programas de mantenimiento (MRO — Maintenance, Repair and Overhaul), las publicaciones técnicas para operadores y los sistemas de soporte integrado logístico (ILS). Su alcance cubre la vida en servicio completa de la aeronave desde la primera entrega hasta el retiro.
+Q-GROUND es la división técnica responsable del diseño, especificación y soporte de todos los sistemas de apoyo en tierra (GSE[^1] — Ground Support Equipment), los programas de mantenimiento (MRO[^2] — Maintenance, Repair and Overhaul), las publicaciones técnicas para operadores y los sistemas de soporte integrado logístico (ILS[^3]). Su alcance cubre la vida en servicio completa de la aeronave desde la primera entrega hasta el retiro.
 
-Q-GROUND actúa como el principal cliente interno de Q-STRUCTURES, Q-MECHANICS y Q-DATAGOV durante las fases de diseño, garantizando que la mantenibilidad (Maintenance Free Operating Period — MFOP) y la testabilidad se incorporen desde el primer día. Es la división propietaria del programa de mantenimiento certificado (conforme a EASA Part 145/Part M) y del conjunto de publicaciones técnicas (AMM, SRM, IPC) en el CSDB.
+Q-GROUND actúa como el principal cliente interno de Q-STRUCTURES, Q-MECHANICS y Q-DATAGOV durante las fases de diseño, garantizando que la mantenibilidad (MFOP[^4]) y la testabilidad se incorporen desde el primer día. Es la división propietaria del programa de mantenimiento certificado (conforme a EASA Part 145/Part M y MSG-3[^5]) y del conjunto de publicaciones técnicas (AMM, SRM, IPC) en el CSDB.
 
 ---
 
@@ -147,6 +147,13 @@ graph LR
 - [AMPEL360-BWB-Q100 Docs](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)
 - [CSDB S1000D Validator](../../../CSDB/s1000d_validator.py)
 
----
+
+## Notas
+
+[^1]: **GSE** (Ground Support Equipment): conjunto de equipos, vehículos y herramientas utilizados en tierra para el mantenimiento, servicio, remolque, avituallamiento y apoyo operacional de la aeronave.
+[^2]: **MRO** (Maintenance, Repair and Overhaul): conjunto de actividades de mantenimiento aeronáutico que incluye mantenimiento de línea (line), base (base/heavy) y revisión general de componentes.
+[^3]: **ILS** (Integrated Logistic Support): disciplina de ingeniería y gestión que asegura que el sistema sea mantenible y supportable durante toda su vida operativa; integra análisis RAM, aprovisionamiento, formación y publicaciones técnicas.
+[^4]: **MFOP** (Maintenance Free Operating Period): objetivo de diseño que define el período de operación continua durante el cual la aeronave no requiere ninguna intervención de mantenimiento programado.
+[^5]: **MSG-3** (Maintenance Steering Group — 3ª revisión): metodología de análisis lógico, desarrollada por ATA/IATA, que determina los requisitos de mantenimiento de una aeronave a partir del análisis de consecuencias de fallo.
 
 **[FIN DEL DOCUMENTO]**

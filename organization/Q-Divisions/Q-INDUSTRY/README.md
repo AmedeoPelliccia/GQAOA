@@ -32,9 +32,9 @@ parent: "../Readme.md"
 
 ## 1. Misión y Alcance
 
-Q-INDUSTRY es la división técnica responsable de la planificación, ejecución y control de todos los procesos de fabricación, ensamblaje y producción del programa GQAOA. Su alcance cubre desde la ingeniería de producción (DFM/DFA) hasta la aprobación de la organización de producción conforme a EASA Part 21G y Part 145, incluyendo la gestión de la cadena de suministro de nivel 1 y 2.
+Q-INDUSTRY es la división técnica responsable de la planificación, ejecución y control de todos los procesos de fabricación, ensamblaje y producción del programa GQAOA. Su alcance cubre desde la ingeniería de producción (DFM/DFA[^1]) hasta la aprobación de la organización de producción conforme a EASA Part 21G[^2] y Part 145, incluyendo la gestión de la cadena de suministro de nivel 1 y 2.
 
-La división es propietaria de la Final Assembly Line (FAL), del Manufacturing Process Instructions (MPIs), del sistema de control de calidad (AOG/SPC) y de la cualificación de proveedores estratégicos. Q-INDUSTRY trabaja en estrecha colaboración con Q-STRUCTURES (especificaciones de materiales y tolerancias), Q-GREENTECH (procesos de sistemas de energía) y Q-GROUND (integración con GSE de producción).
+La división es propietaria de la Final Assembly Line (FAL[^3]), del Manufacturing Process Instructions (MPIs[^4]), del sistema de control de calidad (SPC[^5]/NC) y de la cualificación de proveedores estratégicos. Q-INDUSTRY trabaja en estrecha colaboración con Q-STRUCTURES (especificaciones de materiales y tolerancias), Q-GREENTECH (procesos de sistemas de energía) y Q-GROUND (integración con GSE de producción).
 
 ---
 
@@ -147,6 +147,13 @@ graph LR
 - [AMPEL360-BWB-Q100 Docs](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)
 - [Robbbo-T Robotics PRD (OGATA 600)](../../../programs/Robbbo-T_Robotics_PRD/Readme.md)
 
----
+
+## Notas
+
+[^1]: **DFM/DFA** (Design for Manufacturability / Design for Assembly): metodología que incorpora requisitos de fabricabilidad y ensamblaje desde las primeras fases de diseño para reducir costes y defectos de producción.
+[^2]: **Part 21G** (EASA): reglamento europeo que define los requisitos para la aprobación de organizaciones de producción de aeronaves y componentes aeronáuticos; equivalente a FAA Production Approval Holder (PAH).
+[^3]: **FAL** (Final Assembly Line): instalación y proceso de integración final de todos los componentes y sistemas de la aeronave hasta obtener el avión completo listo para los vuelos de aceptación.
+[^4]: **MPI** (Manufacturing Process Instruction): instrucción detallada de trabajo que describe paso a paso un proceso de fabricación específico; en GQAOA se publica conforme a S1000D.
+[^5]: **SPC** (Statistical Process Control): metodología de control de calidad que usa técnicas estadísticas (cartas de control, capacidad de proceso Cp/Cpk) para monitorizar y controlar procesos de fabricación.
 
 **[FIN DEL DOCUMENTO]**

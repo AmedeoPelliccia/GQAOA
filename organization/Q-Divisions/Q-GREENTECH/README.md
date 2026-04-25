@@ -32,9 +32,9 @@ parent: "../Readme.md"
 
 ## 1. Misión y Alcance
 
-Q-GREENTECH es la división técnica responsable del diseño, desarrollo e integración de todos los sistemas de propulsión sostenible, almacenamiento de energía y tecnologías de economía circular del programa GQAOA. Su alcance cubre sistemas de propulsión híbrida-eléctrica, celdas de combustible de hidrógeno, baterías de alta densidad energética, gestión térmica, y el Análisis de Ciclo de Vida (ACV/LCA) de la aeronave completa.
+Q-GREENTECH es la división técnica responsable del diseño, desarrollo e integración de todos los sistemas de propulsión sostenible, almacenamiento de energía y tecnologías de economía circular del programa GQAOA. Su alcance cubre sistemas de propulsión híbrida-eléctrica (HEP[^1]), celdas de combustible de hidrógeno, baterías de alta densidad energética, gestión térmica, y el Análisis de Ciclo de Vida (ACV/LCA[^2]) de la aeronave completa.
 
-Q-GREENTECH lidera además la estrategia de sostenibilidad del consorcio, actuando como división propietaria de los compromisos ESG técnicos y coordinando con ORB-CSR y ORB-LEG para el cumplimiento de la normativa ambiental (ISO 14040, CORSIA, EU ETS).
+Q-GREENTECH lidera además la estrategia de sostenibilidad del consorcio, actuando como división propietaria de los compromisos ESG[^3] técnicos y coordinando con ORB-CSR y ORB-LEG para el cumplimiento de la normativa ambiental (ISO 14040, CORSIA[^4], EU ETS). El registro de tecnologías LUTNDR[^5] es un entregable clave de esta división para la economía circular.
 
 ---
 
@@ -160,6 +160,13 @@ graph LR
 - [AMPEL360-BWB-Q100 Docs](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)
 - [LUTNDR — Libro Unico de Tecnologías](../../../OPT-INS_FRAMEWORK/GQAOA-UTA-LUTNDR-001.md)
 
----
+
+## Notas
+
+[^1]: **HEP** (Hybrid-Electric Propulsion): arquitectura de propulsión que combina motores de combustión (o celdas de combustible H₂) con motores eléctricos y baterías para reducir el consumo de combustible y las emisiones.
+[^2]: **ACV/LCA** (Análisis del Ciclo de Vida / Life Cycle Assessment): metodología ISO 14040/14044 que cuantifica los impactos ambientales de un producto desde la extracción de materias primas hasta su fin de vida.
+[^3]: **ESG** (Environmental, Social, Governance): marco de criterios no financieros para evaluar el desempeño sostenible y de responsabilidad corporativa de una organización.
+[^4]: **CORSIA** (Carbon Offsetting and Reduction Scheme for International Aviation): mecanismo de la ICAO para estabilizar las emisiones de CO₂ de la aviación internacional a los niveles de 2020.
+[^5]: **LUTNDR**: Libro Unico delle Tecnologie: in uso, Nuova progettazione, Disuso, Riassetti — registro centralizado de tecnologías del programa; los archivos canónicos son `LUT_REGISTER.yaml` y `LUT_CIRCULARITY.yaml`.
 
 **[FIN DEL DOCUMENTO]**

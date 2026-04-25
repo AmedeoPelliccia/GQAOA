@@ -32,9 +32,9 @@ parent: "../Readme.md"
 
 ## 1. Misión y Alcance
 
-Q-STRUCTURES es la división técnica responsable del diseño, análisis, fabricación y certificación de la estructura primaria y secundaria de la aeronave, incluyendo la selección y cualificación de materiales avanzados (compuestos de fibra de carbono, aleaciones metálicas y materiales bio-inspirados). Su alcance cubre toda la integridad estructural del ciclo de vida, desde el diseño conceptual hasta la gestión del damage tolerance en servicio.
+Q-STRUCTURES es la división técnica responsable del diseño, análisis, fabricación y certificación de la estructura primaria y secundaria de la aeronave, incluyendo la selección y cualificación de materiales avanzados (compuestos CFRP[^1], aleaciones metálicas y materiales bio-inspirados). Su alcance cubre toda la integridad estructural del ciclo de vida, desde el diseño conceptual hasta la gestión del damage tolerance[^2] en servicio.
 
-La división es propietaria del modelo de elementos finitos (FEM) maestro, del espectro de cargas de fatiga, y de los Structural Repair Manuals (SRM). Actúa como nodo central entre Q-AIR (cargas aerodinámicas), Q-INDUSTRY (procesos de fabricación) y Q-SCIRES (ensayos de certificación estructural).
+La división es propietaria del modelo de elementos finitos (FEM[^3]) maestro, del espectro de cargas de fatiga, y de los Structural Repair Manuals (SRM[^4]). Actúa como nodo central entre Q-AIR (cargas aerodinámicas), Q-INDUSTRY (procesos de fabricación) y Q-SCIRES (ensayos de certificación estructural), aplicando metodología MDO[^5] para maximizar la relación resistencia-peso.
 
 ---
 
@@ -159,6 +159,13 @@ graph LR
 - [AMPEL360-BWB-Q100 Docs](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)
 - [CSDB S1000D Validator](../../../CSDB/s1000d_validator.py)
 
----
+
+## Notas
+
+[^1]: **CFRP** (Carbon Fibre Reinforced Polymer): material compuesto de fibra de carbono en matriz epoxídica o termoplástica; ofrece alta relación resistencia-peso, fundamental para estructuras aeronáuticas modernas.
+[^2]: **Damage Tolerance**: filosofía de diseño estructural que acepta la presencia de defectos o grietas y asegura la integridad estructural entre inspecciones planificadas, conforme a CS-25 Subpart D.
+[^3]: **FEM** (Finite Element Method / Método de Elementos Finitos): técnica numérica de cálculo estructural que discretiza la geometría en elementos para resolver ecuaciones diferenciales de elasticidad y dinámica.
+[^4]: **SRM** (Structural Repair Manual): manual que define los procedimientos aprobados para reparar daños estructurales en servicio; publicado conforme al estándar S1000D.
+[^5]: **MDO** (Multidisciplinary Design Optimization): metodología de optimización que considera simultáneamente múltiples disciplinas (aerodinámica, estructuras, propulsión, peso) para encontrar el diseño óptimo global.
 
 **[FIN DEL DOCUMENTO]**

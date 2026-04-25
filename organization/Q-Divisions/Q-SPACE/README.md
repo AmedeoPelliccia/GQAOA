@@ -33,9 +33,9 @@ parent: "../Readme.md"
 
 ## 1. Misión y Alcance
 
-Q-SPACE es la división técnica responsable del diseño, integración y operación de todos los sistemas de comunicaciones aéreas vía satélite (SATCOM), enlaces de datos aeronáuticos (ACARS/ADS-B/Link 16), y sistemas de posicionamiento y navegación de precisión (GNSS/PNT) del programa GQAOA. Su alcance se extiende también a la integración de sistemas de comunicación cuántica (QKD — Quantum Key Distribution) y al soporte de la infraestructura del Continente Eternity (EC) para los enlaces espaciales.
+Q-SPACE es la división técnica responsable del diseño, integración y operación de todos los sistemas de comunicaciones aéreas vía satélite (SATCOM[^1]), enlaces de datos aeronáuticos (ACARS/ADS-B/Link 16), y sistemas de posicionamiento y navegación de precisión (GNSS/PNT[^2]) del programa GQAOA. Su alcance se extiende también a la integración de sistemas de comunicación cuántica (QKD[^3] — Quantum Key Distribution) y al soporte de la infraestructura del Continente Eternity (EC) para los enlaces espaciales.
 
-Q-SPACE actúa como la división enlace entre las capacidades aeronáuticas y la infraestructura espacial europea, coordinando con Q-HPC (integración de QPU y QKD), Q-DATAGOV (ICDs de comunicaciones) y ORB-IT (infraestructura de tierra).
+Q-SPACE actúa como la división enlace entre las capacidades aeronáuticas y la infraestructura espacial europea, coordinando con Q-HPC (integración de QPU y QKD), Q-DATAGOV (ICDs de comunicaciones) y ORB-IT (infraestructura de tierra). La compatibilidad electromagnética (EMC/EMI[^4]) y los estándares PBN[^5] de ICAO son pilares de su proceso de certificación.
 
 ---
 
@@ -143,6 +143,13 @@ graph LR
 - [AMPEL360-BWB-Q100 Docs](../../../programs/AMPEL360/AMPEL360-BWB-Q100/Docs/readme.md)
 - [Eternity Continent Infrastructure](../../Eternity-Continent-Infrastructure.md)
 
----
+
+## Notas
+
+[^1]: **SATCOM** (Satellite Communications): comunicaciones aeronáuticas enrutadas a través de satélites geoestacionarios (GEO) o de órbita baja (LEO) para voz de alta calidad y datos de banda ancha en vuelo.
+[^2]: **GNSS/PNT** (Global Navigation Satellite System / Positioning, Navigation and Timing): conjunto de sistemas de satélites (GPS, Galileo, GLONASS, BeiDou) que proporcionan posicionamiento, navegación y sincronización horaria de alta precisión.
+[^3]: **QKD** (Quantum Key Distribution): protocolo criptográfico cuántico que utiliza propiedades de la mecánica cuántica (polarización de fotones, entrelazamiento) para distribuir claves criptográficas de forma teóricamente irrompible.
+[^4]: **EMC/EMI** (Electromagnetic Compatibility / Electromagnetic Interference): disciplina de ingeniería que asegura que los sistemas electrónicos funcionen correctamente en su entorno electromagnético sin causar ni sufrir interferencias; ensayos normalizados en DO-160G.
+[^5]: **PBN** (Performance-Based Navigation): concepto ICAO que define los requisitos de rendimiento de navegación (precisión, integridad, disponibilidad) en lugar de especificar el equipo, permitiendo operaciones RNP/RNAV.
 
 **[FIN DEL DOCUMENTO]**

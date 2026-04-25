@@ -36,11 +36,11 @@ parent: "../../README.md"
 
 ## 1. Misión y Alcance
 
-Las **Q-Divisions** constituyen el **brazo de ejecución técnica** del programa GQAOA. Son las unidades responsables de la ingeniería, el desarrollo, la integración y la validación de todos los subsistemas y tecnologías que componen las aeronaves y sistemas del consorcio. A diferencia de las **ORB-Functions** (funciones empresariales transversales como Finanzas, RRHH, Legal), las Q-Divisions operan en el dominio técnico-científico y reportan directamente al Comité Técnico Ejecutivo (CTE).
+Las **Q-Divisions** constituyen el **brazo de ejecución técnica** del programa GQAOA[^1]. Son las unidades responsables de la ingeniería, el desarrollo, la integración y la validación de todos los subsistemas y tecnologías que componen las aeronaves y sistemas del consorcio. A diferencia de las **ORB-Functions**[^2] (funciones empresariales transversales como Finanzas, RRHH, Legal), las Q-Divisions operan en el dominio técnico-científico y reportan directamente al Comité Técnico Ejecutivo (CTE).
 
-Cada Q-Division es responsable de un dominio tecnológico específico y actúa como propietaria (*Accountable*) de los entregables técnicos de su dominio, colaborando estrechamente con otras Q-Divisions y recibiendo soporte de las ORB-Functions para asuntos empresariales, regulatorios y de recursos.
+Cada Q-Division es responsable de un dominio tecnológico específico y actúa como propietaria (*Accountable*) de los entregables técnicos de su dominio en la matriz RACI[^3], colaborando estrechamente con otras Q-Divisions y recibiendo soporte de las ORB-Functions para asuntos empresariales, regulatorios y de recursos.
 
-La estructura de 10 Q-Divisions cubre el espectro completo del ciclo de vida del programa, desde la investigación conceptual hasta el retiro y la economía circular, garantizando la trazabilidad RACI en cada proceso y artefacto técnico del programa.
+La estructura de 10 Q-Divisions cubre el espectro completo del ciclo de vida del programa, desde la investigación conceptual hasta el retiro y la economía circular, garantizando la trazabilidad RACI en cada proceso y artefacto técnico del programa. El gemelo digital BOB DA[^4] y el registro LUTNDR[^5] son herramientas transversales que atraviesan todas las Q-Divisions.
 
 ---
 
@@ -224,6 +224,13 @@ Resumen de documentos por Q-Division (AMPEL360-BWB-Q100):
 | Q-SPACE | 6 | Sat-comm ICD, orbital ops |
 | Q-SCIRES | 6 | Test plans, cert. matrices |
 
----
+
+## Notas
+
+[^1]: **GQAOA**: GAIA QUANTUM AMPEL OPT-INS ARCHITECTURE, INC. — programa conceptual ficticio de aviación sostenible diseñado por Amedeo Pelliccia.
+[^2]: **ORB-Functions**: Unidades empresariales transversales del consorcio (Finance, HR, Legal, CSR, PMO, Marketing, Procurement, IT) que soportan a las Q-Divisions técnicas.
+[^3]: **RACI**: Responsible, Accountable, Consulted, Informed — metodología estándar de asignación de roles en gestión de programas y proyectos.
+[^4]: **BOB DA**: Contextual Digital Agent — gemelo digital de monitorización en servicio que integra datos de sensores, modelos físicos e IA para predicción del estado de la aeronave.
+[^5]: **LUTNDR**: Libro Unico delle Tecnologie: in uso, Nuova progettazione, Disuso, Riassetti — registro centralizado de tecnologías del programa conforme a la especificación GQAOA-UTA-LUTNDR-001.
 
 **[FIN DEL DOCUMENTO]**

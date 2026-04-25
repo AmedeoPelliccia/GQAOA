@@ -33,9 +33,9 @@ parent: "../Readme.md"
 
 ## 1. Misión y Alcance
 
-Q-HPC es la división técnica responsable del desarrollo, integración y operación de todos los sistemas de computación de alto rendimiento (HPC), computación cuántica (QPU) e inteligencia artificial/aprendizaje automático (IA/ML) del programa GQAOA. Su alcance cubre desde la infraestructura de cómputo hasta los algoritmos especializados de optimización cuántica (QAOA), modelos de IA para diseño y operaciones, y el gemelo digital (BOB DA) para monitorización en servicio.
+Q-HPC es la división técnica responsable del desarrollo, integración y operación de todos los sistemas de computación de alto rendimiento (HPC[^1]), computación cuántica (QPU[^2]) e inteligencia artificial/aprendizaje automático (IA/ML) del programa GQAOA. Su alcance cubre desde la infraestructura de cómputo hasta los algoritmos especializados de optimización cuántica (QAOA[^3]), modelos de IA para diseño y operaciones, y el gemelo digital (BOB DA) para monitorización en servicio.
 
-Q-HPC es el habilitador tecnológico transversal del programa, proveyendo capacidades de simulación de alta fidelidad a todas las demás Q-Divisions y actuando como propietaria de la arquitectura de software de misión crítica (DO-178C/DO-254).
+Q-HPC es el habilitador tecnológico transversal del programa, proveyendo capacidades de simulación de alta fidelidad a todas las demás Q-Divisions y actuando como propietaria de la arquitectura de software de misión crítica conforme a DO-178C[^4]/DO-254[^5].
 
 ---
 
@@ -162,6 +162,13 @@ graph LR
 - [CSDB S1000D Validator](../../../CSDB/s1000d_validator.py)
 - [SUPIA v1.0 — Sistema Unico de Proyección Industrial](../../../OPT-INS_FRAMEWORK/GQAOA-UTA-SUPIA-001.md)
 
----
+
+## Notas
+
+[^1]: **HPC** (High-Performance Computing): infraestructura de computación paralela masiva utilizada para simulaciones de alta fidelidad (CFD, FEM, optimización MDO) que superan la capacidad de estaciones de trabajo convencionales.
+[^2]: **QPU** (Quantum Processing Unit): procesador cuántico basado en qubits que aprovecha la superposición y el entrelazamiento para resolver ciertos problemas de optimización exponencialmente más rápido que procesadores clásicos.
+[^3]: **QAOA** (Quantum Approximate Optimization Algorithm): algoritmo cuántico variacional para optimización combinatoria; en GQAOA se aplica a diseño aerodinámico, planificación de rutas y diagnóstico predictivo.
+[^4]: **DO-178C**: Software Considerations in Airborne Systems and Equipment Certification — estándar RTCA/EUROCAE que establece los criterios para desarrollar y verificar software aeronáutico según niveles de criticidad (DAL A–E).
+[^5]: **DO-254**: Design Assurance Guidance for Airborne Electronic Hardware — estándar equivalente a DO-178C para hardware electrónico complejo (FPGAs, ASICs) en sistemas aviónicos.
 
 **[FIN DEL DOCUMENTO]**
