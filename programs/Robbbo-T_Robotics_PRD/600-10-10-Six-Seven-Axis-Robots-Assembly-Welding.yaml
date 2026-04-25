@@ -1,0 +1,172 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# OGATA 600-10-10 — Six/Seven-Axis Robots for Assembly and Welding
+# Companion machine-readable specification metadata.
+#
+# Parent narrative document:
+#   programs/Robbbo-T_Robotics_PRD/600-10-10-Six-Seven-Axis-Robots-Assembly-Welding.md
+#
+# Schema: GQAOA UTA / OGATA spec companion (v1)
+# Authority: GQAOA, INC. — Robbbo-T Robotics PRD
+# ──────────────────────────────────────────────────────────────────────────────
+spec:
+  id: OGATA-600-10-10
+  title: "Robots de 6 y 7 Ejes para Tareas de Ensamblaje y Soldadura"
+  title_en: "Six- and Seven-Axis Robots for Assembly and Welding Tasks"
+  version: "1.1"
+  status: DRAFT
+  date: "2026-04-25"
+  author: "GQAOA, INC. — Robbbo-T Robotics PRD"
+  classification: "UTCS OGATA 600-10-10"
+  language: "es-ES"
+  parent_document: "programs/Robbbo-T_Robotics_PRD/600-10-10-Six-Seven-Axis-Robots-Assembly-Welding.md"
+  parent_program: "Robbbo-T_Robotics_PRD"
+
+utcs:
+  domain_group: G7
+  domain: OGATA
+  domain_range: "600-699"
+  domain_title: "Ground Automation"
+  code: "600-10-10"
+  parent_code: "600-10-00"
+  parent_title: "Robots de Brazo Articulado y Cartesianos"
+  ancestors:
+    - code: "600"
+      title: "Industrial Robotics (OGATA root)"
+    - code: "600-10"
+      title: "Robots de Brazo Articulado y Cartesianos (familia)"
+    - code: "600-10-00"
+      title: "Robots de Brazo Articulado y Cartesianos"
+
+robot_inc:
+  classes:
+    - id: ROBOT.INC-M
+      label: Manipuladores
+      role: "6/7-axis articulated manipulators (welding & material handling)"
+    - id: ROBOT.INC-A
+      label: Assemblaggio
+      role: "Precision assembly cells (drilling, fastening, sealing, kitting)"
+  registration_required: true
+
+deployment:
+  primary_site:
+    name: "Airbus Getafe Final Assembly Line (FAL)"
+    short_name: "Getafe FAL"
+    city: "Getafe"
+    region: "Comunidad de Madrid"
+    country: "España"
+    country_code: "ES"
+    sector: "aeronautical"
+  jurisdictional_layers:
+    - layer: 1
+      scope: "European Union"
+      authority: "EU institutions; CE marking regime"
+    - layer: 2
+      scope: "Spain (national)"
+      authority: "MITECO / MITES / INSST; transposed EU directives"
+    - layer: 3
+      scope: "Aerospace sector"
+      authority: "EASA + Airbus customer requirements"
+    - layer: 4
+      scope: "Occupational safety (workplace)"
+      authority: "INSST + Airbus EHS Getafe"
+  conflict_resolution_rule: >
+    The strictest applicable requirement across the four layers governs;
+    aeronautical-sector requirements (EASA / Airbus) shall not be relaxed
+    by EU/Spanish minima, and Spanish PRL workplace minima shall not be
+    relaxed by EU directive minima.
+
+s1000d_applicability:
+  product: GQAOA
+  variant: OGATA
+  optAxis: "600-10-10"
+  environment: GETAFE-FAL
+  expression: 'product="GQAOA" AND variant="OGATA" AND optAxis="600-10-10" AND environment="GETAFE-FAL"'
+  data_modules:
+    - dmc: "DM-600-10-10-DESC"
+      title: "Descriptive — system overview"
+    - dmc: "DM-600-10-10-SAFETY"
+      title: "Safety — risk assessment, compliance evidence, configuration"
+    - dmc: "DM-600-10-10-WELD"
+      title: "Weld procedure specifications (WPS) and parameter database"
+    - dmc: "DM-600-10-10-ASSY"
+      title: "Assembly procedures (drilling, fastening, sealing)"
+    - dmc: "DM-600-10-10-MAINT"
+      title: "Scheduled maintenance and calibration"
+    - dmc: "DM-600-10-10-CAL"
+      title: "Calibration records (ISO 9283 performance criteria)"
+
+regulatory_overlay:
+  international:
+    - { ref: "ISO 10218-1:2011",   subject: "Robot safety — Part 1 (robots)" }
+    - { ref: "ISO 10218-2:2011",   subject: "Robot safety — Part 2 (systems & integration)" }
+    - { ref: "ISO/TS 15066:2016",  subject: "Collaborative robots" }
+    - { ref: "ISO 12100:2010",     subject: "Safety of machinery — general principles" }
+    - { ref: "ISO 13849-1:2023",   subject: "Safety-related parts of control systems" }
+    - { ref: "IEC 62061:2021",     subject: "Functional safety of E/E/PE control systems" }
+    - { ref: "IEC 61508",          subject: "Functional safety (E/E/PE)" }
+    - { ref: "IEC 61800-5-2",      subject: "Adjustable speed drives — safety functions (STO/SLS/SLP)" }
+    - { ref: "ISO 9283:1998",      subject: "Industrial robot performance criteria" }
+    - { ref: "ANSI/RIA R15.06-2012", subject: "US robot safety" }
+    - { ref: "AWS D8.1M",          subject: "Automotive arc weld quality" }
+    - { ref: "ISO 14731:2019",     subject: "Welding coordination" }
+  european_union:
+    - { ref: "Reg. (EU) 2023/1230", subject: "Machinery Regulation" }
+    - { ref: "Dir. 2006/42/EC",     subject: "Machinery Directive (legacy)" }
+    - { ref: "Dir. 2014/35/EU",     subject: "Low Voltage Directive (LVD)" }
+    - { ref: "Dir. 2014/30/EU",     subject: "EMC Directive" }
+    - { ref: "Dir. 2014/34/EU",     subject: "ATEX equipment" }
+    - { ref: "Dir. 89/391/EEC",     subject: "OSH framework directive" }
+    - { ref: "Reg. (EC) 1907/2006", subject: "REACH" }
+    - { ref: "Reg. (EC) 1272/2008", subject: "CLP" }
+  spain:
+    - { ref: "Ley 31/1995",  subject: "Prevención de Riesgos Laborales (PRL)" }
+    - { ref: "RD 1644/2008", subject: "Comercialización y puesta en servicio de máquinas" }
+    - { ref: "RD 1215/1997", subject: "Equipos de trabajo" }
+    - { ref: "RD 486/1997",  subject: "Lugares de trabajo" }
+    - { ref: "RD 614/2001",  subject: "Riesgo eléctrico" }
+    - { ref: "RD 681/2003",  subject: "Atmósferas explosivas" }
+    - { ref: "RD 374/2001",  subject: "Agentes químicos" }
+    - { ref: "RD 286/2006",  subject: "Ruido" }
+    - { ref: "RD 1311/2005", subject: "Vibraciones mecánicas" }
+    - { ref: "RD 773/1997",  subject: "EPI" }
+    - { ref: "RD 488/1997",  subject: "PVDs" }
+    - { ref: "RD 39/1997",   subject: "Reglamento Servicios de Prevención" }
+    - { ref: "ITC-MIE-AEM-2", subject: "Reglamentación grúas torre y aparatos elevación" }
+    - { ref: "INSST NTPs",   subject: "Notas Técnicas de Prevención (sector-specific)" }
+  aeronautical:
+    - { ref: "EASA Part 21G", subject: "Production Organisation Approval (POA)" }
+    - { ref: "EASA Part 145", subject: "Maintenance Organisation Approval" }
+    - { ref: "EN 9100",       subject: "Aerospace QMS" }
+    - { ref: "EN 4179",       subject: "NDT personnel qualification (aerospace)" }
+    - { ref: "Airbus AIPS",   subject: "Airbus Process Specifications" }
+    - { ref: "Airbus AP",     subject: "Airbus Procedures" }
+    - { ref: "Airbus AITM",   subject: "Airbus Test Methods" }
+    - { ref: "Airbus ABT",    subject: "Airbus Bonding/Treatment specs" }
+
+review:
+  required_reviewers:
+    - "Safety Engineering"
+    - "Welding Engineering"
+    - "Robotics Integration"
+    - "Airbus EHS Getafe"
+    - "EASA POA Office"
+
+cross_references:
+  csdb_module_root: "GQAOA CSDB / OGATA / 600-10-10"
+  see_also:
+    - "programs/Robbbo-T_Robotics_PRD/Readme.md"
+    - "README.md (UTCS root, OGATA 600 series)"
+
+revisions:
+  - version: "1.0"
+    date: "2026-04-17"
+    summary: "Initial spec covering kinematics, envelopes, welding/assembly applications, safety methodology."
+  - version: "1.1"
+    date: "2026-04-25"
+    summary: >
+      Getafe FAL regulatory overlay added (EU / Spain / EASA-Airbus / INSST);
+      Document Status updated; ROBOT.INC-M/INC-A naming clarified;
+      ISO 14644-1 cleanroom wording corrected; IEC 61800-5-2 added to references.
+  - version: "1.1"
+    date: "2026-04-25"
+    summary: "Added YAML frontmatter to narrative document and this companion metadata file."
