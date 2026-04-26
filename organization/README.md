@@ -39,6 +39,7 @@
 *   [GTL Specification](GTL-Specification.md): Generative Transgentle Language — framework for transgentle models
 *   [TMS Species Taxonomy](TMS-Transgentle-Model-Species.md): Transgentle Model Species — eight subtypes, ten axioms, lifecycle, UTCS mapping
 *   [Q-ASI-HUMAN-TRANSGENTLE](Q-ASI-HUMAN-TRANSGENTLE.md): Coexistence protocol — Quantum, ASI, Human under Transgentle governance; includes ⚠️ MANDATORY QUHI principle
+*   [Q-ATLANTIDE / ATLAS-1000](Q-ATLANTIDE-ATLAS-1000.md): Controlled `000-999` architecture-band registry (ATLAS, STA, DTTA, DTCEC, EPTA, AMTA, OGATA, ACV, CYB, QCSAA) with Q-Division and ORB-Function mapping
 *   [TMC Training Master Class](TMC-Training-Master-Class.md): Four-tier certification program — Foundation, Specialist, Practitioner, Master — for transgentle governance competency
 
 ---
