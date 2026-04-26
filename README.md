@@ -471,6 +471,22 @@ It is designed to distribute authority while preserving non-negotiable constrain
 | Judicial / Oversight | Independent Tribunal of Safety, Ethics & Compliance | Compliance disputes, safety halts, whistleblower protection, ethical breaches |
 | Auditorial / Control | Independent Audit Board (Office of the Auditor General) | Independent financial, operational, performance and compliance audits; internal control assurance; attestation of accounts and KPIs; fraud and waste investigations; reporting to the Stakeholder Assembly |
 
+### 5.3.1 Crossing Power — Education & Training (Unity Function)
+
+Education & Training is not a fourth branch but a **crossing power** that traverses and unifies the Legislative, Executive, Judicial/Oversight and Auditorial/Control branches. It is the constitutional mechanism that keeps all powers competent, aligned and accountable to the same body of knowledge, ethics and safety doctrine.
+
+| Crossing Power | Corporate Equivalent | Authority | Unifies |
+|---|---|---|---|
+| Education & Training (Unity) | Corporate Academy & TMC (Training Master Class) — under Q-SCIRES / ORB-HR with Q-DATAGOV curriculum governance | Charter and ethics literacy; mandatory induction and recurrent training for all branches; certification of competencies (safety, compliance, audit, leadership); curriculum stewardship; cross-branch knowledge exchange; learning records and revocation of certifications when standards are breached | Legislative · Executive · Judicial/Oversight · Auditorial/Control |
+
+**Operating principles**
+
+- **Mandatory for all branches** — assembly members, executives, tribunal members and auditors must hold current charter, ethics and domain certifications issued through this crossing power.
+- **Independent curriculum** — content is governed jointly so that no single branch can shape its own training to its advantage.
+- **Evidence-based** — all training events, assessments and certifications are recorded as auditable artefacts available to the Auditorial branch.
+- **Continuity and unity** — common doctrine, vocabulary and safety culture are propagated across branches, divisions and programmes, preserving institutional unity across mandates and generations.
+- **No override of safety or ethics** — loss or suspension of required certification suspends the holder's authority within their branch until remediated.
+
 ## 5.4 Safety and Certification Guardrails
 
 | Guardrail | Mechanism | Override |
