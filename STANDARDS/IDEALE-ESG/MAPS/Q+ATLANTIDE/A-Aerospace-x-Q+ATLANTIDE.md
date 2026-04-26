@@ -1,3 +1,34 @@
+---
+title: "A-Aerospace × Q+ATLANTIDE — Crosslink Map"
+id: STD-IDEALE-MAPS-QATL-A-AEROSPACE
+version: "1.0.0"
+date: 2026-04-26
+classification: open-technical-taxonomy
+author: "GAIA-QAO / IDEALE-ESG"
+status: controlled-baseline
+type: crosslink-map
+program: GAIA-QAO
+division: Q-DATAGOV
+domain: "A-Aerospace OPT-IN axes × Q+ATLANTIDE 000-999 architecture bands"
+language: en
+tags:
+  - IDEALE-ESG
+  - A-Aerospace
+  - Q+ATLANTIDE
+  - OPT-IN
+  - crosslink
+  - ATLAS
+  - STA
+  - DTCEC
+  - EPTA
+  - AMTA
+  - OGATA
+  - ACV
+  - CYB
+  - QCSAA
+parent: "README.md"
+---
+
 # A-Aerospace × Q+ATLANTIDE — Crosslink Map
 
 ## Purpose
@@ -128,3 +159,5 @@ A-Aerospace OPT-IN axis is materially distinct from the band-level default.
 - A-Aerospace framework: [`IDEALE-ESG.panpara.eu/A-Aerospace/`](../../../../IDEALE-ESG.panpara.eu/A-Aerospace/README.md)
 - Q+ATLANTIDE baseline: [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md)
 - IDEALE-ESG namespace index: [`IDEALE-ESG.panpara.eu/README.md`](../../../../IDEALE-ESG.panpara.eu/README.md)
+
+**[END OF DOCUMENT]**

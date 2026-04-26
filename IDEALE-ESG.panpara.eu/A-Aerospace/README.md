@@ -1,3 +1,25 @@
+---
+title: "A-Aerospace — IDEALE-ESG Framework Index"
+id: IDEALE-ESG-A-AEROSPACE-README
+version: "1.0.0"
+date: 2026-04-26
+classification: open-technical-taxonomy
+author: "GAIA-QAO / IDEALE-ESG"
+status: controlled-baseline
+type: framework-index
+program: GAIA-QAO
+division: Q-DATAGOV
+domain: "Aerospace framework decomposed along OPT-IN axes (excluding D-Defense scope)"
+language: en
+tags:
+  - IDEALE-ESG
+  - A-Aerospace
+  - OPT-IN
+  - aerospace
+  - framework-index
+parent: "../README.md"
+---
+
 # A-Aerospace
 
 ## Purpose
@@ -40,3 +62,5 @@ under the standards namespace:
 
 - IDEALE-ESG namespace index: [`../README.md`](../README.md)
 - Q+ATLANTIDE baseline: [`../../organization/Q+ATLANTIDE.md`](../../organization/Q+ATLANTIDE.md)
+
+**[END OF DOCUMENT]**

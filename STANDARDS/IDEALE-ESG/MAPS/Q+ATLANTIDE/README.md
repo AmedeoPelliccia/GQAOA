@@ -1,3 +1,25 @@
+---
+title: "STANDARDS / IDEALE-ESG / MAPS / Q+ATLANTIDE — Map Index"
+id: STD-IDEALE-MAPS-QATL-README
+version: "1.0.0"
+date: 2026-04-26
+classification: open-technical-taxonomy
+author: "GAIA-QAO / IDEALE-ESG"
+status: controlled-baseline
+type: map-index
+program: GAIA-QAO
+division: Q-DATAGOV
+domain: "IDEALE-ESG × Q+ATLANTIDE crosslink artefacts"
+language: en
+tags:
+  - IDEALE-ESG
+  - Q+ATLANTIDE
+  - crosslink
+  - map
+  - standards
+parent: "../../README.md"
+---
+
 # STANDARDS / IDEALE-ESG / MAPS / Q+ATLANTIDE
 
 ## Purpose
@@ -70,3 +92,5 @@ following the same conventions.
 - Q+ATLANTIDE baseline: [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md)
 - OPT-IN axes definition: [`IDEALE-ESG.panpara.eu/README.md`](../../../../IDEALE-ESG.panpara.eu/README.md) (§ OPT-IN Axes)
 - Architecture-band catalogue: [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md) (§ 3. Consolidated Architecture Table)
+
+**[END OF DOCUMENT]**
