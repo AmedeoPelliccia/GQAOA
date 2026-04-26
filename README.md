@@ -1,4 +1,4 @@
-# GAIA-QAO ADVENT: Documento Organizacional Maestro (Revisado y Extendido)
+# P&L.inc_Peace-and-Love: Documento Organizacional Maestro (Revisado y Extendido)
 ## Marco Estratégico para el Liderazgo Aeroespacial Sostenible Europeo
 
 **Identificador del Documento:** GAIA-QAO-ORG-MASTER-001
