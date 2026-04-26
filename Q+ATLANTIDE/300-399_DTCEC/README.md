@@ -48,18 +48,18 @@ Cross-reference the full Q+ATLANTIDE acronym set at [`organization/Q+ATLANTIDE.m
 
 Sub-ranges within this band, sourced from the Q+ATLANTIDE controlled baseline[^baseline] §3 *Consolidated Architecture Table*[^table].
 
-| Sub-range | Block | Primary focus | Primary Q-Division | Support Q-Divisions | ORB support |
-|---:|---|---|---|---|---|
-| 300–309 | Fundamentos de Gemelos Digitales | Modelos digitales, sincronización, baseline, configuración | Q-DATAGOV | Q-HPC, Q-INDUSTRY | ORB-PMO, ORB-LEG |
-| 310–319 | Sensores e IoT para Digital Twins | Sensorización, IoT, edge telemetry, data ingestion | Q-DATAGOV | Q-HPC, Q-MECHANICS, Q-SPACE | ORB-PMO, ORB-FIN |
-| 320–329 | IA y Machine Learning para Digital Twins | ML, predictive analytics, anomaly detection, IA certificable | Q-HPC | Q-DATAGOV, Q-AIR, Q-GREENTECH | ORB-PMO, ORB-LEG |
-| 330–339 | Cloud Computing y Arquitecturas Distribuidas | Cloud, edge, federated systems, sovereign infrastructure | Q-DATAGOV | Q-HPC, Q-INDUSTRY | ORB-PMO, ORB-FIN |
-| 340–349 | Simulación y Modelado Avanzado | CFD, FEA, MBSE, mission simulation, multiphysics | Q-HPC | Q-AIR, Q-STRUCTURES, Q-GREENTECH | ORB-PMO |
-| 350–359 | Realidad Extendida y Metaverso | XR, training, immersive IETP, virtual operations | Q-HPC | Q-DATAGOV, Q-GROUND | ORB-HR, ORB-MKTG |
-| 360–369 | Blockchain y Tecnologías Descentralizadas | DPP, traceability ledger, smart contracts, evidence chain | Q-DATAGOV | Q-HPC, Q-INDUSTRY | ORB-LEG, ORB-PMO |
-| 370–379 | Ciberseguridad para Digital Twins | Security-by-design, model integrity, access control, cyber resilience | Q-DATAGOV | Q-HPC, Q-SPACE | ORB-LEG, ORB-PMO |
-| 380–389 | Analytics y Business Intelligence | KPI, EVM analytics, operations intelligence, dashboards | Q-DATAGOV | Q-HPC, Q-INDUSTRY | ORB-PMO, ORB-FIN |
-| 390–399 | Digital Twins Conscientes y Evolutivos | Adaptive twins, self-updating models, governed autonomy | Q-HORIZON | Q-HPC, Q-DATAGOV | ORB-PMO, ORB-LEG |
+| Code range | Section | Section title | Subject | Subject title | Primary focus | Primary Q-Division | Support Q-Divisions | ORB support |
+|---:|---:|---|---:|---|---|---|---|---|
+| 300–309 | 00 | Fundamentos de Gemelos Digitales | 00 | General Information | Modelos digitales, sincronización, baseline, configuración | Q-DATAGOV | Q-HPC, Q-INDUSTRY | ORB-PMO, ORB-LEG |
+| 310–319 | 01 | Sensores e IoT para Digital Twins | 00 | General Information | Sensorización, IoT, edge telemetry, data ingestion | Q-DATAGOV | Q-HPC, Q-MECHANICS, Q-SPACE | ORB-PMO, ORB-FIN |
+| 320–329 | 02 | IA y Machine Learning para Digital Twins | 00 | General Information | ML, predictive analytics, anomaly detection, IA certificable | Q-HPC | Q-DATAGOV, Q-AIR, Q-GREENTECH | ORB-PMO, ORB-LEG |
+| 330–339 | 03 | Cloud Computing y Arquitecturas Distribuidas | 00 | General Information | Cloud, edge, federated systems, sovereign infrastructure | Q-DATAGOV | Q-HPC, Q-INDUSTRY | ORB-PMO, ORB-FIN |
+| 340–349 | 04 | Simulación y Modelado Avanzado | 00 | General Information | CFD, FEA, MBSE, mission simulation, multiphysics | Q-HPC | Q-AIR, Q-STRUCTURES, Q-GREENTECH | ORB-PMO |
+| 350–359 | 05 | Realidad Extendida y Metaverso | 00 | General Information | XR, training, immersive IETP, virtual operations | Q-HPC | Q-DATAGOV, Q-GROUND | ORB-HR, ORB-MKTG |
+| 360–369 | 06 | Blockchain y Tecnologías Descentralizadas | 00 | General Information | DPP, traceability ledger, smart contracts, evidence chain | Q-DATAGOV | Q-HPC, Q-INDUSTRY | ORB-LEG, ORB-PMO |
+| 370–379 | 07 | Ciberseguridad para Digital Twins | 00 | General Information | Security-by-design, model integrity, access control, cyber resilience | Q-DATAGOV | Q-HPC, Q-SPACE | ORB-LEG, ORB-PMO |
+| 380–389 | 08 | Analytics y Business Intelligence | 00 | General Information | KPI, EVM analytics, operations intelligence, dashboards | Q-DATAGOV | Q-HPC, Q-INDUSTRY | ORB-PMO, ORB-FIN |
+| 390–399 | 09 | Digital Twins Conscientes y Evolutivos | 00 | General Information | Adaptive twins, self-updating models, governed autonomy | Q-HORIZON | Q-HPC, Q-DATAGOV | ORB-PMO, ORB-LEG |
 
 ## 4. Footprint
 

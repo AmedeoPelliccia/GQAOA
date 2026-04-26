@@ -48,18 +48,18 @@ Cross-reference the full Q+ATLANTIDE acronym set at [`organization/Q+ATLANTIDE.m
 
 Sub-ranges within this band, sourced from the Q+ATLANTIDE controlled baseline[^baseline] §3 *Consolidated Architecture Table*[^table].
 
-| Sub-range | Block | Primary focus | Primary Q-Division | Support Q-Divisions | ORB support |
-|---:|---|---|---|---|---|
-| 900–909 | Fundamentos de Computación Cuántica | Qubits, gates, circuits, quantum algorithms, foundations | Q-HORIZON | Q-HPC, Q-DATAGOV | ORB-PMO, ORB-LEG |
-| 910–919 | Quantum Machine Learning e IA Cuántica | QML, hybrid quantum-classical AI, optimization learning | Q-HPC | Q-HORIZON, Q-DATAGOV | ORB-PMO, ORB-LEG |
-| 920–929 | Redes y Comunicaciones Cuánticas | Quantum networks, QKD, entanglement distribution | Q-SPACE | Q-HORIZON, Q-DATAGOV | ORB-PMO, ORB-LEG |
-| 930–939 | Ciberseguridad Cuántica | Quantum-safe security, quantum cyber, crypto transition | Q-DATAGOV | Q-HORIZON, Q-HPC | ORB-LEG, ORB-PMO |
-| 940–949 | Sensores y Metrología Cuántica | Quantum sensing, gravimetry, timing, navigation, metrology | Q-HORIZON | Q-SPACE, Q-AIR, Q-HPC | ORB-PMO, ORB-LEG |
-| 950–959 | Simulación Cuántica | Quantum simulation, materials simulation, physics modelling | Q-HPC | Q-HORIZON, Q-STRUCTURES, Q-GREENTECH | ORB-PMO, ORB-FIN |
-| 960–969 | Robótica Cuántica y Manipulación de Materia | Quantum-enhanced robotics, precision manipulation, matter control | Q-HORIZON | Q-HPC, Q-INDUSTRY | ORB-PMO, ORB-LEG |
-| 970–979 | Agencia Sentiente Cuántica | Sentient agency models, quantum-classical agency, autonomy governance | Q-HORIZON | Q-HPC, Q-DATAGOV | ORB-LEG, ORB-PMO |
-| 980–989 | Gobernanza y Ética de IA y Cuántica Sentiente | AI ethics, quantum governance, agency constraints, auditability | Q-DATAGOV | Q-HORIZON, Q-HPC | ORB-LEG, ORB-CSR |
-| 990–999 | Futuro QCSAA y Aplicaciones Inter-Arquitectura | Cross-band applications, future architectures, post-2040 systems | Q-HORIZON | Q-HPC, Q-SPACE, Q-DATAGOV | ORB-PMO, ORB-MKTG |
+| Code range | Section | Section title | Subject | Subject title | Primary focus | Primary Q-Division | Support Q-Divisions | ORB support |
+|---:|---:|---|---:|---|---|---|---|---|
+| 900–909 | 00 | Fundamentos de Computación Cuántica | 00 | General Information | Qubits, gates, circuits, quantum algorithms, foundations | Q-HORIZON | Q-HPC, Q-DATAGOV | ORB-PMO, ORB-LEG |
+| 910–919 | 01 | Quantum Machine Learning e IA Cuántica | 00 | General Information | QML, hybrid quantum-classical AI, optimization learning | Q-HPC | Q-HORIZON, Q-DATAGOV | ORB-PMO, ORB-LEG |
+| 920–929 | 02 | Redes y Comunicaciones Cuánticas | 00 | General Information | Quantum networks, QKD, entanglement distribution | Q-SPACE | Q-HORIZON, Q-DATAGOV | ORB-PMO, ORB-LEG |
+| 930–939 | 03 | Ciberseguridad Cuántica | 00 | General Information | Quantum-safe security, quantum cyber, crypto transition | Q-DATAGOV | Q-HORIZON, Q-HPC | ORB-LEG, ORB-PMO |
+| 940–949 | 04 | Sensores y Metrología Cuántica | 00 | General Information | Quantum sensing, gravimetry, timing, navigation, metrology | Q-HORIZON | Q-SPACE, Q-AIR, Q-HPC | ORB-PMO, ORB-LEG |
+| 950–959 | 05 | Simulación Cuántica | 00 | General Information | Quantum simulation, materials simulation, physics modelling | Q-HPC | Q-HORIZON, Q-STRUCTURES, Q-GREENTECH | ORB-PMO, ORB-FIN |
+| 960–969 | 06 | Robótica Cuántica y Manipulación de Materia | 00 | General Information | Quantum-enhanced robotics, precision manipulation, matter control | Q-HORIZON | Q-HPC, Q-INDUSTRY | ORB-PMO, ORB-LEG |
+| 970–979 | 07 | Agencia Sentiente Cuántica | 00 | General Information | Sentient agency models, quantum-classical agency, autonomy governance | Q-HORIZON | Q-HPC, Q-DATAGOV | ORB-LEG, ORB-PMO |
+| 980–989 | 08 | Gobernanza y Ética de IA y Cuántica Sentiente | 00 | General Information | AI ethics, quantum governance, agency constraints, auditability | Q-DATAGOV | Q-HORIZON, Q-HPC | ORB-LEG, ORB-CSR |
+| 990–999 | 09 | Futuro QCSAA y Aplicaciones Inter-Arquitectura | 00 | General Information | Cross-band applications, future architectures, post-2040 systems | Q-HORIZON | Q-HPC, Q-SPACE, Q-DATAGOV | ORB-PMO, ORB-MKTG |
 
 ## 4. Footprint
 

@@ -46,18 +46,18 @@ Cross-reference the full Q+ATLANTIDE acronym set at [`organization/Q+ATLANTIDE.m
 
 Sub-ranges within this band, sourced from the Q+ATLANTIDE controlled baseline[^baseline] §3 *Consolidated Architecture Table*[^table].
 
-| Sub-range | Block | Primary focus | Primary Q-Division | Support Q-Divisions | ORB support |
-|---:|---|---|---|---|---|
-| 400–409 | Fuentes de Energía Convencionales y Avanzadas | Generación energética, fuentes primarias, arquitecturas de suministro | Q-GREENTECH | Q-HPC, Q-INDUSTRY | ORB-FIN, ORB-PMO |
-| 410–419 | Energías Renovables | Solar, eólica, renovables integradas, infraestructura energética | Q-GREENTECH | Q-INDUSTRY, Q-HORIZON | ORB-CSR, ORB-FIN |
-| 420–429 | Almacenamiento de Energía | Baterías, supercapacitores, almacenamiento criogénico, buffer energético | Q-GREENTECH | Q-STRUCTURES, Q-HPC | ORB-PMO, ORB-LEG |
-| 430–439 | Gestión y Distribución de Energía | HVDC, power management, distribución, protección eléctrica | Q-GREENTECH | Q-MECHANICS, Q-DATAGOV, Q-HPC | ORB-PMO, ORB-LEG |
-| 440–449 | Propulsión por Combustión | Turbinas, combustión, hot section, combustibles sostenibles | Q-GREENTECH | Q-AIR, Q-MECHANICS | ORB-PMO, ORB-FIN |
-| 450–459 | Propulsión Eléctrica e Híbrida | Motores eléctricos, híbrido-eléctrico, conversión, inversores | Q-GREENTECH | Q-HPC, Q-MECHANICS, Q-AIR | ORB-PMO, ORB-LEG |
-| 460–469 | Propulsión de Hidrógeno y Celdas de Combustible | LH₂, fuel cells, BoP, criogenia, seguridad H₂ | Q-GREENTECH | Q-STRUCTURES, Q-MECHANICS, Q-HPC | ORB-PMO, ORB-LEG, ORB-CSR |
-| 470–479 | Nuevas Formas de Propulsión | Propulsión avanzada, conceptos post-2040, experimental TRL bajo | Q-HORIZON | Q-GREENTECH, Q-HPC, Q-SPACE | ORB-PMO, ORB-LEG |
-| 480–489 | Optimización Energética y Cuántica | Optimización energética, quantum optimization, smart energy systems | Q-HPC | Q-GREENTECH, Q-HORIZON | ORB-PMO, ORB-FIN |
-| 490–499 | Sistemas de Recuperación de Energía | Recuperación térmica, regeneración, efficiency recovery systems | Q-GREENTECH | Q-MECHANICS, Q-HPC | ORB-CSR, ORB-FIN |
+| Code range | Section | Section title | Subject | Subject title | Primary focus | Primary Q-Division | Support Q-Divisions | ORB support |
+|---:|---:|---|---:|---|---|---|---|---|
+| 400–409 | 00 | Fuentes de Energía Convencionales y Avanzadas | 00 | General Information | Generación energética, fuentes primarias, arquitecturas de suministro | Q-GREENTECH | Q-HPC, Q-INDUSTRY | ORB-FIN, ORB-PMO |
+| 410–419 | 01 | Energías Renovables | 00 | General Information | Solar, eólica, renovables integradas, infraestructura energética | Q-GREENTECH | Q-INDUSTRY, Q-HORIZON | ORB-CSR, ORB-FIN |
+| 420–429 | 02 | Almacenamiento de Energía | 00 | General Information | Baterías, supercapacitores, almacenamiento criogénico, buffer energético | Q-GREENTECH | Q-STRUCTURES, Q-HPC | ORB-PMO, ORB-LEG |
+| 430–439 | 03 | Gestión y Distribución de Energía | 00 | General Information | HVDC, power management, distribución, protección eléctrica | Q-GREENTECH | Q-MECHANICS, Q-DATAGOV, Q-HPC | ORB-PMO, ORB-LEG |
+| 440–449 | 04 | Propulsión por Combustión | 00 | General Information | Turbinas, combustión, hot section, combustibles sostenibles | Q-GREENTECH | Q-AIR, Q-MECHANICS | ORB-PMO, ORB-FIN |
+| 450–459 | 05 | Propulsión Eléctrica e Híbrida | 00 | General Information | Motores eléctricos, híbrido-eléctrico, conversión, inversores | Q-GREENTECH | Q-HPC, Q-MECHANICS, Q-AIR | ORB-PMO, ORB-LEG |
+| 460–469 | 06 | Propulsión de Hidrógeno y Celdas de Combustible | 00 | General Information | LH₂, fuel cells, BoP, criogenia, seguridad H₂ | Q-GREENTECH | Q-STRUCTURES, Q-MECHANICS, Q-HPC | ORB-PMO, ORB-LEG, ORB-CSR |
+| 470–479 | 07 | Nuevas Formas de Propulsión | 00 | General Information | Propulsión avanzada, conceptos post-2040, experimental TRL bajo | Q-HORIZON | Q-GREENTECH, Q-HPC, Q-SPACE | ORB-PMO, ORB-LEG |
+| 480–489 | 08 | Optimización Energética y Cuántica | 00 | General Information | Optimización energética, quantum optimization, smart energy systems | Q-HPC | Q-GREENTECH, Q-HORIZON | ORB-PMO, ORB-FIN |
+| 490–499 | 09 | Sistemas de Recuperación de Energía | 00 | General Information | Recuperación térmica, regeneración, efficiency recovery systems | Q-GREENTECH | Q-MECHANICS, Q-HPC | ORB-CSR, ORB-FIN |
 
 ## 4. Footprint
 

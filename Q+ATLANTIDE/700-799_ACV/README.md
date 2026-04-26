@@ -47,18 +47,18 @@ Cross-reference the full Q+ATLANTIDE acronym set at [`organization/Q+ATLANTIDE.m
 
 Sub-ranges within this band, sourced from the Q+ATLANTIDE controlled baseline[^baseline] §3 *Consolidated Architecture Table*[^table].
 
-| Sub-range | Block | Primary focus | Primary Q-Division | Support Q-Divisions | ORB support |
-|---:|---|---|---|---|---|
-| 700–709 | Vehículos de Movilidad Aérea Urbana | eVTOL, UAM vehicles, urban air platforms | Q-AIR | Q-GREENTECH, Q-STRUCTURES, Q-HPC | ORB-MKTG, ORB-PMO |
-| 710–719 | Vertipuertos y Heliplataformas | Vertiports, charging/refuelling, passenger infrastructure | Q-GROUND | Q-GREENTECH, Q-INDUSTRY | ORB-FIN, ORB-PMO |
-| 720–729 | Gestión del Tráfico Aéreo Urbano | UTM, airspace integration, traffic management, autonomy | Q-AIR | Q-DATAGOV, Q-SPACE, Q-HPC | ORB-PMO, ORB-LEG |
-| 730–739 | Ruido y Acústica Urbana | Noise modelling, acoustic footprint, urban impact | Q-AIR | Q-HPC, Q-GREENTECH | ORB-CSR, ORB-MKTG |
-| 740–749 | Sostenibilidad Ambiental en UAM | Emissions, lifecycle impact, ESG, urban sustainability | Q-GREENTECH | Q-DATAGOV, Q-HPC | ORB-CSR, ORB-PMO |
-| 750–759 | Legal, Regulación y Certificación UAM | Certification, airworthiness, operating rules, liability | Q-DATAGOV | Q-AIR, Q-GROUND | ORB-LEG, ORB-PMO |
-| 760–769 | Interfaz Urbana y Aceptación Social | Human factors, accessibility, social acceptance, UX | Q-GROUND | Q-AIR, Q-DATAGOV | ORB-MKTG, ORB-CSR |
-| 770–779 | Seguridad y Resiliencia Operacional | Safety, emergency response, operational resilience | Q-AIR | Q-GROUND, Q-DATAGOV, Q-HPC | ORB-PMO, ORB-LEG |
-| 780–789 | Optimización Cuántica de Tráfico y Logística UAM | Quantum traffic optimization, urban logistics, routing | Q-HPC | Q-AIR, Q-DATAGOV, Q-HORIZON | ORB-PMO, ORB-FIN |
-| 790–799 | Modelos de Negocio y Ecosistemas UAM | Operators, business models, infrastructure partnerships | Q-HORIZON | Q-AIR, Q-GROUND | ORB-MKTG, ORB-FIN |
+| Code range | Section | Section title | Subject | Subject title | Primary focus | Primary Q-Division | Support Q-Divisions | ORB support |
+|---:|---:|---|---:|---|---|---|---|---|
+| 700–709 | 00 | Vehículos de Movilidad Aérea Urbana | 00 | General Information | eVTOL, UAM vehicles, urban air platforms | Q-AIR | Q-GREENTECH, Q-STRUCTURES, Q-HPC | ORB-MKTG, ORB-PMO |
+| 710–719 | 01 | Vertipuertos y Heliplataformas | 00 | General Information | Vertiports, charging/refuelling, passenger infrastructure | Q-GROUND | Q-GREENTECH, Q-INDUSTRY | ORB-FIN, ORB-PMO |
+| 720–729 | 02 | Gestión del Tráfico Aéreo Urbano | 00 | General Information | UTM, airspace integration, traffic management, autonomy | Q-AIR | Q-DATAGOV, Q-SPACE, Q-HPC | ORB-PMO, ORB-LEG |
+| 730–739 | 03 | Ruido y Acústica Urbana | 00 | General Information | Noise modelling, acoustic footprint, urban impact | Q-AIR | Q-HPC, Q-GREENTECH | ORB-CSR, ORB-MKTG |
+| 740–749 | 04 | Sostenibilidad Ambiental en UAM | 00 | General Information | Emissions, lifecycle impact, ESG, urban sustainability | Q-GREENTECH | Q-DATAGOV, Q-HPC | ORB-CSR, ORB-PMO |
+| 750–759 | 05 | Legal, Regulación y Certificación UAM | 00 | General Information | Certification, airworthiness, operating rules, liability | Q-DATAGOV | Q-AIR, Q-GROUND | ORB-LEG, ORB-PMO |
+| 760–769 | 06 | Interfaz Urbana y Aceptación Social | 00 | General Information | Human factors, accessibility, social acceptance, UX | Q-GROUND | Q-AIR, Q-DATAGOV | ORB-MKTG, ORB-CSR |
+| 770–779 | 07 | Seguridad y Resiliencia Operacional | 00 | General Information | Safety, emergency response, operational resilience | Q-AIR | Q-GROUND, Q-DATAGOV, Q-HPC | ORB-PMO, ORB-LEG |
+| 780–789 | 08 | Optimización Cuántica de Tráfico y Logística UAM | 00 | General Information | Quantum traffic optimization, urban logistics, routing | Q-HPC | Q-AIR, Q-DATAGOV, Q-HORIZON | ORB-PMO, ORB-FIN |
+| 790–799 | 09 | Modelos de Negocio y Ecosistemas UAM | 00 | General Information | Operators, business models, infrastructure partnerships | Q-HORIZON | Q-AIR, Q-GROUND | ORB-MKTG, ORB-FIN |
 
 ## 4. Footprint
 

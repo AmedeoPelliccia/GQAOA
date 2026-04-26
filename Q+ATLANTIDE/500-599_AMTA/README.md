@@ -46,18 +46,18 @@ Cross-reference the full Q+ATLANTIDE acronym set at [`organization/Q+ATLANTIDE.m
 
 Sub-ranges within this band, sourced from the Q+ATLANTIDE controlled baseline[^baseline] §3 *Consolidated Architecture Table*[^table].
 
-| Sub-range | Block | Primary focus | Primary Q-Division | Support Q-Divisions | ORB support |
-|---:|---|---|---|---|---|
-| 500–509 | Materiales Compuestos Avanzados | CFRP, composites estructurales, laminados, certificación material | Q-STRUCTURES | Q-INDUSTRY, Q-HPC | ORB-PMO, ORB-FIN |
-| 510–519 | Metamateriales y Materiales Inteligentes | Metamateriales, morphing, smart skins, materiales adaptativos | Q-HORIZON | Q-STRUCTURES, Q-HPC | ORB-PMO, ORB-LEG |
-| 520–529 | Nanomateriales y Recubrimientos Funcionales | Coatings, nano-coatings, anti-icing, protección superficial | Q-STRUCTURES | Q-HORIZON, Q-INDUSTRY | ORB-PMO, ORB-LEG |
-| 530–539 | Biotecnología y Bioingeniería | Bioengineering, biofabrication, materiales bioinspirados | Q-HORIZON | Q-STRUCTURES, Q-GREENTECH | ORB-CSR, ORB-LEG |
-| 540–549 | Biomateriales y Biónica | Biomateriales, estructuras biónicas, sistemas bioinspirados | Q-HORIZON | Q-STRUCTURES, Q-HPC | ORB-CSR, ORB-PMO |
-| 550–559 | Nanotecnología y Nanorobótica | Nanorobots, nanoassembly, nanostructures, nanoscale actuation | Q-HORIZON | Q-HPC, Q-STRUCTURES | ORB-PMO, ORB-LEG |
-| 560–569 | Sensores Avanzados Bio/Nano | Bio/nano sensors, structural health monitoring, smart sensing | Q-HORIZON | Q-DATAGOV, Q-HPC, Q-STRUCTURES | ORB-PMO, ORB-LEG |
-| 570–579 | Manufactura Aditiva para Materiales Avanzados | 3D printing, additive manufacturing, repair, qualification | Q-INDUSTRY | Q-STRUCTURES, Q-HPC | ORB-PMO, ORB-FIN |
-| 580–589 | Materiales y Procesos Cuánticos | Quantum materials, cryogenic materials, superconducting materials | Q-HORIZON | Q-STRUCTURES, Q-HPC, Q-GREENTECH | ORB-PMO, ORB-LEG |
-| 590–599 | Reciclaje y Sostenibilidad de Materiales | Circularity, recycling, DPP material traceability, eco-design | Q-STRUCTURES | Q-INDUSTRY, Q-DATAGOV | ORB-CSR, ORB-PMO |
+| Code range | Section | Section title | Subject | Subject title | Primary focus | Primary Q-Division | Support Q-Divisions | ORB support |
+|---:|---:|---|---:|---|---|---|---|---|
+| 500–509 | 00 | Materiales Compuestos Avanzados | 00 | General Information | CFRP, composites estructurales, laminados, certificación material | Q-STRUCTURES | Q-INDUSTRY, Q-HPC | ORB-PMO, ORB-FIN |
+| 510–519 | 01 | Metamateriales y Materiales Inteligentes | 00 | General Information | Metamateriales, morphing, smart skins, materiales adaptativos | Q-HORIZON | Q-STRUCTURES, Q-HPC | ORB-PMO, ORB-LEG |
+| 520–529 | 02 | Nanomateriales y Recubrimientos Funcionales | 00 | General Information | Coatings, nano-coatings, anti-icing, protección superficial | Q-STRUCTURES | Q-HORIZON, Q-INDUSTRY | ORB-PMO, ORB-LEG |
+| 530–539 | 03 | Biotecnología y Bioingeniería | 00 | General Information | Bioengineering, biofabrication, materiales bioinspirados | Q-HORIZON | Q-STRUCTURES, Q-GREENTECH | ORB-CSR, ORB-LEG |
+| 540–549 | 04 | Biomateriales y Biónica | 00 | General Information | Biomateriales, estructuras biónicas, sistemas bioinspirados | Q-HORIZON | Q-STRUCTURES, Q-HPC | ORB-CSR, ORB-PMO |
+| 550–559 | 05 | Nanotecnología y Nanorobótica | 00 | General Information | Nanorobots, nanoassembly, nanostructures, nanoscale actuation | Q-HORIZON | Q-HPC, Q-STRUCTURES | ORB-PMO, ORB-LEG |
+| 560–569 | 06 | Sensores Avanzados Bio/Nano | 00 | General Information | Bio/nano sensors, structural health monitoring, smart sensing | Q-HORIZON | Q-DATAGOV, Q-HPC, Q-STRUCTURES | ORB-PMO, ORB-LEG |
+| 570–579 | 07 | Manufactura Aditiva para Materiales Avanzados | 00 | General Information | 3D printing, additive manufacturing, repair, qualification | Q-INDUSTRY | Q-STRUCTURES, Q-HPC | ORB-PMO, ORB-FIN |
+| 580–589 | 08 | Materiales y Procesos Cuánticos | 00 | General Information | Quantum materials, cryogenic materials, superconducting materials | Q-HORIZON | Q-STRUCTURES, Q-HPC, Q-GREENTECH | ORB-PMO, ORB-LEG |
+| 590–599 | 09 | Reciclaje y Sostenibilidad de Materiales | 00 | General Information | Circularity, recycling, DPP material traceability, eco-design | Q-STRUCTURES | Q-INDUSTRY, Q-DATAGOV | ORB-CSR, ORB-PMO |
 
 ## 4. Footprint
 

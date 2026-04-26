@@ -46,18 +46,18 @@ Cross-reference the full Q+ATLANTIDE acronym set at [`organization/Q+ATLANTIDE.m
 
 Sub-ranges within this band, sourced from the Q+ATLANTIDE controlled baseline[^baseline] §3 *Consolidated Architecture Table*[^table].
 
-| Sub-range | Block | Primary focus | Primary Q-Division | Support Q-Divisions | ORB support |
-|---:|---|---|---|---|---|
-| 100–109 | Sistemas Generales y Soporte Vital Espacial | Arquitectura general espacial, habitabilidad, soporte vital, seguridad de misión | Q-SPACE | Q-DATAGOV, Q-HORIZON | ORB-PMO, ORB-LEG |
-| 110–119 | Estructuras y Materiales Espaciales | Estructuras orbitales, materiales espaciales, protección térmica y radiación | Q-STRUCTURES | Q-SPACE, Q-HORIZON, Q-INDUSTRY | ORB-PMO, ORB-FIN |
-| 120–129 | Propulsión Espacial Tradicional y Avanzada | Propulsión química, eléctrica, nuclear conceptual, avanzada | Q-GREENTECH | Q-SPACE, Q-HORIZON, Q-HPC | ORB-PMO, ORB-LEG |
-| 130–139 | Sistemas de Energía Espacial | Solar, baterías, energía nuclear espacial conceptual, distribución eléctrica | Q-GREENTECH | Q-SPACE, Q-HPC | ORB-PMO, ORB-FIN |
-| 140–149 | Aviónica y Control de Misión Espacial | GNC, avionics, flight software, mission control, autonomy | Q-SPACE | Q-DATAGOV, Q-HPC, Q-HORIZON | ORB-PMO, ORB-LEG |
-| 150–159 | Comunicaciones Espaciales | Satcom, enlaces ópticos, redes espaciales, comunicación intersatélite | Q-SPACE | Q-DATAGOV, Q-HPC | ORB-PMO, ORB-LEG |
-| 160–169 | Sensores y Carga Útil Espacial | Payloads, instrumentación, sensores científicos, observación | Q-SPACE | Q-HORIZON, Q-HPC, Q-DATAGOV | ORB-PMO, ORB-MKTG |
-| 170–179 | Operaciones y Mantenimiento en Órbita | Servicing orbital, inspección, reparación, ensamblaje en órbita | Q-SPACE | Q-GROUND, Q-HORIZON, Q-MECHANICS | ORB-PMO, ORB-LEG |
-| 180–189 | Infraestructura y Logística Espacial | Bases orbitales, logística cis-lunar, transporte espacial, recursos | Q-SPACE | Q-INDUSTRY, Q-GROUND, Q-HORIZON | ORB-PMO, ORB-FIN |
-| 190–199 | Sistemas Avanzados, Conceptos y Futuro Espacial | Interplanetario, hábitats avanzados, conceptos post-2040 | Q-HORIZON | Q-SPACE, Q-HPC, Q-GREENTECH | ORB-PMO, ORB-MKTG |
+| Code range | Section | Section title | Subject | Subject title | Primary focus | Primary Q-Division | Support Q-Divisions | ORB support |
+|---:|---:|---|---:|---|---|---|---|---|
+| 100–109 | 00 | Sistemas Generales y Soporte Vital Espacial | 00 | General Information | Arquitectura general espacial, habitabilidad, soporte vital, seguridad de misión | Q-SPACE | Q-DATAGOV, Q-HORIZON | ORB-PMO, ORB-LEG |
+| 110–119 | 01 | Estructuras y Materiales Espaciales | 00 | General Information | Estructuras orbitales, materiales espaciales, protección térmica y radiación | Q-STRUCTURES | Q-SPACE, Q-HORIZON, Q-INDUSTRY | ORB-PMO, ORB-FIN |
+| 120–129 | 02 | Propulsión Espacial Tradicional y Avanzada | 00 | General Information | Propulsión química, eléctrica, nuclear conceptual, avanzada | Q-GREENTECH | Q-SPACE, Q-HORIZON, Q-HPC | ORB-PMO, ORB-LEG |
+| 130–139 | 03 | Sistemas de Energía Espacial | 00 | General Information | Solar, baterías, energía nuclear espacial conceptual, distribución eléctrica | Q-GREENTECH | Q-SPACE, Q-HPC | ORB-PMO, ORB-FIN |
+| 140–149 | 04 | Aviónica y Control de Misión Espacial | 00 | General Information | GNC, avionics, flight software, mission control, autonomy | Q-SPACE | Q-DATAGOV, Q-HPC, Q-HORIZON | ORB-PMO, ORB-LEG |
+| 150–159 | 05 | Comunicaciones Espaciales | 00 | General Information | Satcom, enlaces ópticos, redes espaciales, comunicación intersatélite | Q-SPACE | Q-DATAGOV, Q-HPC | ORB-PMO, ORB-LEG |
+| 160–169 | 06 | Sensores y Carga Útil Espacial | 00 | General Information | Payloads, instrumentación, sensores científicos, observación | Q-SPACE | Q-HORIZON, Q-HPC, Q-DATAGOV | ORB-PMO, ORB-MKTG |
+| 170–179 | 07 | Operaciones y Mantenimiento en Órbita | 00 | General Information | Servicing orbital, inspección, reparación, ensamblaje en órbita | Q-SPACE | Q-GROUND, Q-HORIZON, Q-MECHANICS | ORB-PMO, ORB-LEG |
+| 180–189 | 08 | Infraestructura y Logística Espacial | 00 | General Information | Bases orbitales, logística cis-lunar, transporte espacial, recursos | Q-SPACE | Q-INDUSTRY, Q-GROUND, Q-HORIZON | ORB-PMO, ORB-FIN |
+| 190–199 | 09 | Sistemas Avanzados, Conceptos y Futuro Espacial | 00 | General Information | Interplanetario, hábitats avanzados, conceptos post-2040 | Q-HORIZON | Q-SPACE, Q-HPC, Q-GREENTECH | ORB-PMO, ORB-MKTG |
 
 ## 4. Footprint
 

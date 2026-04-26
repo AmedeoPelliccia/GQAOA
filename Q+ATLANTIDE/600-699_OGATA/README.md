@@ -47,18 +47,18 @@ Cross-reference the full Q+ATLANTIDE acronym set at [`organization/Q+ATLANTIDE.m
 
 Sub-ranges within this band, sourced from the Q+ATLANTIDE controlled baseline[^baseline] §3 *Consolidated Architecture Table*[^table].
 
-| Sub-range | Block | Primary focus | Primary Q-Division | Support Q-Divisions | ORB support |
-|---:|---|---|---|---|---|
-| 600–609 | Robótica Industrial y Colaborativa | Robots industriales, cobots, automation cells, safety | Q-INDUSTRY | Q-HPC, Q-GROUND | ORB-PMO, ORB-FIN |
-| 610–619 | Vehículos Autónomos Terrestres | AGV, AMR, autonomous towing, yard automation | Q-GROUND | Q-HPC, Q-INDUSTRY, Q-DATAGOV | ORB-PMO, ORB-FIN |
-| 620–629 | Infraestructura Inteligente | Smart infrastructure, connected facilities, sensorized ground systems | Q-GROUND | Q-DATAGOV, Q-INDUSTRY | ORB-FIN, ORB-PMO |
-| 630–639 | Fábricas 4.0 y Manufactura Avanzada | Digital manufacturing, FAL automation, MES, robotics | Q-INDUSTRY | Q-DATAGOV, Q-HPC | ORB-PMO, ORB-FIN |
-| 640–649 | Logística y Almacenamiento Automatizado | Warehousing, automated logistics, supply chain robotics | Q-INDUSTRY | Q-GROUND, Q-DATAGOV | ORB-FIN, ORB-PMO |
-| 650–659 | Agricultura de Precisión | Agro-automation, robotics, monitoring, autonomous farming systems | Q-HORIZON | Q-HPC, Q-GROUND | ORB-CSR, ORB-MKTG |
-| 660–669 | Construcción y Demolición Automatizada | Construction robotics, demolition automation, autonomous site operations | Q-GROUND | Q-INDUSTRY, Q-HPC | ORB-PMO, ORB-LEG |
-| 670–679 | Servicios Autónomos en Entornos Cerrados | Indoor robotics, maintenance support, facility service robots | Q-GROUND | Q-HPC, Q-DATAGOV | ORB-PMO, ORB-HR |
-| 680–689 | Optimización con IA y Cuántica | Scheduling, routing, quantum optimization, logistics intelligence | Q-HPC | Q-DATAGOV, Q-INDUSTRY | ORB-PMO, ORB-FIN |
-| 690–699 | Interacción Humano-Robot y Seguridad | HRI, safety cases, human factors, collaborative procedures | Q-INDUSTRY | Q-HPC, Q-GROUND | ORB-HR, ORB-LEG |
+| Code range | Section | Section title | Subject | Subject title | Primary focus | Primary Q-Division | Support Q-Divisions | ORB support |
+|---:|---:|---|---:|---|---|---|---|---|
+| 600–609 | 00 | Robótica Industrial y Colaborativa | 00 | General Information | Robots industriales, cobots, automation cells, safety | Q-INDUSTRY | Q-HPC, Q-GROUND | ORB-PMO, ORB-FIN |
+| 610–619 | 01 | Vehículos Autónomos Terrestres | 00 | General Information | AGV, AMR, autonomous towing, yard automation | Q-GROUND | Q-HPC, Q-INDUSTRY, Q-DATAGOV | ORB-PMO, ORB-FIN |
+| 620–629 | 02 | Infraestructura Inteligente | 00 | General Information | Smart infrastructure, connected facilities, sensorized ground systems | Q-GROUND | Q-DATAGOV, Q-INDUSTRY | ORB-FIN, ORB-PMO |
+| 630–639 | 03 | Fábricas 4.0 y Manufactura Avanzada | 00 | General Information | Digital manufacturing, FAL automation, MES, robotics | Q-INDUSTRY | Q-DATAGOV, Q-HPC | ORB-PMO, ORB-FIN |
+| 640–649 | 04 | Logística y Almacenamiento Automatizado | 00 | General Information | Warehousing, automated logistics, supply chain robotics | Q-INDUSTRY | Q-GROUND, Q-DATAGOV | ORB-FIN, ORB-PMO |
+| 650–659 | 05 | Agricultura de Precisión | 00 | General Information | Agro-automation, robotics, monitoring, autonomous farming systems | Q-HORIZON | Q-HPC, Q-GROUND | ORB-CSR, ORB-MKTG |
+| 660–669 | 06 | Construcción y Demolición Automatizada | 00 | General Information | Construction robotics, demolition automation, autonomous site operations | Q-GROUND | Q-INDUSTRY, Q-HPC | ORB-PMO, ORB-LEG |
+| 670–679 | 07 | Servicios Autónomos en Entornos Cerrados | 00 | General Information | Indoor robotics, maintenance support, facility service robots | Q-GROUND | Q-HPC, Q-DATAGOV | ORB-PMO, ORB-HR |
+| 680–689 | 08 | Optimización con IA y Cuántica | 00 | General Information | Scheduling, routing, quantum optimization, logistics intelligence | Q-HPC | Q-DATAGOV, Q-INDUSTRY | ORB-PMO, ORB-FIN |
+| 690–699 | 09 | Interacción Humano-Robot y Seguridad | 00 | General Information | HRI, safety cases, human factors, collaborative procedures | Q-INDUSTRY | Q-HPC, Q-GROUND | ORB-HR, ORB-LEG |
 
 ## 4. Footprint
 

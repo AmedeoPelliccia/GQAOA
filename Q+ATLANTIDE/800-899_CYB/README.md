@@ -51,18 +51,18 @@ Cross-reference the full Q+ATLANTIDE acronym set at [`organization/Q+ATLANTIDE.m
 
 Sub-ranges within this band, sourced from the Q+ATLANTIDE controlled baseline[^baseline] §3 *Consolidated Architecture Table*[^table].
 
-| Sub-range | Block | Primary focus | Primary Q-Division | Support Q-Divisions | ORB support |
-|---:|---|---|---|---|---|
-| 800–809 | Gobernanza y Gestión de Riesgos de Ciberseguridad | Cyber governance, risk management, compliance, policy | Q-DATAGOV | Q-HPC, Q-SPACE | ORB-LEG, ORB-PMO |
-| 810–819 | Seguridad de Redes y Comunicaciones | Network security, secure comms, zero trust, segmentation | Q-DATAGOV | Q-SPACE, Q-HPC | ORB-LEG, ORB-PMO |
-| 820–829 | Seguridad de Datos y Almacenamiento | Encryption, data integrity, secure storage, DLP | Q-DATAGOV | Q-HPC | ORB-LEG, ORB-PMO |
-| 830–839 | Gestión de Identidades y Acceso | IAM, PKI, access control, privileged access | Q-DATAGOV | Q-HPC | ORB-LEG, ORB-HR |
-| 840–849 | Seguridad de Aplicaciones y Software | Secure SDLC, code security, software assurance | Q-DATAGOV | Q-HPC | ORB-LEG, ORB-PMO |
-| 850–859 | Ciberseguridad Operacional | SecOps, SOC, detection, response, monitoring | Q-DATAGOV | Q-HPC, Q-GROUND | ORB-PMO, ORB-LEG |
-| 860–869 | Seguridad Cloud y Edge | Cloud security, edge security, distributed systems hardening | Q-DATAGOV | Q-HPC, Q-INDUSTRY | ORB-LEG, ORB-PMO |
-| 870–879 | Ciberseguridad ICS/OT | OT security, industrial control systems, FAL protection | Q-DATAGOV | Q-INDUSTRY, Q-GROUND | ORB-LEG, ORB-PMO |
-| 880–889 | Criptografía Post-Cuántica y Seguridad Cuántica | PQC, QKD, crypto-agility, quantum-safe transition | Q-HORIZON | Q-DATAGOV, Q-HPC, Q-SPACE | ORB-LEG, ORB-PMO |
-| 890–899 | Inteligencia de Amenazas y Ciber-resiliencia | Threat intelligence, resilience engineering, cyber recovery | Q-DATAGOV | Q-HPC, Q-HORIZON | ORB-LEG, ORB-PMO |
+| Code range | Section | Section title | Subject | Subject title | Primary focus | Primary Q-Division | Support Q-Divisions | ORB support |
+|---:|---:|---|---:|---|---|---|---|---|
+| 800–809 | 00 | Gobernanza y Gestión de Riesgos de Ciberseguridad | 00 | General Information | Cyber governance, risk management, compliance, policy | Q-DATAGOV | Q-HPC, Q-SPACE | ORB-LEG, ORB-PMO |
+| 810–819 | 01 | Seguridad de Redes y Comunicaciones | 00 | General Information | Network security, secure comms, zero trust, segmentation | Q-DATAGOV | Q-SPACE, Q-HPC | ORB-LEG, ORB-PMO |
+| 820–829 | 02 | Seguridad de Datos y Almacenamiento | 00 | General Information | Encryption, data integrity, secure storage, DLP | Q-DATAGOV | Q-HPC | ORB-LEG, ORB-PMO |
+| 830–839 | 03 | Gestión de Identidades y Acceso | 00 | General Information | IAM, PKI, access control, privileged access | Q-DATAGOV | Q-HPC | ORB-LEG, ORB-HR |
+| 840–849 | 04 | Seguridad de Aplicaciones y Software | 00 | General Information | Secure SDLC, code security, software assurance | Q-DATAGOV | Q-HPC | ORB-LEG, ORB-PMO |
+| 850–859 | 05 | Ciberseguridad Operacional | 00 | General Information | SecOps, SOC, detection, response, monitoring | Q-DATAGOV | Q-HPC, Q-GROUND | ORB-PMO, ORB-LEG |
+| 860–869 | 06 | Seguridad Cloud y Edge | 00 | General Information | Cloud security, edge security, distributed systems hardening | Q-DATAGOV | Q-HPC, Q-INDUSTRY | ORB-LEG, ORB-PMO |
+| 870–879 | 07 | Ciberseguridad ICS/OT | 00 | General Information | OT security, industrial control systems, FAL protection | Q-DATAGOV | Q-INDUSTRY, Q-GROUND | ORB-LEG, ORB-PMO |
+| 880–889 | 08 | Criptografía Post-Cuántica y Seguridad Cuántica | 00 | General Information | PQC, QKD, crypto-agility, quantum-safe transition | Q-HORIZON | Q-DATAGOV, Q-HPC, Q-SPACE | ORB-LEG, ORB-PMO |
+| 890–899 | 09 | Inteligencia de Amenazas y Ciber-resiliencia | 00 | General Information | Threat intelligence, resilience engineering, cyber recovery | Q-DATAGOV | Q-HPC, Q-HORIZON | ORB-LEG, ORB-PMO |
 
 ## 4. Footprint
 

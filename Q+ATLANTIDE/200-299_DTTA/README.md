@@ -49,18 +49,18 @@ Cross-reference the full Q+ATLANTIDE acronym set at [`organization/Q+ATLANTIDE.m
 
 Sub-ranges within this band, sourced from the Q+ATLANTIDE controlled baseline[^baseline] §3 *Consolidated Architecture Table*[^table].
 
-| Sub-range | Block | Primary focus | Primary Q-Division | Support Q-Divisions | ORB support |
-|---:|---|---|---|---|---|
-| 200–209 | Sistemas de Combate y Armamento | Sistemas de combate, efectos, integración de plataformas | Q-HORIZON | Q-AIR, Q-SPACE, Q-DATAGOV | ORB-LEG, ORB-PMO |
-| 210–219 | C4ISR | Mando, control, comunicaciones, inteligencia, vigilancia, reconocimiento | Q-DATAGOV | Q-SPACE, Q-HPC, Q-AIR | ORB-PMO, ORB-LEG |
-| 220–229 | Protección y Resiliencia | Protección de sistemas, supervivencia, hardening, resiliencia operacional | Q-HORIZON | Q-STRUCTURES, Q-DATAGOV, Q-HPC | ORB-LEG, ORB-PMO |
-| 230–239 | Robótica y Sistemas Autónomos de Defensa | UGV, UAV, USV, autonomía, swarms, control humano-supervisado | Q-HPC | Q-HORIZON, Q-DATAGOV, Q-AIR | ORB-PMO, ORB-LEG |
-| 240–249 | Logística y Mantenimiento en Defensa | MRO militar, logística desplegada, soporte en campaña | Q-GROUND | Q-INDUSTRY, Q-DATAGOV, Q-MECHANICS | ORB-PMO, ORB-FIN |
-| 250–259 | Ciberdefensa y Guerra Electrónica | EW, cyber defence, spectrum operations, resilience | Q-DATAGOV | Q-SPACE, Q-HPC, Q-HORIZON | ORB-LEG, ORB-PMO |
-| 260–269 | Materiales y Sensores para Defensa | Sensores, protección, materiales especiales, stealth conceptual | Q-STRUCTURES | Q-HORIZON, Q-HPC, Q-DATAGOV | ORB-PMO, ORB-LEG |
-| 270–279 | Simulación y Entrenamiento Militar | Synthetic environments, simuladores, wargaming, entrenamiento XR | Q-HPC | Q-DATAGOV, Q-AIR, Q-GROUND | ORB-PMO, ORB-HR |
-| 280–289 | Guerra Cuántica y Tecnologías Disruptivas | Quantum sensing, quantum comms, quantum cyber, tecnologías emergentes | Q-HORIZON | Q-HPC, Q-DATAGOV, Q-SPACE | ORB-LEG, ORB-PMO |
-| 290–299 | Conceptos Operacionales Futuros | Future operating concepts, multi-domain operations, doctrina tecnológica | Q-HORIZON | Q-HPC, Q-DATAGOV, Q-SPACE | ORB-PMO, ORB-MKTG |
+| Code range | Section | Section title | Subject | Subject title | Primary focus | Primary Q-Division | Support Q-Divisions | ORB support |
+|---:|---:|---|---:|---|---|---|---|---|
+| 200–209 | 00 | Sistemas de Combate y Armamento | 00 | General Information | Sistemas de combate, efectos, integración de plataformas | Q-HORIZON | Q-AIR, Q-SPACE, Q-DATAGOV | ORB-LEG, ORB-PMO |
+| 210–219 | 01 | C4ISR | 00 | General Information | Mando, control, comunicaciones, inteligencia, vigilancia, reconocimiento | Q-DATAGOV | Q-SPACE, Q-HPC, Q-AIR | ORB-PMO, ORB-LEG |
+| 220–229 | 02 | Protección y Resiliencia | 00 | General Information | Protección de sistemas, supervivencia, hardening, resiliencia operacional | Q-HORIZON | Q-STRUCTURES, Q-DATAGOV, Q-HPC | ORB-LEG, ORB-PMO |
+| 230–239 | 03 | Robótica y Sistemas Autónomos de Defensa | 00 | General Information | UGV, UAV, USV, autonomía, swarms, control humano-supervisado | Q-HPC | Q-HORIZON, Q-DATAGOV, Q-AIR | ORB-PMO, ORB-LEG |
+| 240–249 | 04 | Logística y Mantenimiento en Defensa | 00 | General Information | MRO militar, logística desplegada, soporte en campaña | Q-GROUND | Q-INDUSTRY, Q-DATAGOV, Q-MECHANICS | ORB-PMO, ORB-FIN |
+| 250–259 | 05 | Ciberdefensa y Guerra Electrónica | 00 | General Information | EW, cyber defence, spectrum operations, resilience | Q-DATAGOV | Q-SPACE, Q-HPC, Q-HORIZON | ORB-LEG, ORB-PMO |
+| 260–269 | 06 | Materiales y Sensores para Defensa | 00 | General Information | Sensores, protección, materiales especiales, stealth conceptual | Q-STRUCTURES | Q-HORIZON, Q-HPC, Q-DATAGOV | ORB-PMO, ORB-LEG |
+| 270–279 | 07 | Simulación y Entrenamiento Militar | 00 | General Information | Synthetic environments, simuladores, wargaming, entrenamiento XR | Q-HPC | Q-DATAGOV, Q-AIR, Q-GROUND | ORB-PMO, ORB-HR |
+| 280–289 | 08 | Guerra Cuántica y Tecnologías Disruptivas | 00 | General Information | Quantum sensing, quantum comms, quantum cyber, tecnologías emergentes | Q-HORIZON | Q-HPC, Q-DATAGOV, Q-SPACE | ORB-LEG, ORB-PMO |
+| 290–299 | 09 | Conceptos Operacionales Futuros | 00 | General Information | Future operating concepts, multi-domain operations, doctrina tecnológica | Q-HORIZON | Q-HPC, Q-DATAGOV, Q-SPACE | ORB-PMO, ORB-MKTG |
 
 ## 4. Footprint
 
