@@ -16,6 +16,62 @@
 
 ---
 
+## REPOSITORY STRUCTURE — `organization/` and `Q+ATLANTIDE/`
+
+The repository materialises the GAIA-QAO baseline through two top-level trees that this README MUST stay aligned with:
+
+* [`organization/`](organization/) — Organisational layer (governance, Q-Divisions, ORB-Functions, transgentle framework).
+* [`Q+ATLANTIDE/`](Q+ATLANTIDE/) — ATLAS-1000 architecture-band register (`000-999`), one folder per band with 10 sub-ranges each.
+
+### `organization/` — coded structure
+
+| Path | Type | Purpose |
+|---|---|---|
+| [`organization/README.md`](organization/README.md) | Master doc | GAIA-QAO ADVENT Organizational Master Document (P&L Inc.). |
+| [`organization/Q+ATLANTIDE.md`](organization/Q+ATLANTIDE.md) | Baseline | Q+ATLANTIDE v1.0.0 controlled baseline; ATLAS-1000 register definition, glossary, acronyms, governance rules (N-001…N-006). |
+| [`organization/GTL-Specification.md`](organization/GTL-Specification.md) | Spec | Generative Transgentle Language — framework for transgentle models. |
+| [`organization/TMS-Transgentle-Model-Species.md`](organization/TMS-Transgentle-Model-Species.md) | Taxonomy | Transgentle Model Species — eight subtypes, ten axioms, lifecycle, UTCS mapping. |
+| [`organization/TMC-Training-Master-Class.md`](organization/TMC-Training-Master-Class.md) | Programme | Four-tier certification (Foundation, Specialist, Practitioner, Master) for transgentle governance. |
+| [`organization/Q-ASI-HUMAN-TRANSGENTLE.md`](organization/Q-ASI-HUMAN-TRANSGENTLE.md) | Protocol | Quantum / ASI / Human coexistence under transgentle governance — includes the ⚠️ MANDATORY QUHI principle. |
+| [`organization/Q-Divisions/`](organization/Q-Divisions/) | Layer | 10 technical centres of excellence (see table below) plus the [`Readme.md`](organization/Q-Divisions/Readme.md) master RACI matrix. |
+| [`organization/ORB/`](organization/ORB/) | Layer | Enterprise support functions (ORB-Functions). Currently coded: [`ORB/FIN/`](organization/ORB/FIN/) — Finance & Budget unit ([readme](organization/ORB/FIN/readme.md), [budget master](organization/ORB/FIN/ORB-FIN-01-BUDGET-MASTER.md)). |
+
+#### Q-Divisions coded under [`organization/Q-Divisions/`](organization/Q-Divisions/)
+
+| Division | Folder | Title |
+|---|---|---|
+| Q-AIR | [`Q-AIR/`](organization/Q-Divisions/Q-AIR/README.md) | Aerodinámica y Control de Vuelo |
+| Q-DATAGOV | [`Q-DATAGOV/`](organization/Q-Divisions/Q-DATAGOV/README.md) | Gobierno del Dato, Normas, Documentación y CSDB |
+| Q-GREENTECH | [`Q-GREENTECH/`](organization/Q-Divisions/Q-GREENTECH/README.md) | Sistemas de Energía, Baterías y Sostenibilidad |
+| Q-GROUND | [`Q-GROUND/`](organization/Q-Divisions/Q-GROUND/README.md) | Soporte Terrestre, Mantenimiento y GSE |
+| Q-HPC | [`Q-HPC/`](organization/Q-Divisions/Q-HPC/README.md) | Computación de Alto Rendimiento, Cuántica e IA/ML |
+| Q-INDUSTRY | [`Q-INDUSTRY/`](organization/Q-Divisions/Q-INDUSTRY/README.md) | Fabricación, Ensamblaje y Producción |
+| Q-MECHANICS | [`Q-MECHANICS/`](organization/Q-Divisions/Q-MECHANICS/README.md) | Hidráulica, Actuadores y Sistemas Mecánicos |
+| Q-SCIRES | [`Q-SCIRES/`](organization/Q-Divisions/Q-SCIRES/README.md) | Investigación Científica, Ensayos y Certificación |
+| Q-SPACE | [`Q-SPACE/`](organization/Q-Divisions/Q-SPACE/README.md) | Sistemas Satelitales, Espacio y Comunicaciones |
+| Q-STRUCTURES | [`Q-STRUCTURES/`](organization/Q-Divisions/Q-STRUCTURES/README.md) | Célula, Materiales e Integridad Estructural |
+
+### `Q+ATLANTIDE/` — coded ATLAS-1000 architecture bands (`000-999`)
+
+Each band folder contains a `README.md` plus 10 sub-range folders (`XX0-XX9_*`). The 10 bands currently materialised on disk are:
+
+| Code | Range | Folder | Architecture Name |
+|---|---|---|---|
+| ATLAS | `000-099` | [`000-099_ATLAS/`](Q+ATLANTIDE/000-099_ATLAS/README.md) | Aircraft Top-Level Architecture System |
+| STA | `100-199` | [`100-199_STA/`](Q+ATLANTIDE/100-199_STA/README.md) | Space Technology Architecture |
+| DTTA | `200-299` | [`200-299_DTTA/`](Q+ATLANTIDE/200-299_DTTA/README.md) | Defence Technology Type Architecture |
+| DTCEC | `300-399` | [`300-399_DTCEC/`](Q+ATLANTIDE/300-399_DTCEC/README.md) | Digital Twin, Cloud, Edge & AI Architecture |
+| EPTA | `400-499` | [`400-499_EPTA/`](Q+ATLANTIDE/400-499_EPTA/README.md) | Energy & Propulsion Technology Architecture |
+| AMTA | `500-599` | [`500-599_AMTA/`](Q+ATLANTIDE/500-599_AMTA/README.md) | Advanced Material, Bio & Nanotechnology Architecture |
+| OGATA | `600-699` | [`600-699_OGATA/`](Q+ATLANTIDE/600-699_OGATA/README.md) | On-Ground Automation Technology Architecture |
+| ACV | `700-799` | [`700-799_ACV/`](Q+ATLANTIDE/700-799_ACV/README.md) | Aerial City Viability |
+| CYB | `800-899` | [`800-899_CYB/`](Q+ATLANTIDE/800-899_CYB/README.md) | Cybersecurity Architecture |
+| QCSAA | `900-999` | [`900-999_QCSAA/`](Q+ATLANTIDE/900-999_QCSAA/README.md) | Quantum Computing & Sentient Agency Architecture |
+
+> **Note (No-AAA Rule, N-004):** "AAA" is not a valid band, division or interface code. Cross-band programme interfaces are documented as **"Programme / Q-Division Interface"** (see ATLAS sub-range [`050-059_Estructuras-Primarias-e-Interfaces-de-Programa-Q-Division/`](Q+ATLANTIDE/000-099_ATLAS/050-059_Estructuras-Primarias-e-Interfaces-de-Programa-Q-Division/)).
+
+---
+
 ## ÍNDICE EJECUTIVO
 
 *   [Declaración de Propósito](#1-declaración-de-propósito)
@@ -231,88 +287,89 @@ Define claramente quién tiene el poder de decisión en cada nivel para evitar l
 
 # 5. DIVISIONES TÉCNICAS (Q-DIVISIONS)
 
-Las Q-Divisions son los centros de excelencia técnica que proveen de talento y soluciones a los diferentes programas.
+Las Q-Divisions son los centros de excelencia técnica que proveen de talento y soluciones a los diferentes programas. Las **10 divisiones coded** viven bajo [`organization/Q-Divisions/`](organization/Q-Divisions/) (ver además la matriz RACI maestra en [`organization/Q-Divisions/Readme.md`](organization/Q-Divisions/Readme.md)).
 
-## Q-DATAGOV: Gobernanza de Datos y Arquitectura Digital
+## [Q-DATAGOV](organization/Q-Divisions/Q-DATAGOV/README.md): Gobierno del Dato, Normas, Documentación y CSDB
 
 *   **Misión:** Construir y mantener el gemelo digital de la empresa y sus productos, implementando S1000D y asegurando la integridad de los datos con ciberseguridad avanzada.
 *   **Responsabilidades Clave:** Definir la arquitectura de datos común para la organización; gestionar la plataforma PLM; implementar la ciberseguridad post-cuántica.
 
-## Q-STRUCTURES: Ingeniería Estructural y Materiales
+## [Q-STRUCTURES](organization/Q-Divisions/Q-STRUCTURES/README.md): Célula, Materiales e Integridad Estructural
 
 *   **Misión:** Diseñar y certificar estructuras de composites ligeras y duraderas para el AMPEL360e, e investigar materiales criogénicos para el AMPEL-BWB-H2.
 *   **Responsabilidades Clave:** Análisis estático y de fatiga; desarrollo de uniones entre composites y metales; ensayos de materiales a escala.
 
-## Q-AIR: Aerodinámica y Sistemas de Vuelo
+## [Q-AIR](organization/Q-Divisions/Q-AIR/README.md): Aerodinámica y Control de Vuelo
 
 *   **Misión:** Optimizar la aerodinámica del AMPEL360e. Desarrollar y certificar sus sistemas de control de vuelo fly-by-wire y manuales de vuelo (AFM/FCOM).
 *   **Responsabilidades Clave:** Simulaciones CFD; pruebas en túnel de viento; desarrollo de las leyes de control de vuelo (control laws).
 
-## Q-GREENTECH: Propulsión Sostenible y Energía
+## [Q-GREENTECH](organization/Q-Divisions/Q-GREENTECH/README.md): Sistemas de Energía, Baterías y Sostenibilidad
 
 *   **Misión:** Liderar el desarrollo y certificación del sistema de propulsión híbrido-eléctrico para el AMPEL360e. Investigar y madurar la tecnología de propulsión por hidrógeno para la Generación 2.
 *   **Responsabilidades Clave:** Integración del sistema de propulsión; diseño del sistema de baterías y gestión térmica; pruebas de la unidad de potencia.
 
-## Q-INDUSTRY: Manufactura Avanzada y Cadena de Suministro
+## [Q-INDUSTRY](organization/Q-Divisions/Q-INDUSTRY/README.md): Fabricación, Ensamblaje y Producción
 
 *   **Misión:** Establecer una red de producción 4.0, automatizada y flexible (AS9100D), gestionando una cadena de suministro europea resiliente.
 *   **Responsabilidades Clave:** Diseño de las líneas de ensamblaje final (FAL); calificación de proveedores (Tier 1/2); implementación de robótica colaborativa.
 
-## Q-HPC: Computación de Alto Rendimiento y IA
+## [Q-HPC](organization/Q-Divisions/Q-HPC/README.md): Computación de Alto Rendimiento, Cuántica e IA/ML
 
 *   **Misión:** Proveer la capacidad computacional para simulaciones complejas (CFD/FEA). Desarrollar algoritmos de IA certificables para la optimización de vuelo y el mantenimiento predictivo.
 *   **Responsabilidades Clave:** Gestión del supercomputador de la organización; desarrollo del gemelo digital de rendimiento; creación de modelos de mantenimiento predictivo.
 
-## Q-MECHANICS: Sistemas Mecánicos e Integración
+## [Q-MECHANICS](organization/Q-Divisions/Q-MECHANICS/README.md): Hidráulica, Actuadores y Sistemas Mecánicos
 
 *   **Misión:** Diseñar y certificar sistemas mecánicos ultra-confiables (tren de aterrizaje, hidráulicos, actuadores) para el AMPEL360e.
 *   **Responsabilidades Clave:** Diseño del tren de aterrizaje y sus sistemas de extensión/retracción; diseño de los sistemas hidráulicos y de actuación de superficies de vuelo.
 
-## Q-GROUND: Operaciones Terrestres y Soporte
+## [Q-GROUND](organization/Q-Divisions/Q-GROUND/README.md): Soporte Terrestre, Mantenimiento y GSE
 
 *   **Misión:** Definir los requerimientos de infraestructura terrestre y equipos de soporte (GSE) para las nuevas aeronaves.
 *   **Responsabilidades Clave:** Diseño de procedimientos de mantenimiento en línea; desarrollo de programas de formación para técnicos; especificación de GSE.
 
-## Q-SPACE: Comunicaciones y Navegación
+## [Q-SPACE](organization/Q-Divisions/Q-SPACE/README.md): Sistemas Satelitales, Espacio y Comunicaciones
 
-*   **Misión:** Integrar sistemas de comunicación y navegación de próxima generación, asegurando la conectividad y seguridad de los datos.
-*   **Responsabilidades Clave:** Diseño de la arquitectura de aviónica; integración de sistemas de comunicación por satélite; aseguramiento de la integridad de los datos de navegación.
+*   **Misión:** Integrar sistemas de comunicación, navegación y carga útil espacial de próxima generación, asegurando la conectividad y seguridad de los datos a través del segmento espacial.
+*   **Responsabilidades Clave:** Diseño de la arquitectura de aviónica de comunicaciones; integración de sistemas de comunicación por satélite; aseguramiento de la integridad de los datos de navegación; interfaz con la banda STA (`100-199`).
 
-## Q-HORIZON: Investigación Avanzada y Tecnologías Disruptivas
+## [Q-SCIRES](organization/Q-Divisions/Q-SCIRES/README.md): Investigación Científica, Ensayos y Certificación
 
-*   **Misión:** Liderar la investigación a largo plazo (TRL 1-4) en aerodinámica BWB, computación cuántica de a bordo y otras tecnologías post-2040, asegurando la ventaja competitiva futura.
-*   **Responsabilidades Clave:** Colaboración con universidades y centros de investigación; gestión de proyectos de demostradores tecnológicos; vigilancia tecnológica global.
+*   **Misión:** Liderar la investigación a largo plazo (TRL 1-4), los ensayos científicos y la coordinación de campañas de certificación, asegurando la ventaja competitiva futura y la trazabilidad de la evidencia.
+*   **Responsabilidades Clave:** Colaboración con universidades y centros de investigación; gestión de proyectos de demostradores tecnológicos; vigilancia tecnológica global; preparación de evidence packages para gates de certificación.
 
 # 6. FUNCIONES EMPRESARIALES (ORB-FUNCTIONS)
 
-Las ORB-Functions son los pilares empresariales que soportan a toda la organización, permitiendo que las divisiones técnicas se centren en la ingeniería.
+Las ORB-Functions son los pilares empresariales que soportan a toda la organización, permitiendo que las divisiones técnicas se centren en la ingeniería. La capa enterprise vive bajo [`organization/ORB/`](organization/ORB/). De las funciones especificadas en el baseline, **actualmente coded en repo:** [`ORB/FIN/`](organization/ORB/FIN/readme.md). Las restantes (PMO, HR, MKTG, CSR, LEG) están definidas a nivel de baseline y pendientes de materializarse como subcarpetas.
 
-## ORB-FIN: Finanzas y Presupuesto
+## [ORB-FIN](organization/ORB/FIN/readme.md): Finanzas y Presupuesto *(coded)*
 
 *   **Misión:** Gestionar la compleja estructura financiera de la organización, asegurar la financiación, controlar los presupuestos de los programas y reportar a los stakeholders.
 *   **Responsabilidades Clave:** Gestión de la tesorería multi-divisa; modelización financiera a largo plazo; control de costes de los work packages mediante EVM.
+*   **Entregables coded:** [`ORB-FIN-01-BUDGET-MASTER.md`](organization/ORB/FIN/ORB-FIN-01-BUDGET-MASTER.md).
 
-## ORB-PMO: Oficina de Gestión de Programas
+## ORB-PMO: Oficina de Gestión de Programas *(planned)*
 
 *   **Misión:** Implementar las mejores prácticas de gestión de programas (PMI/PMBOK, EVM) para asegurar que los programas se ejecuten a tiempo y dentro del presupuesto.
 *   **Responsabilidades Clave:** Mantenimiento del cronograma maestro integrado; gestión de riesgos del programa; coordinación de las revisiones de fase (gate reviews).
 
-## ORB-HR: Recursos Humanos y Cultura
+## ORB-HR: Recursos Humanos y Cultura *(planned)*
 
 *   **Misión:** Atraer, desarrollar y retener el talento de élite necesario para el éxito de la organización, fomentando una cultura de colaboración e innovación.
 *   **Responsabilidades Clave:** Reclutamiento internacional de especialistas; gestión de la movilidad entre los socios de la organización; desarrollo de la Academia GAIA.
 
-## ORB-MKTG: Marketing y Comunicaciones
+## ORB-MKTG: Marketing y Comunicaciones *(planned)*
 
 *   **Misión:** Posicionar a GAIA-QAO y sus productos en el mercado global, gestionando la comunicación con aerolíneas, socios y el público.
 *   **Responsabilidades Clave:** Análisis de mercado y estrategia de producto; campañas de lanzamiento para las aeronaves; gestión de la marca GAIA-QAO.
 
-## ORB-CSR: Responsabilidad Social y Sostenibilidad
+## ORB-CSR: Responsabilidad Social y Sostenibilidad *(planned)*
 
 *   **Misión:** Integrar los principios ESG en toda la organización, liderando las iniciativas de sostenibilidad más allá del producto.
 *   **Responsabilidades Clave:** Elaboración del informe anual de sostenibilidad (GRI/SASB); gestión de la huella de carbono corporativa; desarrollo de programas de impacto social.
 
-## ORB-LEG: Legal y Cumplimiento
+## ORB-LEG: Legal y Cumplimiento *(planned)*
 
 *   **Misión:** Gestionar la compleja red de acuerdos de la organización, proteger la propiedad intelectual y asegurar el cumplimiento normativo en todas las jurisdicciones.
 *   **Responsabilidades Clave:** Redacción y gestión de los acuerdos de la organización; estrategia y registro de patentes; aseguramiento del cumplimiento de las normativas de exportación.
@@ -8529,20 +8586,24 @@ La **Cybersecurity Architecture (CYB)** se centra en la protección de la inform
 
 ## 🎯 **NAVEGACIÓN RÁPIDA**
 
-| **Sección** | **Link Directo** | **Subsecciones** |
+| **Sección** | **Ruta en repo** | **Subsecciones** |
 |-------------|------------------|------------------|
-| **Gobernanza** | [00-GOVERNANCE](#00-governance) | Políticas, Compliance, Maestros |
-| **Programas** | [01-PROGRAMS](#01-programs) | AMPEL360e, AMPEL-BWB-H2, GAIA-SP, ROBBBO-T |
-| **Q-Divisions** | [02-Q-DIVISIONS](#02-q-divisions) | 10 Divisiones Técnicas |
-| **ORB-Functions** | [03-ORB-FUNCTIONS](#03-orb-functions) | 6 Funciones Empresariales |
-| **UTCS** | [04-UTCS-ARCHITECTURE](#04-utcs-architecture) | 10 Arquitecturas (000-999) |
-| **Templates** | [05-DOCUMENTATION-TEMPLATES](#05-documentation-templates) | 251 Templates |
-| **Standards** | [06-STANDARDS-COMPLIANCE](#06-standards-compliance) | Aerospace, Quality, Cyber |
-| **Facilities** | [07-FACILITIES-LOCATIONS](#07-facilities-locations) | 6 Ubicaciones Principales |
-| **Digital** | [08-DIGITAL-INFRASTRUCTURE](#08-digital-infrastructure) | PLM, Twins, Quantum, Cyber |
-| **Partnerships** | [09-EXTERNAL-PARTNERSHIPS](#09-external-partnerships) | Industria, Academia, Gobierno |
-| **Archive** | [10-ARCHIVE-LEGACY](#10-archive-legacy) | Histórico, Legacy, Versiones |
-| **Opt-Ins** | [OPT-INS_FRAMEWORK](#opt-ins_framework) | S-SPACE (9 sub-modules) |
+| **Gobernanza** | [`organization/`](organization/) · [`GAI-A-AMAR-AGGIX-Architecture.md`](GAI-A-AMAR-AGGIX-Architecture.md) | Master doc, GTL, TMS, TMC, Q-ASI-HUMAN-TRANSGENTLE |
+| **Baseline ATLAS-1000** | [`organization/Q+ATLANTIDE.md`](organization/Q+ATLANTIDE.md) | Glosario, acrónimos, reglas N-001…N-006 |
+| **Q-Divisions (10)** | [`organization/Q-Divisions/`](organization/Q-Divisions/) | Q-AIR, Q-DATAGOV, Q-GREENTECH, Q-GROUND, Q-HPC, Q-INDUSTRY, Q-MECHANICS, Q-SCIRES, Q-SPACE, Q-STRUCTURES |
+| **ORB-Functions (1 coded / 5 planned)** | [`organization/ORB/`](organization/ORB/) | FIN *(coded)*; PMO, HR, MKTG, CSR, LEG *(planned)* |
+| **ATLAS-1000 bands (10 × `000-999`)** | [`Q+ATLANTIDE/`](Q+ATLANTIDE/) | ATLAS, STA, DTTA, DTCEC, EPTA, AMTA, OGATA, ACV, CYB, QCSAA |
+| **ATLAS `000-099`** | [`Q+ATLANTIDE/000-099_ATLAS/`](Q+ATLANTIDE/000-099_ATLAS/README.md) | Aircraft Top-Level Architecture System |
+| **STA `100-199`** | [`Q+ATLANTIDE/100-199_STA/`](Q+ATLANTIDE/100-199_STA/README.md) | Space Technology Architecture |
+| **DTTA `200-299`** | [`Q+ATLANTIDE/200-299_DTTA/`](Q+ATLANTIDE/200-299_DTTA/README.md) | Defence Technology Type Architecture |
+| **DTCEC `300-399`** | [`Q+ATLANTIDE/300-399_DTCEC/`](Q+ATLANTIDE/300-399_DTCEC/README.md) | Digital Twin, Cloud, Edge & AI |
+| **EPTA `400-499`** | [`Q+ATLANTIDE/400-499_EPTA/`](Q+ATLANTIDE/400-499_EPTA/README.md) | Energy & Propulsion |
+| **AMTA `500-599`** | [`Q+ATLANTIDE/500-599_AMTA/`](Q+ATLANTIDE/500-599_AMTA/README.md) | Advanced Materials, Bio & Nano |
+| **OGATA `600-699`** | [`Q+ATLANTIDE/600-699_OGATA/`](Q+ATLANTIDE/600-699_OGATA/README.md) | On-Ground Automation |
+| **ACV `700-799`** | [`Q+ATLANTIDE/700-799_ACV/`](Q+ATLANTIDE/700-799_ACV/README.md) | Aerial City Viability |
+| **CYB `800-899`** | [`Q+ATLANTIDE/800-899_CYB/`](Q+ATLANTIDE/800-899_CYB/README.md) | Cybersecurity |
+| **QCSAA `900-999`** | [`Q+ATLANTIDE/900-999_QCSAA/`](Q+ATLANTIDE/900-999_QCSAA/README.md) | Quantum Computing & Sentient Agency |
+| **Opt-Ins** | [`OPT-INS_FRAMEWORK`](#opt-ins_framework) | S-SPACE (9 sub-modules) |
 
 ---
 
@@ -8590,6 +8651,7 @@ La **Cybersecurity Architecture (CYB)** se centra en la protección de la inform
 | 1.0.0   | 23/07/2025| Documento inicial completo        | A. Pelliccia    |
 | 2.0.0   | 23/07/2025| Corrección nomenclatura y autoría  | A. Pelliccia    |
 | 2.1.0   | 08/04/2026| Revisión de PRs pendientes, notas de integración y recomendaciones de merge; asistido por GitHub Copilot | A. Pelliccia    |
+| 2.2.0   | 26/04/2026| Alineación del README raíz con las estructuras coded en `organization/` y `Q+ATLANTIDE/`: nueva sección "Repository Structure", §5 Q-Divisions corregida (Q-HORIZON → Q-SCIRES, 10 divisiones reales con enlaces), §6 ORB-Functions etiqueta `(coded)/(planned)`, NAVEGACIÓN RÁPIDA con rutas reales de carpetas. | A. Pelliccia    |
 
 ---
 
