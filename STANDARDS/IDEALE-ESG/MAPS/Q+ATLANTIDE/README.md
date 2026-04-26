@@ -64,10 +64,6 @@ following the same conventions.
    or QCSAA (`900-999`) inherit Q+ATLANTIDE Note `N-006`: additional
    governance, evidence packages and access controls beyond the baseline
    trace record are required.
-5. **No-AAA rule.** Q+ATLANTIDE Note `N-004` applies. The string "AAA" is not
-   used as a domain, division, architecture, interface or function in any
-   map.
-
 ## Cross-References
 
 - IDEALE-ESG namespace index: [`IDEALE-ESG.panpara.eu/README.md`](../../../../IDEALE-ESG.panpara.eu/README.md)

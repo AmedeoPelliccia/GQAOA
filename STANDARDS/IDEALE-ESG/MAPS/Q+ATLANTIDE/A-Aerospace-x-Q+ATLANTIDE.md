@@ -100,7 +100,7 @@ A-Aerospace OPT-IN axis is materially distinct from the band-level default.
 | `ATLAS 010-019` | Manejo en Tierra & Servicio | `I`, `O` | Ground handling and GSE — primary interface with `OGATA` infrastructures. |
 | `ATLAS 020-029` | Sistemas Core de Aeronave | `T` | Avionics, electrical, hydraulic, ECS, fuel and flight control as core aircraft technologies. |
 | `ATLAS 040-049` | Aviónica, Información & APU | `T`, `N` | IMA, data networks and onboard information systems — primary AI/N integration layer. |
-| `ATLAS 050-059` | Estructuras Primarias e Interfaces de Programa / Q-Division | `T`, `I` | Per Q+ATLANTIDE Note `N-005`, the `050-059` heading is "Estructuras Primarias e Interfaces de Programa / Q-Division". The "AAA" string is prohibited (Note `N-004`). |
+| `ATLAS 050-059` | Estructuras Primarias e Interfaces de Programa / Q-Division | `T`, `I` | Per Q+ATLANTIDE Note `N-005`, the `050-059` heading is "Estructuras Primarias e Interfaces de Programa / Q-Division". |
 | `ATLAS 060-079` | Propulsión Tradicional & Eco-Tech | `T` | Turbofan, hybrid-electric and thermal management — also crosslinked to `EPTA 440-459`. |
 | `ATLAS 080-089` | Propulsión Alternativa & Cuántica | `T`, `N` | LH₂, fuel cells, HVDC, superconductors and Q-sensing — crosslinked to `EPTA 460-489` and `QCSAA 940-949`. |
 | `STA 140-149` | Aviónica y Control de Misión Espacial | `T`, `N` | GNC, flight software, mission control and autonomy. |
@@ -120,8 +120,7 @@ A-Aerospace OPT-IN axis is materially distinct from the band-level default.
 | M-001 | This map is a crosslink artefact only. Authoritative content remains in the source documents listed under § Document Metadata. |
 | M-002 | DTTA (`200-299`) cells are kept for traceability; substantive defence crosslinks belong to the `D-Defense-x-Q+ATLANTIDE.md` map. |
 | M-003 | CYB (`800-899`) and QCSAA (`900-999`) crosslinks inherit Q+ATLANTIDE Note `N-006`. |
-| M-004 | The "AAA" string is not a valid domain, division, architecture, interface or function in this map (Q+ATLANTIDE Note `N-004`). |
-| M-005 | `ATLAS 050-059` uses the heading "Estructuras Primarias e Interfaces de Programa / Q-Division" (Q+ATLANTIDE Note `N-005`). |
+| M-004 | `ATLAS 050-059` uses the heading "Estructuras Primarias e Interfaces de Programa / Q-Division" (Q+ATLANTIDE Note `N-005`). |
 
 ## Cross-References
 
