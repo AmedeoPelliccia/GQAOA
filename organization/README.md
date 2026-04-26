@@ -39,7 +39,7 @@
 *   [GTL Specification](GTL-Specification.md): Generative Transgentle Language — framework for transgentle models
 *   [TMS Species Taxonomy](TMS-Transgentle-Model-Species.md): Transgentle Model Species — eight subtypes, ten axioms, lifecycle, UTCS mapping
 *   [Q-ASI-HUMAN-TRANSGENTLE](Q-ASI-HUMAN-TRANSGENTLE.md): Coexistence protocol — Quantum, ASI, Human under Transgentle governance; includes ⚠️ MANDATORY QUHI principle
-*   [Q-ATLANTIDE / ATLAS-1000](Q-ATLANTIDE-ATLAS-1000.md): Controlled `000-999` architecture-band registry (ATLAS, STA, DTTA, DTCEC, EPTA, AMTA, OGATA, ACV, CYB, QCSAA) with Q-Division and ORB-Function mapping
+*   [Q+ATLANTIDE / ATLAS-1000](Q+ATLANTIDE-ATLAS-1000.md): Controlled `000-999` architecture-band registry (ATLAS, STA, DTTA, DTCEC, EPTA, AMTA, OGATA, ACV, CYB, QCSAA) with Q-Division and ORB-Function mapping
 *   [TMC Training Master Class](TMC-Training-Master-Class.md): Four-tier certification program — Foundation, Specialist, Practitioner, Master — for transgentle governance competency
 
 ---
@@ -1166,7 +1166,7 @@ flowchart TD
 
 ## ANEXO F: LISTA COMPLETA DE TEMPLATES DE DOCUMENTACIÓN TÉCNICA
 
-> **Q-ATLANTIDE / ATLAS-1000 governance.** Todas las plantillas de este anexo se rigen por el baseline controlado [`Q-ATLANTIDE-ATLAS-1000.md`](Q-ATLANTIDE-ATLAS-1000.md), §5 *Templates System*. Cada plantilla debe declarar `architecture_band` (uno de los sub-rangos `XX0–XX9` del registro `000-999`), `architecture_code` (`ATLAS`/`STA`/`DTTA`/`DTCEC`/`EPTA`/`AMTA`/`OGATA`/`ACV`/`CYB`/`QCSAA` o `ORB`), `q_division_owner` (autoridad técnica) y `orb_function_support` (soporte empresarial). La columna **"División Responsable"** sustituye cualquier uso heredado de "AAA Responsable" (regla **N-004**). Las plantillas con `architecture_band` en `200-299` (DTTA), `800-899` (CYB) o `900-999` (QCSAA) son **restricted** y requieren `evidence_package_id` y `access_control_profile` (regla **N-006**).
+> **Q+ATLANTIDE / ATLAS-1000 governance.** Todas las plantillas de este anexo se rigen por el baseline controlado [`Q+ATLANTIDE-ATLAS-1000.md`](Q+ATLANTIDE-ATLAS-1000.md), §5 *Templates System*. Cada plantilla debe declarar `architecture_band` (uno de los sub-rangos `XX0–XX9` del registro `000-999`), `architecture_code` (`ATLAS`/`STA`/`DTTA`/`DTCEC`/`EPTA`/`AMTA`/`OGATA`/`ACV`/`CYB`/`QCSAA` o `ORB`), `q_division_owner` (autoridad técnica) y `orb_function_support` (soporte empresarial). La columna **"División Responsable"** sustituye cualquier uso heredado de "AAA Responsable" (regla **N-004**). Las plantillas con `architecture_band` en `200-299` (DTTA), `800-899` (CYB) o `900-999` (QCSAA) son **restricted** y requieren `evidence_package_id` y `access_control_profile` (regla **N-006**).
 
 ### F.1 Resumen de Templates por Categoría
 
