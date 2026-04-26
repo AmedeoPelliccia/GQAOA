@@ -16,4 +16,3 @@ This namespace contains the IDEALE-ESG primitive definitions used as common math
 - **PATH → MTL (§STD):** operates on the invariant core and extension layer.
 - **IDEALE (§IDEALE):** decomposes the primitive across ESG domains and pillar structures.
 - **NBT (§NBT):** bridges primitive governance objects into quantum-augmented computation gates.
-

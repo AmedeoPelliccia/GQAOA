@@ -34,4 +34,3 @@ The OPT-IN five-axis topology (`O-P-T-I-N`) is the MCD for programme management 
 | Constraint layer | Deterministic rules required for governance and interoperability. |
 | Extension surface | Domain-specific additions that remain outside the invariant core. |
 | Aggregation surface | Open aggregator interface that combines systems without fragmenting the shared core. |
-
