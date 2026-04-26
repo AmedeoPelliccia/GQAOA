@@ -2,7 +2,7 @@
 
 **Quantum + Aerospace Top-Level Architectures. Novel Technologies Identification Data Ecosystem**
 
-> Umbrella register: **ATLAS-1000** (the controlled `000-999` architecture-band registry).
+> Subpart: **ATLAS-1000** — umbrella register for the controlled `000-999` architecture-band taxonomy inside Q+ATLANTIDE.
 
 **Document ID:** QATL-ATLAS1000-README  
 **Baseline:** v1.0.0  
@@ -25,7 +25,9 @@
 - **Q-Divisions are technical centres:** true
 - **ORB-Functions are enterprise support:** true
 
-Q+ATLANTIDE / ATLAS-1000 is a controlled `000-999` taxonomy and traceability ecosystem for classifying aerospace, space, defence, digital, energy, materials, ground automation, urban air mobility, cybersecurity, and quantum / sentient-agency technologies.
+**Q+ATLANTIDE** is the canonical baseline. **ATLAS-1000** is a subpart of Q+ATLANTIDE — the umbrella register for the controlled `000-999` architecture-band taxonomy, analogous to how concept-aircraft domains live as subparts under their parent programme.
+
+Q+ATLANTIDE provides a controlled `000-999` taxonomy and traceability ecosystem for classifying aerospace, space, defence, digital, energy, materials, ground automation, urban air mobility, cybersecurity, and quantum / sentient-agency technologies. ATLAS-1000 carries the architecture-band register inside that ecosystem.
 
 ---
 
@@ -35,7 +37,7 @@ Q+ATLANTIDE / ATLAS-1000 is a controlled `000-999` taxonomy and traceability eco
 |---|---|---|
 | Architecture Band | Controlled numeric range used to classify a technology family. | Defines **what** the technology is. |
 | Architecture Code | Short identifier assigned to a band, such as ATLAS, STA, DTTA or CYB. | Must remain unique inside the `000-999` register. |
-| ATLAS-1000 | Umbrella name for the full Q+ATLANTIDE architecture register. | Does not create a `1000` numeric band; operational codes remain `000-999`. |
+| ATLAS-1000 | Subpart of Q+ATLANTIDE; umbrella name for the architecture-band register inside the baseline. | Does not create a `1000` numeric band; operational codes remain `000-999`. |
 | Baseline | Frozen version of the taxonomy accepted for reference, comparison and traceability. | Changes require version increment and change record. |
 | Controlled Range | Numeric interval reserved for a specific architecture family. | Ranges must not overlap. |
 | Evidence Package | Set of artefacts used to justify a node classification, maturity claim or gate decision. | Required for programme-grade usage. |
@@ -198,7 +200,7 @@ Q+ATLANTIDE / ATLAS-1000 is a controlled `000-999` taxonomy and traceability eco
 
 | Note ID | Note |
 |---|---|
-| N-001 | Q+ATLANTIDE / ATLAS-1000 is a taxonomy and traceability ecosystem, not an organization chart. |
+| N-001 | Q+ATLANTIDE (with its ATLAS-1000 register subpart) is a taxonomy and traceability ecosystem, not an organization chart. |
 | N-002 | Architecture bands classify technologies. Q-Divisions provide technical authority. ORB-Functions provide enterprise support. |
 | N-003 | The `000-999` range is controlled. `ATLAS-1000` is the umbrella name, not an additional numeric band. |
 | N-004 | "AAA" is not a valid domain, division, architecture, interface or function in this baseline. |
