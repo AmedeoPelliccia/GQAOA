@@ -88,7 +88,7 @@ Las **Q-Divisions** constituyen el **brazo de ejecución técnica** del programa
 
 Cada Q-Division es responsable de un dominio tecnológico específico y actúa como propietaria (*Accountable*) de los entregables técnicos de su dominio en la matriz RACI[^3], colaborando estrechamente con otras Q-Divisions y recibiendo soporte de las ORB-Functions para asuntos empresariales, regulatorios y de recursos.
 
-La estructura de 10 Q-Divisions cubre el espectro completo del ciclo de vida del programa, desde la investigación conceptual hasta el retiro y la economía circular, garantizando la trazabilidad RACI en cada proceso y artefacto técnico del programa. El gemelo digital BOB DA[^4] y el registro LUTNDR[^5] son herramientas transversales que atraviesan todas las Q-Divisions.
+La estructura mantiene 10 Q-Divisions RACI principales (#1–#10) y añade 2 capas de interfaz/posicionamiento (#11–#12) para horizonte, posicionamiento e investigación abierta. Cubre el espectro completo del ciclo de vida del programa desde la investigación conceptual hasta el retiro y la economía circular. El gemelo digital BOB DA[^4] y el registro LUTNDR[^5] son herramientas transversales que atraviesan todas las Q-Divisions.
 
 ---
 
@@ -106,6 +106,8 @@ La estructura de 10 Q-Divisions cubre el espectro completo del ciclo de vida del
 | 8 | **Q-GROUND** | Soporte Terrestre, Mantenimiento, GSE | [./Q-GROUND/](./Q-GROUND/) |
 | 9 | **Q-MECHANICS** | Hidráulica, Actuadores, Sistemas Mecánicos | [./Q-MECHANICS/](./Q-MECHANICS/) |
 | 10 | **Q-SCIRES** | Investigación Científica, Ensayos, Certificación | [./Q-SCIRES/](./Q-SCIRES/) |
+| 11 | **Q-HORIZON** | Horizonte UE, TRL 1–4, conceptos futuros | [./Q-HORIZON/](./Q-HORIZON/) |
+| 12 | **Q-HUESCORT-SCIRES-OPEN** | Interfaz Horizon + SCIRES + OPEN frameworks | [./Q-HUESCORT-SCIRES-OPEN/](./Q-HUESCORT-SCIRES-OPEN/) |
 
 ---
 
@@ -214,6 +216,8 @@ graph LR
     QGROUND["Q-GROUND\nSoporte Terrestre"]
     QMECH["Q-MECHANICS\nHidráulica/Act."]
     QSCIRES["Q-SCIRES\nI+D/Certificación"]
+    QHORIZON["Q-HORIZON\nHorizon UE/TRL 1–4"]
+    QHUESCORT["Q-HUESCORT-SCIRES-OPEN\nInterface/OPEN"]
 
     QAIR -- "Cargas aero → FEM" --> QSTRUCT
     QSTRUCT -- "Peso/RIG → Aero" --> QAIR
@@ -231,6 +235,9 @@ graph LR
     QSCIRES -- "Datos certificación" --> QDATA
     QSCIRES -- "Inform. ensayos → diseño" --> QAIR
     QSCIRES -- "Inform. ensayos → estructuras" --> QSTRUCT
+    QHORIZON -- "Calling orders UE" --> QHUESCORT
+    QSCIRES -- "Contextos científicos" --> QHUESCORT
+    QHUESCORT -- "OPEN frameworks" --> QDATA
     QSPACE -- "Comm. sat. → avión" --> QHPC
     QGROUND -- "GSE data → MRO" --> QDATA
     QGROUND -- "Req. mant. → diseño" --> QMECH
@@ -242,7 +249,8 @@ graph LR
 
 | Foro | Frecuencia | Presidente | Participantes | Outputs |
 |------|------------|------------|---------------|---------|
-| Q-Council (Consejo de Q-Divisions) | Quincenal | CTO | Directores de las 10 Q-Divisions | Decisiones técnicas cross-division, resolución de conflictos RACI |
+| Q-Council (Consejo de Q-Divisions) | Quincenal | CTO | Directores de Q-Divisions #1–#12 | Decisiones técnicas cross-division, resolución de conflictos RACI |
+| Q-HUESCORT-SCIRES-OPEN Interface Review | Mensual | CTO / Q-HORIZON Lead | Q-HORIZON, Q-SCIRES, Q-DATAGOV, ORB-PMO | Posicionamiento Horizon UE, intake OPEN frameworks, rutas de contexto científico |
 | IPT Review (Integrated Product Team) | Semanal | Director Q propietario | Q-Divisions afectadas + ORB-PMO | Avance de entregables, gestión de riesgos técnicos |
 | Program Management Review (PMR) | Mensual | CEO / COO | Todos los Directores Q + ORB-Functions | Estado del programa, presupuesto, KPIs |
 | Technical Baseline Review (TBR) | Por fase | CTO + ORB-PMO | Q-Divisions relevantes + ORB-LEG | Congelado de baseline técnico |
@@ -271,6 +279,8 @@ Resumen de documentos por Q-Division (AMPEL360-BWB-Q100):
 | Q-GROUND | 8 | GSE specs, MRO procedures |
 | Q-SPACE | 6 | Sat-comm ICD, orbital ops |
 | Q-SCIRES | 6 | Test plans, cert. matrices |
+| Q-HORIZON | 3 | Calling-order registers, TRL roadmaps, OPEN framework maps |
+| Q-HUESCORT-SCIRES-OPEN | 3 | Interface maps, calling-order registers, scientific context intake logs |
 
 
 ---

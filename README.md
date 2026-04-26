@@ -250,121 +250,121 @@ Interfaces de Programa / Q-Division
 
 | Master range | Architecture code | Architecture name | Primary focus |
 |---:|---|---|---|
-| `000–099` | ATLAS | Aircraft Top-Level Architecture System | New commercial aircraft architectures, BWB, WTW, hybrid-electric, H₂, S1000D/CSDB/PLM integration |
-| `100–199` | STA | Space Technology Architecture | Space systems, LEO+, orbital infrastructure, interplanetary concepts |
-| `200–299` | DTTA | Defence Technology Type Architecture | Defence, C4ISR, resilience, electronic warfare, autonomous systems |
-| `300–399` | DTCEC | Digital Twin, Cloud, Edge & AI Architecture | Digital twins, AI, cloud, edge, XR, blockchain, analytics |
-| `400–499` | EPTA | Energy & Propulsion Technology Architecture | Energy, storage, conversion, electric, hydrogen and advanced propulsion |
-| `500–599` | AMTA | Advanced Material, Bio & Nanotechnology Architecture | Advanced materials, bio/nano, metamaterials, additive manufacturing |
-| `600–699` | OGATA | On-Ground Automation Technology Architecture | Ground automation, robotics, factories 4.0, logistics, HRI |
-| `700–799` | ACV | Aerial City Viability / UAM Architecture | UAM, vertiports, UTM, noise, urban integration and business models |
-| `800–899` | CYB | Cybersecurity Architecture | Cybersecurity, PQC, ICS/OT, SecOps, IAM, cyber-resilience |
-| `900–999` | QCSAA | Quantum Computing & Sentient Agency Architecture | Quantum computing, QML, quantum networks, sensing, agency governance |
+| [`000–099`](Q+ATLANTIDE/000-099_ATLAS/) | [ATLAS](Q+ATLANTIDE/000-099_ATLAS/) | Aircraft Top-Level Architecture System | New commercial aircraft architectures, BWB, WTW, hybrid-electric, H₂, S1000D/CSDB/PLM integration |
+| [`100–199`](Q+ATLANTIDE/100-199_STA/) | [STA](Q+ATLANTIDE/100-199_STA/) | Space Technology Architecture | Space systems, LEO+, orbital infrastructure, interplanetary concepts |
+| [`200–299`](Q+ATLANTIDE/200-299_DTTA/) | [DTTA](Q+ATLANTIDE/200-299_DTTA/) | Defence Technology Type Architecture | Defence, C4ISR, resilience, electronic warfare, autonomous systems |
+| [`300–399`](Q+ATLANTIDE/300-399_DTCEC/) | [DTCEC](Q+ATLANTIDE/300-399_DTCEC/) | Digital Twin, Cloud, Edge & AI Architecture | Digital twins, AI, cloud, edge, XR, blockchain, analytics |
+| [`400–499`](Q+ATLANTIDE/400-499_EPTA/) | [EPTA](Q+ATLANTIDE/400-499_EPTA/) | Energy & Propulsion Technology Architecture | Energy, storage, conversion, electric, hydrogen and advanced propulsion |
+| [`500–599`](Q+ATLANTIDE/500-599_AMTA/) | [AMTA](Q+ATLANTIDE/500-599_AMTA/) | Advanced Material, Bio & Nanotechnology Architecture | Advanced materials, bio/nano, metamaterials, additive manufacturing |
+| [`600–699`](Q+ATLANTIDE/600-699_OGATA/) | [OGATA](Q+ATLANTIDE/600-699_OGATA/) | On-Ground Automation Technology Architecture | Ground automation, robotics, factories 4.0, logistics, HRI |
+| [`700–799`](Q+ATLANTIDE/700-799_ACV/) | [ACV](Q+ATLANTIDE/700-799_ACV/) | Aerial City Viability / UAM Architecture | UAM, vertiports, UTM, noise, urban integration and business models |
+| [`800–899`](Q+ATLANTIDE/800-899_CYB/) | [CYB](Q+ATLANTIDE/800-899_CYB/) | Cybersecurity Architecture | Cybersecurity, PQC, ICS/OT, SecOps, IAM, cyber-resilience |
+| [`900–999`](Q+ATLANTIDE/900-999_QCSAA/) | [QCSAA](Q+ATLANTIDE/900-999_QCSAA/) | Quantum Computing & Sentient Agency Architecture | Quantum computing, QML, quantum networks, sensing, agency governance |
 
 ## 3.2 Architecture Table — Code Range / Section / Subject Baseline
 
 | Architecture | Master range | Code range | Section | Section title | Subject | Subject title |
 |---|---:|---:|---:|---|---:|---|
-| ATLAS | `000–099` | `000–009` | `00` | Información General y Servicio | `00` | General Information |
-| ATLAS | `000–099` | `010–019` | `01` | Manejo en Tierra & Servicio | `00` | General Information |
-| ATLAS | `000–099` | `020–029` | `02` | Sistemas Core de Aeronave | `00` | General Information |
-| ATLAS | `000–099` | `030–039` | `03` | Protección & Sistemas Mecánicos | `00` | General Information |
-| ATLAS | `000–099` | `040–049` | `04` | Aviónica, Información & APU | `00` | General Information |
-| ATLAS | `000–099` | `050–059` | `05` | Estructuras Primarias e Interfaces de Programa / Q-Division | `00` | General Information |
-| ATLAS | `000–099` | `060–069` | `06` | Propulsión Tradicional | `00` | General Information |
-| ATLAS | `000–099` | `070–079` | `07` | Propulsión Eco-Tech e Híbrido-Eléctrica | `00` | General Information |
-| ATLAS | `000–099` | `080–089` | `08` | Propulsión Alternativa & Cuántica | `00` | General Information |
-| ATLAS | `000–099` | `090–099` | `09` | Tipos Específicos & Expansión | `00` | General Information |
-| STA | `100–199` | `100–109` | `00` | Sistemas Generales y Soporte Vital Espacial | `00` | General Information |
-| STA | `100–199` | `110–119` | `01` | Estructuras y Materiales Espaciales | `00` | General Information |
-| STA | `100–199` | `120–129` | `02` | Propulsión Espacial Tradicional y Avanzada | `00` | General Information |
-| STA | `100–199` | `130–139` | `03` | Sistemas de Energía Espacial | `00` | General Information |
-| STA | `100–199` | `140–149` | `04` | Aviónica y Control de Misión Espacial | `00` | General Information |
-| STA | `100–199` | `150–159` | `05` | Comunicaciones Espaciales | `00` | General Information |
-| STA | `100–199` | `160–169` | `06` | Sensores y Carga Útil Espacial | `00` | General Information |
-| STA | `100–199` | `170–179` | `07` | Operaciones y Mantenimiento en Órbita | `00` | General Information |
-| STA | `100–199` | `180–189` | `08` | Infraestructura y Logística Espacial | `00` | General Information |
-| STA | `100–199` | `190–199` | `09` | Sistemas Avanzados, Conceptos y Futuro Espacial | `00` | General Information |
-| DTTA | `200–299` | `200–209` | `00` | Sistemas de Combate y Armamento | `00` | General Information |
-| DTTA | `200–299` | `210–219` | `01` | C4ISR | `00` | General Information |
-| DTTA | `200–299` | `220–229` | `02` | Protección y Resiliencia | `00` | General Information |
-| DTTA | `200–299` | `230–239` | `03` | Robótica y Sistemas Autónomos de Defensa | `00` | General Information |
-| DTTA | `200–299` | `240–249` | `04` | Logística y Mantenimiento en Defensa | `00` | General Information |
-| DTTA | `200–299` | `250–259` | `05` | Ciberdefensa y Guerra Electrónica | `00` | General Information |
-| DTTA | `200–299` | `260–269` | `06` | Materiales y Sensores para Defensa | `00` | General Information |
-| DTTA | `200–299` | `270–279` | `07` | Simulación y Entrenamiento Militar | `00` | General Information |
-| DTTA | `200–299` | `280–289` | `08` | Guerra Cuántica y Tecnologías Disruptivas | `00` | General Information |
-| DTTA | `200–299` | `290–299` | `09` | Conceptos Operacionales Futuros | `00` | General Information |
-| DTCEC | `300–399` | `300–309` | `00` | Fundamentos de Gemelos Digitales | `00` | General Information |
-| DTCEC | `300–399` | `310–319` | `01` | Sensores e IoT para Digital Twins | `00` | General Information |
-| DTCEC | `300–399` | `320–329` | `02` | IA y Machine Learning para Digital Twins | `00` | General Information |
-| DTCEC | `300–399` | `330–339` | `03` | Cloud Computing y Arquitecturas Distribuidas | `00` | General Information |
-| DTCEC | `300–399` | `340–349` | `04` | Simulación y Modelado Avanzado | `00` | General Information |
-| DTCEC | `300–399` | `350–359` | `05` | Realidad Extendida y Metaverso | `00` | General Information |
-| DTCEC | `300–399` | `360–369` | `06` | Blockchain y Tecnologías Descentralizadas | `00` | General Information |
-| DTCEC | `300–399` | `370–379` | `07` | Ciberseguridad para Digital Twins | `00` | General Information |
-| DTCEC | `300–399` | `380–389` | `08` | Analytics y Business Intelligence | `00` | General Information |
-| DTCEC | `300–399` | `390–399` | `09` | Digital Twins Conscientes y Evolutivos | `00` | General Information |
-| EPTA | `400–499` | `400–409` | `00` | Fuentes de Energía Convencionales y Avanzadas | `00` | General Information |
-| EPTA | `400–499` | `410–419` | `01` | Energías Renovables | `00` | General Information |
-| EPTA | `400–499` | `420–429` | `02` | Almacenamiento de Energía | `00` | General Information |
-| EPTA | `400–499` | `430–439` | `03` | Gestión y Distribución de Energía | `00` | General Information |
-| EPTA | `400–499` | `440–449` | `04` | Propulsión por Combustión | `00` | General Information |
-| EPTA | `400–499` | `450–459` | `05` | Propulsión Eléctrica e Híbrida | `00` | General Information |
-| EPTA | `400–499` | `460–469` | `06` | Propulsión de Hidrógeno y Celdas de Combustible | `00` | General Information |
-| EPTA | `400–499` | `470–479` | `07` | Nuevas Formas de Propulsión | `00` | General Information |
-| EPTA | `400–499` | `480–489` | `08` | Optimización Energética y Cuántica | `00` | General Information |
-| EPTA | `400–499` | `490–499` | `09` | Sistemas de Recuperación de Energía | `00` | General Information |
-| AMTA | `500–599` | `500–509` | `00` | Materiales Compuestos Avanzados | `00` | General Information |
-| AMTA | `500–599` | `510–519` | `01` | Metamateriales y Materiales Inteligentes | `00` | General Information |
-| AMTA | `500–599` | `520–529` | `02` | Nanomateriales y Recubrimientos Funcionales | `00` | General Information |
-| AMTA | `500–599` | `530–539` | `03` | Biotecnología y Bioingeniería | `00` | General Information |
-| AMTA | `500–599` | `540–549` | `04` | Biomateriales y Biónica | `00` | General Information |
-| AMTA | `500–599` | `550–559` | `05` | Nanotecnología y Nanorobótica | `00` | General Information |
-| AMTA | `500–599` | `560–569` | `06` | Sensores Avanzados Bio/Nano | `00` | General Information |
-| AMTA | `500–599` | `570–579` | `07` | Manufactura Aditiva para Materiales Avanzados | `00` | General Information |
-| AMTA | `500–599` | `580–589` | `08` | Materiales y Procesos Cuánticos | `00` | General Information |
-| AMTA | `500–599` | `590–599` | `09` | Reciclaje y Sostenibilidad de Materiales | `00` | General Information |
-| OGATA | `600–699` | `600–609` | `00` | Robótica Industrial y Colaborativa | `00` | General Information |
-| OGATA | `600–699` | `610–619` | `01` | Vehículos Autónomos Terrestres | `00` | General Information |
-| OGATA | `600–699` | `620–629` | `02` | Infraestructura Inteligente | `00` | General Information |
-| OGATA | `600–699` | `630–639` | `03` | Fábricas 4.0 y Manufactura Avanzada | `00` | General Information |
-| OGATA | `600–699` | `640–649` | `04` | Logística y Almacenamiento Automatizado | `00` | General Information |
-| OGATA | `600–699` | `650–659` | `05` | Agricultura de Precisión | `00` | General Information |
-| OGATA | `600–699` | `660–669` | `06` | Construcción y Demolición Automatizada | `00` | General Information |
-| OGATA | `600–699` | `670–679` | `07` | Servicios Autónomos en Entornos Cerrados | `00` | General Information |
-| OGATA | `600–699` | `680–689` | `08` | Optimización con IA y Cuántica | `00` | General Information |
-| OGATA | `600–699` | `690–699` | `09` | Interacción Humano-Robot y Seguridad | `00` | General Information |
-| ACV | `700–799` | `700–709` | `00` | Vehículos de Movilidad Aérea Urbana | `00` | General Information |
-| ACV | `700–799` | `710–719` | `01` | Vertipuertos y Heliplataformas | `00` | General Information |
-| ACV | `700–799` | `720–729` | `02` | Gestión del Tráfico Aéreo Urbano | `00` | General Information |
-| ACV | `700–799` | `730–739` | `03` | Ruido y Acústica Urbana | `00` | General Information |
-| ACV | `700–799` | `740–749` | `04` | Sostenibilidad Ambiental en UAM | `00` | General Information |
-| ACV | `700–799` | `750–759` | `05` | Legal, Regulación y Certificación UAM | `00` | General Information |
-| ACV | `700–799` | `760–769` | `06` | Interfaz Urbana y Aceptación Social | `00` | General Information |
-| ACV | `700–799` | `770–779` | `07` | Seguridad y Resiliencia Operacional | `00` | General Information |
-| ACV | `700–799` | `780–789` | `08` | Optimización Cuántica de Tráfico y Logística UAM | `00` | General Information |
-| ACV | `700–799` | `790–799` | `09` | Modelos de Negocio y Ecosistemas UAM | `00` | General Information |
-| CYB | `800–899` | `800–809` | `00` | Gobernanza y Gestión de Riesgos de Ciberseguridad | `00` | General Information |
-| CYB | `800–899` | `810–819` | `01` | Seguridad de Redes y Comunicaciones | `00` | General Information |
-| CYB | `800–899` | `820–829` | `02` | Seguridad de Datos y Almacenamiento | `00` | General Information |
-| CYB | `800–899` | `830–839` | `03` | Gestión de Identidades y Acceso | `00` | General Information |
-| CYB | `800–899` | `840–849` | `04` | Seguridad de Aplicaciones y Software | `00` | General Information |
-| CYB | `800–899` | `850–859` | `05` | Ciberseguridad Operacional | `00` | General Information |
-| CYB | `800–899` | `860–869` | `06` | Seguridad Cloud y Edge | `00` | General Information |
-| CYB | `800–899` | `870–879` | `07` | Ciberseguridad ICS/OT | `00` | General Information |
-| CYB | `800–899` | `880–889` | `08` | Criptografía Post-Cuántica y Seguridad Cuántica | `00` | General Information |
-| CYB | `800–899` | `890–899` | `09` | Inteligencia de Amenazas y Ciber-resiliencia | `00` | General Information |
-| QCSAA | `900–999` | `900–909` | `00` | Fundamentos de Computación Cuántica | `00` | General Information |
-| QCSAA | `900–999` | `910–919` | `01` | Quantum Machine Learning e IA Cuántica | `00` | General Information |
-| QCSAA | `900–999` | `920–929` | `02` | Redes y Comunicaciones Cuánticas | `00` | General Information |
-| QCSAA | `900–999` | `930–939` | `03` | Ciberseguridad Cuántica | `00` | General Information |
-| QCSAA | `900–999` | `940–949` | `04` | Sensores y Metrología Cuántica | `00` | General Information |
-| QCSAA | `900–999` | `950–959` | `05` | Simulación Cuántica | `00` | General Information |
-| QCSAA | `900–999` | `960–969` | `06` | Robótica Cuántica y Manipulación de Materia | `00` | General Information |
-| QCSAA | `900–999` | `970–979` | `07` | Agencia Sentiente Cuántica | `00` | General Information |
-| QCSAA | `900–999` | `980–989` | `08` | Gobernanza y Ética de IA y Cuántica Sentiente | `00` | General Information |
-| QCSAA | `900–999` | `990–999` | `09` | Futuro QCSAA y Aplicaciones Inter-Arquitectura | `00` | General Information |
+| [ATLAS](Q+ATLANTIDE/000-099_ATLAS/) | `000–099` | [`000–009`](Q+ATLANTIDE/000-099_ATLAS/000-009_Informacion-General-y-Servicio/) | `00` | Información General y Servicio | `00` | General Information |
+| [ATLAS](Q+ATLANTIDE/000-099_ATLAS/) | `000–099` | [`010–019`](Q+ATLANTIDE/000-099_ATLAS/010-019_Manejo-en-Tierra-Servicio/) | `01` | Manejo en Tierra & Servicio | `00` | General Information |
+| [ATLAS](Q+ATLANTIDE/000-099_ATLAS/) | `000–099` | [`020–029`](Q+ATLANTIDE/000-099_ATLAS/020-029_Sistemas-Core-de-Aeronave/) | `02` | Sistemas Core de Aeronave | `00` | General Information |
+| [ATLAS](Q+ATLANTIDE/000-099_ATLAS/) | `000–099` | [`030–039`](Q+ATLANTIDE/000-099_ATLAS/030-039_Proteccion-Sistemas-Mecanicos/) | `03` | Protección & Sistemas Mecánicos | `00` | General Information |
+| [ATLAS](Q+ATLANTIDE/000-099_ATLAS/) | `000–099` | [`040–049`](Q+ATLANTIDE/000-099_ATLAS/040-049_Avionica-Informacion-APU/) | `04` | Aviónica, Información & APU | `00` | General Information |
+| [ATLAS](Q+ATLANTIDE/000-099_ATLAS/) | `000–099` | [`050–059`](Q+ATLANTIDE/000-099_ATLAS/050-059_Estructuras-Primarias-e-Interfaces-de-Programa-Q-Division/) | `05` | Estructuras Primarias e Interfaces de Programa / Q-Division | `00` | General Information |
+| [ATLAS](Q+ATLANTIDE/000-099_ATLAS/) | `000–099` | [`060–069`](Q+ATLANTIDE/000-099_ATLAS/060-069_Propulsion-Tradicional/) | `06` | Propulsión Tradicional | `00` | General Information |
+| [ATLAS](Q+ATLANTIDE/000-099_ATLAS/) | `000–099` | [`070–079`](Q+ATLANTIDE/000-099_ATLAS/070-079_Propulsion-Eco-Tech-e-Hibrido-Electrica/) | `07` | Propulsión Eco-Tech e Híbrido-Eléctrica | `00` | General Information |
+| [ATLAS](Q+ATLANTIDE/000-099_ATLAS/) | `000–099` | [`080–089`](Q+ATLANTIDE/000-099_ATLAS/080-089_Propulsion-Alternativa-Cuantica/) | `08` | Propulsión Alternativa & Cuántica | `00` | General Information |
+| [ATLAS](Q+ATLANTIDE/000-099_ATLAS/) | `000–099` | [`090–099`](Q+ATLANTIDE/000-099_ATLAS/090-099_Tipos-Especificos-Expansion/) | `09` | Tipos Específicos & Expansión | `00` | General Information |
+| [STA](Q+ATLANTIDE/100-199_STA/) | `100–199` | [`100–109`](Q+ATLANTIDE/100-199_STA/100-109_Sistemas-Generales-y-Soporte-Vital-Espacial/) | `00` | Sistemas Generales y Soporte Vital Espacial | `00` | General Information |
+| [STA](Q+ATLANTIDE/100-199_STA/) | `100–199` | [`110–119`](Q+ATLANTIDE/100-199_STA/110-119_Estructuras-y-Materiales-Espaciales/) | `01` | Estructuras y Materiales Espaciales | `00` | General Information |
+| [STA](Q+ATLANTIDE/100-199_STA/) | `100–199` | [`120–129`](Q+ATLANTIDE/100-199_STA/120-129_Propulsion-Espacial-Tradicional-y-Avanzada/) | `02` | Propulsión Espacial Tradicional y Avanzada | `00` | General Information |
+| [STA](Q+ATLANTIDE/100-199_STA/) | `100–199` | [`130–139`](Q+ATLANTIDE/100-199_STA/130-139_Sistemas-de-Energia-Espacial/) | `03` | Sistemas de Energía Espacial | `00` | General Information |
+| [STA](Q+ATLANTIDE/100-199_STA/) | `100–199` | [`140–149`](Q+ATLANTIDE/100-199_STA/140-149_Avionica-y-Control-de-Mision-Espacial/) | `04` | Aviónica y Control de Misión Espacial | `00` | General Information |
+| [STA](Q+ATLANTIDE/100-199_STA/) | `100–199` | [`150–159`](Q+ATLANTIDE/100-199_STA/150-159_Comunicaciones-Espaciales/) | `05` | Comunicaciones Espaciales | `00` | General Information |
+| [STA](Q+ATLANTIDE/100-199_STA/) | `100–199` | [`160–169`](Q+ATLANTIDE/100-199_STA/160-169_Sensores-y-Carga-Util-Espacial/) | `06` | Sensores y Carga Útil Espacial | `00` | General Information |
+| [STA](Q+ATLANTIDE/100-199_STA/) | `100–199` | [`170–179`](Q+ATLANTIDE/100-199_STA/170-179_Operaciones-y-Mantenimiento-en-Orbita/) | `07` | Operaciones y Mantenimiento en Órbita | `00` | General Information |
+| [STA](Q+ATLANTIDE/100-199_STA/) | `100–199` | [`180–189`](Q+ATLANTIDE/100-199_STA/180-189_Infraestructura-y-Logistica-Espacial/) | `08` | Infraestructura y Logística Espacial | `00` | General Information |
+| [STA](Q+ATLANTIDE/100-199_STA/) | `100–199` | [`190–199`](Q+ATLANTIDE/100-199_STA/190-199_Sistemas-Avanzados-Conceptos-y-Futuro-Espacial/) | `09` | Sistemas Avanzados, Conceptos y Futuro Espacial | `00` | General Information |
+| [DTTA](Q+ATLANTIDE/200-299_DTTA/) | `200–299` | [`200–209`](Q+ATLANTIDE/200-299_DTTA/200-209_Sistemas-de-Combate-y-Armamento/) | `00` | Sistemas de Combate y Armamento | `00` | General Information |
+| [DTTA](Q+ATLANTIDE/200-299_DTTA/) | `200–299` | [`210–219`](Q+ATLANTIDE/200-299_DTTA/210-219_C4ISR/) | `01` | C4ISR | `00` | General Information |
+| [DTTA](Q+ATLANTIDE/200-299_DTTA/) | `200–299` | [`220–229`](Q+ATLANTIDE/200-299_DTTA/220-229_Proteccion-y-Resiliencia/) | `02` | Protección y Resiliencia | `00` | General Information |
+| [DTTA](Q+ATLANTIDE/200-299_DTTA/) | `200–299` | [`230–239`](Q+ATLANTIDE/200-299_DTTA/230-239_Robotica-y-Sistemas-Autonomos-de-Defensa/) | `03` | Robótica y Sistemas Autónomos de Defensa | `00` | General Information |
+| [DTTA](Q+ATLANTIDE/200-299_DTTA/) | `200–299` | [`240–249`](Q+ATLANTIDE/200-299_DTTA/240-249_Logistica-y-Mantenimiento-en-Defensa/) | `04` | Logística y Mantenimiento en Defensa | `00` | General Information |
+| [DTTA](Q+ATLANTIDE/200-299_DTTA/) | `200–299` | [`250–259`](Q+ATLANTIDE/200-299_DTTA/250-259_Ciberdefensa-y-Guerra-Electronica/) | `05` | Ciberdefensa y Guerra Electrónica | `00` | General Information |
+| [DTTA](Q+ATLANTIDE/200-299_DTTA/) | `200–299` | [`260–269`](Q+ATLANTIDE/200-299_DTTA/260-269_Materiales-y-Sensores-para-Defensa/) | `06` | Materiales y Sensores para Defensa | `00` | General Information |
+| [DTTA](Q+ATLANTIDE/200-299_DTTA/) | `200–299` | [`270–279`](Q+ATLANTIDE/200-299_DTTA/270-279_Simulacion-y-Entrenamiento-Militar/) | `07` | Simulación y Entrenamiento Militar | `00` | General Information |
+| [DTTA](Q+ATLANTIDE/200-299_DTTA/) | `200–299` | [`280–289`](Q+ATLANTIDE/200-299_DTTA/280-289_Guerra-Cuantica-y-Tecnologias-Disruptivas/) | `08` | Guerra Cuántica y Tecnologías Disruptivas | `00` | General Information |
+| [DTTA](Q+ATLANTIDE/200-299_DTTA/) | `200–299` | [`290–299`](Q+ATLANTIDE/200-299_DTTA/290-299_Conceptos-Operacionales-Futuros/) | `09` | Conceptos Operacionales Futuros | `00` | General Information |
+| [DTCEC](Q+ATLANTIDE/300-399_DTCEC/) | `300–399` | [`300–309`](Q+ATLANTIDE/300-399_DTCEC/300-309_Fundamentos-de-Gemelos-Digitales/) | `00` | Fundamentos de Gemelos Digitales | `00` | General Information |
+| [DTCEC](Q+ATLANTIDE/300-399_DTCEC/) | `300–399` | [`310–319`](Q+ATLANTIDE/300-399_DTCEC/310-319_Sensores-e-IoT-para-Digital-Twins/) | `01` | Sensores e IoT para Digital Twins | `00` | General Information |
+| [DTCEC](Q+ATLANTIDE/300-399_DTCEC/) | `300–399` | [`320–329`](Q+ATLANTIDE/300-399_DTCEC/320-329_IA-y-Machine-Learning-para-Digital-Twins/) | `02` | IA y Machine Learning para Digital Twins | `00` | General Information |
+| [DTCEC](Q+ATLANTIDE/300-399_DTCEC/) | `300–399` | [`330–339`](Q+ATLANTIDE/300-399_DTCEC/330-339_Cloud-Computing-y-Arquitecturas-Distribuidas/) | `03` | Cloud Computing y Arquitecturas Distribuidas | `00` | General Information |
+| [DTCEC](Q+ATLANTIDE/300-399_DTCEC/) | `300–399` | [`340–349`](Q+ATLANTIDE/300-399_DTCEC/340-349_Simulacion-y-Modelado-Avanzado/) | `04` | Simulación y Modelado Avanzado | `00` | General Information |
+| [DTCEC](Q+ATLANTIDE/300-399_DTCEC/) | `300–399` | [`350–359`](Q+ATLANTIDE/300-399_DTCEC/350-359_Realidad-Extendida-y-Metaverso/) | `05` | Realidad Extendida y Metaverso | `00` | General Information |
+| [DTCEC](Q+ATLANTIDE/300-399_DTCEC/) | `300–399` | [`360–369`](Q+ATLANTIDE/300-399_DTCEC/360-369_Blockchain-y-Tecnologias-Descentralizadas/) | `06` | Blockchain y Tecnologías Descentralizadas | `00` | General Information |
+| [DTCEC](Q+ATLANTIDE/300-399_DTCEC/) | `300–399` | [`370–379`](Q+ATLANTIDE/300-399_DTCEC/370-379_Ciberseguridad-para-Digital-Twins/) | `07` | Ciberseguridad para Digital Twins | `00` | General Information |
+| [DTCEC](Q+ATLANTIDE/300-399_DTCEC/) | `300–399` | [`380–389`](Q+ATLANTIDE/300-399_DTCEC/380-389_Analytics-y-Business-Intelligence/) | `08` | Analytics y Business Intelligence | `00` | General Information |
+| [DTCEC](Q+ATLANTIDE/300-399_DTCEC/) | `300–399` | [`390–399`](Q+ATLANTIDE/300-399_DTCEC/390-399_Digital-Twins-Conscientes-y-Evolutivos/) | `09` | Digital Twins Conscientes y Evolutivos | `00` | General Information |
+| [EPTA](Q+ATLANTIDE/400-499_EPTA/) | `400–499` | [`400–409`](Q+ATLANTIDE/400-499_EPTA/400-409_Fuentes-de-Energia-Convencionales-y-Avanzadas/) | `00` | Fuentes de Energía Convencionales y Avanzadas | `00` | General Information |
+| [EPTA](Q+ATLANTIDE/400-499_EPTA/) | `400–499` | [`410–419`](Q+ATLANTIDE/400-499_EPTA/410-419_Energias-Renovables/) | `01` | Energías Renovables | `00` | General Information |
+| [EPTA](Q+ATLANTIDE/400-499_EPTA/) | `400–499` | [`420–429`](Q+ATLANTIDE/400-499_EPTA/420-429_Almacenamiento-de-Energia/) | `02` | Almacenamiento de Energía | `00` | General Information |
+| [EPTA](Q+ATLANTIDE/400-499_EPTA/) | `400–499` | [`430–439`](Q+ATLANTIDE/400-499_EPTA/430-439_Gestion-y-Distribucion-de-Energia/) | `03` | Gestión y Distribución de Energía | `00` | General Information |
+| [EPTA](Q+ATLANTIDE/400-499_EPTA/) | `400–499` | [`440–449`](Q+ATLANTIDE/400-499_EPTA/440-449_Propulsion-por-Combustion/) | `04` | Propulsión por Combustión | `00` | General Information |
+| [EPTA](Q+ATLANTIDE/400-499_EPTA/) | `400–499` | [`450–459`](Q+ATLANTIDE/400-499_EPTA/450-459_Propulsion-Electrica-e-Hibrida/) | `05` | Propulsión Eléctrica e Híbrida | `00` | General Information |
+| [EPTA](Q+ATLANTIDE/400-499_EPTA/) | `400–499` | [`460–469`](Q+ATLANTIDE/400-499_EPTA/460-469_Propulsion-de-Hidrogeno-y-Celdas-de-Combustible/) | `06` | Propulsión de Hidrógeno y Celdas de Combustible | `00` | General Information |
+| [EPTA](Q+ATLANTIDE/400-499_EPTA/) | `400–499` | [`470–479`](Q+ATLANTIDE/400-499_EPTA/470-479_Nuevas-Formas-de-Propulsion/) | `07` | Nuevas Formas de Propulsión | `00` | General Information |
+| [EPTA](Q+ATLANTIDE/400-499_EPTA/) | `400–499` | [`480–489`](Q+ATLANTIDE/400-499_EPTA/480-489_Optimizacion-Energetica-y-Cuantica/) | `08` | Optimización Energética y Cuántica | `00` | General Information |
+| [EPTA](Q+ATLANTIDE/400-499_EPTA/) | `400–499` | [`490–499`](Q+ATLANTIDE/400-499_EPTA/490-499_Sistemas-de-Recuperacion-de-Energia/) | `09` | Sistemas de Recuperación de Energía | `00` | General Information |
+| [AMTA](Q+ATLANTIDE/500-599_AMTA/) | `500–599` | [`500–509`](Q+ATLANTIDE/500-599_AMTA/500-509_Materiales-Compuestos-Avanzados/) | `00` | Materiales Compuestos Avanzados | `00` | General Information |
+| [AMTA](Q+ATLANTIDE/500-599_AMTA/) | `500–599` | [`510–519`](Q+ATLANTIDE/500-599_AMTA/510-519_Metamateriales-y-Materiales-Inteligentes/) | `01` | Metamateriales y Materiales Inteligentes | `00` | General Information |
+| [AMTA](Q+ATLANTIDE/500-599_AMTA/) | `500–599` | [`520–529`](Q+ATLANTIDE/500-599_AMTA/520-529_Nanomateriales-y-Recubrimientos-Funcionales/) | `02` | Nanomateriales y Recubrimientos Funcionales | `00` | General Information |
+| [AMTA](Q+ATLANTIDE/500-599_AMTA/) | `500–599` | [`530–539`](Q+ATLANTIDE/500-599_AMTA/530-539_Biotecnologia-y-Bioingenieria/) | `03` | Biotecnología y Bioingeniería | `00` | General Information |
+| [AMTA](Q+ATLANTIDE/500-599_AMTA/) | `500–599` | [`540–549`](Q+ATLANTIDE/500-599_AMTA/540-549_Biomateriales-y-Bionica/) | `04` | Biomateriales y Biónica | `00` | General Information |
+| [AMTA](Q+ATLANTIDE/500-599_AMTA/) | `500–599` | [`550–559`](Q+ATLANTIDE/500-599_AMTA/550-559_Nanotecnologia-y-Nanorobotica/) | `05` | Nanotecnología y Nanorobótica | `00` | General Information |
+| [AMTA](Q+ATLANTIDE/500-599_AMTA/) | `500–599` | [`560–569`](Q+ATLANTIDE/500-599_AMTA/560-569_Sensores-Avanzados-Bio-Nano/) | `06` | Sensores Avanzados Bio/Nano | `00` | General Information |
+| [AMTA](Q+ATLANTIDE/500-599_AMTA/) | `500–599` | [`570–579`](Q+ATLANTIDE/500-599_AMTA/570-579_Manufactura-Aditiva-para-Materiales-Avanzados/) | `07` | Manufactura Aditiva para Materiales Avanzados | `00` | General Information |
+| [AMTA](Q+ATLANTIDE/500-599_AMTA/) | `500–599` | [`580–589`](Q+ATLANTIDE/500-599_AMTA/580-589_Materiales-y-Procesos-Cuanticos/) | `08` | Materiales y Procesos Cuánticos | `00` | General Information |
+| [AMTA](Q+ATLANTIDE/500-599_AMTA/) | `500–599` | [`590–599`](Q+ATLANTIDE/500-599_AMTA/590-599_Reciclaje-y-Sostenibilidad-de-Materiales/) | `09` | Reciclaje y Sostenibilidad de Materiales | `00` | General Information |
+| [OGATA](Q+ATLANTIDE/600-699_OGATA/) | `600–699` | [`600–609`](Q+ATLANTIDE/600-699_OGATA/600-609_Robotica-Industrial-y-Colaborativa/) | `00` | Robótica Industrial y Colaborativa | `00` | General Information |
+| [OGATA](Q+ATLANTIDE/600-699_OGATA/) | `600–699` | [`610–619`](Q+ATLANTIDE/600-699_OGATA/610-619_Vehiculos-Autonomos-Terrestres/) | `01` | Vehículos Autónomos Terrestres | `00` | General Information |
+| [OGATA](Q+ATLANTIDE/600-699_OGATA/) | `600–699` | [`620–629`](Q+ATLANTIDE/600-699_OGATA/620-629_Infraestructura-Inteligente/) | `02` | Infraestructura Inteligente | `00` | General Information |
+| [OGATA](Q+ATLANTIDE/600-699_OGATA/) | `600–699` | [`630–639`](Q+ATLANTIDE/600-699_OGATA/630-639_Fabricas-4-0-y-Manufactura-Avanzada/) | `03` | Fábricas 4.0 y Manufactura Avanzada | `00` | General Information |
+| [OGATA](Q+ATLANTIDE/600-699_OGATA/) | `600–699` | [`640–649`](Q+ATLANTIDE/600-699_OGATA/640-649_Logistica-y-Almacenamiento-Automatizado/) | `04` | Logística y Almacenamiento Automatizado | `00` | General Information |
+| [OGATA](Q+ATLANTIDE/600-699_OGATA/) | `600–699` | [`650–659`](Q+ATLANTIDE/600-699_OGATA/650-659_Agricultura-de-Precision/) | `05` | Agricultura de Precisión | `00` | General Information |
+| [OGATA](Q+ATLANTIDE/600-699_OGATA/) | `600–699` | [`660–669`](Q+ATLANTIDE/600-699_OGATA/660-669_Construccion-y-Demolicion-Automatizada/) | `06` | Construcción y Demolición Automatizada | `00` | General Information |
+| [OGATA](Q+ATLANTIDE/600-699_OGATA/) | `600–699` | [`670–679`](Q+ATLANTIDE/600-699_OGATA/670-679_Servicios-Autonomos-en-Entornos-Cerrados/) | `07` | Servicios Autónomos en Entornos Cerrados | `00` | General Information |
+| [OGATA](Q+ATLANTIDE/600-699_OGATA/) | `600–699` | [`680–689`](Q+ATLANTIDE/600-699_OGATA/680-689_Optimizacion-con-IA-y-Cuantica/) | `08` | Optimización con IA y Cuántica | `00` | General Information |
+| [OGATA](Q+ATLANTIDE/600-699_OGATA/) | `600–699` | [`690–699`](Q+ATLANTIDE/600-699_OGATA/690-699_Interaccion-Humano-Robot-y-Seguridad/) | `09` | Interacción Humano-Robot y Seguridad | `00` | General Information |
+| [ACV](Q+ATLANTIDE/700-799_ACV/) | `700–799` | [`700–709`](Q+ATLANTIDE/700-799_ACV/700-709_Vehiculos-de-Movilidad-Aerea-Urbana/) | `00` | Vehículos de Movilidad Aérea Urbana | `00` | General Information |
+| [ACV](Q+ATLANTIDE/700-799_ACV/) | `700–799` | [`710–719`](Q+ATLANTIDE/700-799_ACV/710-719_Vertipuertos-y-Heliplataformas/) | `01` | Vertipuertos y Heliplataformas | `00` | General Information |
+| [ACV](Q+ATLANTIDE/700-799_ACV/) | `700–799` | [`720–729`](Q+ATLANTIDE/700-799_ACV/720-729_Gestion-del-Trafico-Aereo-Urbano/) | `02` | Gestión del Tráfico Aéreo Urbano | `00` | General Information |
+| [ACV](Q+ATLANTIDE/700-799_ACV/) | `700–799` | [`730–739`](Q+ATLANTIDE/700-799_ACV/730-739_Ruido-y-Acustica-Urbana/) | `03` | Ruido y Acústica Urbana | `00` | General Information |
+| [ACV](Q+ATLANTIDE/700-799_ACV/) | `700–799` | [`740–749`](Q+ATLANTIDE/700-799_ACV/740-749_Sostenibilidad-Ambiental-en-UAM/) | `04` | Sostenibilidad Ambiental en UAM | `00` | General Information |
+| [ACV](Q+ATLANTIDE/700-799_ACV/) | `700–799` | [`750–759`](Q+ATLANTIDE/700-799_ACV/750-759_Legal-Regulacion-y-Certificacion-UAM/) | `05` | Legal, Regulación y Certificación UAM | `00` | General Information |
+| [ACV](Q+ATLANTIDE/700-799_ACV/) | `700–799` | [`760–769`](Q+ATLANTIDE/700-799_ACV/760-769_Interfaz-Urbana-y-Aceptacion-Social/) | `06` | Interfaz Urbana y Aceptación Social | `00` | General Information |
+| [ACV](Q+ATLANTIDE/700-799_ACV/) | `700–799` | [`770–779`](Q+ATLANTIDE/700-799_ACV/770-779_Seguridad-y-Resiliencia-Operacional/) | `07` | Seguridad y Resiliencia Operacional | `00` | General Information |
+| [ACV](Q+ATLANTIDE/700-799_ACV/) | `700–799` | [`780–789`](Q+ATLANTIDE/700-799_ACV/780-789_Optimizacion-Cuantica-de-Trafico-y-Logistica-UAM/) | `08` | Optimización Cuántica de Tráfico y Logística UAM | `00` | General Information |
+| [ACV](Q+ATLANTIDE/700-799_ACV/) | `700–799` | [`790–799`](Q+ATLANTIDE/700-799_ACV/790-799_Modelos-de-Negocio-y-Ecosistemas-UAM/) | `09` | Modelos de Negocio y Ecosistemas UAM | `00` | General Information |
+| [CYB](Q+ATLANTIDE/800-899_CYB/) | `800–899` | [`800–809`](Q+ATLANTIDE/800-899_CYB/800-809_Gobernanza-y-Gestion-de-Riesgos-de-Ciberseguridad/) | `00` | Gobernanza y Gestión de Riesgos de Ciberseguridad | `00` | General Information |
+| [CYB](Q+ATLANTIDE/800-899_CYB/) | `800–899` | [`810–819`](Q+ATLANTIDE/800-899_CYB/810-819_Seguridad-de-Redes-y-Comunicaciones/) | `01` | Seguridad de Redes y Comunicaciones | `00` | General Information |
+| [CYB](Q+ATLANTIDE/800-899_CYB/) | `800–899` | [`820–829`](Q+ATLANTIDE/800-899_CYB/820-829_Seguridad-de-Datos-y-Almacenamiento/) | `02` | Seguridad de Datos y Almacenamiento | `00` | General Information |
+| [CYB](Q+ATLANTIDE/800-899_CYB/) | `800–899` | [`830–839`](Q+ATLANTIDE/800-899_CYB/830-839_Gestion-de-Identidades-y-Acceso/) | `03` | Gestión de Identidades y Acceso | `00` | General Information |
+| [CYB](Q+ATLANTIDE/800-899_CYB/) | `800–899` | [`840–849`](Q+ATLANTIDE/800-899_CYB/840-849_Seguridad-de-Aplicaciones-y-Software/) | `04` | Seguridad de Aplicaciones y Software | `00` | General Information |
+| [CYB](Q+ATLANTIDE/800-899_CYB/) | `800–899` | [`850–859`](Q+ATLANTIDE/800-899_CYB/850-859_Ciberseguridad-Operacional/) | `05` | Ciberseguridad Operacional | `00` | General Information |
+| [CYB](Q+ATLANTIDE/800-899_CYB/) | `800–899` | [`860–869`](Q+ATLANTIDE/800-899_CYB/860-869_Seguridad-Cloud-y-Edge/) | `06` | Seguridad Cloud y Edge | `00` | General Information |
+| [CYB](Q+ATLANTIDE/800-899_CYB/) | `800–899` | [`870–879`](Q+ATLANTIDE/800-899_CYB/870-879_Ciberseguridad-ICS-OT/) | `07` | Ciberseguridad ICS/OT | `00` | General Information |
+| [CYB](Q+ATLANTIDE/800-899_CYB/) | `800–899` | [`880–889`](Q+ATLANTIDE/800-899_CYB/880-889_Criptografia-Post-Cuantica-y-Seguridad-Cuantica/) | `08` | Criptografía Post-Cuántica y Seguridad Cuántica | `00` | General Information |
+| [CYB](Q+ATLANTIDE/800-899_CYB/) | `800–899` | [`890–899`](Q+ATLANTIDE/800-899_CYB/890-899_Inteligencia-de-Amenazas-y-Ciber-resiliencia/) | `09` | Inteligencia de Amenazas y Ciber-resiliencia | `00` | General Information |
+| [QCSAA](Q+ATLANTIDE/900-999_QCSAA/) | `900–999` | [`900–909`](Q+ATLANTIDE/900-999_QCSAA/900-909_Fundamentos-de-Computacion-Cuantica/) | `00` | Fundamentos de Computación Cuántica | `00` | General Information |
+| [QCSAA](Q+ATLANTIDE/900-999_QCSAA/) | `900–999` | [`910–919`](Q+ATLANTIDE/900-999_QCSAA/910-919_Quantum-Machine-Learning-e-IA-Cuantica/) | `01` | Quantum Machine Learning e IA Cuántica | `00` | General Information |
+| [QCSAA](Q+ATLANTIDE/900-999_QCSAA/) | `900–999` | [`920–929`](Q+ATLANTIDE/900-999_QCSAA/920-929_Redes-y-Comunicaciones-Cuanticas/) | `02` | Redes y Comunicaciones Cuánticas | `00` | General Information |
+| [QCSAA](Q+ATLANTIDE/900-999_QCSAA/) | `900–999` | [`930–939`](Q+ATLANTIDE/900-999_QCSAA/930-939_Ciberseguridad-Cuantica/) | `03` | Ciberseguridad Cuántica | `00` | General Information |
+| [QCSAA](Q+ATLANTIDE/900-999_QCSAA/) | `900–999` | [`940–949`](Q+ATLANTIDE/900-999_QCSAA/940-949_Sensores-y-Metrologia-Cuantica/) | `04` | Sensores y Metrología Cuántica | `00` | General Information |
+| [QCSAA](Q+ATLANTIDE/900-999_QCSAA/) | `900–999` | [`950–959`](Q+ATLANTIDE/900-999_QCSAA/950-959_Simulacion-Cuantica/) | `05` | Simulación Cuántica | `00` | General Information |
+| [QCSAA](Q+ATLANTIDE/900-999_QCSAA/) | `900–999` | [`960–969`](Q+ATLANTIDE/900-999_QCSAA/960-969_Robotica-Cuantica-y-Manipulacion-de-Materia/) | `06` | Robótica Cuántica y Manipulación de Materia | `00` | General Information |
+| [QCSAA](Q+ATLANTIDE/900-999_QCSAA/) | `900–999` | [`970–979`](Q+ATLANTIDE/900-999_QCSAA/970-979_Agencia-Sentiente-Cuantica/) | `07` | Agencia Sentiente Cuántica | `00` | General Information |
+| [QCSAA](Q+ATLANTIDE/900-999_QCSAA/) | `900–999` | [`980–989`](Q+ATLANTIDE/900-999_QCSAA/980-989_Gobernanza-y-Etica-de-IA-y-Cuantica-Sentiente/) | `08` | Gobernanza y Ética de IA y Cuántica Sentiente | `00` | General Information |
+| [QCSAA](Q+ATLANTIDE/900-999_QCSAA/) | `900–999` | [`990–999`](Q+ATLANTIDE/900-999_QCSAA/990-999_Futuro-QCSAA-y-Aplicaciones-Inter-Arquitectura/) | `09` | Futuro QCSAA y Aplicaciones Inter-Arquitectura | `00` | General Information |
 
 ---
 
@@ -497,6 +497,7 @@ Q-Divisions are **technical authority units**. They are not architecture bands.
 | Q-GROUND | [`organization/Q-Divisions/Q-GROUND/`](organization/Q-Divisions/Q-GROUND/) | Ground operations, GSE, maintenance procedures, technician training |
 | Q-SPACE | [`organization/Q-Divisions/Q-SPACE/`](organization/Q-Divisions/Q-SPACE/) | Space systems, communication, navigation, satcom, payload integration |
 | Q-HORIZON | [`organization/Q-Divisions/Q-HORIZON/`](organization/Q-Divisions/Q-HORIZON/) | TRL 1–4 research, disruptive technologies, BWB future concepts, quantum onboard computing |
+| Q-HUESCORT-SCIRES-OPEN | [`organization/Q-Divisions/Q-HUESCORT-SCIRES-OPEN/`](organization/Q-Divisions/Q-HUESCORT-SCIRES-OPEN/) | Horizon/SCIRES/OPEN interface layer for research positioning, scientific validation and open-framework intake |
 
 ---
 
