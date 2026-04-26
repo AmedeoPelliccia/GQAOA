@@ -24,7 +24,15 @@ The core is contained in all systems. Extensions exist outside the invariant cor
 
 ## OPT-IN Cross-Reference
 
-The OPT-IN five-axis topology (`O-P-T-I-N`) is the MCD for programme management across any IDEALE pillar.
+The OPT-IN five-axis topology (`O-P-T-I-N`) is the MCD for programme management across any IDEALE pillar:
+
+| Axis | Domain |
+|---|---|
+| O | Organizations |
+| P | Programmes |
+| T | Technologies |
+| I | Infrastructures |
+| N | Neural-Networks |
 
 ## Interoperability Boundary
 

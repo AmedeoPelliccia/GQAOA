@@ -10,6 +10,16 @@ This namespace contains the IDEALE-ESG primitive definitions used as common math
 |---|---|---|
 | [`01-minimum-common-denominator-open-aggregator/`](01-minimum-common-denominator-open-aggregator/) | Minimum Common Denominator (Open Aggregator) | Defines the invariant structural core shared by interoperable systems while preserving an open extension surface. |
 
+## OPT-IN Axes
+
+| Axis | Domain |
+|---|---|
+| O | Organizations |
+| P | Programmes |
+| T | Technologies |
+| I | Infrastructures |
+| N | Neural-Networks |
+
 ## Cross-References
 
 - **OPT-IN (§OPT-IN):** implements the primitive as the five-axis topology for programme management across IDEALE pillars.
