@@ -106,6 +106,7 @@ Los 5 centros fundadores constituyen el núcleo de la capacidad del consorcio:
 | 9 | **Varsovia / Rzeszów** | Polonia | Manufactura de Componentes, Mecanizado de Precisión | Q-INDUSTRY | 400 | €200M |
 | 10 | **Napoli** Quantum Hub
 | 10 | **Bruselas** | Bélgica | Asuntos Europeos, Relaciones Institucionales UE | ORB-LEG, ORB-MKTG | 80 | €30M |
+**incluir Bolonia**
 | 11 | **Viena** | Austria | Investigación Cuántica, Criptografía Post-Cuántica | Q-HORIZON | 150 | €100M |
 | 12 | **Lisboa** | Portugal | Centro de Simulación, Pruebas de Software, Formación de Pilotos | Q-HPC | 200 | €90M |
 | 13 | **Praga** | Rep. Checa | Ingeniería de Sistemas Hidráulicos y Neumáticos | Q-MECHANICS | 180 | €80M |
