@@ -1,5 +1,6 @@
 # GAIA-QAO ADVENT: Documento Organizacional Maestro 
 ## Marco Estratégico para el Liderazgo Aeroespacial Sostenible Europeo
+### P&L Incorporated — Peace and Love, Incorporated
 
 **Identificador del Documento:** GAIA-QAO-ORG-MASTER-001
 **Versión:** 2.0.0
@@ -39,6 +40,11 @@
 *   Anexo D: Arquitectura de Documentación Técnica (S1000D)
 *   Anexo E: Glosario de Términos
 *   Anexo F: Catálogo Maestro de Plantillas de Documentación
+*   [GTL Specification](GTL-Specification.md): Generative Transgentle Language — framework for transgentle models
+*   [TMS Species Taxonomy](TMS-Transgentle-Model-Species.md): Transgentle Model Species — eight subtypes, ten axioms, lifecycle, UTCS mapping
+*   [Q-ASI-HUMAN-TRANSGENTLE](Q-ASI-HUMAN-TRANSGENTLE.md): Coexistence protocol — Quantum, ASI, Human under Transgentle governance; includes ⚠️ MANDATORY QUHI principle
+*   [Q+ATLANTIDE](Q+ATLANTIDE.md): Canonical baseline for the controlled `000-999` architecture-band taxonomy. Includes the **ATLAS-1000** register subpart (ATLAS, STA, DTTA, DTCEC, EPTA, AMTA, OGATA, ACV, CYB, QCSAA) with Q-Division and ORB-Function mapping
+*   [TMC Training Master Class](TMC-Training-Master-Class.md): Four-tier certification program — Foundation, Specialist, Practitioner, Master — for transgentle governance competency
 
 ---
 
@@ -46,7 +52,7 @@
 
 ## 1.1 Misión
 
-La **Global Aerospace Innovation Alliance (GAIA-QAO)** es un consorcio estratégico europeo público-privado creado para asegurar el liderazgo tecnológico del continente en la aviación sostenible. Nuestra **misión** es desarrollar y certificar una nueva generación de aeronaves comerciales que establezcan el estándar global en eficiencia, seguridad y responsabilidad ambiental, utilizando un enfoque por fases que integre progresivamente tecnologías disruptivas. Esta misión no solo busca un avance tecnológico, sino también la revitalización y consolidación de la base industrial aeroespacial europea, asegurando su competitividad a largo plazo.
+La **Global Aerospace Innovation Alliance (GAIA-QAO)** es un consorcio estratégico europeo público-privado creado para asegurar el liderazgo tecnológico del continente en la aviación sostenible. Nuestra **misión** es desarrollar y certificar una nueva generación de aeronaves comerciales que establezcan el estándar global en eficiencia, seguridad y responsabilidad ambiental, generando retornos sociales tangibles para las comunidades y los territorios donde operamos y asumiendo responsabilidades globales en materia de equidad, inclusión y bienestar colectivo, utilizando un enfoque por fases que integre progresivamente tecnologías disruptivas. Esta misión no solo busca un avance tecnológico, sino también la revitalización y consolidación de la base industrial aeroespacial europea, asegurando su competitividad a largo plazo.
 
 ## 1.2 Visión
 
@@ -111,11 +117,15 @@ graph TD
 
 | Ubicación   | Función Principal                     | Personal (Fase 1) | Justificación Estratégica                                                                                                | Inversión (2025-2030) |
 | :---------- | :------------------------------------ | :----------------- | :----------------------------------------------------------------------------------------------------------------------- | :-------------------- |
-| Madrid (HQ) | Sede Central, Finanzas, Legal         | 500                | Ubicación central, acceso a talento financiero y legal, entorno empresarial competitivo.                                  | €150M                 |
+| Amsterdam Tech Hub (HQ) | Sede Central, Finanzas, Legal         | 500                | Hub tecnológico europeo, acceso a talento internacional, entorno empresarial competitivo y conectividad global.           | €150M                 |
 | Toulouse    | Integración Final, Pruebas Vuelo      | 1200               | Ecosistema aeroespacial líder en Europa, con infraestructura de pruebas y talento experimentado.                         | €400M                 |
 | Hamburgo    | Diseño Fuselaje, Cabina               | 800                | Centro de excelencia histórico en diseño de cabinas y fuselajes, con una fuerte base industrial.                         | €300M                 |
 | Múnich      | I+D Cuántico, Propulsión              | 400                | Proximidad a centros de investigación de vanguardia en propulsión y física cuántica.                                     | €250M                 |
 | Sevilla     | Manufactura Composites                | 600                | Centro especializado en la producción de aeroestructuras de materiales compuestos a gran escala.                       | €350M                 |
+| Napoli      | Quantum Tech Hub                      | 300                | Polo de investigación cuántica emergente, acceso a talento científico y colaboración con universidades de vanguardia.  | €200M                 |
+| Barcelona   | Blockchain Tech Hub                   | 250                | Ecosistema tecnológico dinámico, líder en innovación blockchain y comunidad emprendedora digital.                      | €180M                 |
+| Bolonia     | Space Hub                             | 350                | Centro de excelencia aeroespacial, proximidad a la industria espacial italiana y red de investigación avanzada.        | €220M                 |
+| Getafe      | Robotics Fabric Center                | 400                | Base industrial consolidada, experiencia en fabricación automatizada y robótica aplicada a la industria aeroespacial.  | €250M                 |
 
 # 4. SISTEMA DE GOBERNANZA
 
@@ -448,7 +458,7 @@ Comunicación proactiva, transparente y coordinada para alinear a todos los stak
     *   [ ] Asegurar la primera ronda de financiación (€1.0B) mediante la formalización de los compromisos de los Estados Miembro.
 *   **Q4 2025: Estructuración**
     *   [ ] Contratación del Comité Ejecutivo (C-Level) y directores de división.
-    *   [ ] Establecimiento de las sedes principales (Madrid, Toulouse, Hamburgo) y comienzo de la adecuación de las instalaciones.
+    *   [ ] Establecimiento de las sedes principales (Amsterdam, Toulouse, Hamburgo) y comienzo de la adecuación de las instalaciones.
     *   [ ] Lanzamiento oficial del programa GAIA-350e con la asignación de los primeros work packages.
 *   **2026: Operaciones Iniciales**
     *   [ ] Contratación de 1000 empleados clave, incluyendo los equipos de arquitectura de sistemas.
@@ -973,7 +983,7 @@ flowchart TB
 
 #### Principios de Gestión de Personas
 1. **Meritocracia**: Promoción por resultados
-2. **Diversidad**: 40% mujeres en leadership
+2. **Diversidad**: 40% mujeres, 38% hombres, 22% queers en leadership
 3. **Desarrollo**: 5% payroll en training
 4. **Bienestar**: Work-life balance
 5. **Reconocimiento**: Quarterly awards
@@ -1159,6 +1169,8 @@ flowchart TD
 ---
 
 ## ANEXO F: LISTA COMPLETA DE TEMPLATES DE DOCUMENTACIÓN TÉCNICA
+
+> **Q+ATLANTIDE governance.** Todas las plantillas de este anexo se rigen por el baseline controlado [`Q+ATLANTIDE.md`](Q+ATLANTIDE.md), §5 *Templates System* (registro **ATLAS-1000** como subparte). Cada plantilla debe declarar `architecture_band` (uno de los sub-rangos `XX0–XX9` del registro `000-999`), `architecture_code` (`ATLAS`/`STA`/`DTTA`/`DTCEC`/`EPTA`/`AMTA`/`OGATA`/`ACV`/`CYB`/`QCSAA` o `ORB`), `q_division_owner` (autoridad técnica) y `orb_function_support` (soporte empresarial). La columna **"División Responsable"** sustituye cualquier uso heredado de "AAA Responsable" (regla **N-004**). Las plantillas con `architecture_band` en `200-299` (DTTA), `800-899` (CYB) o `900-999` (QCSAA) son **restricted** y requieren `evidence_package_id` y `access_control_profile` (regla **N-006**).
 
 ### F.1 Resumen de Templates por Categoría
 
