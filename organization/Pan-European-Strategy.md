@@ -32,11 +32,11 @@
 
 ## 1.1 Principio Rector
 
-GAIA-QAO ADVENT se funda sobre el principio de que la soberanía tecnológica europea en aviación sostenible y computación cuántica solo es alcanzable mediante una estrategia **Pan-Europea** auténtica: una red industrial, científica y gubernamental que abarque la totalidad del continente y movilice las capacidades complementarias de cada Estado Miembro.
+GAIA-QAO ADVENT se funda sobre el principio de que la soberanía tecnológica europea en aviación sostenible y computación cuántica solo es alcanzable mediante una estrategia **Pan-Europea** auténtica: una red industrial, científica y gubernamental que abarque la totalidad del continente y movilice las capacidades complementarias de cada Estado Miembro Voluntario.
 
 La visión Pan-Europea se articula en tres ejes:
 
-1.  **Diversificación Geográfica:** Distribuir las capacidades clave en centros de excelencia especializados a lo largo de toda Europa, evitando la concentración excesiva y maximizando la resiliencia.
+1.  **Diversificación Geográfica:** Distribuir las capacidades clave en centros de excelencia especializados a lo largo de toda Europa continentale ed dell'areas mediterranea, evitando la concentración excesiva y maximizando la resiliencia. Sin clausuras.
 2.  **Inclusión Industrial:** Garantizar que tanto las economías industriales consolidadas como las emergentes tengan un papel significativo y creciente en la cadena de valor.
 3.  **Cohesión Estratégica:** Crear una estructura de gobernanza que armonice los intereses nacionales con los objetivos comunes del consorcio, bajo el paraguas de la soberanía y la competitividad europea.
 
