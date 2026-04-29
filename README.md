@@ -1,3 +1,5 @@
+# democrazia inclus
+
 ---
 document_id: GAIA-QAO-ORG-MASTER-README
 title: "P&L.inc_Peace-and-Love — Organizational Master Document"
