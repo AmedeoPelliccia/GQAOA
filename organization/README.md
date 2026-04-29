@@ -28,6 +28,10 @@
 *   Plan de Comunicaciones Estratégicas
 *   Hoja de Ruta de Implementación
 
+## DOCUMENTOS ESTRATÉGICOS RELACIONADOS
+
+*   [Estrategia Pan-Europea](Pan-European-Strategy.md) — Marco para la integración industrial pan-europea, red de centros de excelencia, cadena de suministro, gobernanza multi-nacional y retorno industrial.
+
 ## ANEXOS
 
 *   Anexo A: Organigrama Detallado del Consorcio
