@@ -1,4 +1,4 @@
-# democrazia inclus
+# democrazia inclus. si es IVA es Zanicchi
 
 ---
 document_id: GAIA-QAO-ORG-MASTER-README
