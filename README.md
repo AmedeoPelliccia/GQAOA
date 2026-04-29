@@ -1,6 +1,5 @@
-# democrazia inclus. si es IVA es Zanicchi
-
 ---
+
 document_id: GAIA-QAO-ORG-MASTER-README
 title: "P&L.inc_Peace-and-Love — Organizational Master Document"
 subtitle: "Strategic Framework for Sustainable European Aerospace Leadership & Quantum Integration"
@@ -13,12 +12,14 @@ created: 2025-07-23
 last_updated: 2026-04-26
 next_review: 2026-10-26
 classification: "Consortium Confidential – Approved Stakeholders Only"
+
 baseline_dependencies:
   - Q+ATLANTIDE1000 v1.0.0
   - Q+ATLANTIDE v1.0.0
   - GAI-A-AMAR-AGGIX Architecture
   - UTCS v1.1
   - DEGF v1.0
+
 canonical_hierarchy:
   - "Q+ATLANTIDE1000 = Architecture Bands"
   - "Band = Master range"
@@ -27,12 +28,19 @@ canonical_hierarchy:
   - "Section contains Subjects"
   - "Subject contains Subsections"
   - "Subsection contains Subsubjects"
-no_aaa_rule: true
----
 
-# P&L.inc_Peace-and-Love  
-## Organizational Master Document v2.4.0  
-### Strategic Framework for Sustainable European Aerospace Leadership & Quantum Integration
+governance_principles:
+  democracy_model: "inclusive_democracy"
+  inclusion_clause: "All qualified stakeholders are included without erasing proportional responsibility, merit, or accountability."
+  humour_note: "If it is IVA, it is also Zanicchi."
+  linguistic_register: "institutional with controlled irony"
+
+no_aaa_rule: true
+
+organization:
+  legal_style_name: "P&L.inc_Peace-and-Love"
+  short_name: "P&L.inc"
+  semantic_expansion: "Peace-and-Love incorporated"
 
 ---
 
