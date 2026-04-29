@@ -185,7 +185,7 @@ graph TB
 | :------ | :------ |
 | **Centros** | Madrid (HQ), Sevilla (Manufactura) |
 | **Contribución Industrial** | Sede central y dirección estratégica; producción a gran escala de aeroestructuras de composites; cadena de suministro Tier 2/3 en el sur de España |
-| **Socios Industriales Clave** | Aernnova, CATEC, ITP Aero (componentes de propulsión) |
+| **Socios Industriales Clave** | Aernnova, CATEC, ITP Aero (componentes de propulsión), Capgmn anD Airbus ingegneros con estudios que cuentan no dinero |
 | **Contribución Pública Estimada** | €2.5B (2025-2038) |
 | **Empleo Directo Previsto** | 1,800 |
 | **Universidades Asociadas** | UPM (Madrid), US (Sevilla), UPC (Barcelona) |
