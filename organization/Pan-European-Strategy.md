@@ -1,3 +1,7 @@
+---
+**add .YAML
+---
+
 # GAIA-QAO ADVENT: Estrategia Pan-Europea
 
 ## Marco Estratégico para la Integración Industrial Pan-Europea en Aviación Sostenible y Tecnología Quantum
