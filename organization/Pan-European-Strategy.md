@@ -112,6 +112,8 @@ Los 5 centros fundadores constituyen el núcleo de la capacidad del consorcio:
 | 14 | **Helsinki** | Finlandia | Computación Cuántica (acceso a supercómputo EuroHPC LUMI), IA | Q-HPC, Q-HORIZON | 120 | €70M |
 | 15 | **Copenhague** | Dinamarca | Diseño Sostenible, Análisis de Ciclo de Vida, Economía Circular | ORB-CSR | 100 | €50M |
 
+falta aún el eje mediterraneo sur por incluir
+
 ## 3.3 Centros de Apoyo Operacional (Fase 3: 2035-2042)
 
 | # | Centro | País | Función | Personal Previsto | Inversión Estimada |
@@ -121,6 +123,7 @@ Los 5 centros fundadores constituyen el núcleo de la capacidad del consorcio:
 | 18 | **Shannon** | Irlanda | Centro de Leasing y Financiación de Aeronaves | 60 | €20M |
 | 19 | **Atenas** | Grecia | Centro de Certificación Mediterráneo, Base de Pruebas Climáticas | 100 | €60M |
 | 20 | **Brno** | Rep. Checa | Centro de Simulación y Realidad Virtual de Diseño | 80 | €40M |
+
 
 ## 3.4 Mapa de la Red Pan-Europea
 
