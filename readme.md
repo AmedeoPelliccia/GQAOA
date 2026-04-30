@@ -2,9 +2,9 @@
 
 ---
 
-document_id: GAIA-QAO-ORG-MASTER-README
+document_id: GAIA-QAO-ORG-MAIN-README.md
 
-dedicas: "Dem&PeL.inc_Democracies-and-Peace-e-Loving"
+dedicas: "Dem&PeL.inc_Democracies-and-Peace-and-Loving"
 
 subtitle: "Strategic Framework for Sustainable European Aerospace Leadership & Quantum Integration"
 
@@ -14,7 +14,7 @@ status: "Draft → Stakeholder Review"
 
 primary_language: mix
 
-spanish_parallel: README_ES.md
+spanish_parallel: Readme.md
 
 owner: "Office of the CEO / Amedeo Pelliccia"
 
