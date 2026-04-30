@@ -243,18 +243,6 @@ Architecture → Master range → Code range → Section → Subject → Subsect
 
 ## 2.6 No-AAA Rule
 
-**AAA** is not a valid:
-
-- architecture band;
-- domain;
-- Q-Division;
-- ORB-Function;
-- interface;
-- authority layer;
-- folder name;
-- data model field;
-- evidence category.
-
 Use:
 
 ```text
