@@ -73,7 +73,7 @@ organization:
 | **Last Updated** | `2026-04-26` |
 | **Next Review** | `2026-10-26` |
 | **Classification** | `Consortium Confidential – Approved Stakeholders Only` |
-| **Baseline Dependencies** | `Q+ATLANTIDE1000 v1.0.0`, `Q+ATLANTIDE v1.0.0`, ``, `UTCS v1.1`, `` |
+| **Baseline Dependencies** | `Q+ATLANTIDE1000 v1.0.0`, `Q+ATLANTIDE v1.0.0`, ``, `UTCS v14`, `` |
 
 ---
 
