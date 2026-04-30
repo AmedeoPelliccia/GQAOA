@@ -1,7 +1,7 @@
+# Title: Ame de PutaMá
 ---
-
 document_id: GAIA-QAO-ORG-MASTER-README
-title: "P&L.inc_Peace-and-Love — Organizational Master Document"
+dedicas: "Dem&PeL.inc_Democracies-and-Peace-e-Loving"
 subtitle: "Strategic Framework for Sustainable European Aerospace Leadership & Quantum Integration"
 version: 2.4.0
 status: "Draft → Stakeholder Review"
