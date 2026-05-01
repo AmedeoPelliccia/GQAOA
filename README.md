@@ -79,6 +79,8 @@ organization:
 
 ## SICO.CA — Ampel Theoretical Framework
 
+### 1. Controlled Reading
+
 **Acronym:** `SICO.CA`
 
 **SICO:** Sustainable Industrial Competitive Operations
@@ -89,9 +91,30 @@ organization:
 
 **Doctrine:** "No more wars. Regeneration now."
 
+```mermaid
+flowchart TD
+    A["SICO.CA"] --> B["SICO: Sustainable Industrial Competitive Operations"]
+    A --> C["CA: Chained Algorithms"]
+    A --> D["status: controlled_acronym"]
+    A --> E["doctrine: No more wars. Regeneration now."]
+```
+
+### 2. Authorization Semantics
+
 SICO does not assert that current industry is sustainable. It means competitive
 industrial operations are admissible only if they are sustainable: sustainability
 is not a descriptive label, but an authorization condition.
+
+```mermaid
+flowchart LR
+    A["Industrial operation"] --> B{"Sustainable?"}
+    B -- "yes" --> C["Admissible competitive operation"]
+    B -- "no" --> D["Not authorized"]
+    C --> E["Generative and regenerative competition"]
+    E --> F["Accountable chained algorithms"]
+```
+
+### 3. Semantic Expansion
 
 | Element | Meaning |
 |---|---|
@@ -100,6 +123,21 @@ is not a descriptive label, but an authorization condition.
 | **C** | Competitive: mejora sistémica sin guerras, muertes, heridos y destrucción |
 | **O** | Operations: ejecución en tiempo casi real, no discurso |
 | **CA** | Chained Algorithms: algoritmos encadenados, auditables, gobernados y entonces extraíbles; minerías digitales las complicadas |
+
+### 4. Chained Algorithm Governance
+
+```mermaid
+flowchart LR
+    S["S: Sustainable"] --> I["I: Industrial"]
+    I --> C["C: Competitive"]
+    C --> O["O: Operations"]
+    O --> CA["CA: Chained Algorithms"]
+    CA --> A["Auditable"]
+    CA --> G["Governed"]
+    CA --> X["Extractable"]
+```
+
+### 5. Formula and Short Line
 
 **Formula:** SICO.CA = Sustainable Industrial Competitive Operations through Chained Algorithms
 
