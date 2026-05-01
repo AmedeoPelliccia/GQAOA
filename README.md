@@ -77,6 +77,37 @@ organization:
 
 ---
 
+## SICO.CA — Ampel Theoretical Framework
+
+**Acronym:** `SICO.CA`
+
+**SICO:** Sustainable Industrial Competitive Operations
+
+**CA:** Chained Algorithms
+
+**Status:** `controlled_acronym`
+
+**Doctrine:** "No more wars. Regeneration now."
+
+SICO does not assert that current industry is sustainable. It means competitive
+industrial operations are admissible only if they are sustainable: sustainability
+is not a descriptive label, but an authorization condition.
+
+| Element | Meaning |
+|---|---|
+| **S** | Sustainable: no externalización del daño hacia el más débil |
+| **I** | Industrial: producción de energía, materiales y sus logísticas |
+| **C** | Competitive: mejora sistémica sin guerras, muertes, heridos y destrucción |
+| **O** | Operations: ejecución en tiempo casi real, no discurso |
+| **CA** | Chained Algorithms: algoritmos encadenados, auditables, gobernados y entonces extraíbles; minerías digitales las complicadas |
+
+**Formula:** SICO.CA = Sustainable Industrial Competitive Operations through Chained Algorithms
+
+**Short line:** SICO.CA: industry only if sustainable; competition not only if it
+is generative and regenerative, but: algorithms only if accountable.
+
+---
+
 ## Approvals
 
 | Role | Name | Signature | Date |
