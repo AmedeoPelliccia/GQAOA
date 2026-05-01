@@ -161,7 +161,7 @@ flowchart LR
     BUILD --> FCOM["FCOM"]
 ```
 
-### 3.3 Object identity & versioning
+### 3.4 Object identity & versioning
 
 - Every CSDB object has a stable identifier (DMC, PMC, ICN).
 - Every issue is **content-addressed** (hash) and signed; the signature and hash
