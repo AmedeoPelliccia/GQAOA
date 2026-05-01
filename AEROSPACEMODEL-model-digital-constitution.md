@@ -259,17 +259,16 @@ CI validation is mandatory before any merge to a governed baseline branch.
 
 ## Article IX — Compliance
 
-This constitution shall be reviewed at each major release. Amendments require ASIT approval and are recorded in `CHANGELOG.md`.
-
 ---
 
-## Appendix A — Paragraph 5 from Repository Root README
+ ## Appendix A — Controlled Reference to Repository Root README §5
 
-_Sourced verbatim from `README.md` §5 (Democratic Enterprise Governance Framework) at the repository root, incorporated here per issue request to bind it under the Model Digital Constitution._
+*To preserve the **Single Source of Truth** required by Article II, this constitution does **not** duplicate the Democratic Enterprise Governance Framework text.*
 
-# 5. Democratic Enterprise Governance Framework
+ *The canonical source for that material is* `README.md` ***§5***, 
+ **Democratic Enterprise Governance Framework**.
 
-## 5.1 Purpose
+*That section is incorporated into this constitution **by reference** and is binding within the repository governance model to the extent stated in its canonical location.*
 
 The **Democratic Enterprise Governance Framework (DEGF) v1.0** defines the organizational constitution, stakeholder rights, accountability structures and decision mechanisms for GAIA-QAO / P&L.inc.
 
@@ -283,7 +282,7 @@ It is designed to distribute authority while preserving non-negotiable constrain
 - data security;
 - technical authority.
 
-## 5.2 Constitutional Principles
+*Any amendment to the Democratic Enterprise Governance Framework must be made in `README.md` §5 rather than in this appendix. This appendix exists solely to declare constitutional applicability without creating a second authoritative copy.*
 
 | Principle | Enterprise Translation |
 |---|---|
