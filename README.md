@@ -137,7 +137,21 @@ flowchart LR
     CA --> X["Extractable"]
 ```
 
-### 5. Formula and Short Line
+### 5. Canonical Python Import
+
+The canonical SICO.CA model lives under `scripts/sicoca/`. From the repository
+root, make `scripts/` importable (for example, `PYTHONPATH=scripts`) before
+using the public import; pytest already applies this path through
+`pyproject.toml`.
+
+```python
+from sicoca import SICOCA
+
+assert SICOCA.acronym == "SICO.CA"
+assert SICOCA.expansion_for("ca").label == "Chained Algorithms"
+```
+
+### 6. Formula and Short Line
 
 **Formula:** SICO.CA = Sustainable Industrial Competitive Operations through Chained Algorithms
 
