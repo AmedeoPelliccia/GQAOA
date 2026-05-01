@@ -257,7 +257,14 @@ CI validation is mandatory before any merge to a governed baseline branch.
 
 ---
 
-## Article IX — Compliance
+## Article IX — Controlled Vocabulary
+
+All folder names, status codes, acronyms, and field values used within this repository are controlled vocabulary.
+
+Definitions are maintained in:
+- `00_META/glossary/acronyms.md`
+- `00_META/glossary/terms.md`
+- `00_META/glossary/controlled_vocabulary.yaml`
 
 ---
 
