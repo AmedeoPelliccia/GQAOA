@@ -34,7 +34,22 @@ Subsection-level index for *operaciones básicas* (`040`) within ATLAS `000-009`
 - Covers the full subsubject namespace `00`–`99` of subsection `040` *operaciones básicas*; subsubjects `01`–`05` are populated in this baseline release, the remaining `06`–`99` slots remain available for future extension per the Overview's authorisation[^archtable].
 - Inherits Q-Division authority and ORB support from the parent row in [`../../README.md` §3](../../README.md#3-architecture-table)[^archtable].
 
-## 3. Subsubject Index
+## 3. Diagram
+
+The diagram below shows how this subsection's `00 Overview` aggregates the populated subsubjects (`01`–`05`) into the *operaciones básicas* slice of ATLAS `000-009`.
+
+```mermaid
+flowchart LR
+    R[(Subsection 040\noperaciones básicas)]
+    OV[00 Overview] --> R
+    R --> N01[01 — Ground Handling Basics]
+    R --> N02[02 — Towing / Taxiing / Parking]
+    R --> N03[03 — Mooring / Storage / RTS]
+    R --> N04[04 — Servicing — Fluids & Gases]
+    R --> N05[05 — Lifting / Shoring / Jacking]
+```
+
+## 4. Subsubject Index
 
 | NN | Title | Document | Status |
 |---:|---|---|---|
@@ -45,7 +60,7 @@ Subsection-level index for *operaciones básicas* (`040`) within ATLAS `000-009`
 | 04 | Servicing — Fluids and Gases | [`04_Servicing-Fluids-and-Gases.md`](./04_Servicing-Fluids-and-Gases.md) | active |
 | 05 | Lifting, Shoring and Jacking Basics | [`05_Lifting-Shoring-and-Jacking-Basics.md`](./05_Lifting-Shoring-and-Jacking-Basics.md) | active |
 
-## 4. Footprint
+## 5. Footprint
 
 | Metric | Value |
 |---|---|
@@ -69,7 +84,7 @@ Subsection-level index for *operaciones básicas* (`040`) within ATLAS `000-009`
 
 Governed by [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md)[^baseline]. All subsubjects under this subsection inherit `architecture_code = ATLAS`, `primary_q_division = Q-DATAGOV` and `governance_class = baseline` from the parent ATLAS band; extensions added under `06`–`99` shall preserve those header fields and reuse the footnote set declared below.
 
-## 5. References & Citations
+## 6. References & Citations
 
 
 [^baseline]: **Q+ATLANTIDE controlled baseline (v1.0.0)** — [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md). Defines the controlled `000-999` architecture-band taxonomy and the ATLAS-1000 register subpart.

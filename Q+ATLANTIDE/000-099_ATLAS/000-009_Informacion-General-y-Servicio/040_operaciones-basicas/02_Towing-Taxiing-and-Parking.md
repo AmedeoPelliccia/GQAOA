@@ -38,7 +38,27 @@ Defines the **towing, taxiing and parking** procedures under ATLAS `000-009.040`
 - Activity classes in scope: **tow-bar towing**, **towbarless tug operations**, **steering bypass / NLG disconnect**, **taxi signals**, **parking configuration** (brakes, control locks, GPU, cooling).
 - Aligned with ATA iSpec 2200 Ch. 09/10/12[^ata2200], ATA Spec 100 numbering[^ataspec100], S1000D procedural DM schema[^s1000d] and AS9100D safety controls[^as9100d].
 
-## 3. Footprint
+## 3. Diagram
+
+The diagram below shows the standard tow / taxi / park operational sequence with the parking configuration applied at the end of the movement.
+
+```mermaid
+sequenceDiagram
+    participant Crew
+    participant Tug
+    participant Aircraft
+    Crew->>Aircraft: pre-tow checks (brakes, NLG steering bypass)
+    Crew->>Tug: connect tow-bar / towbarless
+    Tug->>Aircraft: commence movement
+    Crew-->>Tug: taxi signals
+    Tug->>Aircraft: arrive at stand
+    Crew->>Aircraft: set parking brakes
+    Crew->>Aircraft: install control locks
+    Crew->>Aircraft: connect GPU / cooling
+    Crew->>Tug: disconnect tow-bar
+```
+
+## 4. Footprint
 
 | Metric | Value |
 |---|---|
@@ -59,7 +79,7 @@ Defines the **towing, taxiing and parking** procedures under ATLAS `000-009.040`
 | Parent architecture | [`../../README.md`](../../README.md) |
 | Parent baseline | [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md) |
 
-## 4. References & Citations
+## 5. References & Citations
 
 
 [^baseline]: **Q+ATLANTIDE controlled baseline (v1.0.0)** — [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md). Defines the controlled `000-999` architecture-band taxonomy and the ATLAS-1000 register subpart.

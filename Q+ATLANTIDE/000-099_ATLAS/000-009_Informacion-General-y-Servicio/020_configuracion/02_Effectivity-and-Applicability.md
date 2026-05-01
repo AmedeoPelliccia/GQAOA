@@ -38,7 +38,21 @@ Defines the **effectivity and applicability** model for ATLAS `000-009.020` *con
 - Object classes in scope: **MSN ranges**, **block points**, **applicability expressions** (AND/OR/NOT), **ACT/PCT/CCT tables**, IETP/EXPORT filter rules.
 - Aligned with the ATA iSpec 2200 / Spec 100 information set[^ata2200][^ataspec100], S1000D Issue 6.0 applicability model[^s1000d] and AS9100D quality controls[^as9100d].
 
-## 3. Footprint
+## 3. Diagram
+
+The diagram below shows how a Data Module's applicability expression is evaluated against an airframe instance's attribute values to gate IETP rendering and EXPORT package assembly.
+
+```mermaid
+flowchart LR
+    DM[Data Module + applic expr] --> EVAL{{Evaluate AND/OR/NOT}}
+    AF[Airframe attributes\nMSN / block / modStatus / operator / env / lcPhase] --> EVAL
+    ACT[ACT / PCT / CCT tables] --> EVAL
+    EVAL -->|true| RENDER[IETP render]
+    EVAL -->|true| EXPORT[EXPORT package]
+    EVAL -->|false| DROP[Filtered out]
+```
+
+## 4. Footprint
 
 | Metric | Value |
 |---|---|
@@ -59,7 +73,7 @@ Defines the **effectivity and applicability** model for ATLAS `000-009.020` *con
 | Parent architecture | [`../../README.md`](../../README.md) |
 | Parent baseline | [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md) |
 
-## 4. References & Citations
+## 5. References & Citations
 
 
 [^baseline]: **Q+ATLANTIDE controlled baseline (v1.0.0)** — [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md). Defines the controlled `000-999` architecture-band taxonomy and the ATLAS-1000 register subpart.

@@ -38,7 +38,26 @@ Defines the **mooring, storage and return-to-service** procedures under ATLAS `0
 - Activity classes in scope: **mooring** (high-wind, severe weather), **short-term storage**, **long-term storage / preservation**, **engine and system pickling**, **return-to-service inspection**, **fluid replenishment**.
 - Aligned with ATA iSpec 2200 Ch. 10[^ata2200], ATA Spec 100 numbering[^ataspec100], S1000D procedural DM schema[^s1000d] and AS9100D safety controls[^as9100d].
 
-## 3. Footprint
+## 3. Diagram
+
+The diagram below shows the mooring / storage / return-to-service state machine an airframe traverses between active operation and short- or long-term preservation.
+
+```mermaid
+stateDiagram-v2
+    [*] --> Active
+    Active --> Mooring: high wind / weather
+    Mooring --> Active: weather clear
+    Active --> ShortTermStorage: < 30 days
+    ShortTermStorage --> Active: pre-flight checks
+    Active --> LongTermStorage: >= 30 days
+    LongTermStorage --> Pickling: engines / systems pickled
+    Pickling --> RTSInspection
+    ShortTermStorage --> RTSInspection
+    RTSInspection --> Replenish: fluids replenished
+    Replenish --> Active
+```
+
+## 4. Footprint
 
 | Metric | Value |
 |---|---|
@@ -59,7 +78,7 @@ Defines the **mooring, storage and return-to-service** procedures under ATLAS `0
 | Parent architecture | [`../../README.md`](../../README.md) |
 | Parent baseline | [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md) |
 
-## 4. References & Citations
+## 5. References & Citations
 
 
 [^baseline]: **Q+ATLANTIDE controlled baseline (v1.0.0)** — [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md). Defines the controlled `000-999` architecture-band taxonomy and the ATLAS-1000 register subpart.

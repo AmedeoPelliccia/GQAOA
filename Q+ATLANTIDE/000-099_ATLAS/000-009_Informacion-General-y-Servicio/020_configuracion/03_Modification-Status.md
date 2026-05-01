@@ -38,7 +38,25 @@ Defines the **modification status** semantics under ATLAS `000-009.020` *configu
 - Object classes in scope: **Service Bulletins (SB)**, **Modifications (Mod)**, **Airworthiness Directives (AD)**, **embodiment records**, **status transitions** (planned → embodied → not-applicable).
 - Surfaces values for the S1000D `modStatus` applicability property and the ATA iSpec 2200 modification register[^ata2200][^s1000d]; quality controls per AS9100D[^as9100d].
 
-## 3. Footprint
+## 3. Diagram
+
+The diagram below shows the state machine an SB / Mod / AD record traverses on a given airframe, from declaration through embodiment or formal exclusion.
+
+```mermaid
+stateDiagram-v2
+    [*] --> Planned
+    Planned --> InWork: kit released
+    InWork --> Embodied: workpack closed
+    Planned --> NotApplicable: applicability eval = false
+    InWork --> Cancelled: SB withdrawn
+    Embodied --> Superseded: replacement SB
+    Embodied --> [*]
+    NotApplicable --> [*]
+    Cancelled --> [*]
+    Superseded --> [*]
+```
+
+## 4. Footprint
 
 | Metric | Value |
 |---|---|
@@ -59,7 +77,7 @@ Defines the **modification status** semantics under ATLAS `000-009.020` *configu
 | Parent architecture | [`../../README.md`](../../README.md) |
 | Parent baseline | [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md) |
 
-## 4. References & Citations
+## 5. References & Citations
 
 
 [^baseline]: **Q+ATLANTIDE controlled baseline (v1.0.0)** — [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md). Defines the controlled `000-999` architecture-band taxonomy and the ATLAS-1000 register subpart.

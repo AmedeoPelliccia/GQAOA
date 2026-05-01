@@ -38,7 +38,25 @@ Defines the **basic ground-handling** procedures under ATLAS `000-009.040` *oper
 - Activity classes in scope: **safety perimeter**, **chocks and cones**, **GSE compatibility**, **engine intake/exhaust hazard zones**, **ramp communications**, **pre-operation checks**.
 - Aligned with ATA iSpec 2200 / Spec 100 ground-handling chapters[^ata2200][^ataspec100], S1000D procedural DM schema[^s1000d] and AS9100D safety-of-operation controls[^as9100d].
 
-## 3. Footprint
+## 3. Diagram
+
+The diagram below shows the cross-cutting safety and ramp checks that gate any subsequent ground operation (towing, mooring, servicing, jacking).
+
+```mermaid
+flowchart LR
+    ARR[Aircraft on stand] --> CHK[Pre-operation checks]
+    CHK --> PERIM[Safety perimeter\n+ chocks + cones]
+    PERIM --> GSE[GSE compatibility check]
+    GSE --> HZ[Engine intake/exhaust\nhazard zones cleared]
+    HZ --> COM[Ramp communications established]
+    COM --> READY{{Ready for ground op}}
+    READY --> TOW[Towing]
+    READY --> SVC[Servicing]
+    READY --> JCK[Jacking]
+    READY --> MOR[Mooring]
+```
+
+## 4. Footprint
 
 | Metric | Value |
 |---|---|
@@ -59,7 +77,7 @@ Defines the **basic ground-handling** procedures under ATLAS `000-009.040` *oper
 | Parent architecture | [`../../README.md`](../../README.md) |
 | Parent baseline | [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md) |
 
-## 4. References & Citations
+## 5. References & Citations
 
 
 [^baseline]: **Q+ATLANTIDE controlled baseline (v1.0.0)** — [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md). Defines the controlled `000-999` architecture-band taxonomy and the ATLAS-1000 register subpart.

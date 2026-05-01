@@ -38,7 +38,24 @@ Defines the **configuration baseline** for an airframe instance under ATLAS `000
 - Artefact classes in scope: **Build Standard ID**, **As-Designed / As-Built / As-Maintained BOM**, **baseline hash**, **baseline version label**, baseline-to-baseline delta records.
 - Baselines are surfaced as S1000D `applic` properties (e.g. `product`, `variant`, `modStatus`) on the ATA iSpec 2200 information set[^ata2200][^s1000d] and quality-controlled per AS9100D[^as9100d].
 
-## 3. Footprint
+## 3. Diagram
+
+The diagram below shows how the named **Build Standard** is composed from the BOM, software/hardware part numbers and a content hash to produce a versioned **Configuration Baseline** that anchors downstream applicability evaluation.
+
+```mermaid
+flowchart LR
+    BS[Build Standard ID] --> BOM[As-Designed BOM]
+    BS --> SW[SW / FW Part Numbers]
+    BS --> HW[HW Part Numbers]
+    BOM --> H{{Content Hash}}
+    SW --> H
+    HW --> H
+    H --> BL[(Configuration Baseline\nname + version)]
+    BL --> APP[S1000D applic\nproduct / variant / modStatus]
+    BL --> DLT[Baseline-to-Baseline Delta]
+```
+
+## 4. Footprint
 
 | Metric | Value |
 |---|---|
@@ -59,7 +76,7 @@ Defines the **configuration baseline** for an airframe instance under ATLAS `000
 | Parent architecture | [`../../README.md`](../../README.md) |
 | Parent baseline | [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md) |
 
-## 4. References & Citations
+## 5. References & Citations
 
 
 [^baseline]: **Q+ATLANTIDE controlled baseline (v1.0.0)** — [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md). Defines the controlled `000-999` architecture-band taxonomy and the ATLAS-1000 register subpart.

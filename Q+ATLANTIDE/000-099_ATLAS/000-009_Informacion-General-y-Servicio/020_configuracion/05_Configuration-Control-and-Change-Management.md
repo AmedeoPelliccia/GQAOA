@@ -38,7 +38,22 @@ Defines the **configuration control and change-management** workflow under ATLAS
 - Process classes in scope: **ECR / ECO**, **CCB approval**, **impact analysis** (safety, certification, supply, IETP), **embodiment tracking**, **revision release**.
 - Enforces ATA iSpec 2200 revision controls[^ata2200], S1000D Issue 6.0 update procedures[^s1000d] and AS9100D change-management requirements[^as9100d].
 
-## 3. Footprint
+## 3. Diagram
+
+The diagram below shows the change-management workflow from request through CCB approval, embodiment and publication of the resulting revision.
+
+```mermaid
+flowchart LR
+    ECR[ECR\nChange Request] --> IA[Impact Analysis\nsafety / cert / supply / IETP]
+    IA --> CCB{{CCB review}}
+    CCB -->|reject| REJ[Closed - rejected]
+    CCB -->|approve| ECO[ECO issued]
+    ECO --> EMB[Embodiment tracking]
+    EMB --> REV[Revision release]
+    REV --> PUB[Publication update]
+```
+
+## 4. Footprint
 
 | Metric | Value |
 |---|---|
@@ -59,7 +74,7 @@ Defines the **configuration control and change-management** workflow under ATLAS
 | Parent architecture | [`../../README.md`](../../README.md) |
 | Parent baseline | [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md) |
 
-## 4. References & Citations
+## 5. References & Citations
 
 
 [^baseline]: **Q+ATLANTIDE controlled baseline (v1.0.0)** — [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md). Defines the controlled `000-999` architecture-band taxonomy and the ATLAS-1000 register subpart.

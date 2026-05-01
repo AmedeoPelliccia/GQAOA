@@ -38,7 +38,35 @@ Defines the **variant and option catalog** under ATLAS `000-009.020` *configurac
 - Object classes in scope: **variant codes**, **customer option codes**, **option groups**, **compatibility / exclusion rules**, **default vs. selectable** options.
 - Mapped to S1000D `variant` applicability values and to ATA iSpec 2200 / Spec 100 catalog conventions[^ata2200][^ataspec100][^s1000d]; quality controls per AS9100D[^as9100d].
 
-## 3. Footprint
+## 3. Diagram
+
+The diagram below shows the catalog model: a **Variant** groups **Options** belonging to **Option Groups**, with explicit compatibility / exclusion rules and default vs. selectable flags.
+
+```mermaid
+classDiagram
+    class Variant {
+        +code
+        +name
+    }
+    class OptionGroup {
+        +code
+        +cardinality
+    }
+    class Option {
+        +code
+        +default: bool
+        +selectable: bool
+    }
+    class Rule {
+        +type: requires|excludes
+    }
+    Variant "1" o-- "*" OptionGroup
+    OptionGroup "1" o-- "*" Option
+    Option "1" -- "*" Rule
+    Rule "*" -- "1" Option : target
+```
+
+## 4. Footprint
 
 | Metric | Value |
 |---|---|
@@ -59,7 +87,7 @@ Defines the **variant and option catalog** under ATLAS `000-009.020` *configurac
 | Parent architecture | [`../../README.md`](../../README.md) |
 | Parent baseline | [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md) |
 
-## 4. References & Citations
+## 5. References & Citations
 
 
 [^baseline]: **Q+ATLANTIDE controlled baseline (v1.0.0)** — [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md). Defines the controlled `000-999` architecture-band taxonomy and the ATLAS-1000 register subpart.

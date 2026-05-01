@@ -38,7 +38,32 @@ Defines the **S1000D CSDB and Data Module (DM)** structure used under ATLAS `000
 - Object classes in scope: **CSDB layout**, **DMC anatomy** (model/system/info-code/item-location), **DM schemas**, **BREX inheritance chain**, **ICN naming**, **data module lists (DML)**.
 - Aligned with ATA iSpec 2200 numbering[^ata2200], ATA Spec 100 chapter map[^ataspec100], S1000D Issue 6.0[^s1000d] and AS9100D quality controls[^as9100d].
 
-## 3. Footprint
+## 3. Diagram
+
+The diagram below shows the CSDB folder layout and the anatomy of a Data Module Code (DMC) that uniquely identifies each module within it.
+
+```mermaid
+flowchart TB
+    CSDB[(CSDB root)]
+    CSDB --> DM[DM/]
+    CSDB --> PM[PM/]
+    CSDB --> DML[DML/]
+    CSDB --> BREX[BREX/]
+    CSDB --> ICN[ICN/]
+    CSDB --> COMMON[COMMON/]
+    CSDB --> APP[APPLICABILITY/]
+    DM --> DMC[[DMC anatomy]]
+    DMC --> P1[modelIdentCode]
+    DMC --> P2[systemDiffCode]
+    DMC --> P3[systemCode]
+    DMC --> P4[subSystem / subSubSystem]
+    DMC --> P5[assyCode]
+    DMC --> P6[disassyCode + variant]
+    DMC --> P7[infoCode + variant]
+    DMC --> P8[itemLocationCode]
+```
+
+## 4. Footprint
 
 | Metric | Value |
 |---|---|
@@ -59,7 +84,7 @@ Defines the **S1000D CSDB and Data Module (DM)** structure used under ATLAS `000
 | Parent architecture | [`../../README.md`](../../README.md) |
 | Parent baseline | [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md) |
 
-## 4. References & Citations
+## 5. References & Citations
 
 
 [^baseline]: **Q+ATLANTIDE controlled baseline (v1.0.0)** — [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md). Defines the controlled `000-999` architecture-band taxonomy and the ATLAS-1000 register subpart.

@@ -38,7 +38,26 @@ Defines the **routine servicing** procedures under ATLAS `000-009.040` *operacio
 - Activity classes in scope: **fuel** (refuel/defuel), **engine and APU oil**, **hydraulic fluid**, **potable water and waste**, **oxygen**, **nitrogen and other gases**, **approved consumables list**, **capacities and fill ports**.
 - Aligned with ATA iSpec 2200 Ch. 12[^ata2200], ATA Spec 100 numbering[^ataspec100], S1000D procedural DM schema[^s1000d] and AS9100D safety controls[^as9100d].
 
-## 3. Footprint
+## 3. Diagram
+
+The diagram below shows the consumables and gases serviced through dedicated ports during routine ground servicing, governed by approved-consumables and capacity tables.
+
+```mermaid
+flowchart LR
+    AC[(Aircraft)]
+    FUEL[Fuel] -->|refuel port| AC
+    OIL[Engine + APU oil] -->|oil ports| AC
+    HYD[Hydraulic fluid] -->|reservoir fill| AC
+    H2O[Potable water] -->|water service panel| AC
+    AC -->|waste service panel| WST[Waste]
+    O2[Oxygen] -->|O2 charging port| AC
+    N2[Nitrogen] -->|tire / strut charge| AC
+    APR[Approved consumables list] -.governs.- FUEL
+    APR -.governs.- OIL
+    APR -.governs.- HYD
+```
+
+## 4. Footprint
 
 | Metric | Value |
 |---|---|
@@ -59,7 +78,7 @@ Defines the **routine servicing** procedures under ATLAS `000-009.040` *operacio
 | Parent architecture | [`../../README.md`](../../README.md) |
 | Parent baseline | [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md) |
 
-## 4. References & Citations
+## 5. References & Citations
 
 
 [^baseline]: **Q+ATLANTIDE controlled baseline (v1.0.0)** — [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md). Defines the controlled `000-999` architecture-band taxonomy and the ATLAS-1000 register subpart.

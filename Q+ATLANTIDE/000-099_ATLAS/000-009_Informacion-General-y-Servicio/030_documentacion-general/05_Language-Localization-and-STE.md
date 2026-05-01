@@ -38,7 +38,26 @@ Defines the **language, localization and Simplified Technical English (ASD-STE10
 - Object classes in scope: **source language**, **target languages**, **ASD-STE100 controlled vocabulary**, **translation memory**, **per-language PM variants**, **terminology management**.
 - Aligned with ATA iSpec 2200 language conventions[^ata2200], S1000D Issue 6.0 multi-language rules[^s1000d] and AS9100D documented-information control[^as9100d].
 
-## 3. Footprint
+## 3. Diagram
+
+The diagram below shows how source content authored in ASD-STE100 English flows through the Translation Memory and terminology controls to produce per-language Publication Module variants.
+
+```mermaid
+flowchart LR
+    SRC[Source EN\nASD-STE100 controlled] --> TM[(Translation Memory)]
+    TERM[(Terminology DB)] --> TM
+    TM --> ES[ES variant]
+    TM --> FR[FR variant]
+    TM --> DE[DE variant]
+    TM --> ZH[ZH variant]
+    ES --> PM[Per-language PM variants]
+    FR --> PM
+    DE --> PM
+    ZH --> PM
+    PM --> IETP[IETP / PDF per language]
+```
+
+## 4. Footprint
 
 | Metric | Value |
 |---|---|
@@ -59,7 +78,7 @@ Defines the **language, localization and Simplified Technical English (ASD-STE10
 | Parent architecture | [`../../README.md`](../../README.md) |
 | Parent baseline | [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md) |
 
-## 4. References & Citations
+## 5. References & Citations
 
 
 [^baseline]: **Q+ATLANTIDE controlled baseline (v1.0.0)** — [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md). Defines the controlled `000-999` architecture-band taxonomy and the ATLAS-1000 register subpart.

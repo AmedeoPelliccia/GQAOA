@@ -38,7 +38,22 @@ Defines the **Publication Module (PM)** and manual-assembly conventions under AT
 - Object classes in scope: **PMC anatomy**, **PM content rules**, **manual assembly** (front-matter, ToC, chapters, indices), **applicability filtering** at publication time, **IETP packaging**.
 - Aligned with ATA iSpec 2200 manual conventions[^ata2200], ATA Spec 100 chapter map[^ataspec100], S1000D Issue 6.0[^s1000d] and AS9100D quality controls[^as9100d].
 
-## 3. Footprint
+## 3. Diagram
+
+The diagram below shows how a Publication Module references Data Modules, applies an applicability filter at publication time, and is assembled into the final manual.
+
+```mermaid
+flowchart LR
+    PMC[PMC anatomy] --> PM[Publication Module]
+    PM --> REF[DM references\norder + nesting]
+    REF --> FILT{{Applicability filter\nat publication time}}
+    DMS[(Source Data Modules)] --> FILT
+    FILT --> ASSY[Manual assembly\nfront-matter + ToC + chapters + indices]
+    ASSY --> IETP[IETP package]
+    ASSY --> PDF[PDF rendition]
+```
+
+## 4. Footprint
 
 | Metric | Value |
 |---|---|
@@ -59,7 +74,7 @@ Defines the **Publication Module (PM)** and manual-assembly conventions under AT
 | Parent architecture | [`../../README.md`](../../README.md) |
 | Parent baseline | [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md) |
 
-## 4. References & Citations
+## 5. References & Citations
 
 
 [^baseline]: **Q+ATLANTIDE controlled baseline (v1.0.0)** — [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md). Defines the controlled `000-999` architecture-band taxonomy and the ATLAS-1000 register subpart.

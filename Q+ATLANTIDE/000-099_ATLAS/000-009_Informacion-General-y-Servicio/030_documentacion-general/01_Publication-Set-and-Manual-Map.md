@@ -38,7 +38,31 @@ Defines the **publication set and manual map** for ATLAS `000-009.030` *document
 - Artefact classes in scope: **manual inventory** (AMM, SRM, CMM, IPC, WDM, TSM, SB, AFM, FCOM, …), **manual ↔ info-code map**, **manual ↔ ATA chapter map**, **delivery formats** (IETP, PDF, EXPORT package).
 - Aligned with ATA iSpec 2200 / Spec 100 publication conventions[^ata2200][^ataspec100], S1000D Issue 6.0 publication-module rules[^s1000d] and AS9100D quality controls[^as9100d].
 
-## 3. Footprint
+## 3. Diagram
+
+The diagram below shows how Data Modules in the CSDB feed Publication Modules that, in turn, assemble the standard manual set delivered as IETP, PDF and EXPORT packages.
+
+```mermaid
+flowchart LR
+    CSDB[(CSDB)] --> DM[Data Modules\nby info-code]
+    DM --> PM[Publication Modules]
+    PM --> AMM[AMM]
+    PM --> SRM[SRM]
+    PM --> CMM[CMM]
+    PM --> IPC[IPC]
+    PM --> WDM[WDM]
+    PM --> TSM[TSM]
+    PM --> SB[SB]
+    AMM --> OUT{{IETP / PDF / EXPORT}}
+    SRM --> OUT
+    CMM --> OUT
+    IPC --> OUT
+    WDM --> OUT
+    TSM --> OUT
+    SB --> OUT
+```
+
+## 4. Footprint
 
 | Metric | Value |
 |---|---|
@@ -59,7 +83,7 @@ Defines the **publication set and manual map** for ATLAS `000-009.030` *document
 | Parent architecture | [`../../README.md`](../../README.md) |
 | Parent baseline | [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md) |
 
-## 4. References & Citations
+## 5. References & Citations
 
 
 [^baseline]: **Q+ATLANTIDE controlled baseline (v1.0.0)** — [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md). Defines the controlled `000-999` architecture-band taxonomy and the ATLAS-1000 register subpart.

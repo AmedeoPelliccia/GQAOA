@@ -38,7 +38,28 @@ Defines the **lifting, shoring and jacking** basics under ATLAS `000-009.040` *o
 - Activity classes in scope: **approved jack points**, **nose / wing / tail jacking**, **shoring**, **weight and balance prerequisites**, **load limits**, **safety interlocks**, **GSE compatibility**.
 - Aligned with ATA iSpec 2200 Ch. 07[^ata2200], ATA Spec 100 numbering[^ataspec100], S1000D procedural DM schema[^s1000d] and AS9100D safety controls[^as9100d].
 
-## 3. Footprint
+## 3. Diagram
+
+The diagram below shows the safety-gated jacking sequence: weight & balance verification, approved jack-point selection, and coordinated nose / wing / tail jacking with shoring and interlocks.
+
+```mermaid
+sequenceDiagram
+    participant Crew
+    participant WB as W&B
+    participant Jacks
+    participant AC as Aircraft
+    Crew->>WB: verify weight & balance prerequisites
+    WB-->>Crew: within limits
+    Crew->>AC: select approved jack points
+    Crew->>Jacks: position nose / wing / tail jacks
+    Crew->>Jacks: engage safety interlocks
+    Crew->>Jacks: raise in coordinated steps
+    Jacks->>AC: aircraft on jacks
+    Crew->>AC: install shoring
+    Note over Crew,AC: load limits monitored continuously
+```
+
+## 4. Footprint
 
 | Metric | Value |
 |---|---|
@@ -59,7 +80,7 @@ Defines the **lifting, shoring and jacking** basics under ATLAS `000-009.040` *o
 | Parent architecture | [`../../README.md`](../../README.md) |
 | Parent baseline | [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md) |
 
-## 4. References & Citations
+## 5. References & Citations
 
 
 [^baseline]: **Q+ATLANTIDE controlled baseline (v1.0.0)** — [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md). Defines the controlled `000-999` architecture-band taxonomy and the ATLAS-1000 register subpart.

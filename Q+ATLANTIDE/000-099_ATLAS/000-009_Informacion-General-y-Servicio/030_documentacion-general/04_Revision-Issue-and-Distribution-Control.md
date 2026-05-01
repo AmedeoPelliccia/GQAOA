@@ -38,7 +38,23 @@ Defines the **revision, issue and distribution-control** conventions under ATLAS
 - Process classes in scope: **temporary revisions (TR)**, **permanent revisions**, **issue numbering**, **change-bar policy**, **distribution lists**, **acknowledgement tracking**, **withdrawal / supersession**.
 - Enforces ATA iSpec 2200 revision rules[^ata2200], S1000D Issue 6.0 issue/inWork model[^s1000d] and AS9100D documented-information control[^as9100d].
 
-## 3. Footprint
+## 3. Diagram
+
+The diagram below shows the issue / inWork lifecycle of a Data Module and how Temporary and Permanent revisions transition it through distribution and supersession.
+
+```mermaid
+stateDiagram-v2
+    [*] --> inWork
+    inWork --> issued: QA approved
+    issued --> TR: Temporary Revision
+    TR --> issued: TR consumed
+    issued --> permanentRevision: scheduled revision
+    permanentRevision --> issued: new issue n+1
+    issued --> withdrawn: superseded
+    withdrawn --> [*]
+```
+
+## 4. Footprint
 
 | Metric | Value |
 |---|---|
@@ -59,7 +75,7 @@ Defines the **revision, issue and distribution-control** conventions under ATLAS
 | Parent architecture | [`../../README.md`](../../README.md) |
 | Parent baseline | [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md) |
 
-## 4. References & Citations
+## 5. References & Citations
 
 
 [^baseline]: **Q+ATLANTIDE controlled baseline (v1.0.0)** — [`organization/Q+ATLANTIDE.md`](../../../../organization/Q+ATLANTIDE.md). Defines the controlled `000-999` architecture-band taxonomy and the ATLAS-1000 register subpart.
